@@ -1239,7 +1239,7 @@ html.w-mod-js *[data-ix="r-init"] {
 }
 
 
-#view, #users, #emission, #rashod {
+/*#view, #users, #emission, #rashod {
 	background: rgb(85,85,85);
 	background: -moz-radial-gradient(right, ellipse cover, rgba(85,85,85,1) 0%, rgba(55,55,55,1) 50%);
 	background: -webkit-radial-gradient(right, ellipse cover, rgba(85,85,85,1) 0%,rgba(55,55,55,1) 50%);
@@ -1252,15 +1252,31 @@ html.w-mod-js *[data-ix="r-init"] {
 	background: -webkit-radial-gradient(left, ellipse cover, rgba(85,85,85,1) 0%,rgba(55,55,55,1) 50%);
 	background: radial-gradient(ellipse at left, rgba(85,85,85,1) 0%,rgba(55,55,55,1) 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#373737',GradientType=1 );
+}*/
+
+/* fix for the right position particls.js canvas */
+#head canvas {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
 }
 
+/* the first slide heigh fix - by Anton */
+#head {
+  padding-bottom: 145px;
+}
 
+.sharpey-slogan {
+  font-weight: normal;
+}
 
 @media (min-width: 1280px) {
   .clock {
     width: 100%;
   }
-} 
+}
 
 @media (max-width: 991px) {
   .body {
@@ -2315,4 +2331,3 @@ html.w-mod-js *[data-ix="r-init"] {
     text-align: left;
   }
 }
-
