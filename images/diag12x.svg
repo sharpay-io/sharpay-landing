@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 646.01 646"><defs><style>.a{fill:#517ff3;}.b{fill:#da4a39;}.c{fill:#f2b50e;}.d{fill:#009c59;}.e{fill:#ad44ba;}.f{fill:#10a9c0;}.g,.h{font-size:28px;font-family:DejaVuSans-Bold, DejaVu Sans;font-weight:700;}.h{fill:#fff;}</style></defs><title>chart</title><path class="a" d="M325.91,3A323,323,0,0,1,561.65,546.86l-58.92-55.22A242.25,242.25,0,0,0,325.93,83.73Z" transform="translate(-2.98 -2.98)"/><path class="b" d="M561.43,547.09A323,323,0,0,1,33.83,463.73l73-34.44a242.25,242.25,0,0,0,395.7,62.52Z" transform="translate(-2.98 -2.98)"/><path class="c" d="M33.69,463.44a323,323,0,0,1,9-292.71l70.81,38.81a242.25,242.25,0,0,0-6.79,219.53Z" transform="translate(-2.98 -2.98)"/><path class="d" d="M42.9,170.45a323,323,0,0,1,93-105.57l47.53,65.28a242.25,242.25,0,0,0-69.71,79.18Z" transform="translate(-2.98 -2.98)"/><path class="e" d="M136.11,64.68A323,323,0,0,1,265.17,8.76l15.2,79.31A242.25,242.25,0,0,0,183.58,130Z" transform="translate(-2.98 -2.98)"/><path class="f" d="M265.49,8.7a323,323,0,0,1,60-5.71l.11,80.75a242.25,242.25,0,0,0-45,4.29Z" transform="translate(-2.98 -2.98)"/><text class="g" transform="translate(555 227)">3</text><text class="g" transform="translate(574 227)">7</text><text class="g" transform="translate(593 227)">%</text><text class="h" transform="translate(555 227)">3</text><text class="h" transform="translate(574 227)">7</text><text class="h" transform="translate(593 227)">%</text><text class="g" transform="translate(251 619)">3</text><text class="g" transform="translate(270 619)">1</text><text class="g" transform="translate(289 619)">%</text><text class="h" transform="translate(251 619)">3</text><text class="h" transform="translate(270 619)">1</text><text class="h" transform="translate(289 619)">%</text><text class="g" transform="translate(13 331)">1</text><text class="g" transform="translate(32 331)">5</text><text class="g" transform="translate(51 331)">%</text><text class="h" transform="translate(13 331)">1</text><text class="h" transform="translate(32 331)">5</text><text class="h" transform="translate(51 331)">%</text><text class="g" transform="translate(91 153)">7</text><text class="g" transform="translate(110 153)">%</text><text class="h" transform="translate(91 153)">7</text><text class="h" transform="translate(110 153)">%</text><text class="g" transform="translate(191 81)">7</text><text class="g" transform="translate(210 81)">%</text><text class="h" transform="translate(191 81)">7</text><text class="h" transform="translate(210 81)">%</text><text class="g" transform="translate(277 59)">3</text><text class="g" transform="translate(296 59)">%</text><text class="h" transform="translate(277 59)">3</text><text class="h" transform="translate(296 59)">%</text></svg>
+<svg width="646.01" height="646" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.a{fill:#517ff3;}.b{fill:#da4a39;}.c{fill:#f2b50e;}.d{fill:#009c59;}.e{fill:#ad44ba;}.f{fill:#10a9c0;}.g,.h{font-size:24px;font-family:Verdana, DejaVuSans-Bold, DejaVu Sans;font-weight:700;}.h{fill:#fff;}</style>
+ </defs>
+ <title>chart</title>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" d="m322.93,0.02a323,323 0 0 1 235.74,543.86l-58.92,-55.22a242.25,242.25 0 0 0 -176.8,-407.91l-0.02,-80.73z" class="a"/>
+  <path id="svg_2" d="m558.45,544.11a323,323 0 0 1 -527.6,-83.36l73,-34.44a242.25,242.25 0 0 0 395.7,62.52l58.9,55.28z" class="b"/>
+  <path id="svg_3" d="m31.71,460.46a323,323 0 0 1 9,-292.71l70.81,38.81a242.25,242.25 0 0 0 -6.79,219.53l-73.02,34.37z" class="c"/>
+  <path id="svg_4" d="m39.92,167.47a323,323 0 0 1 93,-105.57l47.53,65.28a242.25,242.25 0 0 0 -69.71,79.18l-70.82,-38.89z" class="d"/>
+  <path id="svg_5" d="m133.13,61.7a323,323 0 0 1 129.06,-55.92l15.2,79.31a242.25,242.25 0 0 0 -96.79,41.93l-47.47,-65.32z" class="e"/>
+  <path id="svg_6" d="m262.51,5.72a323,323 0 0 1 60,-5.71l0.11,80.75a242.25,242.25 0 0 0 -45,4.29l-15.11,-79.33z" class="f"/>
+  <text id="svg_7" x="555" y="227" class="g">3</text>
+  <text id="svg_8" x="574" y="227" class="g">7</text>
+  <text id="svg_9" x="593" y="227" class="g">%</text>
+  <text id="svg_10" x="555" y="227" class="h">3</text>
+  <text id="svg_11" x="574" y="227" class="h">7</text>
+  <text id="svg_12" x="593" y="227" class="h">%</text>
+  <text id="svg_16" x="253" y="611.666667" class="h">3</text>
+  <text id="svg_17" x="270" y="612.333334" class="h">1</text>
+  <text id="svg_18" x="289" y="610.333334" class="h">%</text>
+  <text id="svg_19" x="13" y="331" class="g">1</text>
+  <text id="svg_22" x="13" y="331" class="h">1</text>
+  <text id="svg_23" x="29" y="331" class="h">5</text>
+  <text id="svg_24" x="47" y="331" class="h">%</text>
+  <text id="svg_25" x="91" y="153" class="g">7</text>
+  <text id="svg_26" x="110" y="153" class="g">%</text>
+  <text id="svg_27" x="91" y="153" class="h">7</text>
+  <text id="svg_28" x="110" y="153" class="h">%</text>
+  <text id="svg_29" x="191" y="81" class="g">7</text>
+  <text id="svg_30" x="210" y="81" class="g">%</text>
+  <text id="svg_31" x="191" y="81" class="h">7</text>
+  <text id="svg_32" x="210" y="81" class="h">%</text>
+  <text id="svg_35" x="275.666667" y="49.666667" class="h">3</text>
+  <text id="svg_36" x="291.333333" y="49.666667" class="h">%</text>
+ </g>
+</svg>

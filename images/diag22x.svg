@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 646 646.01"><defs><style>.a{fill:#517ff3;}.b{fill:#da4a39;}.c{fill:#f2b50e;}.d{fill:#009c59;}.e{fill:#ad44ba;}.f{fill:#10a9c0;}.g,.h{font-size:28px;font-family:DejaVuSans-Bold, DejaVu Sans;font-weight:700;}.h{fill:#fff;}</style></defs><title>chart (1)</title><path class="a" d="M325.92,3A323,323,0,0,1,609.14,481.4l-70.79-38.86A242.25,242.25,0,0,0,325.94,83.73Z" transform="translate(-2.98 -2.98)"/><path class="b" d="M609,481.68A323,323,0,0,1,445.13,626.2l-29.79-75.06A242.25,242.25,0,0,0,538.23,442.76Z" transform="translate(-2.98 -2.98)"/><path class="c" d="M444.83,626.32A323,323,0,0,1,42.75,170.72l70.81,38.81a242.25,242.25,0,0,0,301.57,341.7Z" transform="translate(-2.98 -2.98)"/><path class="d" d="M42.9,170.44A323,323,0,0,1,90.4,105l58.9,55.24a242.25,242.25,0,0,0-35.63,49.08Z" transform="translate(-2.98 -2.98)"/><path class="e" d="M90.62,104.77a323,323,0,0,1,154.7-91.56L265.49,91.4a242.25,242.25,0,0,0-116,68.67Z" transform="translate(-2.98 -2.98)"/><path class="f" d="M245.64,13.13A323,323,0,0,1,325.54,3l.11,80.75a242.25,242.25,0,0,0-59.92,7.61Z" transform="translate(-2.98 -2.98)"/><text class="g" transform="translate(539 195)">3</text><text class="g" transform="translate(558 195)">3</text><text class="g" transform="translate(577 195)">%</text><text class="h" transform="translate(539 195)">3</text><text class="h" transform="translate(558 195)">3</text><text class="h" transform="translate(577 195)">%</text><text class="g" transform="translate(483 553)">1</text><text class="g" transform="translate(502 553)">1</text><text class="g" transform="translate(521 553)">%</text><text class="h" transform="translate(483 553)">1</text><text class="h" transform="translate(502 553)">1</text><text class="h" transform="translate(521 553)">%</text><text class="g" transform="translate(83 527)">3</text><text class="g" transform="translate(102 527)">9</text><text class="g" transform="translate(121 527)">%</text><text class="h" transform="translate(83 527)">3</text><text class="h" transform="translate(102 527)">9</text><text class="h" transform="translate(121 527)">%</text><text class="g" transform="translate(73 173)">4</text><text class="g" transform="translate(92 173)">%</text><text class="h" transform="translate(73 173)">4</text><text class="h" transform="translate(92 173)">%</text><text class="g" transform="translate(157 97)">9</text><text class="g" transform="translate(176 97)">%</text><text class="h" transform="translate(157 97)">9</text><text class="h" transform="translate(176 97)">%</text><text class="g" transform="translate(267 59)">4</text><text class="g" transform="translate(286 59)">%</text><text class="h" transform="translate(267 59)">4</text><text class="h" transform="translate(286 59)">%</text></svg>
+<svg width="646" height="646.01" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.a{fill:#517ff3;}.b{fill:#da4a39;}.c{fill:#f2b50e;}.d{fill:#009c59;}.e{fill:#ad44ba;}.f{fill:#10a9c0;}.g,.h{font-size:22px;font-family:Verdana, DejaVuSans-Bold, DejaVu Sans;font-weight:700;}.h{fill:#fff;}</style>
+ </defs>
+ <title>chart (1)</title>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" d="m322.94,0.02a323,323 0 0 1 283.22,478.4l-70.79,-38.86a242.25,242.25 0 0 0 -212.41,-358.81l-0.02,-80.73z" class="a"/>
+  <path id="svg_2" d="m606.02,478.7a323,323 0 0 1 -163.87,144.52l-29.79,-75.06a242.25,242.25 0 0 0 122.89,-108.38l70.77,38.92z" class="b"/>
+  <path id="svg_3" d="m441.85,623.34a323,323 0 0 1 -402.08,-455.6l70.81,38.81a242.25,242.25 0 0 0 301.57,341.7l29.7,75.09z" class="c"/>
+  <path id="svg_4" d="m39.92,167.46a323,323 0 0 1 47.5,-65.44l58.9,55.24a242.25,242.25 0 0 0 -35.63,49.08l-70.77,-38.88z" class="d"/>
+  <path id="svg_5" d="m87.64,101.79a323,323 0 0 1 154.7,-91.56l20.17,78.19a242.25,242.25 0 0 0 -116,68.67l-58.87,-55.3z" class="e"/>
+  <path id="svg_6" d="m242.66,10.15a323,323 0 0 1 79.9,-10.13l0.11,80.75a242.25,242.25 0 0 0 -59.92,7.61l-20.09,-78.23z" class="f"/>
+  <text id="svg_8" x="558" y="195" class="g">3</text>
+  <text id="svg_10" x="542.333333" y="195" class="h">3</text>
+  <text id="svg_11" x="558" y="195" class="h">3</text>
+  <text id="svg_12" x="574.333333" y="195" class="h">%</text>
+  <text id="svg_13" x="483" y="553" class="g">1</text>
+  <text id="svg_16" x="483" y="553" class="h">1</text>
+  <text id="svg_17" x="497.333333" y="553" class="h">1</text>
+  <text id="svg_18" x="511.666667" y="552.333333" class="h">%</text>
+  <text id="svg_20" x="102" y="527" class="g">9</text>
+  <text id="svg_21" x="121" y="527" class="g">%</text>
+  <text id="svg_22" x="86.333333" y="527" class="h">3</text>
+  <text id="svg_23" x="102" y="527" class="h">9</text>
+  <text id="svg_24" x="121" y="527" class="h">%</text>
+  <text id="svg_25" x="73" y="173" class="g">4</text>
+  <text id="svg_26" x="92" y="173" class="g">%</text>
+  <text id="svg_27" x="73" y="173" class="h">4</text>
+  <text id="svg_28" x="92" y="173" class="h">%</text>
+  <text id="svg_29" x="157" y="97" class="g">9</text>
+  <text id="svg_30" x="176" y="97" class="g">%</text>
+  <text id="svg_31" x="157" y="97" class="h">9</text>
+  <text id="svg_32" x="176" y="97" class="h">%</text>
+  <text id="svg_33" x="267" y="59" class="g">4</text>
+  <text id="svg_34" x="286" y="59" class="g">%</text>
+  <text id="svg_35" x="267" y="59" class="h">4</text>
+  <text id="svg_36" x="286" y="59" class="h">%</text>
+ </g>
+</svg>
