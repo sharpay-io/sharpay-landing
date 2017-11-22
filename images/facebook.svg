@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="лендинг" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sharpay-home-Copy" transform="translate(-284.000000, -765.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="facebook" transform="translate(284.000000, 765.000000)">
+                <path d="M0,16 C0,7.16346667 7.16346667,0 16,0 C24.8365333,0 32,7.16346667 32,16 C32,24.8365333 24.8365333,32 16,32 C7.16346667,32 0,24.8365333 0,16 Z M17.66768,25.4076267 L17.66768,16.7027733 L20.0705973,16.7027733 L20.3890357,13.7030347 L17.6676811,13.7030347 L17.6717636,12.2016373 C17.6717636,11.4192587 17.7461001,11.0000427 18.8698222,11.0000427 L20.3720302,11.0000427 L20.3720302,7.99996267 L17.9687716,7.99996267 C15.0820729,7.99996267 14.0660302,9.45515733 14.0660302,11.9023413 L14.0660302,13.7033707 L12.2666489,13.7033707 L12.2666489,16.7031093 L14.0660302,16.7031093 L14.0660302,25.4075893 L17.6676836,25.4075893 L17.66768,25.4076267 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
