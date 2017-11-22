@@ -124,6 +124,7 @@ a {
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 45px;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
@@ -163,7 +164,7 @@ a {
 }
 
 .h-subtitle {
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 30px;
 }
 
@@ -207,7 +208,7 @@ a {
 }
 
 .form-block {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 
@@ -260,7 +261,7 @@ a {
 
 .soc-links {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -599,7 +600,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  margin-top: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1268,9 +1269,6 @@ html.w-mod-js *[data-ix="r-init"] {
   padding-bottom: 145px;
 }
 
-.sharpey-slogan {
-  font-weight: normal;
-}
 
 @media (min-width: 1280px) {
   .clock {
