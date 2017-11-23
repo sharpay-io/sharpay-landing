@@ -12,6 +12,15 @@ a {
   text-decoration: underline;
 }
 
+.body>div {
+	z-index: 2;
+}
+#particles {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 .body {
   background-color: #373737;
   background-image: url('../images/hero-bg.jpg');
@@ -23,8 +32,9 @@ a {
   font-size: 17px;
 }
 
+
 .head-section {
-  position: relative;
+  /*position: relative;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -75,10 +85,11 @@ a {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  margin-top: 6px;
 }
 
 .nav-link {
-  margin-right: 20px;
+  margin-right: 30px;
   padding: 0px;
   color: hsla(0, 0%, 100%, .5);
   font-size: 13px;
@@ -107,6 +118,7 @@ a {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  margin-top: 6px;
 }
 
 .nav-lang.nl-mob {
@@ -164,16 +176,16 @@ a {
 }
 
 .h-subtitle {
-  margin-top: 10px;
+  margin-top: 17px;
   line-height: 30px;
 }
 
 .h-btns {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .btn {
-  width: 180px;
+  width: 147px;
   margin-right: 16px;
   padding: 11px 20px 14px;
   border: 2px solid #f93;
@@ -183,6 +195,7 @@ a {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .btn:hover {
@@ -223,7 +236,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 9px 20px;
+  padding: 6.5px 20px;
   border: 2px solid #f93;
   border-radius: 80px;
 }
@@ -261,7 +274,7 @@ a {
 
 .soc-links {
   display: block;
-  margin-top: 20px;
+  margin-top: 15px;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -273,7 +286,7 @@ a {
 }
 
 .soc-link {
-  margin-right: 20px;
+  margin-right: 17px;
   opacity: 0.3;
 }
 
@@ -515,6 +528,7 @@ a {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .team-item {
@@ -524,9 +538,9 @@ a {
   display: flex;
   width: 33.33333333%;
   max-width: 460px;
-  margin-top: 60px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-top: 50px;
+padding-right: 13px;
+    padding-left: 13px;
 }
 
 .team-top {
@@ -1081,7 +1095,7 @@ a {
   margin-top: -72px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url('../images/sharpay-img.jpg');
+  background-image: url('../images/sharpay-img.png');
   background-position: 87% 50%;
   background-size: cover;
   background-repeat: no-repeat;
