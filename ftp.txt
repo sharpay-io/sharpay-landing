@@ -1,4 +1,0 @@
-[ftp]
-Host: sharpay.io
-User: sharpay_io
-Pass: NqY3P86Y
