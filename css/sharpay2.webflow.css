@@ -1,3 +1,4 @@
+
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -15,6 +16,7 @@ a {
 .body>div {
 	z-index: 2;
 }
+
 #particles {
 	z-index: 1;
 	position: fixed;
@@ -30,6 +32,9 @@ a {
   font-family: Verdana, Geneva, sans-serif;
   color: #efefef;
   font-size: 17px;
+}
+#token, #sites, #add, #emission, #rashod, #footer {
+  background-color: #313131;
 }
 
 
@@ -106,7 +111,9 @@ a {
 
 .nav-link.nl-lang {
   margin-right: 0px;
-  margin-left: 20px;
+  margin-left: 5px;
+  display: inline-block;
+  width: 25px;
 }
 
 .nav-link.nl-lang.w--current {
@@ -1003,12 +1010,39 @@ padding-right: 13px;
 }
 
 .btn-img {
-  width: 230px;
+  margin-top: 65px;
+  margin-left: 50px;
 }
 
-.btn-img.bi2 {
-  width: 200px;
+.btn-img.r2 {
   margin-top: 10px;
+}
+
+#bi1, #bi3, #bi4 {
+  width: 160px;
+}
+
+#bi2 {
+  width: 200px;
+  margin-right: 30px;
+}
+
+#bi3 {
+  margin-top: 20px;
+}
+
+#bi4 {
+  margin-right: 70px;
+}
+
+#soc-plugged {
+  margin-top: 117px;
+  margin-left: 90px;
+}
+
+#soc-future {
+  margin-top: 63px;
+  margin-left: 90px;
 }
 
 .soc-img {
@@ -1253,6 +1287,10 @@ html.w-mod-js *[data-ix="r-init"] {
   transform: translate(100px, 0px);
 }
 
+.plus-icon {
+  margin-top: 6px;
+}
+
 
 /*#view, #users, #emission, #rashod {
 	background: rgb(85,85,85);
@@ -1283,6 +1321,22 @@ html.w-mod-js *[data-ix="r-init"] {
   padding-bottom: 145px;
 }
 
+/* https://www.iconfinder.com/iconsets/world-flag-icons */
+img.flag {
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-right: -3px;
+}
+
+.nav-link img.flag {
+  width: 23px;
+  height: 23px;
+}
+
+.team-status {
+  margin-top: 2px;
+}
 
 @media (min-width: 1280px) {
   .clock {
