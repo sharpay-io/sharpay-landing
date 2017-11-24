@@ -1295,6 +1295,7 @@ html.w-mod-js *[data-ix="r-init"] {
   margin-top: 6px;
 }
 
+/* background gradients, left commented just in case */
 
 /*#view, #users, #emission, #rashod {
 	background: rgb(85,85,85);
@@ -1341,9 +1342,13 @@ img.flag {
 .team-status {
   margin-top: 2px;
 }
+
 #rashodChart {
   margin-top: 100px;
 }
+
+/******************************************************************************/
+
 @media (min-width: 1280px) {
   .clock {
     width: 100%;
@@ -1352,7 +1357,8 @@ img.flag {
     font-size: 64px ;
     line-height: 72px;
   }
-}
+} /* 1280 *********************************************************************/
+
 
 @media (max-width: 991px) {
   .body {
@@ -1600,7 +1606,7 @@ img.flag {
   }
   #rashodChart {
   margin-top: 0;
-}
+  }
   .sheme2.s3 {
     max-width: 300px;
     margin-top: 0px;
@@ -1662,7 +1668,7 @@ img.flag {
     padding-right: 20px;
     padding-left: 20px;
   }
-}
+} /* 991 **********************************************************************/
 
 @media (max-width: 767px) {
   .body {
@@ -2037,7 +2043,22 @@ img.flag {
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-}
+
+  /* centering sharing buttons */
+  #btn-img-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  /* centering scheme in Users section */
+  .sheme2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+} /* 767 **********************************************************************/
+
+
 
 @media (max-width: 479px) {
   .body {
@@ -2422,7 +2443,30 @@ img.flag {
   .diag-row {
     text-align: left;
   }
-}
+
+   /* sharing buttons positon fixes */
+  #btn-img-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #bi1, #bi2, #bi3, #bi4 {
+    min-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  /* centering scheme in Users section */
+  .sheme2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* fix for the white color on white background in email fields */
+  input.text-field {
+    color: #333;
+  }
+} /* 479 *********************************************************************/
 
 .highcharts-text-outline { display:none; }
 .highcharts-credits { opacity: 0; }
