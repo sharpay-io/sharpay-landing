@@ -1348,7 +1348,10 @@ img.flag {
   .clock {
     width: 100%;
   }
-  
+  .h1 {
+    font-size: 64px ;
+    line-height: 72px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1797,7 +1800,7 @@ img.flag {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  
+
   #soc-plugged {
 	  margin-top: 25px;
 	  margin-left: 20px;
