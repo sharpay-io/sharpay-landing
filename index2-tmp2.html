@@ -35,6 +35,13 @@
         line-height: 72px;
       }
     }
+	img.flag {
+		width: 16px;
+		height: 16px;
+		margin-right: -2px;
+		margin-left: 2px;
+	}
+	.highcharts-credits { opacity: 0; }
   </style>
   <script async src="https://app.sharpay.io/api/script.js"></script>
 </head>
@@ -45,7 +52,7 @@
   <div id="head" data-ix="new-interaction" class="head-section">
     <div data-collapse="medium" data-animation="default" data-duration="400" class="h-nav w-nav">
       <div class="h-nav-cont"><a href="#" class="h-nav-logo w-nav-brand"><img src="images/logo_sharpay_1_w.svg"></a>
-        <nav role="navigation" class="h-menu w-nav-menu"><a href="#token" class="nav-link w-nav-link">Token Sale</a><a href="#view" class="nav-link w-nav-link">Что это</a><a href="#sites" class="nav-link w-nav-link">Сайтам</a><a href="#users" class="nav-link w-nav-link">Пользователям</a><a href="#roadmap" class="nav-link w-nav-link">Roadmap</a><a href="#emission" class="nav-link w-nav-link">Эмиссия</a><a href="#team" class="nav-link w-nav-link">Команда</a>
+        <nav role="navigation" class="h-menu w-nav-menu"><a href="#token" class="nav-link w-nav-link">Token Sale</a><a href="#view" class="nav-link w-nav-link">Внешний вид</a><a href="#sites" class="nav-link w-nav-link">Сайтам</a><a href="#users" class="nav-link w-nav-link">Пользователям</a><a href="#roadmap" class="nav-link w-nav-link">Roadmap</a><a href="#emission" class="nav-link w-nav-link">Эмиссия</a><a href="#team" class="nav-link w-nav-link">Команда</a>
           <div class="nav-lang nl-mob"><a href="#" class="nav-link nl-lang w-nav-link">EN</a><a href="index.html" class="nav-link nl-lang w-nav-link">RU</a><a href="#" class="nav-link nl-lang w-nav-link">CH</a></div>
         </nav>
         <div class="nav-lang">
@@ -140,31 +147,14 @@
     <div class="cont2 container">
       <div class="row-cont">
         <div class="row-l-col" data-ix="l-init">
-          <h2 class="h2">Что <span class="orange-span">это</span> &amp; <br>как <span class="orange-span">выглядит</span> кнопка</h2>
-          <p class="p">Инновации <strong class="brand">shar<span>pay</span></strong> — мультишеринг и вознаграждение токенами. Мультишеринг — возможность поделиться контентом в один клик в несколько сетей на выбор. Вознаграждение начисляется за сам шеринг или за переходы по распространённой ссылке (как настроит сайт). Всё вместе — это рост конверсий для сайтов и удобство для пользователей.</p>
-          <p class="p">Кнопка <strong class="brand">shar<span>pay</span></strong> может выглядеть как угодно, например, как на этой странице, а также может быть кастомизирована под дизайн сайта. Кнопка <strong class="brand">shar<span>pay</span></strong> может быть любого цвета и в ней могут стоять логотипы любых подключенных сетей. В кнопке главное код, который активируется при клике. Если вас не устроят предложенные нами варианты — дизайн ваш, код наш.</p>
+          <h2 class="h2">Как выглядит <span class="orange-span">кнопка</span></h2>
+          <p class="p">Кнопка <strong class="brand">shar<span>pay</span></strong> может выглядеть как угодно, например, как на этой странице, а также может быть кастомизирована под дизайн сайта. Кнопка <strong class="brand">shar<span>pay</span></strong> может быть любого цвета и в ней могут стоять логотипы любых приоритетных соцсетей. В кнопке главное код, который активируется при клике. Если вас не устроят предложенные нами варианты — дизайн ваш, код наш.</p>
         </div>
         <div class="row-r-col" data-ix="r-init">
-          <div id="bi1" class="btn-img">
-            <a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-              <img src="images/btn1.svg" />
-            </a>
-          </div>
-          <div id="bi2" class="btn-img">
-            <a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-              <img src="images/share-btn3.svg">
-            </a>
-          </div>
-          <div id="bi3" class="r2 btn-img">
-            <a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-              <img src="images/btn3.svg">
-            </a>
-          </div>
-          <div id="bi4" class="r2 btn-img">
-            <a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-              <img src="images/custom-btn2x.png">
-            </a>
-          </div>
+          <div id="bi1" class="btn-img"><img src="images/btn1.svg"></div>
+          <div id="bi2" class="btn-img"><img src="images/share-btn3.svg"></div>
+          <div id="bi3" class="r2 btn-img"><img src="images/btn3.svg"></div>
+          <div id="bi4" class="r2 btn-img"><img src="images/custom-btn2x.png"></div>
         </div>
       </div>
       <div class="row-cont">
@@ -172,7 +162,7 @@
           <h2 class="h2 h2-2">Какие сети <span class="orange-span">подключены</span></h2>
           <p class="p">Сейчас к мультишерингу рабочей версии кнопки <strong class="brand">shar<span>pay</span></strong> уже подключены Facebook, Twitter, LinkedIn, VK, Reddit, Telegram, Tumblr, а также можно скопировать прямую уникальную ссылку для самостоятельного шеринга в форумы, блоги и комментарии.</p>
         </div>
-        <div id="soc-plugged" class="row-r-col rr2" data-ix="r-init">
+        <div class="row-r-col rr2" data-ix="r-init">
           <div class="soc-img"><img src="images/fb.svg"></div>
           <div class="soc-img"><img src="images/tw.svg"></div>
           <div class="soc-img"><img src="images/in.svg"></div>
@@ -187,15 +177,14 @@
           <h2 class="h2 h2-2">Скоро</h2>
           <p class="p">Мы продолжаем работу по подключению новых социальных сетей, скоро будут подключены WeChat, Weibo, QQ, G+, Snapchat, Viber, LiveJournal и другие.</p>
         </div>
-        <div id="soc-future" class="row-r-col rr2" data-ix="r-init">
+        <div class="row-r-col rr2" data-ix="r-init">
           <div class="soc-img"><img src="images/wechat.svg"></div>
           <div class="soc-img"><img src="images/weibo.svg"></div>
           <div class="soc-img"><img src="images/qq.svg"></div>
-          <div class="soc-img"><img src="images/gplus-icon.svg"></div>
+          <div class="soc-img"><img src="images/g.svg"></div>
           <div class="soc-img"><img src="images/snapchaat.svg"></div>
           <div class="soc-img"><img src="images/viber.svg"></div>
           <div class="soc-img"><img src="images/lj.svg"></div>
-          <div class="soc-img"><img src="images/plus-icon.svg" class="plus-icon"></div>
         </div>
       </div>
     </div>
@@ -374,7 +363,7 @@
         <h2 class="h2">Эмиссия &amp; <span class="orange-span">распределение</span> токенов<span class="orange-span"></span></h2>
         <div class="big-p">Эмиссия: <span class="orange-span">4 млрд |</span> Номинал: <span class="orange-span">0.00003 ETH</span></div>
         <div class="diag-item">
-          <div class="diag-img"><!--img src="images/diag12x.svg"--><div id="emissionChart" style="margin: 0 -20px;"></div></div>
+          <div class="diag-img"><!--img src="images/diag12x.svg"--><div id="emissionChart"></div></div>
           <div class="diag-table">
             <div class="diag-row">
               <div class="circle"></div>
@@ -682,12 +671,13 @@
 			       $('#particles').width(w).height(h);
 		}).resize();
 
-		particlesJS.load('particles', 'js/particlesjs-config.json', function() {
-			console.log('callback - particles.js config loaded');
-		});
+    particlesJS.load('particles', 'js/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
     });
   </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="/js/charts.js"></script>
+  
 </body>
 </html>

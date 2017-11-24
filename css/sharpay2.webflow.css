@@ -374,7 +374,7 @@ a {
 }
 
 .h2 {
-  max-width: 400px;
+  max-width: 480px;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 37px;
@@ -384,6 +384,10 @@ a {
 
 .h2.h2-2 {
   margin-top: 40px;
+}
+
+#view .h2.h2-2 {
+  margin-top: 20px;
 }
 
 .h2-wrap {
@@ -1028,7 +1032,7 @@ padding-right: 13px;
 }
 
 #bi3 {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #bi4 {
@@ -1036,12 +1040,12 @@ padding-right: 13px;
 }
 
 #soc-plugged {
-  margin-top: 117px;
+  margin-top: 45px;
   margin-left: 90px;
 }
 
 #soc-future {
-  margin-top: 63px;
+  margin-top: 45px;
   margin-left: 90px;
 }
 
@@ -1138,7 +1142,7 @@ padding-right: 13px;
 .sharpay-img.si2 {
   width: 600px;
   height: 600px;
-  margin-top: 0px;
+  margin-top: -150px;
   background-size: contain;
 }
 
@@ -1323,25 +1327,28 @@ html.w-mod-js *[data-ix="r-init"] {
 
 /* https://www.iconfinder.com/iconsets/world-flag-icons */
 img.flag {
-  display: inline;
-  width: 20px;
-  height: 20px;
-  margin-right: -3px;
+	width: 16px;
+	height: 16px;
+	margin-right: -2px;
+	margin-left: 2px;
 }
 
 .nav-link img.flag {
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
 }
 
 .team-status {
   margin-top: 2px;
 }
-
+#rashodChart {
+  margin-top: 100px;
+}
 @media (min-width: 1280px) {
   .clock {
     width: 100%;
   }
+  
 }
 
 @media (max-width: 991px) {
@@ -1588,6 +1595,9 @@ img.flag {
     margin-right: 0px;
     margin-left: 0px;
   }
+  #rashodChart {
+  margin-top: 0;
+}
   .sheme2.s3 {
     max-width: 300px;
     margin-top: 0px;
@@ -1787,6 +1797,19 @@ img.flag {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  
+  #soc-plugged {
+	  margin-top: 25px;
+	  margin-left: 20px;
+	}
+
+	#soc-future {
+	  margin-top: 25px;
+	  margin-left: 20px;
+	}
+    #rashodChart {
+	  margin-top: 0;
+	}
   .user-items {
     margin-top: 40px;
   }
@@ -2397,3 +2420,6 @@ img.flag {
     text-align: left;
   }
 }
+
+.highcharts-text-outline { display:none; }
+.highcharts-credits { opacity: 0; }
