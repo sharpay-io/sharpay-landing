@@ -773,8 +773,8 @@ padding-right: 13px;
 }
 
 .l-col.lc2 {
-  width: 58%;
   min-width: 0px;
+  max-width: 70%;
   padding-right: 0px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
@@ -804,12 +804,12 @@ padding-right: 13px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  -webkit-box-orient: vertical;
+  width: 70%;
+  -webkit-box-orient:horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -825,7 +825,7 @@ padding-right: 13px;
 }
 
 .r-col.rc4 {
-  max-width: 42%;
+  max-width: 40%;
   padding-left: 40px;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
@@ -1079,11 +1079,10 @@ padding-right: 13px;
 }
 
 .sheme2 {
-  display: block;
+  display: inline-block;
   width: 100%;
   max-width: 480px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 40px;
 }
 
 .r-col-adds {
@@ -1155,7 +1154,12 @@ padding-right: 13px;
 }
 
 .diag-img {
-  width: 380px;
+  width: 440px;
+  height: 440px;
+  margin-left: -20px;
+}
+#emissionChart {
+  height: 440px;
 }
 
 .diag-table {
@@ -1183,9 +1187,15 @@ padding-right: 13px;
   flex: 1;
 }
 
+.diag-table.dt-1 {
+  width: 250px;
+}
+
 .diag-table.dt-2 {
-  margin-top: 40px;
-  margin-left: 0px;
+  margin-top: 80px;
+  margin-left: -20px;
+  width: 250px;
+  max-width: 250px;
 }
 
 .circle {
@@ -1225,12 +1235,15 @@ padding-right: 13px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
+/*.diag-table.dt-1 .diag-row {
+  margin-bottom: 10px;
+}*/
 
 .sb-cont {
   position: fixed;
@@ -1343,8 +1356,26 @@ img.flag {
   margin-top: 2px;
 }
 
+#rashod {
+  padding-bottom: 40px;
+}
+
+#rashod .l-col {
+  min-width: 40%;
+  max-width: 20%;
+}
+
 #rashodChart {
-  margin-top: 100px;
+  margin-top: -40px;
+  margin-left: -80px;
+}
+
+#presale {
+  font-size: 17px;
+}
+
+#emission {
+  padding-bottom: 80px;
 }
 
 /******************************************************************************/

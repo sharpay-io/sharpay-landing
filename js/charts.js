@@ -10,7 +10,10 @@ Highcharts.theme = {
    legend: { itemStyle: {  fontWeight: 'bold', fontSize: '13px' } },
    xAxis: { gridLineWidth: 0, labels: { style: { fontSize: '12px' } }  },
    yAxis: { minorTickInterval: 'auto', title: { style: { textTransform: 'uppercase' } }, labels: { style: { fontSize: '12px' }  } },
-   plotOptions: {  candlestick: { lineColor: '#404048' } },
+   plotOptions: {  pie: { states: {
+     hover: {
+       halo: { size: 20 }
+   }}}},
    background2: '#F0F0EA'
 };
 Highcharts.setOptions(Highcharts.theme);
@@ -18,19 +21,35 @@ Highcharts.setOptions(Highcharts.theme);
 Highcharts.chart('tokenChart', {
     chart: { plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
-    tooltip: { formatter: function() {  return this.point.desc + ': <b>' + this.y + ' млн</b>'; }  },
-    plotOptions: { pie: { dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    tooltip: { formatter: function() {  return '<b>' + this.point.desc + ': </b>' + this.y + ' million tokens'; }  },
+    plotOptions: {
+      pie: {
+        dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } },
+        borderWidth: 0,
+        startAngle: 0,
+        endAngle: 0,
+        shadow: false,
+        center: ['50%', '50%'],
+        states: {
+          hover: {
+            halo: {
+              size: 20
+            }
+          }
+        }
+      }
+    },
     series: [{
         type: 'pie',
         name: 'Token Sale',
         colorByPoint: true,
         innerSize: '70%',
         data: [
-			{ name: '80M', desc: 'Presale', y: 80 },
-			{ name: '100M', desc: 'Бонус 40%', y: 100 },
-			{ name: '300M', desc: 'Бонус 30%', y: 300 },
-			{ name: '500M', desc: 'Бонус 20%', y: 500 },
-			{ name: '520M', desc: 'Бонус 0%', y: 520 }
+			{ name: '80M', desc: 'Bonus 50%', y: 80 },
+			{ name: '100M', desc: 'Bonus 40%', y: 100 },
+			{ name: '300M', desc: 'Bonus 30%', y: 300 },
+			{ name: '500M', desc: 'Bonus 20%', y: 500 },
+			{ name: '520M', desc: 'Bonus 0%', y: 520 }
         ]
     }]
 });
@@ -39,7 +58,7 @@ Highcharts.chart('emissionChart', {
     chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
     tooltip: { formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { size: 270, dataLabels: { enabled: true, distance: -20,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    plotOptions: { pie: { size: 400, dataLabels: { enabled: true, distance: -30,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
     series: [{
         type: 'pie',
         name: 'Emission',
@@ -60,7 +79,7 @@ Highcharts.chart('rashodChart', {
     chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
     tooltip: { formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    plotOptions: { pie: { size: 280, dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
     series: [{
         type: 'pie',
         name: 'Расходы',
@@ -76,4 +95,3 @@ Highcharts.chart('rashodChart', {
         ]
     }]
 });
-

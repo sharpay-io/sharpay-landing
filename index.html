@@ -105,7 +105,7 @@
     <div class="container">
       <div class="l-col" data-ix="l-init">
         <h2 class="h2"><span class="orange-span">Presale</span></h2>
-        <p class="big-p">Старт: 11 декабря 2017<br>Цена токена: <span class="orange-span">0.00003 ETH</span><br>Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br>Бонус: <span class="orange-span">50%</span> (+ 5% при покупке от 50 ETH)<br>Токенов к продаже: <span class="orange-span">80 млн</span></p>
+        <p id="presale" class="big-p">Старт: 11 декабря 2017<br>Цена токена: <span class="orange-span">0.00003 ETH</span><br>Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br>Бонус: <span class="orange-span">50%</span> (+ 5% при покупке от 50 ETH)<br>Токенов к продаже: <span class="orange-span">80 млн</span></p>
         <h2 class="h2 h2-2"><span class="orange-span">Token Sale</span></h2>
         <p class="big-p">Старт: 1 марта 2018<br>Цена токена: <span class="orange-span">0.00003 ETH</span><br>Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><span class="orange-span"></span></p>
         <div class="table">
@@ -127,7 +127,7 @@
         </div>
       </div>
       <div class="r-col" data-ix="r-init">
-        <div class="clock" data-date="Mon Dec 11 2017 12:00:00 GMT+0000"> </div>
+        <div class="clock" data-date="Mon Dec 11 2017 00:00:00 GMT+0000"> </div>
         <!--div class="sharpay-img"></div-->
 		<div id="tokenChart"></div>
       </div>
@@ -372,7 +372,7 @@
         <div class="big-p">Эмиссия: <span class="orange-span">4 млрд |</span> Номинал: <span class="orange-span">0.00003 ETH</span></div>
         <div class="diag-item">
           <div class="diag-img"><!--img src="images/diag12x.svg"--><div id="emissionChart" style="margin: 0 -20px;"></div></div>
-          <div class="diag-table">
+          <div class="diag-table dt-1">
             <div class="diag-row">
               <div class="circle"></div>
               <div>Свободная продажа токенов</div>
@@ -401,7 +401,7 @@
         </div>
       </div>
       <div class="r-col rc4" data-ix="r-init">
-        <h2 class="h2">Зачем нам блокчейн<span class="orange-span"></span></h2>
+        <h2 class="h2">Зачем нам <span class="orange-span">блокчейн</span></h2>
         <div class="big-p">1 этап:<span class="orange-span"></span></div>
         <p class="p">Эмиссия на Ethereum по стандарту ERC20 необходимого объёма токенов для проведения свободной продажи, обеспечения внутренней экономики проекта, а также для распределения между пользователями за мультишеринг и продвижение контента — <span class="orange-span">блокчейн используется в качестве финансового реестра.</span></p>
         <div class="big-p">2 этап:<span class="orange-span"></span></div>
@@ -424,12 +424,19 @@
       </div>
     </div>
   </div>
+
+
   <div id="rashod" class="section">
     <div class="container">
       <div class="l-col" data-ix="l-init">
-        <h2 class="h2">Структура <span class="orange-span">расходов</span></h2>
+        <h2 class="h2">Структура <span id="rashod-h" class="orange-span">расходов</span></h2>
         <div class="big-p">На что мы планируем тратить привлечённые средства</div>
         <p class="p p2">Финансовые активы, привлечённые в рамках проводящейся кампании Token Sale, в следующие 3 года будут направлены на достижения целей, определённых нашим Roadmap. Ключевыми статьями расходов для нас являются “Разработка”, а также “Маркетинг и продажи”.<span class="orange-span"></span></p>
+      </div>
+
+      <div class="r-col rc3 rc3-1" data-ix="r-init">
+        <div class="sheme2"><div id="rashodChart"></div></div>
+
         <div class="diag-table dt-2">
           <div class="diag-row">
             <div class="circle"></div>
@@ -449,16 +456,13 @@
           </div>
           <div class="diag-row">
             <div class="c5 circle"></div>
-            <div>Административно-технические расходы</div>
+            <div>Административные расходы</div>
           </div>
           <div class="diag-row">
             <div class="c6 circle"></div>
             <div>Прочие расходы</div>
           </div>
         </div>
-      </div>
-      <div class="r-col rc3 rc3-1" data-ix="r-init">
-        <div class="sheme2"><!--img src="images/diag22x.svg" class="img"--><div id="rashodChart"></div></div>
       </div>
     </div>
   </div>
@@ -677,11 +681,11 @@
 			       var h = $(window).height();
 			       var w = $(window).width();
 			       $('#particles').width(w).height(h);
-		}).resize();
+		         }).resize();
 
-		particlesJS.load('particles', 'js/particlesjs-config.json', function() {
-			console.log('callback - particles.js config loaded');
-		});
+		    particlesJS.load('particles', 'js/particlesjs-config.json', function() {
+			       console.log('callback - particles.js config loaded');
+		    });
     });
   </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
