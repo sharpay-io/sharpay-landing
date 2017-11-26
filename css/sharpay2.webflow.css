@@ -1159,13 +1159,13 @@ padding-right: 13px;
 }
 
 .diag-img {
-  width: 440px;
+  /*width: 440px;
   height: 440px;
-  margin-left: -20px;
+  margin-left: -20px;*/
 }
-#emissionChart {
+/*#emissionChart {
   height: 440px;
-}
+}*/
 
 .diag-table {
   display: -webkit-box;
@@ -1365,10 +1365,10 @@ img.flag {
   padding-bottom: 40px;
 }
 
-#rashodChart {
+/*#rashodChart {
   margin-top: -40px;
   margin-left: -80px;
-}
+}*/
 
 #presale {
   font-size: 17px;
@@ -1376,6 +1376,21 @@ img.flag {
 
 #emission {
   padding-bottom: 80px;
+}
+
+.highcharts-container {
+	margin: 0 auto;
+}
+
+#rashod .r-col .sheme2 {
+	width: 50%; 
+	float: left;
+	margin-left: 0;
+}
+
+#rashod .r-col .diag-table {
+	width: 50%; 
+	margin-top: 0;
 }
 
 /******************************************************************************/
@@ -1691,10 +1706,11 @@ img.flag {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+	width: 100%;
   }
   .diag-img {
     width: 100%;
-    max-width: 300px;
+    /*max-width: 300px;*/
   }
   .diag-table {
     margin-top: 40px;
@@ -2091,6 +2107,24 @@ img.flag {
     margin-left: auto;
     margin-right: auto;
   }
+  
+  
+  
+	#rashod .r-col>div {
+		width: 100%;
+	}
+	#rashod .r-col .sheme2 {
+		width: 100%; 
+		float: none;
+		margin-top: 20px;
+	}
+
+	#rashod .r-col .diag-table {
+		width: 80%; 
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 } /* 767 **********************************************************************/
 
@@ -2430,7 +2464,7 @@ img.flag {
     text-align: center;
   }
   .clock {
-    max-width: 240px;
+    /*max-width: 240px;*/
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;

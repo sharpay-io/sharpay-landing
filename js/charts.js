@@ -12,13 +12,13 @@ Highcharts.theme = {
    yAxis: { minorTickInterval: 'auto', title: { style: { textTransform: 'uppercase' } }, labels: { style: { fontSize: '12px' }  } },
    plotOptions: {  pie: { states: {
      hover: {
-       halo: { size: 20 }
+       halo: { size: 10 }
    }}}},
    background2: '#F0F0EA'
 };
 Highcharts.setOptions(Highcharts.theme);
 
-Highcharts.chart('tokenChart', {
+var tokenChart = Highcharts.chart('tokenChart', {
     chart: { plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
     tooltip: { formatter: function() {  return '<b>' + this.point.desc + ': </b>' + this.y + ' million tokens'; }  },
@@ -54,11 +54,11 @@ Highcharts.chart('tokenChart', {
     }]
 });
 
-Highcharts.chart('emissionChart', {
+var emissionChart = Highcharts.chart('emissionChart', {
     chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
-    tooltip: { formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { /*size: 400,*/ dataLabels: { enabled: true, distance: -30,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
+    plotOptions: { pie: { dataLabels: { enabled: true, distance: -30,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
     series: [{
         type: 'pie',
         name: 'Emission',
@@ -75,11 +75,11 @@ Highcharts.chart('emissionChart', {
     }]
 });
 
-Highcharts.chart('rashodChart', {
+var rashodChart = Highcharts.chart('rashodChart', {
     chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
-    tooltip: { formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { /*size: 280,*/ dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
+    plotOptions: { pie: { dataLabels: { enabled: true, distance: -20,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
     series: [{
         type: 'pie',
         name: 'Расходы',
@@ -94,4 +94,13 @@ Highcharts.chart('rashodChart', {
 			{ name: '4%', desc: 'Прочие', y: 4 }
         ]
     }]
+});
+
+$(function(){
+	$(window).resize(function(){
+		var w = $('#rashodChart').parent().width() * 0.8;
+		rashodChart.setSize(w, w);
+		w = $('#emissionChart').parent().width() * 0.8;
+		emissionChart.setSize(w, w);
+	}).resize();
 });
