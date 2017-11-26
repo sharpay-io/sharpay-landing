@@ -1383,7 +1383,7 @@ img.flag {
 }
 
 #emission .diag-img {
-	margin: -20px;
+	margin: 0 -20px -20px -20px;
 }
 
 #rashod .r-col .sheme2 {
