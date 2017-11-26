@@ -662,34 +662,32 @@
   <script src="js/TimeCircles.js" type="text/javascript"></script>
   <script src="js/particles.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var Webflow = Webflow || []
-    Webflow.push(function() {
-      $('.clock').TimeCircles({
-        circle_bg_color: 'rgba(255,255,255,0.05)',
-        fg_width: 0.05,
-        bg_width: 1,
-        time: {
-          Days: { color: "#ff9a1e", text: "Дней" },
-          Hours: { color: "#ff9a1e", text: "Часов" },
-          Minutes: { color: "#ff9a1e", text: "Минут" },
-          Seconds: { color: "#ff9a1e", text: "Секунд" }
-        }
-      })
-      Webflow.resize.on(function(){
-        $('.clock').TimeCircles().rebuild()
-      })
-    });
+	var Webflow = Webflow || [];
+	Webflow.push(function() {
+		$('.clock').TimeCircles({
+			circle_bg_color: 'rgba(255,255,255,0.05)',
+			fg_width: 0.05,
+			bg_width: 1,
+			time: {
+				Days: { color: "#ff9a1e", text: "Дней" },
+				Hours: { color: "#ff9a1e", text: "Часов" },
+				Minutes: { color: "#ff9a1e", text: "Минут" },
+				Seconds: { color: "#ff9a1e", text: "Секунд" }
+			}
+		});
+		Webflow.resize.on(function(){
+			$('.clock').TimeCircles().rebuild()
+		});
+	});
 
     $(function() {
-		    $(window).resize(function() {
-			       var h = $(window).height();
-			       var w = $(window).width();
-			       $('#particles').width(w).height(h);
-		         }).resize();
+		$(window).resize(function() {
+			var h = $(window).height();
+			var w = $(window).width();
+			$('#particles').width(w).height(h);
+		}).resize();
 
-		    particlesJS.load('particles', 'js/particlesjs-config.json', function() {
-			       console.log('callback - particles.js config loaded');
-		    });
+		particlesJS.load('particles', 'js/particlesjs-config.json', function() { });
     });
   </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>

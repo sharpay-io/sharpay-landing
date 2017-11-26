@@ -79,7 +79,7 @@ var rashodChart = Highcharts.chart('rashodChart', {
     chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
     tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { dataLabels: { enabled: true, distance: -20,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    plotOptions: { pie: { dataLabels: { enabled: true, distance: -20,  style: { fontWeight: 'bold', color: 'white', fontSize: '12px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
     series: [{
         type: 'pie',
         name: 'Расходы',
