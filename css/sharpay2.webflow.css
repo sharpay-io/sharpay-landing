@@ -1391,6 +1391,7 @@ img.flag {
 #rashod .r-col .diag-table {
 	width: 50%; 
 	margin-top: 0;
+	padding-top: 40px;
 }
 
 /******************************************************************************/
@@ -2124,6 +2125,7 @@ img.flag {
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
+		padding-top: 0;
 	}
 	#emission .diag-table {
 		width: 80%; 
