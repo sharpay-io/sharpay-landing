@@ -12,7 +12,7 @@ Highcharts.theme = {
    yAxis: { minorTickInterval: 'auto', title: { style: { textTransform: 'uppercase' } }, labels: { style: { fontSize: '12px' }  } },
    plotOptions: {  pie: { states: {
      hover: {
-       halo: { size: 10 }
+       halo: { size: 20 }
    }}}},
    background2: '#F0F0EA'
 };
@@ -100,7 +100,7 @@ $(function(){
 	$(window).resize(function(){
 		var w = $('#rashodChart').parent().width() * 0.8;
 		rashodChart.setSize(w, w);
-		w = $('#emissionChart').parent().width() * 0.8;
+		w = $('#emissionChart').parent().width() * 0.75;
 		emissionChart.setSize(w, w);
 	}).resize();
 });

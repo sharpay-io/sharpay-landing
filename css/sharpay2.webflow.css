@@ -2125,6 +2125,12 @@ img.flag {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	#emission .diag-table {
+		width: 80%; 
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 } /* 767 **********************************************************************/
 
