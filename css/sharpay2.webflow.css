@@ -1382,6 +1382,10 @@ img.flag {
 	margin: 0 auto;
 }
 
+#emission .diag-img {
+	/*margin: -20px;*/
+}
+
 #rashod .r-col .sheme2 {
 	width: 50%; 
 	float: left;
@@ -2132,6 +2136,9 @@ img.flag {
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	#emission .diag-img {
+		/*margin-bottom: 0;*/
 	}
 
 } /* 767 **********************************************************************/
