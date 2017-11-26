@@ -84,7 +84,7 @@ var rashodChart = Highcharts.chart('rashodChart', {
         type: 'pie',
         name: 'Расходы',
         colorByPoint: true,
-        innerSize: '60%',
+        innerSize: '50%',
         data: [
 			{ name: '33%', desc: 'Разработка', y: 33 },
 			{ name: '11%', desc: 'Персонал', y: 11 },
@@ -98,7 +98,7 @@ var rashodChart = Highcharts.chart('rashodChart', {
 
 $(function(){
 	$(window).resize(function(){
-		var w = $('#rashodChart').parent().width() * 0.8;
+		var w = $('#rashodChart').parent().width() * 0.9;
 		rashodChart.setSize(w, w);
 		w = $('#emissionChart').parent().width() * 0.75;
 		emissionChart.setSize(w, w);
