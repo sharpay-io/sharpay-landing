@@ -63,7 +63,7 @@ var emissionChart = Highcharts.chart('emissionChart', {
         type: 'pie',
         name: 'Emission',
         colorByPoint: true,
-        innerSize: '70%',
+        innerSize: '60%',
         data: [
             { name: '37%', desc: 'Свободная продажа', y: 37 },
 			{ name: '31%', desc: 'Резерв системы', y: 31 },

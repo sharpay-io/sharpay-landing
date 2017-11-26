@@ -1387,15 +1387,16 @@ img.flag {
 }
 
 #rashod .r-col .sheme2 {
-	width: 50%; 
+	width: 40%; 
 	float: left;
 	margin-left: 0;
 }
 
 #rashod .r-col .diag-table {
-	width: 50%; 
+	width: 60%; 
 	margin-top: 0;
 	padding-top: 10px;
+	max-width: none;
 }
 
 /******************************************************************************/
@@ -1415,7 +1416,8 @@ img.flag {
 	}
 	
 	#rashod .l-col .p.p2 {
-		width: 650px;
+		/*width: 500px;
+		line-height: 140%;*/
 	}
 	#rashod .l-col  {
 		width: 60% !important;
@@ -1427,7 +1429,7 @@ img.flag {
 		width: 40% !important;
 		min-width: auto !important;
 		max-width: none !important;
-		margin-top: 35px;
+		/* margin-top: 35px; */
 	}
 } /* 1280 *********************************************************************/
 
