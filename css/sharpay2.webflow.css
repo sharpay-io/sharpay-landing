@@ -503,13 +503,13 @@ a {
   bottom: 0px;
   width: 100%;
   height: 5px;
-  background-image: -webkit-linear-gradient(0deg, #333, rgba(51, 51, 51, 0) 0%, #333 100%, #333);
-  background-image: linear-gradient(90deg, #333, rgba(51, 51, 51, 0) 0%, #333 100%, #333);
+  background-image: -webkit-linear-gradient(0deg, #373737, rgba(55, 55, 55, 0) 0%, #373737 100%, #373737);
+  background-image: linear-gradient(90deg, #373737, rgba(55, 55, 55, 0) 0%, #373737 100%, #373737);
 }
 
 .ui-line-over.ulo2 {
-  background-image: -webkit-linear-gradient(180deg, rgba(51, 51, 51, 0), #333 100%, #333);
-  background-image: linear-gradient(270deg, rgba(51, 51, 51, 0), #333 100%, #333);
+  background-image: -webkit-linear-gradient(180deg, rgba(55, 55, 55, 0), #373737 100%, #373737);
+  background-image: linear-gradient(270deg, rgba(55, 55, 55, 0), #373737 100%, #373737);
 }
 
 .year {
