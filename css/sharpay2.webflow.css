@@ -578,6 +578,11 @@ padding-right: 13px;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
+.team-img img {
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+ border-radius: 50%;
+}
 
 .team-status {
   color: #f93;
