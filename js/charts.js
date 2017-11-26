@@ -84,7 +84,7 @@ var rashodChart = Highcharts.chart('rashodChart', {
         type: 'pie',
         name: 'Расходы',
         colorByPoint: true,
-        innerSize: '35%',
+        innerSize: '40%',
         data: [
 			{ name: '33%', desc: 'Разработка', y: 33 },
 			{ name: '11%', desc: 'Персонал', y: 11 },
