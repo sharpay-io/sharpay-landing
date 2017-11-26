@@ -1437,12 +1437,34 @@ img.flag {
 		margin-right: 30px;
 	}
 	
+	#emission .diag-img {
+		width: 450px;
+	}
+	
 	#vikup {
 		padding-bottom: 80px;
 	}
 	#vikup .sheme2 {
-		margin-top: 42px;
+		float: right;
+		margin-top: 10px;
+		margin-right: 80px;
 	}
+	/*
+	#vikup .l-col .p.p2  {
+		width: 700px;
+	}
+	#vikup .l-col  {
+		width: 60% !important;
+		padding-right: 20px;
+		min-width: auto !important;
+		max-width: none !important;
+	}
+	#vikup .r-col {
+		width: 40% !important;
+		min-width: auto !important;
+		max-width: none !important;
+	}
+	*/
 } /* 1280 *********************************************************************/
 
 
