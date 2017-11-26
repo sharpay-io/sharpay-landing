@@ -1427,6 +1427,7 @@ img.flag {
 		width: 40% !important;
 		min-width: auto !important;
 		max-width: none !important;
+		margin-top: 35px;
 	}
 } /* 1280 *********************************************************************/
 
