@@ -1398,6 +1398,9 @@ img.flag {
 	padding-top: 10px;
 	max-width: none;
 }
+.sharpey-slogan .one-line {
+	white-space:nowrap;
+}
 
 /******************************************************************************/
 
