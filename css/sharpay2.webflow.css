@@ -1365,11 +1365,6 @@ img.flag {
   padding-bottom: 40px;
 }
 
-#rashod .l-col {
-  min-width: 40%;
-  max-width: 20%;
-}
-
 #rashodChart {
   margin-top: -40px;
   margin-left: -80px;
@@ -1393,6 +1388,11 @@ img.flag {
     font-size: 64px ;
     line-height: 72px;
   }
+  
+	#rashod .l-col {
+	  min-width: 40%;
+	  max-width: 20%;
+	}
 } /* 1280 *********************************************************************/
 
 
