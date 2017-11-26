@@ -55,7 +55,7 @@ var tokenChart = Highcharts.chart('tokenChart', {
 });
 
 var emissionChart = Highcharts.chart('emissionChart', {
-    chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
+    chart: { margin: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
     tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
     plotOptions: { pie: { dataLabels: { enabled: true, distance: -30,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
@@ -76,15 +76,15 @@ var emissionChart = Highcharts.chart('emissionChart', {
 });
 
 var rashodChart = Highcharts.chart('rashodChart', {
-    chart: { margin: [0, 0, 0, 0], spacing: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
+    chart: { margin: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
     tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { dataLabels: { enabled: true, distance: -20,  style: { fontWeight: 'bold', color: 'white', fontSize: '12px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
+    plotOptions: { pie: { dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '12px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
     series: [{
         type: 'pie',
         name: 'Расходы',
         colorByPoint: true,
-        innerSize: '50%',
+        innerSize: '35%',
         data: [
 			{ name: '33%', desc: 'Разработка', y: 33 },
 			{ name: '11%', desc: 'Персонал', y: 11 },
@@ -98,7 +98,7 @@ var rashodChart = Highcharts.chart('rashodChart', {
 
 $(function(){
 	$(window).resize(function(){
-		var w = $('#rashodChart').parent().width() * 0.9;
+		var w = $('#rashodChart').parent().width() * 0.84;
 		rashodChart.setSize(w, w);
 		w = $('#emissionChart').parent().width() * 0.75;
 		emissionChart.setSize(w, w);
