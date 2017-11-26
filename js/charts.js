@@ -18,6 +18,7 @@ Highcharts.theme = {
 };
 Highcharts.setOptions(Highcharts.theme);
 
+/*
 var tokenChart = Highcharts.chart('tokenChart', {
     chart: { plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { text: '' },
@@ -53,6 +54,26 @@ var tokenChart = Highcharts.chart('tokenChart', {
         ]
     }]
 });
+*/
+var tokenChart = Highcharts.chart('tokenChart', {
+	chart: { type: 'bar', height: 200, plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
+    title: { enabled: false },
+    xAxis: { visible: false },
+    yAxis: { gridLineColor: '#666', labels: { enabled: false }, tickPositions: [0, 80, 180, 480, 980, 1500], min: 0, max: 1500, minorTicks: false, title: { text: 'Million tokens' }},
+    legend: { enabled: true, reversed: true,  itemStyle: {fontWeight: 'normal', fontSize: '13px', color: '#E0E0E3' }, itemHoverStyle: {  color: '#FFF' }, itemHiddenStyle: { color: '#606063' }},
+    plotOptions: { series: { stacking: 'normal' }, bar: {
+		dataLabels: { enabled: true, style: { fontWeight: 'normal', color: 'white', fontSize: '10px', } } } 
+	},
+	tooltip: { formatter: function() {  return '<b>' + this.series.name + ': </b>' + this.y + ' million tokens'; }  },
+    series: [
+		{ name: 'Bonus 0%', data: [520] },
+		{ name: 'Bonus 20%', data: [500] },
+		{ name: 'Bonus 30%', data: [300] },
+		{ name: 'Bonus 40%', data: [100] },
+		{ name: 'Bonus 50%', data: [80] },
+	]
+});
+
 
 var emissionChart = Highcharts.chart('emissionChart', {
     chart: { margin: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
@@ -102,5 +123,7 @@ $(function(){
 		rashodChart.setSize(w, w);
 		w = $('#emissionChart').parent().width() * 0.75;
 		emissionChart.setSize(w, w);
+		w = $('#tokenChart').parent().width() * 1;
+		tokenChart.setSize(w, 200);
 	}).resize();
 });

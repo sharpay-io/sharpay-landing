@@ -884,7 +884,7 @@ padding-right: 13px;
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 23px;
+  font-size: 17px;
   line-height: 27px;
 }
 
@@ -1401,6 +1401,10 @@ img.flag {
 .sharpey-slogan .one-line {
 	white-space:nowrap;
 }
+#clockChart {
+	width: 100%;
+	min-height: 80px;
+}
 
 /******************************************************************************/
 
@@ -1413,6 +1417,24 @@ img.flag {
     line-height: 72px;
   }
   
+	#token .l-col  {
+		width: 33.4% !important;
+		min-width: auto !important;
+		max-width: none !important;
+	}
+	#token .r-col {
+		width: 66.6% !important;
+		min-width: auto !important;
+		max-width: none !important;
+	}
+	#clockChart {
+		width: 774px;
+	}
+	#tokenChart {
+		margin-top: 80px;
+		width: 774px;
+	}
+	
 	#rashod .l-col {
 	  min-width: 40%;
 	  max-width: 20%;
