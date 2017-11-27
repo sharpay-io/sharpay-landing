@@ -1090,6 +1090,11 @@ padding-right: 13px;
   margin-left: 40px;
 }
 
+.sheme3 {
+	width: 100%;
+	margin-top: 60px;
+}
+
 .r-col-adds {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1396,6 +1401,13 @@ img.flag {
 	white-space:nowrap;
 }
 
+.hide768 {
+	display: block;
+}
+.show768 {
+	display: none;
+}
+
 /******************************************************************************/
 
 @media (min-width: 1280px) {
@@ -1408,6 +1420,21 @@ img.flag {
   #token {
     padding-bottom: 80px;
   }
+
+	#sites .l-col  {
+		width: 25% !important;
+		min-width: auto !important;
+		max-width: none !important;
+	}
+	#sites .r-col {
+		width: 75% !important;
+		min-width: auto !important;
+		max-width: none !important;
+	}
+	#sites .r-col .p {
+		width: 800px;
+		margin-top: 0;
+	}
 
 	#token .l-col  {
 		width: 25% !important;
@@ -1422,7 +1449,7 @@ img.flag {
 
 	#clockChart {
 		width: 800px;
-    margin-top: 15px;
+		margin-top: 15px;
 	}
 
   .clock {
@@ -2213,6 +2240,14 @@ img.flag {
 	#emission .diag-img {
 		margin: 0;
 	}
+	
+	
+	.hide768 {
+		display: none;
+	}
+	.show768 {
+		display: block;
+	}
 
 } /* 767 **********************************************************************/
 
@@ -2624,6 +2659,14 @@ img.flag {
   input.text-field {
     color: #333;
   }
+  
+  .hide768 {
+		display: none;
+	}
+	.show768 {
+		display: block;
+	}
+  
 } /* 479 *********************************************************************/
 
 .highcharts-text-outline { display:none; }
