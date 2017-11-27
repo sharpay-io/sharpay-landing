@@ -102,17 +102,28 @@
     <div class="container">
       <div class="l-col" data-ix="l-init">
         <h2 class="h2"><span class="orange-span">Presale</span></h2>
-        <p class="p">Старт: 11 декабря 2017<br>Цена токена: <span class="orange-span">0.00003 ETH</span><br>Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br>Бонус: <span class="orange-span">50%</span> (+ 5% при покупке от 50 ETH)<br>Токенов к продаже: <span class="orange-span">80 млн</span></p>
+        <p class="p">Старт: <span class="orange-span">11 декабря 2017</span><br>
+          Цена токена: <span class="orange-span">0.00003 ETH</span><br>
+          Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br>
+          Бонус: <span class="orange-span">50%</span> (+5% при покупке от 50 ETH)<br>
+          Токенов к продаже: <span class="orange-span">80 млн</span></p>
       </div>
       <div class="r-col" data-ix="r-init">
-        <div id="clockChart"><div class="clock" data-date="Mon Dec 11 2017 00:00:00 GMT+0000"> </div></div>
+        <div id="clockChart">
+          <div class="clock" data-date="Mon Dec 11 2017 00:00:00 GMT+0000"> </div>
+        </div>
       </div>
     </div>
 	<div class="container">
-      <div class="l-col" data-ix="l-init">
+      <div class="l-col token-chart-col" data-ix="l-init">
         <h2 class="h2 h2-2"><span class="orange-span">Token Sale</span></h2>
-        <p class="p">Старт: 1 марта 2018<br>Цена токена: <span class="orange-span">0.00003 ETH</span><br>Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><span class="orange-span"></span></p>
-        <div class="table">
+        <p class="p">Старт: <span class="orange-span">1 марта 2018</span><br>
+          Цена токена: <span class="orange-span">0.00003 ETH</span><br>
+          Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br />
+          Бонус: <span class="orange-span">40%, 30%, 20%, 0%</span><br />
+          Токенов к продаже: <span class="orange-span">1.420 млрд</span>
+        </p>
+        <!-- <div class="table">
           <div class="tr">
             <div class="row-title">Бонус</div>
             <div class="t-percent">40%</div>
@@ -128,9 +139,9 @@
             <div class="t-percent tp2">500 млн</div>
             <div class="t-percent tp2">520 млн</div>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="r-col" data-ix="r-init">
+      <div class="r-col token-chart-col" data-ix="r-init">
         <div id="tokenChart"></div>
       </div>
     </div>
@@ -230,17 +241,19 @@
     <div class="c5 container">
       <div class="l-col lc3" data-ix="l-init">
         <h2 class="h2">Преимущества <span class="orange-span">мультишеринга</span> и стимулирования <span class="orange-span">токенами</span><span class="orange-span"></span></h2>
-        <div class="sharpay-img si2"></div>
+        <!-- <div class="sharpay-img si2"></div> -->
       </div>
       <div class="r-col rc-4" data-ix="r-init">
         <div class="r-col-adds">
           <div class="big-p bp-r">
-			<div class="add-ico"><img src="images/row-ico4.svg"></div>
+			<!-- <div class="add-ico"><img src="images/row-ico4.svg"></div> -->
 			<span class="orange-span"><strong xmlns="http://www.w3.org/1999/xhtml">повышение конверсий</strong></span><br>распространения контента сайтов в социальных сетях
 			</div>
         </div>
         <div class="r-col-adds">
-          <div class="big-p bp-r"><div class="add-ico"><img src="images/work5.svg"></div><span class="orange-span"><strong xmlns="http://www.w3.org/1999/xhtml">повышение трафика</strong></span><br>на сайты</div>
+          <div class="big-p bp-r">
+            <!-- <div class="add-ico"><img src="images/work5.svg"></div> -->
+          <span class="orange-span"><strong xmlns="http://www.w3.org/1999/xhtml">повышение трафика</strong></span><br>на сайты</div>
         </div>
         <div class="r-col-adds">
            <div class="big-p bp-r"><div class="add-ico ai3"><img src="images/row-ico2.svg" class="img"></div><span class="orange-span"><strong xmlns="http://www.w3.org/1999/xhtml">увеличение KPI сайтов:</strong></span><br>количества активных пользователей, просмотров, регистраций, продаж и др.</div>
@@ -441,7 +454,7 @@
 
       <div class="r-col" data-ix="r-init">
 			<div>
-			
+
 				<div class="sheme2"><div id="rashodChart"></div></div>
 
 				<div class="diag-table dt-2">
@@ -470,7 +483,7 @@
 					<div>Прочие расходы</div>
 				  </div>
 				</div>
-			
+
 		  </div>
       </div>
     </div>
@@ -685,15 +698,17 @@
 		});
 	});
 
-    $(function() {
+  $(function() {
 		$(window).resize(function() {
 			var h = $(window).height();
 			var w = $(window).width();
 			$('#particles').width(w).height(h);
 		}).resize();
 
-		particlesJS.load('particles', 'js/particlesjs-config.json', function() { });
-    });
+		//particlesJS.load('particles', 'js/particlesjs-config.json', function() { });
+
+  });
+
   </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="/js/charts.js?v=0"></script>

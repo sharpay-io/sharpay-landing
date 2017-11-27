@@ -317,7 +317,7 @@ a {
 
 .section {
   overflow: hidden;
-  padding: 80px 20px 120px;
+  padding: 80px 20px 80px;
 }
 
 .section.sf {
@@ -841,8 +841,8 @@ padding-right: 13px;
 .big-p {
   margin-top: 40px;
   margin-bottom: 0px;
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 17px;
+  line-height: 21px;
 }
 
 .big-p.bp2 {
@@ -1095,7 +1095,6 @@ padding-right: 13px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1365,11 +1364,6 @@ img.flag {
   padding-bottom: 70px;
 }
 
-/*#rashodChart {
-  margin-top: -40px;
-  margin-left: -80px;
-}*/
-
 #presale {
   font-size: 17px;
 }
@@ -1383,17 +1377,17 @@ img.flag {
 }
 
 #emission .diag-img {
-	margin: 0 -20px -20px -20px;
+	margin: 0 -20px -20px -40px;
 }
 
 #rashod .r-col .sheme2 {
-	width: 40%; 
+	width: 40%;
 	float: left;
 	margin-left: 0;
 }
 
 #rashod .r-col .diag-table {
-	width: 60%; 
+	width: 60%;
 	margin-top: 0;
 	padding-top: 10px;
 	max-width: none;
@@ -1401,45 +1395,52 @@ img.flag {
 .sharpey-slogan .one-line {
 	white-space:nowrap;
 }
-#clockChart {
-	width: 100%;
-	min-height: 80px;
-}
 
 /******************************************************************************/
 
 @media (min-width: 1280px) {
-  .clock {
-    width: 100%;
-  }
+
   .h1 {
     font-size: 64px ;
     line-height: 72px;
   }
-  
+
+  #token {
+    padding-bottom: 80px;
+  }
+
 	#token .l-col  {
-		width: 33.4% !important;
+		width: 25% !important;
 		min-width: auto !important;
 		max-width: none !important;
 	}
 	#token .r-col {
-		width: 66.6% !important;
+		width: 75% !important;
 		min-width: auto !important;
 		max-width: none !important;
 	}
+
 	#clockChart {
-		width: 774px;
+		width: 800px;
+    margin-top: 15px;
 	}
+
+  .clock {
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 	#tokenChart {
-		margin-top: 80px;
-		width: 774px;
+		margin-top: 15px;
+		width: 800px;
 	}
-	
+
 	#rashod .l-col {
 	  min-width: 40%;
 	  max-width: 20%;
 	}
-	
+
 	#rashod .l-col .p.p2 {
 		/*width: 500px;
 		line-height: 140%;*/
@@ -1461,11 +1462,11 @@ img.flag {
 		margin-left: -30px;
 		margin-right: 30px;
 	}
-	
+
 	#emission .diag-img {
-		width: 450px;
+		width: 490px;
 	}
-	
+
 	#vikup {
 		padding-bottom: 80px;
 	}
@@ -1477,10 +1478,14 @@ img.flag {
 	#team {
 		padding-bottom: 80px;
 	}
-	
+
 	#roadmap {
 		padding-bottom: 20px;
 	}
+
+  #add h2 {
+    max-width: 1200px;
+  }
 } /* 1280 *********************************************************************/
 
 
@@ -2180,27 +2185,27 @@ img.flag {
     margin-left: auto;
     margin-right: auto;
   }
-  
-  
-  
+
+
+
 	#rashod .r-col>div {
 		width: 100%;
 	}
 	#rashod .r-col .sheme2 {
-		width: 100%; 
+		width: 100%;
 		float: none;
 		margin-top: 20px;
 	}
 
 	#rashod .r-col .diag-table {
-		width: 80%; 
+		width: 80%;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 0;
 	}
 	#emission .diag-table {
-		width: 80%; 
+		width: 80%;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
