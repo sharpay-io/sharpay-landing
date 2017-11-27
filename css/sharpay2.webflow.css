@@ -1092,7 +1092,7 @@ padding-right: 13px;
 
 .sheme3 {
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .r-col-adds {
@@ -1420,7 +1420,9 @@ img.flag {
   #token {
     padding-bottom: 80px;
   }
-
+	#sites {
+		padding-bottom: 80px;
+	}
 	#sites .l-col  {
 		width: 25% !important;
 		min-width: auto !important;
@@ -1432,8 +1434,8 @@ img.flag {
 		max-width: none !important;
 	}
 	#sites .r-col .p {
-		width: 800px;
-		margin-top: 0;
+		width: 820px;
+		margin-top: 10px;
 	}
 
 	#token .l-col  {
