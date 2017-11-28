@@ -21,43 +21,6 @@ Highcharts.theme = {
 };
 Highcharts.setOptions(Highcharts.theme);
 
-/*
-var tokenChart = Highcharts.chart('tokenChart', {
-    chart: { plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
-    title: { text: '' },
-    tooltip: { formatter: function() {  return '<b>' + this.point.desc + ': </b>' + this.y + ' million tokens'; }  },
-    plotOptions: {
-      pie: {
-        dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } },
-        borderWidth: 0,
-        startAngle: 0,
-        endAngle: 0,
-        shadow: false,
-        center: ['50%', '50%'],
-        states: {
-          hover: {
-            halo: {
-              size: 20
-            }
-          }
-        }
-      }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Token Sale',
-        colorByPoint: true,
-        innerSize: '70%',
-        data: [
-			{ name: '80M', desc: 'Bonus 50%', y: 80 },
-			{ name: '100M', desc: 'Bonus 40%', y: 100 },
-			{ name: '300M', desc: 'Bonus 30%', y: 300 },
-			{ name: '500M', desc: 'Bonus 20%', y: 500 },
-			{ name: '520M', desc: 'Bonus 0%', y: 520 }
-        ]
-    }]
-});
-*/
 var tokenChart = Highcharts.chart('tokenChart', {
 	chart: { type: 'bar', height: 200, plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { enabled: false, text: '' },

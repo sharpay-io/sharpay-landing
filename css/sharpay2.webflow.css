@@ -827,8 +827,8 @@ a {
 #add .add-icon {
   flex-basis: 70px;
   flex-grow: 0;
-  /*width: 70px;
-  height: 70px;*/
+  width: 70px;
+  height: 70px;
 }
 
 #add .add-text {
@@ -836,42 +836,6 @@ a {
   padding-left: 20px;
   padding-right: 30px;
 }
-
-#add #conversion-icon-wrapper {
-  padding: 8px;
-}
-
-#add #conversion-icon {
-  margin-top: 10px;
-  width: 92px;
-  height: 63px;
-}
-
-#add #kpi-icon {
-  margin-top: -16px;
-  flex-basis: 108px;
-  width: 108px;
-  height: 108px;
-}
-
-#add #traffic-icon-wrapper {
-  padding: 13px 0px;
-}
-
-#add #traffic-icon {
-  width: 72px;
-  height: 63px;
-}
-
-#add #usability-icon {
-  width: 70px;
-  height: 92px;
-}
-
-#add #usability-icon-wrapper {
-  padding: 0px 14px;
-}
-
 #add .right-col-text {
   padding: 0px 28px;
 }
@@ -2714,32 +2678,27 @@ img.flag {
       flex-basis: 80px;
     }
 
-    #add #conversion-icon, #add #kpi-icon, #add #traffic-icon, #add #usability-icon {
-      width: 80px;
-      height: 80px;
-      max-width: unset;
-      vertical-align: unset;
-    }
-
+    #add .add-icon {
+		flex-basis: 50px;
+		flex-grow: 0;
+		width: 50px;
+		height: 50px;
+	}
 
     #add .add-text {
       flex-grow: 1;
-
       padding: 0px;
       padding-left: 20px;
       text-align: left;
       font-size: 14px;
     }
 
-    #add #conversion-icon-wrapper, #add #traffic-icon-wrapper,
-    #add #usability-icon-wrapper {
-      padding: 0px;
-    }
+}
 
-
-    #add .add-text {
-
-    }
+body {
+	-webkit-backface-visibility: hidden;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
 }
 
 .highcharts-text-outline {
