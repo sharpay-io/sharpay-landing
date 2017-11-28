@@ -25,7 +25,7 @@ var tokenChart = Highcharts.chart('tokenChart', {
 	chart: { type: 'bar', height: 200, plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { enabled: false, text: '' },
     xAxis: { visible: false },
-    yAxis: { gridLineColor: '#666', labels: { enabled: false }, tickPositions: [0, 80, 180, 480, 980, 1500], min: 0, max: 1500, minorTicks: false, title: { text: 'Million tokens' }},
+    yAxis: { gridLineColor: '#666', labels: { enabled: false }, tickPositions: [0, 80, 180, 480, 980, 1500], min: 0, max: 1500, minorTicks: false, title: { text: 'Миллионов токенов' }},
     legend: { enabled: true, reversed: true,
       itemStyle: {fontWeight: 'normal', fontSize: '17px', color: '#E0E0E3' },
       itemHoverStyle: {  color: '#FFF' },
@@ -39,13 +39,13 @@ var tokenChart = Highcharts.chart('tokenChart', {
       style: { fontWeight: 'bold', color: 'white', fontSize: '17px', }
     } }
 	},
-	tooltip: { formatter: function() {  return '<b>' + this.series.name + ': </b>' + this.y + ' million tokens'; }  },
+	tooltip: { formatter: function() {  return '<b>' + this.series.name + ': </b>' + this.y + ' миллионов токенов'; }  },
     series: [
-		{ name: 'Bonus 0%', data: [520] },
-		{ name: 'Bonus 20%', data: [500] },
-		{ name: 'Bonus 30%', data: [300] },
-		{ name: 'Bonus 40%', data: [100] },
-		{ name: 'Bonus 50%', data: [80] },
+		{ name: 'Бонус 0%', data: [520] },
+		{ name: 'Бонус 20%', data: [500] },
+		{ name: 'Бонус 30%', data: [300] },
+		{ name: 'Бонус 40%', data: [100] },
+		{ name: 'Бонус 50%', data: [80] },
 	]
 });
 
