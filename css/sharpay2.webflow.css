@@ -1434,6 +1434,109 @@ img.flag {
 
 }
 
+
+@media (min-width:1152px) {
+    .h1 {
+        font-size: 64px;
+        line-height: 72px
+    }
+
+    #token {
+        padding-bottom: 80px
+    }
+
+    #users p.p {
+        width: 590px
+    }
+
+    #users .sheme2 {
+        margin-top: 0;
+        margin-left: 80px
+    }
+
+    #sites .l-col,#sites .r-col,#token .l-col {
+        width: 25%!important;
+        min-width: auto!important;
+        max-width: none!important
+    }
+
+    #sites .r-col,#token .l-col {
+        width: 75%!important
+    }
+
+    #sites .r-col .p {
+        width: 700px;
+        margin-top: 10px
+    }
+
+    #token .l-col {
+        width: 25%!important
+    }
+
+    #token .r-col {
+        width: 75%!important
+    }
+
+    .clock {
+        width: 630px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #clockChart, #tokenChart {
+        margin-top: 15px;
+        width: 680px
+    }
+
+    #rashod .l-col,#rashod .r-col,#token .r-col {
+        min-width: auto!important;
+        max-width: none!important
+    }
+
+    #rashod .l-col {
+        padding-right: 20px;
+        width: 60%!important
+    }
+
+    #rashod .r-col {
+        width: 40%!important
+    }
+
+    #rashod .r-col .sheme2 {
+        margin-top: -8px;
+        margin-left: 0;
+        margin-right: 0;
+		width: 50%;
+    }
+	
+	#rashod .r-col .diag-table {
+		width: 50%;
+	}
+
+    #emission .diag-img {
+        width: 430px
+    }
+
+    #team,#vikup {
+        padding-bottom: 80px
+    }
+
+    #vikup .sheme2 {
+        float: right;
+        margin-top: 10px;
+        margin-right: 80px
+    }
+
+    #roadmap {
+        padding-bottom: 20px
+    }
+
+    #add h2 {
+        max-width: 1200px
+    }
+
+}
+
 @media (max-width:991px) {
     .body {
         background-size: 1200px;
