@@ -1435,7 +1435,7 @@ img.flag {
 }
 
 
-@media (min-width:1152px) {
+@media (max-width:1152px) {
     .h1 {
         font-size: 64px;
         line-height: 72px
