@@ -98,12 +98,12 @@ var emissionChart = Highcharts.chart('emissionChart', {
         colorByPoint: true,
         innerSize: '60%',
         data: [
-            { name: '37%', desc: 'Free sale of tokens', y: 37 },
-			{ name: '31%', desc: 'Reserve for the system operation', y: 31 },
-			{ name: '15%', desc: 'Bonus for the Team', y: 15 },
-			{ name: '7%', desc: 'Bonus for investors', y: 7 },
-			{ name: '7%', desc: 'Reward to the advisers', y: 7 },
-			{ name: '3%', desc: 'Bounty program', y: 3 }
+            { name: '37%', desc: 'Свободная продажа', y: 37 },
+			{ name: '31%', desc: 'Резерв системы', y: 31 },
+			{ name: '15%', desc: 'Бонус команде', y: 15 },
+			{ name: '7%', desc: 'Бонус инвесторам', y: 7 },
+			{ name: '7%', desc: 'Вознаграждение эдвайзерам', y: 7 },
+			{ name: '3%', desc: 'Баунти-программа', y: 3 }
         ]
     }]
 });
@@ -119,12 +119,12 @@ var rashodChart = Highcharts.chart('rashodChart', {
         colorByPoint: true,
         innerSize: '40%',
         data: [
-			{ name: '33%', desc: 'Development', y: 33 },
-			{ name: '11%', desc: 'Staff', y: 11 },
-			{ name: '39%', desc: 'Marketing and Sales', y: 39 },
-			{ name: '4%', desc: 'Legal and patent costs', y: 4 },
-			{ name: '9%', desc: 'Administrative costs', y: 9 },
-			{ name: '4%', desc: 'Other costs', y: 4 }
+			{ name: '33%', desc: 'Разработка', y: 33 },
+			{ name: '11%', desc: 'Персонал', y: 11 },
+			{ name: '39%', desc: 'Маркетинг', y: 39 },
+			{ name: '4%', desc: 'Юридические услуги', y: 4 },
+			{ name: '9%', desc: 'Административные', y: 9 },
+			{ name: '4%', desc: 'Прочие', y: 4 }
         ]
     }]
 });
