@@ -27,7 +27,7 @@ var tokenChart = Highcharts.chart('tokenChart', {
     xAxis: { visible: false },
     yAxis: { gridLineColor: '#666', labels: { enabled: false }, tickPositions: [0, 80, 180, 480, 980, 1500], min: 0, max: 1500, minorTicks: false, title: { text: 'Million tokens' }},
     legend: { enabled: true, reversed: true,
-      itemStyle: {fontWeight: 'normal', fontSize: '17px', color: '#E0E0E3' },
+      itemStyle: {fontWeight: 'normal', fontSize: '14px', color: '#E0E0E3' },
       itemHoverStyle: {  color: '#FFF' },
       itemHiddenStyle: { color: '#606063' }//,
       //floating: true,
@@ -36,7 +36,7 @@ var tokenChart = Highcharts.chart('tokenChart', {
     plotOptions: { series: { stacking: 'normal' }, bar: {
 		dataLabels: {
       enabled: true,
-      style: { fontWeight: 'bold', color: 'white', fontSize: '17px', }
+      style: { fontWeight: 'bold', color: 'white', fontSize: '13px', }
     } }
 	},
 	tooltip: { formatter: function() {  return '<b>' + this.series.name + ': </b>' + this.y + ' million tokens'; }  },
