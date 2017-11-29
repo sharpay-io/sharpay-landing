@@ -2817,25 +2817,29 @@ img.flag {
       flex-direction: row;
     }
 
-    #add .add-icon-block {
-      flex-grow: 0;
-      flex-basis: 80px;
-    }
+  #add .add-icon, #add #traffic-icon, #add #usability-icon {
+    /* added selectors with ids to reassign rules for large screens */
+  	flex-basis: 50px;
+  	flex-grow: 0;
+  	width: 50px;
+  	height: 50px;
+  }
 
-    #add .add-icon {
-		flex-basis: 50px;
-		flex-grow: 0;
-		width: 50px;
-		height: 50px;
-	}
+  #add #conversion-icon, #add #kpi-icon { /* another dirty fix of .icon-wrapper width */
+    margin: 0 10px;
+  }
 
-    #add .add-text {
-      flex-grow: 1;
-      padding: 0px;
-      padding-left: 20px;
-      text-align: left;
-      font-size: 14px;
-    }
+  #add .add-text {
+    flex-grow: 1;
+    padding: 0px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  #add .r-col.rc-4 { /* making space between all items the same */
+    margin-top: 0;
+  }
 
 }
 
