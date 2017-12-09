@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
+<defs>
+  <style>.cls-1,.cls-2{fill:none;stroke:#333;stroke-width:3px;}.cls-1{stroke-miterlimit:10;}.cls-2{stroke-linejoin:round;}</style></defs>
+<title/>
+<path fill="#FFFFFF" d="M1,33A32,32,0,1,0,33,1,32,32,0,0,0,1,33Z"/>
+<g id="Mail">
+<rect class="cls-1" height="24.18" rx="1.48" ry="1.48" width="32" x="17" y="21"/>
+<path class="cls-2" d="M48.44,21.83L37.53,33.54a6.27,6.27,0,0,1-9.07,0l-10.9-11.7"/>
+<line class="cls-2" x1="39.19" x2="48.15" y1="31.75" y2="44.51"/>
+<line class="cls-2" x1="26.98" x2="17.7" y1="31.88" y2="44.51"/>
+</g>
+</svg>
