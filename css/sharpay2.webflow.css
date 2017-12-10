@@ -1300,7 +1300,7 @@ html.w-mod-js [data-ix=r-init] {
 .plus-icon {
     margin-top: 6px
 }
-
+/*
 #head canvas {
     position: absolute;
     top: 0;
@@ -1308,7 +1308,7 @@ html.w-mod-js [data-ix=r-init] {
     width: 100%;
     height: 100%
 }
-
+*/
 #head {
     padding-bottom: 145px
 }

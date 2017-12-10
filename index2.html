@@ -91,13 +91,28 @@
 						</a>
 					</div>
 				</div>
+				<div class="sale-time">
+					<p>Presale started on December 11! Bonus 50%*! Buy now!</p>
+					<div id="clockChartSale">
+						<div class="clock" data-date="Mon Mar 11 2018 00:00:00 GMT+0000"> </div>
+					</div>
+				</div>
+				
 				<style>
+.sale-time p {
+	text-align: center;
+	margin-bottom: 30px;
+}
 .progress-sale {
 	width: 100%;
-	max-width: 550px;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	max-width: 555px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	font-size: 13px;
+}
+.sale-time {
+	width: 100%;
+	max-width: 555px;
 }
 
 .sales-wrap {
@@ -105,12 +120,12 @@
 	margin-left: 75%;
 	text-align: right;
 	min-width: 130px;
-	margin-top: 54px;
+	margin-top: 56px;
 }
 .btn-sale {
 	background-color: #1e9a1e;
 	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
-	padding: 14px 20px 14px;
+	padding: 12px 20px 13px;
 	border: 2px solid #1e9a1e;
 	border-radius: 80px;
 	color: #fff;
@@ -126,7 +141,7 @@
 	float: left;
 }
 .progress-sum {
-	border-left: 10px solid transparent;
+	
 }
 .progress-sum div {
 	border-right: 1px solid #fafafa;
@@ -137,7 +152,6 @@
 }
 .progress-info {
 	text-align: left;
-	margin: 0 10px;
 }
 .progress-info span {
 	display: inline-block;
@@ -151,8 +165,8 @@
 .progress {
 	background-color: #fafafa;
 	border-radius: 80px;
-	border: 10px solid #333;
 	position: relative;
+	margin: 10px 0;
 }
 .progress span {
 	width: 100%;
@@ -170,10 +184,14 @@
 	text-align: right;
 	border-radius: 80px 0 0 80px;
 	padding: 5px;
-	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: linear-gradient(315deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
 	background-size: 2rem 2rem;
 	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
 	height: 46px;
+}
+
+#clockChartSale .clock {
+	width: 100% !important;
 }
 				
 @media (max-width:767px) {
