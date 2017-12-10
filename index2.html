@@ -73,7 +73,8 @@
 					</a>
 				</div>
 				<div class="progress-sale">
-					<p>Presale started on December 11! Bonus 50%! Buy now!</p>
+					<div class="h-form-title">Presale started on December 11! Bonus 50%!</div>
+					<!--p>Presale started on December 11! Bonus 50%! Buy now!</p-->
 					<div class="progress-wrap">
 						<!--div class="progress-sum">
 							<div style="width:45%;">193,54 ETH<br>5,65 BTC</div>
@@ -92,11 +93,11 @@
 						</a>
 					</div>
 				</div>
-				<div class="sale-time">
+				<!--div class="sale-time">
 					<div id="clockChartSale">
 						<div class="clock" data-date="Wed Feb 11 2018 23:59:59 GMT+0000"> </div>
 					</div>
-				</div>
+				</div-->
 				
 				<style>
 .sale-time p {
@@ -105,15 +106,15 @@
 .progress-sale {
 	width: 100%;
 	max-width: 555px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 80px;
+	/*margin-bottom: 30px;*/
 
 }
 .sale-time {
 	width: 100%;
 }
 #clockChartSale {
-	max-width: 490px;
+	max-width: 330px;
     margin-left: -10px;
 }
 
@@ -122,7 +123,7 @@
 	margin-left: 70%;
 	text-align: right;
 	min-width: 157px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .btn-sale {
 	background-color: #1e9a1e;
@@ -138,6 +139,9 @@
 	font-size: 14px;
 	display: inline-block;
 	width: 147px;
+}
+.btn-sale:hover {
+	box-shadow: none;
 }
 .progress-wrap {
 	width: 70%;
@@ -244,7 +248,7 @@
 			</div>
 			<div class="r-col" data-ix="r-init">
 				<div id="clockChart">
-					<div class="clock" data-date="Mon Dec 11 2017 00:00:00 GMT+0000"> </div>
+					<div class="clock" data-date="Wed Feb 11 2018 23:59:59 GMT+0000"> </div>
 				</div>
 			</div>
 		</div>
@@ -883,7 +887,7 @@
 				$('#particles').width(w).height(h);
 			}).resize();
 
-			//particlesJS.load('particles', 'js/particlesjs-config.json', function() { });
+			particlesJS.load('particles', 'js/particlesjs-config.json', function() { });
 
 		 });
 	</script>
