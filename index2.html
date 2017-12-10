@@ -78,11 +78,11 @@
 							<div style="width:45%;">193,54 ETH<br>5,65 BTC</div>
 						</div>
 						<div class="progress">
-							<div class="progress-bar" style="width: 25%;">25%</div>
+							<span>80M tokens + Bonus 50%!</span>
+							<div class="progress-bar" style="width: 25%;">&nbsp;</div>
 						</div>
 						<div class="progress-info">
-							<span>80 million tokens<br>+ bonus 50%</span>
-							20 million tokens<br>+ bonus 50%
+							<span style="width:45%;">20M tokets</span>
 						</div>
 					</div>
 					<div class="sales-wrap">
@@ -105,7 +105,7 @@
 	margin-left: 75%;
 	text-align: right;
 	min-width: 130px;
-	margin-top: 46px;
+	margin-top: 54px;
 }
 .btn-sale {
 	background-color: #1e9a1e;
@@ -136,30 +136,44 @@
 	margin-left: -20%;
 }
 .progress-info {
-	padding: 5px 10px;
 	text-align: left;
 	margin: 0 10px;
-	border-right: 1px solid #fafafa;
-	border-left: 1px solid #fafafa;
 }
 .progress-info span {
 	display: inline-block;
-	float: right;
-	text-align: right;
+	padding: 3px 10px 3px 0;
+	border-right: 1px solid #fafafa;
+    padding: 3px 10px 3px 0;
+    text-align: right;
+	white-space: nowrap;
+	margin-left: -20%;
 }
 .progress {
 	background-color: #fafafa;
-	border-radius: 20px;
+	border-radius: 80px;
 	border: 10px solid #333;
+	position: relative;
+}
+.progress span {
+	width: 100%;
+    display: block;
+    text-align: center;
+    color: #373737;
+    position: absolute;
+    top: 13px;
+	font-weight: bold;
+	padding-right: 5px;
+	font-size: 17px;
 }
 .progress-bar {
 	background-color: #1e9a1e;
 	text-align: right;
-	border-radius: 10px 0 0 10px;
+	border-radius: 80px 0 0 80px;
 	padding: 5px;
 	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
 	background-size: 2rem 2rem;
 	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
+	height: 46px;
 }
 				
 @media (max-width:767px) {
