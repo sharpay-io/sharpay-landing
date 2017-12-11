@@ -2896,3 +2896,86 @@ body {
     margin-top: 0.4em;
     font-weight: bold;
 }
+
+/*********/
+
+.progress-sale {
+	width: 100%;
+	max-width: 555px;
+	margin-top: 80px;
+
+}
+.sales-wrap {
+	width: 30%;
+	margin-left: 70%;
+	text-align: right;
+	min-width: 157px;
+	margin-top: 10px;
+}
+.btn-sale {
+	background-color: #1e9a1e;
+	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
+	padding: 12px 20px 13px;
+	border: 2px solid #1e9a1e;
+	border-radius: 80px;
+	color: #fff;
+	line-height: 17px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+	width: 147px;
+}
+.btn-sale:hover {
+	box-shadow: none;
+}
+.progress-wrap {
+	width: 70%;
+	float: left;
+	font-size: 13px;
+}
+.progress {
+	background-color: #fafafa;
+	border-radius: 80px;
+	position: relative;
+	margin: 10px 0 0;
+}
+.progress span {
+	width: 100%;
+    display: block;
+    text-align: center;
+    color: #373737;
+    position: absolute;
+    top: 13px;
+	font-weight: bold;
+	padding-right: 5px;
+	font-size: 17px;
+}
+.progress-bar {
+	background-color: #1e9a1e;
+	text-align: right;
+	border-radius: 80px 0 0 80px;
+	padding: 5px;
+	background-image: linear-gradient(315deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-size: 2rem 2rem;
+	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
+	height: 46px;
+}
+				
+@media (max-width:767px) {
+	.sales-wrap {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.progress-wrap {
+		width: 100%;
+		float: none;
+	}
+	.btn-sale {
+		margin: 0 auto;
+		width: 100%;
+		display: block;
+	}
+}
