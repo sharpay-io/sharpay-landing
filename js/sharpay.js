@@ -31,14 +31,14 @@ $(function() {
 
     var cap = 2400,
         raised = parseFloat(value),
-        percent = (raised/cap)*100,
+        width = $('.progress').width()*(raised/cap),
         lang = $('html').attr('lang'),
         txt = (lang === 'ru')
           ? 'Собрано: ' + raised + ' ETH | План: ' + cap +' ETH'
           : 'Raised: ' + raised + ' ETH | Cap: ' + cap +' ETH';
 
-    $('#progress-caption').css('opacity', 0).text(txt).animate({opacity: 1}, 3000);
-    $('.progress-bar').animate({ width: percent + '%'}, 3000);
+    $('.progress-bar').animate({ width: width}, 1500);
+    $('#progress-caption').text(txt).animate({opacity: 1}, 3000);
   })
 
 });
