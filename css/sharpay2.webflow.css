@@ -1371,6 +1371,7 @@ img.flag {
 }
 
 #trackico-rating {
+  z-index: 9999;
   position: absolute;
   right: 4px;
   top: 5px
@@ -1382,6 +1383,7 @@ img.flag {
 }
 
 #trackico-rating-mob {
+  z-index: 9999;
   display: none;
 }
 
