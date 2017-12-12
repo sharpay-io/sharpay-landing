@@ -1387,6 +1387,10 @@ img.flag {
   display: none;
 }
 
+#trackico-rating-mob a {
+  z-index: 9999;
+}
+
 @media (min-width:1280px) {
     .h1 {
         font-size: 64px;
