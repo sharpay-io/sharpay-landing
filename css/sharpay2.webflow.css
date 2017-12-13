@@ -1493,6 +1493,15 @@ img.flag {
     .body {
         background-position: 50% 0;
     }
+
+    .head-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    
     .h1 {
         font-size: 64px;
         line-height: 72px
@@ -1592,6 +1601,23 @@ img.flag {
         max-width: 1200px
     }
 
+    #trackico-rating {
+      display: none;
+    }
+
+    #trackico-rating-mob {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    #trackico-rating-mob img {
+      width: 56px;
+      height: 56px;
+    }
+
+    .container-head {
+      margin-top: 15px;
+    }
 }
 
 @media (max-width:991px) {
