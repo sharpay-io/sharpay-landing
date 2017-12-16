@@ -34,7 +34,7 @@ a {
     font-size: 17px
 }
 
-#add,#emission,#footer,#rashod,#sites,#token {
+#add,#emission,#rashod,#sites,#token,#advisers {
     background-color: #313131
 }
 
@@ -1371,25 +1371,46 @@ img.flag {
 }
 
 #trackico-rating {
-  z-index: 9999;
+  z-index: 9;
   position: absolute;
   right: 4px;
   top: 5px
 }
 
-#trackico-rating img {
+#trackico-rating img, #trackico-rating-bottom img {
   width: 56px;
   height: 56px;
 }
 
 #trackico-rating-mob {
-  z-index: 9999;
   display: none;
 }
 
-#trackico-rating-mob a {
-  z-index: 9999;
+#trackico-rating-mob a, #trackico-rating-bottom a {
+  z-index: 9;
 }
+
+#trackico-rating-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* fixes bug with trackico rating button positioned over the menu */
+#main-menu {
+  z-index: 10;
+}
+
+/* temporarly hiding advisers section */
+
+#advisers {
+  display: none;
+}
+
+#footer {
+  background-color: #313131;
+}
+
 
 @media (min-width:1280px) {
     .h1 {
@@ -1501,7 +1522,7 @@ img.flag {
         -ms-flex-direction: column;
         flex-direction: column
     }
-    
+
     .h1 {
         font-size: 64px;
         line-height: 72px
