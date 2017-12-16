@@ -34,7 +34,7 @@ a {
     font-size: 17px
 }
 
-#add,#emission,#rashod,#sites,#token,#advisers {
+#add,#emission,#rashod,#sites,#token,#footer {
     background-color: #313131
 }
 
@@ -1401,14 +1401,8 @@ img.flag {
   z-index: 10;
 }
 
-/* temporarly hiding advisers section */
-
 #advisers {
   display: none;
-}
-
-#footer {
-  background-color: #313131;
 }
 
 
