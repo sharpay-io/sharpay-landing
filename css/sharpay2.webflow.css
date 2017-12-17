@@ -3058,4 +3058,8 @@ body {
 		width: 100%;
 		display: block;
 	}
+	
+	.h-btns .w-inline-block:last-child {
+		display: none;
+	}
 }
