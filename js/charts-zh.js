@@ -41,11 +41,11 @@ var tokenChart = Highcharts.chart('tokenChart', {
 	},
 	tooltip: { formatter: function() {  return '<b>' + this.series.name + ': </b>' + this.y + ' million tokens'; }  },
     series: [
-		{ name: '赠送 0%', data: [520] },
-		{ name: '赠送 20%', data: [500] },
-		{ name: '赠送 30%', data: [300] },
-		{ name: '赠送 40%', data: [100] },
-		{ name: '赠送 50%', data: [80] },
+		{ name: '奖金 0%', data: [520] },
+		{ name: '奖金 20%', data: [500] },
+		{ name: '奖金 30%', data: [300] },
+		{ name: '奖金 40%', data: [100] },
+		{ name: '奖金 50%', data: [80] },
 	]
 });
 
@@ -61,11 +61,11 @@ var emissionChart = Highcharts.chart('emissionChart', {
         colorByPoint: true,
         innerSize: '60%',
         data: [
-            { name: '37%', desc: '代币的自由销售', y: 37 },
+            { name: '37%', desc: '代币销售', y: 37 },
 			{ name: '31%', desc: '为系统运行预留', y: 31 },
-			{ name: '15%', desc: '团队优惠', y: 15 },
-			{ name: '7%', desc: '早期投资者的优惠', y: 7 },
-			{ name: '7%', desc: '顾问薪酬', y: 7 },
+			{ name: '15%', desc: '团队奖金', y: 15 },
+			{ name: '7%', desc: '早期投资者的奖金', y: 7 },
+			{ name: '7%', desc: '顾问奖励', y: 7 },
 			{ name: '3%', desc: '赏金计划', y: 3 }
         ]
     }]
