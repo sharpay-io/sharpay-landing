@@ -25,7 +25,7 @@ $(function() {
     $('#particles').width(w).height(h);
   }).resize();
 
-  particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
+  //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
   $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
 

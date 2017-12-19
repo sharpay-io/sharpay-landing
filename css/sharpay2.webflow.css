@@ -1110,7 +1110,7 @@ a {
 
 .sheme2 {
     display: inline-block;
-    max-width: 480px;
+    max-width: 350px;
     margin-left: 40px
 }
 
@@ -1614,7 +1614,7 @@ body {
     #vikup .sheme2 {
         float: right;
         margin-top: 10px;
-        margin-right: 80px
+        margin-right: 105px
     }
 
     #roadmap {
@@ -2140,7 +2140,7 @@ body {
         font-size: 12px;
         line-height: 16px
     }
-    
+
     .progress-sale {
       margin-top: 60px;
     }
