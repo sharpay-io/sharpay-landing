@@ -1110,8 +1110,12 @@ a {
 
 .sheme2 {
     display: inline-block;
-    max-width: 350px;
+    max-width: 480px;
     margin-left: 40px
+}
+
+#vikup .sheme2 {
+    max-width: 350px;
 }
 
 .sheme3 {
