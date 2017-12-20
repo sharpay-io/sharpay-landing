@@ -1382,8 +1382,9 @@ img.flag {
 }
 
 #trackico-rating img, #trackico-rating-bottom img {
-  width: 56px;
+  /* width: 56px; */
   height: 56px;
+  margin: 0 10px;
 }
 
 #trackico-rating-mob {
@@ -1398,6 +1399,10 @@ img.flag {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+#vergleich-rating-img {
+  background-color: white;
 }
 
 /* fixes bug with trackico rating button positioned over the menu */
