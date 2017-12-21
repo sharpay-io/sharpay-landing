@@ -34,7 +34,7 @@ a {
     font-size: 17px
 }
 
-#add,#emission,#rashod,#sites,#token,#team {
+#add,#emission,#rashod,#sites,#token,#team,#footer {
     background-color: #313131
 }
 
@@ -1537,6 +1537,25 @@ body {
 	background-size: 2rem 2rem;
 	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
 	height: 46px;
+}
+
+#events .container {
+  justify-content: flex-start;
+}
+
+#events-text {
+  margin-right: 30px;
+}
+
+#events img {
+  margin: 10px 46px;
+  height: 138px;
+}
+
+#events p {
+  font-size: 23px;
+  line-height: 25px;
+  margin-top: 16px;
 }
 
 @media (min-width:1280px) {
