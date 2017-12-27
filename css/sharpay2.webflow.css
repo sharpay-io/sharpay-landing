@@ -278,6 +278,10 @@ a {
     line-height: 30px
 }
 
+.text-field.zh {
+  margin-right: 80px;
+}
+
 .soc-links {
     display: block;
     margin-top: 15px;
