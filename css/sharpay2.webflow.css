@@ -282,6 +282,10 @@ a {
   margin-right: 80px;
 }
 
+.text-field.en {
+  margin-right: 40px;
+}
+
 .soc-links {
     display: block;
     margin-top: 15px;
@@ -311,10 +315,6 @@ a {
 
 .soc-link,.soc-link.sl-f:hover {
     opacity: .3
-}
-
-.soc-link.sl-reddit {
-    display: none
 }
 
 .section {
@@ -1552,7 +1552,7 @@ body {
 }
 
 #events img {
-  margin: 10px 46px;
+  margin: 10px 14px;
   height: 138px;
 }
 
