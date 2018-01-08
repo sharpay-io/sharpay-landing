@@ -152,7 +152,7 @@ a {
 }
 
 .h-text-wrap {
-    max-width: 625px;
+    max-width: 675px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1385,10 +1385,19 @@ img.flag {
   top: 5px
 }
 
+#trackico-rating a {
+  display: block;
+  margin-bottom: 16px;
+}
+
+#trackico-rating-mob a {
+  margin: 0 8px;
+}
+
 #trackico-rating img, #trackico-rating-bottom img {
   /* width: 56px; */
   height: 56px;
-  margin: 0 10px;
+  margin: 0;
 }
 
 #trackico-rating-mob {
