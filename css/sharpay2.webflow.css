@@ -1484,8 +1484,19 @@ body {
 .progress-sale {
 	width: 100%;
 	max-width: 555px;
-	margin-top: 80px;
+	/* margin-top: 20px; */
+}
 
+#cool-rating {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: -4px;
+}
+
+.bright-green {
+  color: #1e9a1e;
+  filter: brightness(135%);
 }
 
 .sales-wrap {
@@ -1862,7 +1873,7 @@ body {
     }
 
     .h-form-title {
-        margin-top: 60px;
+        margin-top: 8px;
         font-size: 20px;
         line-height: 24px
     }
@@ -2183,7 +2194,12 @@ body {
     }
 
     .progress-sale {
-      margin-top: 60px;
+      /* margin-top: 60px; */
+    }
+
+    #cool-rating {
+      font-size: 20px;
+      line-height: 24px;
     }
 }
 
@@ -2645,6 +2661,12 @@ body {
   		width: 100%;
   		display: block;
   	}
+
+    #cool-rating {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+    }
 }
 
 @media (max-width:479px) {
