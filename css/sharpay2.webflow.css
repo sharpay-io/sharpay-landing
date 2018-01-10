@@ -3111,3 +3111,12 @@ body {
   }
 
 }
+
+@media (max-width:375px) {
+
+  .btn {
+    width: 65px;
+    padding: 12px 10px 14px;
+  }
+
+}
