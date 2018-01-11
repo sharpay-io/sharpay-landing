@@ -152,7 +152,7 @@ a {
 }
 
 .h-text-wrap {
-    max-width: 625px;
+    max-width: 675px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1385,10 +1385,19 @@ img.flag {
   top: 5px
 }
 
+#trackico-rating a {
+  display: block;
+  margin-bottom: 16px;
+}
+
+#trackico-rating-mob a {
+  margin: 0 8px;
+}
+
 #trackico-rating img, #trackico-rating-bottom img {
   /* width: 56px; */
   height: 56px;
-  margin: 0 10px;
+  margin: 0;
 }
 
 #trackico-rating-mob {
@@ -1475,8 +1484,19 @@ body {
 .progress-sale {
 	width: 100%;
 	max-width: 555px;
-	margin-top: 80px;
+	/* margin-top: 20px; */
+}
 
+#cool-rating {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: -4px;
+}
+
+.bright-green {
+  color: #1e9a1e;
+  filter: brightness(135%);
 }
 
 .sales-wrap {
@@ -1853,7 +1873,7 @@ body {
     }
 
     .h-form-title {
-        margin-top: 60px;
+        margin-top: 8px;
         font-size: 20px;
         line-height: 24px
     }
@@ -2174,7 +2194,12 @@ body {
     }
 
     .progress-sale {
-      margin-top: 60px;
+      /* margin-top: 60px; */
+    }
+
+    #cool-rating {
+      font-size: 20px;
+      line-height: 24px;
     }
 }
 
@@ -2636,6 +2661,12 @@ body {
   		width: 100%;
   		display: block;
   	}
+
+    #cool-rating {
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+    }
 }
 
 @media (max-width:479px) {
@@ -3099,6 +3130,15 @@ body {
 
   #trackico-rating-mob {
     justify-content: center;
+  }
+
+}
+
+@media (max-width:375px) {
+
+  .btn {
+    width: 65px;
+    padding: 12px 10px 14px;
   }
 
 }
