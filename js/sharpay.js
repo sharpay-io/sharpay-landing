@@ -33,17 +33,14 @@ $(function() {
         capUSD = 80
         raised = parseFloat(value),
         width = $('.progress').width()*(raised/cap),
-        lang = $('html').attr('lang'),
-        txt = (lang === 'ru')
-          ? 'Собрано: ' + raised + ' ETH | План: ' + capUSD +'M tokens'
-          : 'Raised: ' + raised + ' ETH | Cap: ' + capUSD +'M tokens';
+        txt = '<span class="cap"><strong>Cap: $800k</strong> |</span> Now: ' + raised + ' ETH | Max: ' + capUSD +'M SHRP';
 
     $('.progress-bar').animate({ width: width}, 1500);
-    $('#progress-caption').text(txt).animate({opacity: 1}, 3000);
+    $('#progress-caption').append(txt).animate({opacity: 1}, 3000);
   });
-  
-  
-  
+
+
+
 Webflow.require('ix').init([
   {"slug":"bg-logo-init","name":"bg logo init","value":{"style":{"display":"none","opacity":0},"triggers":[]}},
   {"slug":"bg-logo-show","name":"bg logo show","value":{"style":{},"triggers":[{"type":"scroll","selector":".bg-logo-cont","stepsA":[{"opacity":0,"transition":"opacity 500ms ease 0"},{"display":"none"}],"stepsB":[{"display":"block"},{"opacity":1,"transition":"opacity 1000ms ease 0"}]}]}},

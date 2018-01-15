@@ -1540,16 +1540,19 @@ body {
 	margin: 10px 0 0;
 }
 
-.progress span {
+.progress #progress-caption {
 	width: 100%;
-    display: block;
-    text-align: center;
-    color: #373737;
-    position: absolute;
-    top: 13px;
-	font-weight: bold;
+  display: block;
+  text-align: center;
+  color: #373737;
+  position: absolute;
+  top: 13px;
 	padding-right: 5px;
 	font-size: 14px;
+}
+
+.progress .cap {
+  color: white;
 }
 
 .progress-bar {
