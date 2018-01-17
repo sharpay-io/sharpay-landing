@@ -29,11 +29,12 @@ $(function() {
 
   $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
 
-    var cap = 1800,
+    var cap = 800,
         capUSD = 80
         raised = parseFloat(value),
         width = $('.progress').width()*(raised/cap),
-        txt = '<span class="cap"><strong>Cap: $800k</strong> |</span> Now: ' + raised + ' ETH | Max: ' + capUSD +'M SHRP';
+        // txt = '<span class="cap"><strong>Cap: $800k</strong> |</span> Now: ' + raised + ' ETH | Max: ' + capUSD +'M SHRP';
+        txt = '<span class="cap">Plan $800k &ndash; successfully!</span> <span class="raised">Now: ' + raised + ' ETH</span>';
 
     $('.progress-bar').animate({ width: width}, 1500);
     $('#progress-caption').append(txt).animate({opacity: 1}, 3000);
