@@ -1592,6 +1592,41 @@ body {
   margin-top: 16px;
 }
 
+
+#modal {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+#dialog {
+	z-index: 110;
+	background: #373737;
+	width: 80%;
+	max-width: 500px;
+	margin: 5% auto 0 auto;
+	min-height: 100px;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+#dialog h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#dialog .btn {
+	width: 40%;
+	margin: 10px 4% 20px 4%;
+}
+#dialog .btn:last-child {
+	float: right;
+}
+
+
 @media (min-width:1280px) {
     .h1 {
         font-size: 64px;

@@ -23,7 +23,19 @@ $(function() {
     var h = $(window).height();
     var w = $(window).width();
     $('#particles').width(w).height(h);
+    $('#modal').width(w).height(h);
   }).resize();
+  
+	$('a[href="#signin"]').click(function(){
+		$('#modal').show();
+		return false;
+	});
+	$('#modal').click(function(){
+		$('#modal').hide();
+	});
+	$('#dialog').click(function(e) {
+		e.stopPropagation();
+	});
 
   //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
