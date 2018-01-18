@@ -1594,7 +1594,7 @@ body {
 
 
 #modal {
-    z-index: 100;
+    z-index: 1100;
     position: fixed;
     top: 0;
     left: 0;
@@ -1602,7 +1602,7 @@ body {
 	display: none;
 }
 #dialog {
-	z-index: 110;
+	z-index: 1110;
 	background: #373737;
 	width: 80%;
 	max-width: 500px;
@@ -1618,12 +1618,27 @@ body {
 	text-align: center;
 	margin-bottom: 20px;
 }
-#dialog .btn {
-	width: 40%;
-	margin: 10px 4% 20px 4%;
+#dialog .row {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
-#dialog .btn:last-child {
-	float: right;
+#dialog .row .col {
+	width: 50%; 
+	float: left;
+	font-size: 17px;
+}
+#dialog .row .col p {
+	margin: 0 5% 0 5%;
+}
+#dialog .btn {
+	width: 90%;
+	margin: 10px 5% 20px 5%;
+	font-weight: normal;
+}
+#dialog .btn:hover .orange-span {
+	color: #fff;
 }
 
 
@@ -2712,6 +2727,11 @@ body {
       line-height: 21px;
       text-align: center;
     }
+	
+	
+	#dialog .row .col {
+		width: 100%;
+	}
 }
 
 @media (max-width:479px) {
