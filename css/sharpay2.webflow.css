@@ -1625,7 +1625,7 @@ body {
     flex-wrap: wrap;
 }
 #dialog .row .col {
-	width: 50%; 
+	width: 50%;
 	float: left;
 	font-size: 17px;
 }
@@ -2727,8 +2727,8 @@ body {
       line-height: 21px;
       text-align: center;
     }
-	
-	
+
+
 	#dialog .row .col {
 		width: 100%;
 	}

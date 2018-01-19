@@ -25,7 +25,7 @@ $(function() {
     $('#particles').width(w).height(h);
     $('#modal').width(w).height(h);
   }).resize();
-  
+
 	$('a[href="#signin"]').click(function(){
 		$('#modal').show();
 		return false;
@@ -41,7 +41,7 @@ $(function() {
 
   $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
 
-    var cap = 800,
+    var cap = 900,
         capUSD = 80
         raised = parseFloat(value),
         width = $('.progress').width()*(raised/cap),
