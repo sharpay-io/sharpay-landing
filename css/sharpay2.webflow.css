@@ -1564,8 +1564,8 @@ body {
 
 .progress-bar {
 	background-color: #1e9a1e;
-	text-align: right;
-	border-radius: 80px 0 0 80px;
+	text-align: center;
+	border-radius: 80px 80px 80px 80px;
 	padding: 5px;
 	background-image: linear-gradient(315deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
 	background-size: 2rem 2rem;
