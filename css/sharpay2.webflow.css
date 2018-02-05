@@ -1483,7 +1483,7 @@ body {
 
 .progress-sale {
 	width: 100%;
-	max-width: 565px;
+	max-width: 585px;
 	/* margin-top: 20px; */
 }
 
@@ -1528,7 +1528,7 @@ body {
 }
 
 .progress-wrap {
-	width: 70%;
+	width: 73%;
 	float: left;
 	font-size: 13px;
 }
@@ -1543,12 +1543,12 @@ body {
 .progress #progress-caption {
 	width: 100%;
   display: block;
-  /* text-align: center; */
-  padding-left: 15px;
+  text-align: center;
+  /* padding-left: 15px; */
   color: #373737;
   position: absolute;
   top: 13px;
-	padding-right: 5px;
+	/* padding-right: 5px; */
 	font-size: 14px;
 }
 
