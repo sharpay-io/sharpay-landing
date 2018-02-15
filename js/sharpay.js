@@ -46,9 +46,11 @@ $(function() {
         raised = parseFloat(value),
         // width = $('.progress').width()*(raised/cap),
         width = $('.progress').width(),
+        lang = $('html').attr('lang'),
         // txt = '<span class="cap"><strong>Cap: $800k</strong> |</span> Now: ' + raised + ' ETH | Max: ' + capUSD +'M SHRP';
         // txt = '<span class="cap">Min Plan $800k &ndash; successfully!</span> <span class="raised">Now: ' + raised + ' ETH</span>';
-        txt = '<span class="cap">Presale completed successfully! Raised 2400 ETH!</span>';
+        txt = lang === 'zh' ? '<span class="cap">预售已经圆满结束! 我们成功地筹集了2400 个ETH!</span>'
+                            : '<span class="cap">Presale completed successfully! Raised 2400 ETH!</span>';
 
     $('.progress-bar').animate({ width: width}, 1500);
     $('#progress-caption').append(txt).animate({opacity: 1}, 3000);

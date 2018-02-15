@@ -1487,8 +1487,12 @@ body {
 	/* margin-top: 20px; */
 }
 
+#contributors {
+  margin-top: 24px;
+}
+
 #cool-rating {
-  margin-top: 60px;
+
   font-size: 24px;
   line-height: 36px;
   margin-bottom: -4px;
@@ -1510,7 +1514,7 @@ body {
 .btn-sale {
 	background-color: #1e9a1e;
 	box-shadow: 0 1px 24px 0 rgba(34,172,34,.5);
-	padding: 12px 20px 13px;
+	padding: 12px 10px 13px;
 	border: 2px solid #1e9a1e;
 	border-radius: 80px;
 	color: #fff;
@@ -1691,8 +1695,15 @@ body {
     }
 
     #clockChart,#tokenChart {
-        margin-top: 15px;
         width: 800px
+    }
+
+    #tokenChart {
+      margin-top: -24px;
+    }
+
+    #clockChart {
+      margin-top: 60px;
     }
 
     #rashod .l-col,#rashod .r-col,#token .r-col {
