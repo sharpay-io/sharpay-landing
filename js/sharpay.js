@@ -43,13 +43,16 @@ $(function() {
 
   $('#video').click(function() {
 
-
     var ratio = 0.5625,
         w = $(window).width()*0.75,
-        h = w*ratio;
+        h = w*ratio,
+        isChina = $('html').attr('lang') === 'zh';
 
-    var url = $('html').attr('lang') === 'zh' ? 'https://www.youtube.com/embed/fC6F24D7k-k' : 'https://www.youtube.com/embed/dWIF3bsxbLI';
-    var videoHtml = '<iframe width="' + w + '" height="' + h + '" src="' + url + '?autoplay=1&controls=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+    var videoHtml = '<iframe width="' + w + '" height="' + h + '" src="https://www.youtube.com/embed/dWIF3bsxbLI?autoplay=1&controls=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+
+    if (isChina) {
+      videoHtml = '<iframe width="' + w + '" height="' + h + '" src="//rutube.ru/play/embed/10940174?autoStart=true" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>';
+    }
 
     $('#video-dialog').width(w).height(h).html(videoHtml);
     $('#video-modal').show();
