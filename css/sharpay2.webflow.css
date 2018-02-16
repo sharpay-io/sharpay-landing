@@ -3263,6 +3263,19 @@ html[lang=zh] #video {
     justify-content: center;
   }
 
+  #head-marketing-msg {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #head-marketing-msg-text {
+    min-width: inherit;
+  }
+  
+  #video {
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width:375px) {
