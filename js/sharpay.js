@@ -23,19 +23,43 @@ $(function() {
     var h = $(window).height();
     var w = $(window).width();
     $('#particles').width(w).height(h);
-    $('#modal').width(w).height(h);
+    $('.modal').width(w).height(h);
   }).resize();
 
 	$('a[href="#signin"]').click(function(){
-		$('#modal').show();
+		$('#singin-modal').show();
 		return false;
 	});
-	$('#modal').click(function(){
-		$('#modal').hide();
+
+	$('#singin-modal').click(function(){
+		$('#singin-modal').hide();
 	});
-	$('#dialog').click(function(e) {
+
+	$('.dialog').click(function(e) {
 		e.stopPropagation();
 	});
+
+  // VIDEO DIALOG
+
+  $('#video').click(function() {
+
+
+    var ratio = 0.5625,
+        w = $(window).width()*0.75,
+        h = w*ratio;
+
+    var url = $('html').attr('lang') === 'zh' ? 'https://www.youtube.com/embed/fC6F24D7k-k' : 'https://www.youtube.com/embed/dWIF3bsxbLI';
+    var videoHtml = '<iframe width="' + w + '" height="' + h + '" src="' + url + '?autoplay=1&controls=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+
+    $('#video-dialog').width(w).height(h).html(videoHtml);
+    $('#video-modal').show();
+    return false;
+  });
+
+  $('#video-modal').click(function() {
+    $('#video-modal').hide();
+    $('#video-dialog iframe').remove();
+  });
 
   //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
