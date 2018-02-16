@@ -2868,8 +2868,8 @@ html[lang=zh] #video {
     }
 
     .btn {
-        margin-right: 5px;
-        margin-left: 5px
+        margin-right: 4px;
+        margin-left: 4px
     }
 
     .h-form-title {
@@ -3271,7 +3271,7 @@ html[lang=zh] #video {
   #head-marketing-msg-text {
     min-width: inherit;
   }
-  
+
   #video {
     margin-top: 20px;
   }
