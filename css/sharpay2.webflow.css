@@ -1512,8 +1512,6 @@ body {
   box-shadow: 0 1px 24px 0 rgba(255,153,51,.5);
 
   background-image: url("/images/video_button.jpg");
-  /* filter: blur(1px); */
-  /* filter: sepia(100%); */
   filter: brightness(0.8);
 }
 
@@ -1526,8 +1524,8 @@ html[lang=zh] #video {
 }
 
 #video:hover {
-  /* filter: blur(0px); */
   filter: brightness(1);
+  cursor: pointer;
 }
 
 /* #cool-rating {

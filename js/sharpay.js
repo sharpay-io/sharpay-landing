@@ -13,7 +13,7 @@ Webflow.push(function() {
     }
   });
   Webflow.resize.on(function(){
-    $('.clock').TimeCircles().rebuild()
+    $('.clock').TimeCircles().rebuild();
   });
 });
 
