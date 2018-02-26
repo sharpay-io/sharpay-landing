@@ -1494,6 +1494,10 @@ body {
   line-height: 30px;
 }
 
+html[lang="ko"] #head-marketing-msg {
+  letter-spacing: -1px;
+}
+
 #head-marketing-msg div {
   display: inline-block;
 }
@@ -1600,6 +1604,10 @@ html[lang=ko] #video {
 .progress .cap {
   color: white;
   font-weight: bold;
+}
+
+html[lang="ko"] .progress .cap {
+  letter-spacing: -1px;
 }
 
 .progress .raised {
@@ -1710,6 +1718,9 @@ html[lang="ko"] #events p {
     .h1 {
         font-size: 64px;
         line-height: 72px
+    }
+    html[lang="ko"] .h1 {
+      font-size: 60px;
     }
 
     #token {
@@ -1826,6 +1837,9 @@ html[lang="ko"] #events p {
     .h1 {
         font-size: 64px;
         line-height: 72px
+    }
+    html[lang="ko"] .h1 {
+      font-size: 60px;
     }
 
     #token {
@@ -2001,6 +2015,9 @@ html[lang="ko"] #events p {
     .h1 {
         font-size: 60px;
         line-height: 70px
+    }
+    html[lang="ko"] .h1 {
+      font-size: 58px;
     }
 
     .h-form-title {
