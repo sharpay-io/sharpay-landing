@@ -1721,6 +1721,7 @@ html[lang="ko"] #events p {
     }
     html[lang="ko"] .h1 {
       font-size: 60px;
+      letter-spacing: -3px;
     }
 
     #token {
@@ -1840,6 +1841,7 @@ html[lang="ko"] #events p {
     }
     html[lang="ko"] .h1 {
       font-size: 60px;
+      letter-spacing: -3px;
     }
 
     #token {
@@ -2018,6 +2020,7 @@ html[lang="ko"] #events p {
     }
     html[lang="ko"] .h1 {
       font-size: 58px;
+      letter-spacing: -3px;
     }
 
     .h-form-title {
