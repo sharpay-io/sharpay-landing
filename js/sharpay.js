@@ -77,6 +77,7 @@ $(function() {
         // txt = '<span class="cap"><strong>Cap: $800k</strong> |</span> Now: ' + raised + ' ETH | Max: ' + capUSD +'M SHRP';
         // txt = '<span class="cap">Min Plan $800k &ndash; successfully!</span> <span class="raised">Now: ' + raised + ' ETH</span>';
         txt = lang === 'zh' ? '<span class="cap">预售已经圆满结束! 我们成功地筹集了2400 个ETH!</span>'
+              : lang === 'ko' ? '<span class="cap">프리 세일이 성공적으로 완료되었습니다. 2400 ETH를 올렸습니다!</span>'
                             : '<span class="cap">Presale completed successfully! Raised 2400 ETH!</span>';
 
     $('.progress-bar').animate({ width: width}, 1500);

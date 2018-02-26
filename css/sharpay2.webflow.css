@@ -1523,6 +1523,10 @@ html[lang=zh] #video {
   background-image: url("/images/video_button_zh.jpg");
 }
 
+html[lang=ko] #video {
+  margin-left: 21px;
+}
+
 #video:hover {
   filter: brightness(1);
   cursor: pointer;
@@ -1633,6 +1637,9 @@ html[lang=zh] #video {
   margin-top: 16px;
 }
 
+html[lang="ko"] #events p {
+  font-size: 18px;
+}
 
 .modal {
   z-index: 1100;
