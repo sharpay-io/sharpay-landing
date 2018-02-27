@@ -1,15 +1,15 @@
 #!/bin/bash
 
 echo 'Generating default (english) page...'
-php index.php en > index.new.html
+php src/index.php en > index.new.html
 
 echo 'Generating chinese page...'
-php index.php zh > zh/index.new.html
+php src/index.php zh > zh/index.new.html
 
 echo 'Generating korian page...'
-php index.php ko > ko/index.new.html
+php src/index.php ko > ko/index.new.html
 
 echo 'Generating russian page...'
-php index.php ru > ru/index.new.html
+php src/index.php ru > ru/index.new.html
 
 echo 'Done.'

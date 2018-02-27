@@ -2,6 +2,6 @@
 .ftpconfig
 ftpconfig
 
-i18n/cache/*.php
+src/i18n/cache/*.php
 
 *.new.html

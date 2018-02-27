@@ -22,7 +22,7 @@ $(function() {
   $(window).resize(function() {
     var h = $(window).height();
     var w = $(window).width();
-    $('#particles').width(w).height(h);
+    // $('#particles').width(w).height(h);
     $('.modal').width(w).height(h);
   }).resize();
 
