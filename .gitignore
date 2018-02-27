@@ -1,3 +1,7 @@
 .DS_Store
 .ftpconfig
 ftpconfig
+
+i18n/cache/*.php
+
+*.new.html
