@@ -41,9 +41,9 @@ include 'init.php'
 		<div id="singin-dialog" class="dialog">
 			<h2 class="h2"><?=L::singin_header?></h2>
 			<div class="row">
-				<div class="col"><a href="https://app.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': 'en'});">
+				<div class="col"><a href="https://app.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'});">
           <div><?=L::singin_app_login?></div></a></div>
-				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': 'en'});">
+				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': '<?=$lang?>'});">
           <div><?=L::singin_cabinet_login?></div></a></div>
 			</div>
 		</div>
@@ -83,6 +83,9 @@ include 'init.php'
 					</a>
 					<a href="/ko/" class="nav-link nl-lang w-nav-link">
 						<img class="flag" src="/images/flat/korea.svg" title="<?=L::head_lang_menu_ko_title?>" />
+					</a>
+					<a href="/jp/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/images/flat/japanese.svg" title="<?=L::head_lang_menu_jp_title?>" />
 					</a>
 					<a href="/ru/" class="nav-link nl-lang w-nav-link">
 					<img class="flag" src="/images/flat/russia.svg" title="<?=L::head_lang_menu_ru_title?>" />
@@ -127,16 +130,16 @@ include 'init.php'
 					<?=L::head_status?>
 				</div>
 				<div class="h-btns">
-					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': 'en'});">
+					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': '<?=$lang?>'});">
 						<div><?=L::head_white_paper?></div>
 					</a>
-					<a href="<?=L::head_presentation_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'presentation', {'lang': 'en'});">
+					<a href="<?=L::head_presentation_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'presentation', {'lang': '<?=$lang?>'});">
 						<div><?=L::head_presentation?></div>
 					</a>
-					<a href="<?=L::head_one_pager_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': 'en'});">
+					<a href="<?=L::head_one_pager_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': '<?=$lang?>'});">
 						<div><?=L::head_one_pager?></div>
 					</a>
-					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': 'en'});">
+					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': '<?=$lang?>'});">
 						<div><?=L::head_chat?></div>
 					</a>
 				</div>
@@ -158,7 +161,7 @@ include 'init.php'
 						</div>
 					</div>
 					<div class="sales-wrap">
-						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': 'en'});">
+						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});">
 							<?=L::head_reserve_now?>
 						</a>
 					</div>
@@ -207,7 +210,7 @@ include 'init.php'
 			</div>
 			<div class="r-col token-chart-col" data-ix="r-init">
 				<div id="clockChart">
-					<div class="clock" data-date="Mar 1 2018 23:59:59 GMT+0000"> </div>
+					<div class="clock" data-date="Mar 1 2018 00:00:00 GMT+0000"> </div>
 				</div>
 			</div>
 		</div>

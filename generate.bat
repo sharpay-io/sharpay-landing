@@ -12,7 +12,7 @@ ECHO Generating russian page...
 C:\xampp\php\php.exe -f src/index.php ru > ru/index.new.html
 
 ECHO Generating japanese page...
-C:\xampp\php\php.exe -f src/index.php jp > jp/index.new.html
+C:\xampp\php\php.exe -f src/index.php jp > jp/index.html
 
 ECHO Done.
 pause

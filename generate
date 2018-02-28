@@ -13,6 +13,6 @@ echo 'Generating russian page...'
 php src/index.php ru > ru/index.new.html
 
 echo 'Generating japanese page...'
-php src/index.php jp > jp/index.new.html
+php src/index.php jp > jp/index.html
 
 echo 'Done.'

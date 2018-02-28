@@ -3311,3 +3311,9 @@ html[lang="ko"] #events p {
   }
 
 }
+
+
+html[lang=jp] #head-marketing-msg {
+	letter-spacing: -2px;
+    font-size: 16px;
+}
