@@ -12,4 +12,7 @@ php src/index.php ko > ko/index.new.html
 echo 'Generating russian page...'
 php src/index.php ru > ru/index.new.html
 
+echo 'Generating japanese page...'
+php src/index.php jp > jp/index.new.html
+
 echo 'Done.'
