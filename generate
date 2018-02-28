@@ -10,7 +10,7 @@ echo 'Generating korian page...'
 php src/index.php ko > ko/index.html
 
 echo 'Generating russian page...'
-php src/index.php ru > ru/index.new.html
+php src/index.php ru > ru/index.html
 
 echo 'Generating japanese page...'
 php src/index.php jp > jp/index.html
