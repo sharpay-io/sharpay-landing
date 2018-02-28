@@ -109,7 +109,7 @@ a {
 
 .nav-link.nl-lang {
     margin-right: 0;
-    margin-left: 5px;
+    margin-left: 0;
     display: inline-block;
     width: 25px
 }
@@ -1497,6 +1497,11 @@ body {
 html[lang="ko"] #head-marketing-msg {
   letter-spacing: -1px;
 }
+html[lang=jp] #head-marketing-msg {
+	letter-spacing: -2px;
+    font-size: 16px;
+}
+
 
 #head-marketing-msg div {
   display: inline-block;
@@ -3312,8 +3317,3 @@ html[lang="ko"] #events p {
 
 }
 
-
-html[lang=jp] #head-marketing-msg {
-	letter-spacing: -2px;
-    font-size: 16px;
-}
