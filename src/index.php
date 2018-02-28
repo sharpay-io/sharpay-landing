@@ -159,7 +159,7 @@ include 'init.php'
 					</div>
 					<div class="sales-wrap">
 						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': 'en'});">
-							Reserve Now
+							<?=L::head_reserve_now?>
 						</a>
 					</div>
 				</div>
