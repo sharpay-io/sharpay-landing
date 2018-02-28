@@ -34,7 +34,7 @@ include 'init.php'
 </head>
 
 <body class="body">
-	<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="en"></div>
+	<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="<?=$lang?>"></div>
 	<!-- <div id="particles"></div> -->
 
 	<div id="singin-modal" class="modal">
