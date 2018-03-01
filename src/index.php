@@ -156,8 +156,14 @@ include 'init.php'
 				<div class="progress-sale">
 					<div class="progress-wrap">
 						<div class="progress">
-							<span id="progress-caption" style="opacity: 0"></span>
+							<span class="progress-caption" style="opacity: 1"></span>
 							<div class="progress-bar" style="width: 100%;">&nbsp;</div>
+						</div>
+					</div>
+					<div class="progress-wrap progress-wrap2">
+						<div class="progress">
+							<span class="progress-caption" style="opacity: 0.5"></span>
+							<div class="progress-bar" style="width: 0;">&nbsp;</div>
 						</div>
 					</div>
 					<div class="sales-wrap">
@@ -210,7 +216,7 @@ include 'init.php'
 			</div>
 			<div class="r-col token-chart-col" data-ix="r-init">
 				<div id="clockChart">
-					<div class="clock" data-date="Mar 1 2018 00:00:00 GMT+0000"> </div>
+					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
 				</div>
 			</div>
 		</div>

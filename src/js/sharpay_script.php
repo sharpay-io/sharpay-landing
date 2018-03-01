@@ -79,16 +79,20 @@ $(function() {
 
   $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
 
-    var cap = 4000,
+    var cap = 1000,
         capUSD = 80
         raised = parseFloat(value),
-        //width = $('.progress').width()*(raised/cap),
-        width = $('.progress').width(),
+        width = $('.progress').eq(1).width()*(raised/cap),
+        //width = $('.progress').width(),
         lang = $('html').attr('lang'),
         txt = '<span class="cap"><?=L::head_progress?></span>';
 
-    $('.progress-bar').animate({ width: width}, 1500);
-    $('#progress-caption').append(txt).animate({opacity: 1}, 3000);
+    //$('.progress-bar').animate({ width: width}, 1500);
+    $('.progress-caption').eq(0).append(txt);//.animate({opacity: 1}, 3000);
+	
+	$('.progress-bar').eq(1).animate({ width: width}, 1500);
+	txt = '<span class="green-cap">+'+( cap )+' ETH</span>';	
+    $('.progress-caption').eq(1).append(txt).animate({opacity: 1}, 500);
   });
 
   Webflow.require('ix').init([
