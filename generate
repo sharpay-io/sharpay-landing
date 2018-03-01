@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo 'Generating default (english) page...'
-php src/index.php en > index.test.html
+php src/index.php en > test/index.html
 
 # echo 'Generating chinese page...'
 # php src/index.php zh > zh/index.html
