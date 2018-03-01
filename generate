@@ -1,18 +1,18 @@
 #!/bin/bash
 
 echo 'Generating default (english) page...'
-php src/index.php en > index.html
+php src/index.php en > index.test.html
 
-echo 'Generating chinese page...'
-php src/index.php zh > zh/index.html
-
-echo 'Generating korian page...'
-php src/index.php ko > ko/index.html
-
-echo 'Generating russian page...'
-php src/index.php ru > ru/index.html
-
-echo 'Generating japanese page...'
-php src/index.php jp > jp/index.html
+# echo 'Generating chinese page...'
+# php src/index.php zh > zh/index.html
+#
+# echo 'Generating korian page...'
+# php src/index.php ko > ko/index.html
+#
+# echo 'Generating russian page...'
+# php src/index.php ru > ru/index.html
+#
+# echo 'Generating japanese page...'
+# php src/index.php jp > jp/index.html
 
 echo 'Done.'

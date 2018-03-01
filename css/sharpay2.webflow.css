@@ -34,7 +34,7 @@ a {
     font-size: 17px
 }
 
-#add,#emission,#rashod,#sites,#token,#team,#footer {
+.section-dark {
     background-color: #313131
 }
 
@@ -1618,7 +1618,7 @@ html[lang=ko] #video {
 	color: #1e9a1e;
 	font-weight: bold;
 	text-shadow:
-   -1px -1px 2px #fff,  
+   -1px -1px 2px #fff,
     1px -1px 2px #fff,
     -1px 1px 2px #fff,
      1px 1px 2px #fff;
@@ -1679,6 +1679,33 @@ html[lang="ko"] .progress .cap {
 
 html[lang="ko"] #events p {
   font-size: 18px;
+}
+
+#media-left {
+  margin-right: 30px;
+  padding-top: 15px;
+}
+
+#media-carousel {
+  width: 950px;
+}
+
+.media-img {
+  height: 50px;
+  margin: 10px 25px;
+}
+
+#media-cryptorus {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* border: solid 5px white; */
+  /* border-top: solid #313131 15px;
+  border-bottom: solid #313131 15px; */
+}
+
+#media-newsbtc {
+  background: white;
+  border: solid 5px white;
 }
 
 .modal {
@@ -2530,7 +2557,7 @@ html[lang="ko"] #events p {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap
     }
-	
+
 	.progress .cap {
 		font-size: 12px;
 	}
@@ -2852,7 +2879,7 @@ html[lang="ko"] #events p {
   		float: left;
 		margin-left: 0;
   	}
-	
+
 
 
   	.btn-sale {
@@ -3359,4 +3386,3 @@ html[lang="ko"] #events p {
   }
 
 }
-

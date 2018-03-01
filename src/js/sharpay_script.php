@@ -5,6 +5,7 @@
 <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 
 <script src="/js/TimeCircles.js"></script>
+<script src="/js/slick.min.js"></script>
 
 <!-- <script src="/js/particles.js"></script> -->
 
@@ -89,14 +90,21 @@ $(function() {
 
     //$('.progress-bar').animate({ width: width}, 1500);
     $('.progress-caption').eq(0).append(txt);//.animate({opacity: 1}, 3000);
-	
+
 	if( $(window).width() <= 767 ) {
 		width = width < 46 ? 46 : width;
 	}
-	
+
 	$('.progress-bar').eq(1).animate({ width: width}, 1500);
-	txt = '<span class="green-cap">+'+( cap )+' ETH</span>';	
+	txt = '<span class="green-cap">+'+( cap )+' ETH</span>';
     $('.progress-caption').eq(1).append(txt).animate({opacity: 1}, 500);
+  });
+
+  $('#media-carousel').slick({
+    dots: false,
+    infinite: true,
+    variableWidth: true
+    // slidesToShow: 3,
   });
 
   Webflow.require('ix').init([

@@ -22,6 +22,8 @@ include 'init.php'
 
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
+	<link href="/css/slick.css" rel="stylesheet" type="text/css">
+	<link href="/css/slick-theme.css" rel="stylesheet" type="text/css">
 	<link href="/css/sharpay2.webflow.css?v=<?=$timestamp?>" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -190,6 +192,30 @@ include 'init.php'
 		</div>
 	</div>
 
+	<div id="media" class="section section-dark">
+		<div class="container">
+			<div id="media-left" data-ix="l-init">
+				<h2 class="h2"><span class="orange-span">Featured&nbsp;in</span></h2>
+				<p></p>
+			</div>
+			<div data-ix="r-init">
+				<div id="media-carousel">
+					<div><img class="media-img" src="/images/media/ccn.svg" /></div>
+					<div><img class="media-img" src="/images/media/btcmanager.webp" /></div>
+					<div><img id="media-cryptorus" class="media-img" src="/images/media/cryptosrus.jpg" /></div>
+					<div><img id="media-newsbtc" class="media-img" src="/images/media/newsbtc.png" /></div>
+					<div><img class="media-img" src="/images/media/bitcoinist.png" /></div>
+					<div><img class="media-img" src="/images/media/themerkle.png" /></div>
+					<div><img class="media-img" src="/images/media/bitscreener.png" /></div>
+					<div><img class="media-img" src="/images/media/livebitcoinnews.png" /></div>
+					<div><img class="media-img" src="/images/media/coinjournal.png" /></div>
+					<div><img class="media-img" src="/images/media/cryptoninjias.png" /></div>
+					<div><img class="media-img" src="/images/media/coinstaker.png" /></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="token" class="section">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
@@ -223,7 +249,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="view" class="section">
+	<div id="view" class="section section-dark">
 		<div class="cont2 container">
 			<div class="row-cont">
 				<div class="row-l-col" data-ix="l-init">
@@ -304,7 +330,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="users" class="section">
+	<div id="users" class="section section-dark">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::users_how_it_works?></h2>
@@ -360,7 +386,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="roadmap" class="section">
+	<div id="roadmap" class="section section-dark">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::roadmap_header?></h2>
@@ -528,7 +554,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="vikup" class="section">
+	<div id="vikup" class="section section-dark">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::buyback_header?></h2>
@@ -584,7 +610,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="advisers" class="section sf">
+	<div id="advisers" class="section sf section-dark">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::advisers_header?></h2>
@@ -819,7 +845,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="events" class="section">
+	<div id="events" class="section section-dark">
 		<div class="container">
 			<div id="events-text" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::events_header?></span></h2>
@@ -835,7 +861,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="footer" class="section sf">
+	<div id="footer" class="section sf section-dark">
 		<div class="container f-cont">
 			<div class="h-form-title hft2"><?=L::footer_start?></div>
 			<div class="fbf form-block w-form">
