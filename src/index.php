@@ -192,6 +192,8 @@ include 'init.php'
 		</div>
 	</div>
 
+	<!-- <? include 'slides/media.php' ?> -->
+
 	<div id="media" class="section section-dark">
 		<div class="container">
 			<div id="media-left" data-ix="l-init">
@@ -200,17 +202,61 @@ include 'init.php'
 			</div>
 			<div data-ix="r-init">
 				<div id="media-carousel">
-					<div><img class="media-img" src="/images/media/ccn.svg" /></div>
-					<div><img class="media-img" src="/images/media/btcmanager.webp" /></div>
-					<div><img id="media-cryptorus" class="media-img" src="/images/media/cryptosrus.jpg" /></div>
-					<div><img id="media-newsbtc" class="media-img" src="/images/media/newsbtc.png" /></div>
-					<div><img class="media-img" src="/images/media/bitcoinist.png" /></div>
-					<div><img class="media-img" src="/images/media/themerkle.png" /></div>
-					<div><img class="media-img" src="/images/media/bitscreener.png" /></div>
-					<div><img class="media-img" src="/images/media/livebitcoinnews.png" /></div>
-					<div><img class="media-img" src="/images/media/coinjournal.png" /></div>
-					<div><img class="media-img" src="/images/media/cryptoninjias.png" /></div>
-					<div><img class="media-img" src="/images/media/coinstaker.png" /></div>
+					<div>
+						<a href="https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/" target="_blank">
+							<img class="media-img" src="/images/media/ccn.svg" />
+						</a>
+					</div>
+					<div>
+						<a href="https://btcmanager.com/" target="_blank">
+							<img class="media-img" src="/images/media/btcmanager.webp" />
+						</a>
+					</div>
+					<div>
+						<a href="https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank">
+							<img id="media-cryptorus" class="media-img" src="/images/media/cryptosrus.png" />
+						</a>
+					</div>
+					<div>
+						<a href="https://www.newsbtc.com/2018/02/23/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/" target="_blank">
+							<img id="media-newsbtc" class="media-img" src="/images/media/newsbtc.png" />
+						</a>
+					</div>
+					<div>
+						<a href="http://bitcoinist.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank">
+							<img class="media-img" src="/images/media/bitcoinist.png" />
+						</a>
+					</div>
+					<div>
+						<a href="https://themerkle.com/sharpay-share-buttons-successfully-raised-2400-eth-in-presale-and-announcing-token-sale/" target="_blank">
+							<img class="media-img" src="/images/media/themerkle.png" />
+						</a>
+					</div>
+					<div>
+						<a href="https://bitscreener.com/news/sharpay-share-buttons-successfully-raised" target="_blank">
+							<img class="media-img" src="/images/media/bitscreener.png" />
+						</a>
+					</div>
+					<div>
+						<a href="http://www.livebitcoinnews.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank">
+							<img class="media-img" src="/images/media/livebitcoinnews.png" />
+						</a>
+					</div>
+					<div>
+						<a href="https://coinjournal.net/pr-release/sharpay-share-buttons-successfully-raised-2400-eht-presale-now-announcing-token-sale/" target="_blank">
+							<img class="media-img" src="/images/media/coinjournal.png" />
+						</a>
+					</div>
+					<div>
+						<a href="https://www.cryptoninjas.net/2018/02/23/sharpay-share-buttons-successfully-raises-2400-eth-presale/" target="_blank">
+							<img class="media-img" src="/images/media/cryptoninjias.png" />
+						</a>
+					</div>
+					<div>
+						<a href="https://www.coinstaker.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank">
+							<img class="media-img" src="/images/media/coinstaker.png" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
