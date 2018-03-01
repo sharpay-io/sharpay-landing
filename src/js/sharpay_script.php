@@ -90,6 +90,10 @@ $(function() {
     //$('.progress-bar').animate({ width: width}, 1500);
     $('.progress-caption').eq(0).append(txt);//.animate({opacity: 1}, 3000);
 	
+	if( $(window).width() <= 767 ) {
+		width = width < 46 ? 46 : width;
+	}
+	
 	$('.progress-bar').eq(1).animate({ width: width}, 1500);
 	txt = '<span class="green-cap">+'+( cap )+' ETH</span>';	
     $('.progress-caption').eq(1).append(txt).animate({opacity: 1}, 500);

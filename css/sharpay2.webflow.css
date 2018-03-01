@@ -2834,8 +2834,8 @@ html[lang="ko"] #events p {
     }
 
   	.sales-wrap {
-  		width: 100%;
-  		margin-left: 0;
+  		width: 45%;
+  		margin-left: 50%;
   		margin-top: 20px;
   	}
 
@@ -2843,6 +2843,17 @@ html[lang="ko"] #events p {
   		width: 100%;
   		float: none;
   	}
+	.progress-bar, .progress, .progress-wrap2 .progress, .progress-wrap2 .progress-bar {
+		border-radius: 80px;
+	}
+	.progress-wrap2 {
+  		width: 45%;
+		margin-top: 10px;
+  		float: left;
+		margin-left: 0;
+  	}
+	
+
 
   	.btn-sale {
   		margin: 0 auto;

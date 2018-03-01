@@ -68,9 +68,10 @@ include 'init.php'
 					<a href="#team" class="nav-link w-nav-link"><?=L::head_menu_team?></a>
 					<a href="#signin" class="nav-link w-nav-link orange-span"><?=L::head_menu_signin?></a>
 					<div class="nav-lang nl-mob">
-						<a href="#" class="nav-link nl-lang w-nav-link badge"><?=L::head_mob_lang_menu_en?></a>
+						<a href="/" class="nav-link nl-lang w-nav-link badge"><?=L::head_mob_lang_menu_en?></a>
 						<a href="/zh/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_zh?></a>
 						<a href="/ko/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ko?></a>
+						<a href="/jp/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_jp?></a>
 						<a href="/ru/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ru?></a>
 					</div>
 				</nav>
@@ -163,7 +164,7 @@ include 'init.php'
 					<div class="progress-wrap progress-wrap2">
 						<div class="progress">
 							<span class="progress-caption" style="opacity: 0.5"></span>
-							<div class="progress-bar" style="width: 0;">&nbsp;</div>
+							<div class="progress-bar" style="width: 10px;">&nbsp;</div>
 						</div>
 					</div>
 					<div class="sales-wrap">
