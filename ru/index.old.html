@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Sharpay &mdash; sharing is the new mining</title>
+	<meta content="Sharing is the new mining" name="description">
+	<meta content="Sharpay - sharing is the new mining" property="og:title">
+	<meta content="Sharing is the new mining" property="og:description">
+	<meta content="https://sharpay.io/images/og_image.jpg" property="og:image">
+	<meta content="summary" name="twitter:card">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#2f2f2f">
+	<meta name="msapplication-navbutton-color" content="#2f2f2f">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#2f2f2f">
+	<link href="/../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+	<link href="/../images/webclip.png" rel="apple-touch-icon">
+	<link href="/../css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="/../css/webflow.css" rel="stylesheet" type="text/css">
+	<link href="/../css/sharpay2.webflow.css?v=23" rel="stylesheet" type="text/css">
+	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+	<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+	<script async src="https://app.sharpay.io/api/script.js"></script>
+
+	<script async src="https://shopnetic.com/js/embed/loader.js"></script>
+	<script> !function(n,u,t){n[u]||(n[u]={}),n[u][t]||(n[u][t]=function(){n[u].q||(n[u].q=[]),n[u].q.push(arguments)})}(window,"antc","run"); antc.run("antc.track.trackCode", 2); </script>
+</head>
+<body class="body">
+	<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="ru"></div>
+	<div id="particles"></div>
+
+	<div id="singin-modal" class="modal">
+		<div id="singin-dialog" class="dialog">
+			<h2 class="h2">Select <span class="orange-span">account</span> type</h2>
+			<div class="row">
+				<div class="col"><a href="https://app.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': 'en'});"><div>For multishare <span class="orange-span">Users</span> and <span class="orange-span">Webmasters</span></div></a></div>
+				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': 'en'});"><div>For <span class="orange-span">Presale</span> & <br><span class="orange-span">Token Sale</span> buyers</div></a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="video-modal">
+		<div id="video-dialog"></div>
+	</div>
+
+	<div id="head" data-ix="new-interaction" class="head-section">
+		<div data-collapse="medium" data-animation="default" data-duration="400" class="h-nav w-nav">
+			<div class="h-nav-cont">
+				<a href="./" class="h-nav-logo w-nav-brand"><img src="/../images/logo_sharpay_1_w.svg"></a>
+				<nav role="navigation" class="h-menu w-nav-menu">
+					<a href="#token" class="nav-link w-nav-link">Token Sale</a>
+					<a href="#view" class="nav-link w-nav-link">Что это</a>
+					<a href="#sites" class="nav-link w-nav-link">Сайтам</a>
+					<a href="#users" class="nav-link w-nav-link">Пользователям</a>
+					<a href="#roadmap" class="nav-link w-nav-link">Roadmap</a>
+					<a href="#emission" class="nav-link w-nav-link">Эмиссия</a>
+					<a href="#advisers" class="nav-link w-nav-link">Консультанты</a>
+					<a href="#team" class="nav-link w-nav-link">Команда</a>
+					<a href="#signin" class="nav-link w-nav-link orange-span">Вход</a>
+					<div class="nav-lang nl-mob">
+						<a href="/" class="nav-link nl-lang w-nav-link">EN</a>
+						<a href="/zh/" class="nav-link nl-lang w-nav-link">CH</a>
+						<a href="/ko/" class="nav-link nl-lang w-nav-link">KR</a>
+						<a href="#" class="nav-link nl-lang w-nav-link">RU</a>
+					</div>
+				</nav>
+				<div class="nav-lang">
+					<a href="/" class="nav-link nl-lang w-nav-link">
+					<img class="flag" src="/../images/flat/uk.svg" title="English" />
+					</a>
+					<a href="/zh/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/../images/flat/china.svg" title="Chinese" />
+					</a>
+					<a href="/ko/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/images/flat/korea.svg" title="Korean" />
+					</a>
+					<a href="/jp/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/images/flat/japanese.svg" title="Japanese" />
+					</a>
+					<a href="#" class="nav-link nl-lang w-nav-link">
+					<img class="flag" src="/../images/flat/russia.svg" title="Russian" />
+					</a>
+				</div>
+				<div class="menu-btn w-nav-button">
+					<div class="w-icon-nav-menu"></div>
+				</div>
+			</div>
+		</div>
+		<div id="trackico-rating-mob">
+			<a href="https://icobench.com/ico/sharpay" target="_blank" title="Sharpay on ICObench">
+				<img src="/images/Rating_ICObench_Sharpay_4_7.svg" />
+			</a>
+			<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="Sharpay on TrackICO">
+				<img src="/images/trackico_rating.svg" />
+			</a>
+			<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="Sharpay on kryptovergleich.org">
+				<img src="/images/Rating_Krypto_Sharpay_4_4.svg" />
+			</a>
+		</div>
+		<div class="container-head">
+			<div id="trackico-rating">
+				<a href="https://icobench.com/ico/sharpay" target="_blank" title="Sharpay on ICObench">
+					<img src="/images/Rating_ICObench_Sharpay_4_7.svg" />
+				</a>
+				<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="Sharpay on TrackICO">
+					<img src="/images/trackico_rating.svg" />
+				</a>
+				<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="Sharpay on kryptovergleich.org">
+					<img src="/images/Rating_Krypto_Sharpay_4_4.svg" />
+				</a>
+			</div>
+			<div class="h-text-wrap">
+				<h1 class="h1 sharpey-slogan">Sharing is <span class="one-line">the <span class="orange-span">new mining</span></span></h1>
+				<div class="h-subtitle"><strong class="brand">Shar<span>pay</span></strong> — кнопка шеринга с доходом на блокчейне<br>Статус: работающий продукт (MVP)</div>
+				<div class="h-btns">
+					<a href="/../files/Sharpay_White_Paper_RU.pdf" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': 'ru'});">
+						<div>White Paper</div>
+					</a>
+					<a href="/files/Sharpay_Presentation_final_ru.pdf" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'presentation', {'lang': 'ru'});">
+						<div>Pitch Deck</div>
+					</a>
+					<a href="/../files/Sharpay_One_Pager_RU.pdf" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': 'ru'});">
+						<div>One Pager</div>
+					</a>
+					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': 'ru'});">
+						<div>Live Chat</div>
+					</a>
+				</div>
+
+				<div id="head-marketing-msg">
+					<div id="head-marketing-msg-text">
+						<span class="orange-span">3023</span> участников Presale! <br />
+						Мировой <span class="bright-green">TOP 5</span> активный ICO по рейтингу ICObench! <br />
+						Token Sale начинается 1 марта! <span class="orange-span">Бонус 40%!</span>
+					</div>
+					<div id="video">
+					</div>
+				</div>
+
+				<div class="progress-sale">
+					<div class="progress-wrap">
+						<div class="progress">
+							<span id="progress-caption" style="opacity: 0"></span>
+							<div class="progress-bar" style="width: 100%;">&nbsp;</div>
+						</div>
+					</div>
+					<div class="sales-wrap">
+						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': 'ru'});">
+							Buy Now!
+						</a>
+					</div>
+				</div>
+				<div class="soc-links">
+					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="Telegram"><img src="/../images/telegram.svg"></a>
+					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="Bitcointalk"><img src="/../images/bitcointalk.svg"></a>
+					<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/" target="_blank" class="soc-link w-inline-block" title="Facebook"><img src="/../images/facebook.svg"></a>
+					<a href="https://twitter.com/sharpay_io" target="_blank" class="soc-link w-inline-block" title="Twitter"><img src="/../images/twitter.svg"></a>
+					<a href="https://github.com/sharpay-io" target="_blank" class="soc-link w-inline-block" title="GitHub"><img src="/../images/github.svg"></a>
+					<a href="https://medium.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="Medium"><img src="/../images/medium.svg"></a>
+					<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="soc-link w-inline-block" title="Reddit"><img src="/images/reddit_1.svg"></a>
+					<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="Steemit"><img src="/../images/steemit.svg"></a>
+					<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block" title="Golos"><img src="/../images/golos.svg"></a>
+					<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block" title="E-Mail"><img src="/../images/mailto.svg"></a>
+					<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="Chat"><img src="/../images/chat.svg"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="token" class="section">
+		<div class="container">
+			<div class="l-col" data-ix="l-init">
+				<h2 class="h2"><span class="orange-span">Presale</span></h2>
+				<p class="p">С <span class="orange-span">11 декабря 2017</span> по <span class="orange-span">11 февраля 2018</span><br>
+					Цена токена: <span class="orange-span">0.00003 ETH</span><br>
+					Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br>
+					Бонус: <span class="orange-span">50%</span><br>
+					Токенов к продаже: <span class="orange-span">80 млн</span> &mdash; <strong>ПРОДАНО!</strong>
+				</p>
+			</div>
+			<div class="r-col" data-ix="r-init">
+				<div id="tokenChart"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="l-col token-chart-col" data-ix="l-init">
+				<h2 class="h2 h2-2"><span class="orange-span">Token Sale</span></h2>
+				<p class="p">Старт: <span class="orange-span">1 марта 2018</span><br>
+					Цена токена: <span class="orange-span">0.00003 ETH</span><br>
+					Минимальный объём к покупке: <span class="orange-span">0.1 ETH</span><br />
+					Бонус: <span class="orange-span">40%, 30%, 20%</span><br />
+					Токенов к продаже: <span class="orange-span">1.420 млрд</span>
+				</p>
+			</div>
+			<div class="r-col token-chart-col" data-ix="r-init">
+				<div id="clockChart">
+					<div class="clock" data-date="Mar 1 2018 23:59:59 GMT+0000"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="view" class="section">
+		<div class="cont2 container">
+			<div class="row-cont">
+				<div class="row-l-col" data-ix="l-init">
+					<h2 class="h2"><span class="orange-span">Что это</span></h2>
+					<p class="p">Кнопка <strong class="brand">shar<span>pay</span></strong> — мультишеринг и вознаграждение токенами. Мультишеринг — возможность поделиться контентом в один клик в несколько сетей на выбор. Вознаграждение начисляется за сам шеринг или за переходы по распространённой ссылке (как настроит владелец сайта). Всё вместе — это рост конверсий для сайтов и удобство для пользователей.</p>
+					<p class="p">Кнопка <strong class="brand">shar<span>pay</span></strong> может выглядеть как угодно, например, как на этой странице, а также может быть кастомизирована под дизайн сайта. Кнопка <strong class="brand">shar<span>pay</span></strong> может быть любого цвета и в ней могут стоять логотипы любых подключенных сетей. В кнопке главное код, который активируется при клике. Если вас не устроят предложенные нами варианты — дизайн ваш, код наш.</p>
+				</div>
+				<div id="btn-img-container" class="row-r-col" data-ix="r-init">
+					<div id="bi1" class="btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+						<img src="/../images/btn1.svg" />
+						</a>
+					</div>
+					<div id="bi2" class="btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+						<img src="/../images/share-btn3-ru.svg">
+						</a>
+					</div>
+					<div id="bi3" class="r2 btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+						<img src="/../images/btn3.svg">
+						</a>
+					</div>
+					<div id="bi4" class="r2 btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+						<img src="/../images/custom-btn2x.png">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row-cont">
+				<div class="row-l-col" data-ix="l-init">
+					<h2 class="h2 h2-2"><span class="orange-span">Подключения</span></h2>
+					<p class="p">Сейчас к мультишерингу рабочей версии кнопки <strong class="brand">shar<span>pay</span></strong>
+						уже <span class="orange-span">подключены</span> Facebook, Twitter, LinkedIn, VK, Reddit, Telegram, Tumblr, а также можно скопировать прямую уникальную ссылку для самостоятельного шеринга в форумы, блоги и комментарии.
+					</p>
+				</div>
+				<div id="soc-plugged" class="row-r-col rr2" data-ix="r-init">
+					<div class="soc-img"><img src="/../images/fb.svg"></div>
+					<div class="soc-img"><img src="/../images/tw.svg"></div>
+					<div class="soc-img"><img src="/../images/in.svg"></div>
+					<div class="soc-img"><img src="/../images/vk.svg"></div>
+					<div class="soc-img"><img src="/../images/reddit.svg"></div>
+					<div class="soc-img"><img src="/../images/tele.svg"></div>
+					<div class="soc-img"><img src="/../images/tumblr.svg"></div>
+				</div>
+			</div>
+			<div class="row-cont">
+				<div class="row-l-col" data-ix="l-init">
+					<!-- <h2 class="h2 h2-2">Скоро</h2> -->
+					<p class="p">Мы продолжаем работу по подключению новых социальных сетей,
+						<span class="orange-span">скоро</span> будут подключены
+						WeChat, Weibo, QQ, G+, Viber, LiveJournal и другие.
+					</p>
+				</div>
+				<div id="soc-future" class="row-r-col rr2" data-ix="r-init">
+					<div class="soc-img"><img src="/../images/wechat.svg"></div>
+					<div class="soc-img"><img src="/../images/weibo.svg"></div>
+					<div class="soc-img"><img src="/../images/qq.svg"></div>
+					<div class="soc-img"><img src="/../images/gplus-icon.svg"></div>
+					<!-- <div class="soc-img"><img src="/../images/snapchaat.svg"></div> -->
+					<div class="soc-img"><img src="/../images/viber.svg"></div>
+					<div class="soc-img"><img src="/../images/lj.svg"></div>
+					<div id="soc-img-plus" class="soc-img"><img src="/../images/plus-icon.svg" class="plus-icon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sites" class="section">
+		<div class="container">
+			<div class="l-col lc22" data-ix="l-init">
+				<h2 class="h2">Как это работает<br><span class="orange-span">для сайтов</span></h2>
+			</div>
+			<div class="r-col" data-ix="r-init">
+				<p class="p">* Администратор сайта увидел рекламу и перешёл на <strong class="brand">shar<span>pay</span>.io</strong> — в личном кабинете на <strong class="brand">shar<span>pay</span>.io</strong>, все действия в интересах сайта выполняет его владелец или администратор (менеджер), при наличии соответствующего поручения и полномочий.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="sheme3" data-ix="l-init">
+				<img src="/../images/sharpayforsites.svg" class="img hide768">
+				<img src="/../images/sheme1_2xhdpi.svg" class="img show768">
+			</div>
+		</div>
+	</div>
+	<div id="users" class="section">
+		<div class="container">
+			<div class="l-col lc22" data-ix="l-init">
+				<h2 class="h2">Как это работает<br><span class="orange-span">для пользователей</span></h2>
+				<p class="p">
+					<span class="orange-span">*</span> Пользователь перешёл на любой сайт — переход пользователя в сети Интернет на любой сайт, который уже установил кнопку мультишеринга <strong class="brand">shar<span>pay</span></strong>, вместо всех обычных share-кнопок<br><br>
+					<span class="orange-span">**</span> Кликнул анимированную кнопку мультишеринга <strong class="brand">shar<span>pay</span></strong> — в момент первого шеринга пользователю автоматически создаётся личный кабинет в <strong class="brand">shar<span>pay</span></strong><br><br>
+					<span class="orange-span">***</span> Расшерил контент — пользователь опубликовал ссылку на интересный контент на своих страницах в социальных сетях, в одной или нескольких на выбор<br><br>
+					<span class="orange-span">****</span> Вывел токены — через ежеквартальную программу <strong class="brand">shar<span>pay</span></strong> по выкупу токенов, либо через криптобиржи<br><br>
+					<span class="orange-span">*****</span> Согласно таргетингу получил уведомление о новом контенте — <strong class="brand">shar<span>pay</span></strong> рассылает пользователям, соответствующим заданным критериям, уведомления о возможности поделиться новым интересным контентом, который сайты продвигают за токены
+				</p>
+			</div>
+			<div class="r-col rc3 rc3-1" data-ix="r-init">
+				<div class="sheme2"><img src="/../images/sharpayforusers.svg" class="img"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="add" class="section">
+		<div class="c5 container">
+			<div class="l-col lc3" data-ix="l-init">
+				<h2 class="h2">Преимущества <span class="orange-span">мультишеринга</span> и стимулирования <span class="orange-span">токенами</span><span class="orange-span"></span></h2>
+			</div>
+		</div>
+		<div class="c5 container">
+			<div class="l-col lc3" data-ix="l-init">
+				<div class="big-p add-block">
+					<div class="icon-wrapper">
+						<img id="conversion-icon" class="add-icon" src="/../images/icons/conversion.svg" />
+					</div>
+					<div class="add-text">
+						<span class="orange-span"><strong>повышение конверсий</strong></span><br>
+						распространения контента сайтов в социальных сетях
+					</div>
+				</div>
+				<div class="big-p add-block second-row">
+					<div class="icon-wrapper">
+						<img id="kpi-icon" class="add-icon" src="/../images/icons/kpi.svg" />
+					</div>
+					<div class="add-text">
+						<span class="orange-span"><strong>увеличение KPI сайтов</strong></span><br>
+						количества активных пользователей, просмотров,<br /> регистраций, продаж
+					</div>
+				</div>
+			</div>
+			<div class="r-col rc-4" data-ix="r-init">
+				<div class="big-p add-block">
+					<div class="icon-wrapper">
+						<img id="traffic-icon" class="add-icon" src="/../images/icons/traffic.svg">
+					</div>
+					<div class="add-text right-col-text">
+						<span class="orange-span"><strong>повышение трафика</strong></span><br>
+						на сайты
+					</div>
+				</div>
+				<div class="big-p add-block second-row">
+					<div class="icon-wrapper">
+						<img id="usability-icon" class="add-icon" src="/../images/icons/logo.svg">
+					</div>
+					<div class="add-text right-col-text">
+						<span class="orange-span"><strong>удобство пользователей</strong></span><br>
+						и возможность заработать токены (цифровую валюту, криптовалюту)
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="roadmap" class="section">
+		<div class="cont2 container">
+			<div class="h2-wrap">
+				<h2 class="h2" data-ix="l-init">Timeline <span class="orange-span">&amp;</span> roadmap</h2>
+			</div>
+			<div class="user-items" data-ix="l-init">
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2012</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+					</div>
+					<p class="year-text">Идея, патентные заявки в Роспатент (РФ) и ЕАПО (Евразия), формирование концепции проекта</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2013</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-arr"><img src="/../images/arr-y.svg" width="10" class="arr-img"></div>
+						</div>
+					</div>
+					<p class="year-text">Получение первого патента РФ, начало разработки проекта</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2014</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-line-over"></div>
+							<div class="arr-mob ui-arr"><img src="/../images/arr-y.svg" width="10" class="arr-img"></div>
+						</div>
+					</div>
+					<p class="year-text">Тестирование прототипа, пилотная установка кнопок мультишеринга на сайты
+					</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2015</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+						<div class="ui-line ul-left ull2">
+							<div class="ua2 ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+							<div class="ui-line-over ulo2"></div>
+						</div>
+					</div>
+					<p class="year-text">Подача первой патентной заявки<br> в США, доработка системы</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2016</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+					</div>
+					<p class="year-text">Начало адаптирования проекта под блокчейн, усовершенствование концепции</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2017</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-line-over"></div>
+							<div class="arr-mob ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+					</div>
+					<p class="year-text">Запуск MVP <strong class="brand">shar<span>pay</span>.io</strong>, открытие международного патентного PCT-приоритета по новой заявке на 152 страны, проведение Presale, подготовка к Token Sale</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2018</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+						<div class="ui-line ul-left ull2">
+							<div class="ua2 ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+							<div class="ui-line-over ulo2"></div>
+						</div>
+					</div>
+					<p class="year-text">Проведение Token Sale, вывод токенов проекта на международные криптобиржи, развитие основного функционала, разработка кнопок для мобильных приложений, продвижение и продажи в Европе и Азии, перевод международного патентного PCT-приоритета в национальные фазы патентования</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2019</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+					</div>
+					<p class="year-text">Запуск независимого децентрализованного блокчейна (форк BitShares), миграция токенов на блокчейн, адаптирование проекта под требования национальных регуляторов, выход на рынки США, Канады и Латинской Америки</p>
+				</div>
+				<div class="ui2 user-item">
+					<div class="ui-top">
+						<div class="year">
+							<div>2020</div>
+						</div>
+						<div class="ui-line ul2">
+							<div class="ui-line-over"></div>
+							<div class="arr-mob ui-arr"><img src="/../images/arr-y.svg" width="10"></div>
+						</div>
+					</div>
+					<p class="year-text">Получение национальных патентов, разработка и реализация партнёрских программ с сайтами и интернет-магазинами по обмену товаров и услуг на токены пользователей <strong class="brand">shar<span>pay</span></strong>, масштабирование проекта, выход на все наиболее значимые рынки мира, активный маркетинг и продажи</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="emission" class="section">
+		<div class="container">
+			<div class="l-col lc2" data-ix="l-init">
+				<h2 class="h2">Эмиссия &amp; <span class="orange-span">распределение</span> токенов<span class="orange-span"></span></h2>
+				<div class="big-p">Эмиссия: <span class="orange-span">4 млрд |</span> Номинал: <span class="orange-span">0.00003 ETH</span></div>
+				<div class="diag-item">
+					<div class="diag-img">
+						<div id="emissionChart"></div>
+					</div>
+					<div class="diag-table dt-1">
+						<div class="diag-row">
+							<div class="circle"></div>
+							<div>Свободная <br>продажа токенов</div>
+						</div>
+						<div class="diag-row">
+							<div class="c2 circle"></div>
+							<div>Резерв на функционирование системы</div>
+						</div>
+						<div class="diag-row">
+							<div class="c3 circle"></div>
+							<div>Бонус команде</div>
+						</div>
+						<div class="diag-row">
+							<div class="c4 circle"></div>
+							<div>Бонус инвесторам <br>на ранних стадиях</div>
+						</div>
+						<div class="diag-row">
+							<div class="c5 circle"></div>
+							<div>Вознаграждение эдвайзерам</div>
+						</div>
+						<div class="diag-row">
+							<div class="c6 circle"></div>
+							<div>Баунти-программа</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="r-col rc4" data-ix="r-init">
+				<h2 class="h2">Зачем нам <span class="orange-span">блокчейн</span></h2>
+				<div class="big-p">1 этап:<span class="orange-span"></span></div>
+				<p class="p">Эмиссия на Ethereum по стандарту ERC20 необходимого объёма токенов для проведения свободной продажи, обеспечения внутренней экономики проекта, а также для распределения между пользователями за мультишеринг и продвижение контента — <span class="orange-span">блокчейн используется в качестве финансового реестра.</span></p>
+				<div class="big-p">2 этап:<span class="orange-span"></span></div>
+				<p class="p">Для повышения пропускной способности и снижения комиссий, разработка и запуск независимого децентрализованного блокчейна (форк BitShares с POS-базисом), с последующей миграцией токенов — <span class="orange-span">блокчейн используется для эмиссии, распределения токенов между сайтами и пользователями за социальную активность, а также для хранения информации.</span></p>
+				<p class="p p2">Начиная со второго этапа, <span class="orange-span">доход</span> от блокчейна будут получать не только пользователи, но и сайты за установленные кнопки.<span class="orange-span"></span></p>
+			</div>
+		</div>
+	</div>
+	<div id="vikup" class="section">
+		<div class="container">
+			<div class="l-col" data-ix="l-init">
+				<h2 class="h2">Программа<br><span class="orange-span">выкупа токенов</span></h2>
+				<div class="big-p">Ежеквартально<span class="orange-span"> |</span> Номинал: <span class="orange-span">0.00003 ETH</span></div>
+				<p class="p p2"><strong class="brand">Shar<span>pay</span></strong> будет ежеквартально выделять <span class="orange-span">90%</span> выручки на обеспечение обратного выкупа токенов у их держателей (инвесторов и пользователей).<span class="orange-span"></span></p>
+				<p class="p p2">Программа стартует по результатам 3 квартала 2018 года.<br>
+					Цена обратного выкупа основана на номинальной цене токена 0.00003 ETH, что примерно равно $0.01 на момент официального запуска проекта в ноябре 2017 года.
+					<!-- Это <span class="orange-span">обеспечит стабильную поддержку</span> стоимости токена на уровне, не ниже номинальной. -->
+				</p>
+				<!-- <p class="p p2">Стоимость токена <strong class="brand">shar<span>pay</span></strong> имеет потенциал к многократному росту, учитывая планируемые на 3 года развития проекта обороты, достигающие <span class="orange-span">$160 млн.</span></p> -->
+			</div>
+			<div class="r-col" data-ix="r-init">
+				<div class="sheme2"><img src="/../images/shema3xhdpi.svg" class="img"></div>
+			</div>
+		</div>
+	</div>
+	<div id="rashod" class="section">
+		<div class="container">
+			<div class="l-col" data-ix="l-init">
+				<h2 class="h2">Структура <span id="rashod-h" class="orange-span">расходов</span></h2>
+				<p class="p p2">Финансовые активы, привлечённые в рамках проводящейся кампании Token Sale, в следующие 3 года будут направлены на достижения целей, определённых нашим Roadmap. Ключевыми статьями расходов для нас являются “Разработка”, а также “Маркетинг и продажи”.<span class="orange-span"></span></p>
+			</div>
+			<div class="r-col" data-ix="r-init">
+				<div>
+					<div class="sheme2">
+						<div id="rashodChart"></div>
+					</div>
+					<div class="diag-table dt-2">
+						<div class="diag-row">
+							<div class="circle"></div>
+							<div>Разработка</div>
+						</div>
+						<div class="diag-row">
+							<div class="c2 circle"></div>
+							<div>Персонал</div>
+						</div>
+						<div class="diag-row">
+							<div class="c3 circle"></div>
+							<div>Маркетинг и продажи</div>
+						</div>
+						<div class="diag-row">
+							<div class="c4 circle"></div>
+							<div>Юридические и патентные расходы</div>
+						</div>
+						<div class="diag-row">
+							<div class="c5 circle"></div>
+							<div>Административные расходы</div>
+						</div>
+						<div class="diag-row">
+							<div class="c6 circle"></div>
+							<div>Прочие расходы</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="advisers" class="section sf">
+		<div class="cont2 container">
+			<div class="h2-wrap">
+				<h2 class="h2" data-ix="l-init">Наши <span class="orange-span">Консультанты</span></h2>
+			</div>
+
+			<div class="team-cont" data-ix="l-init">
+				<div class="team-item">
+					<div class="team-img"><img src="/images/Ken.png"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Ken Huang
+								<img class="flag" src="/images/flat/usa.svg" title="USA" />
+								<a href="https://www.linkedin.com/in/kenhuang8/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">Well-known Blockchain Expert, CEO of Distributed Business Applications</div>
+						</div>
+						<p class="team-p">Экс-директор по кибербезопасности в федеральном бюро CGI (CША), создатель Федеральной системы управления идентификацией и Центра компетенции по кибербезопасности.
+							Консультировал правительство США, финансовые организации и предприятия по вопросам блокчейн-технологий и кибербезопасности.
+							Получил образование в Zhejian Normal University, Xian Jiaotong University (Китай), а также в университете Лозанны (Швейцария).</p>
+					</div>
+				</div>
+
+				<div class="team-item">
+					<div class="team-img"><img src="/images/Simon.png"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Simon Choi
+								<img class="flag" src="/images/flat/china.svg" title="China" />
+								<a href="https://www.linkedin.com/in/prof-simon-choi-2621005/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">TOP Expert at ICObench, Fintech & ICO Lawyer</div>
+						</div>
+						<p class="team-p">Юрист международного класса с опытом более 25 лет, имеет право заниматься юриспруденцией в Англии, Уэльсе, Гонгконге и Китае.
+							Широко известен как блокчейн-спикер и блогер. Учился в юридической школе при Пекинском университете, окончил Лондонский университет и университет в Гонгконге.
+							Занимается консультированием по вопросам правовых основ регулирования блокчейн-технологий, обеспечивает наивысшую степень соблюдения государственных законов по отношению к блокчейн-проектам.
+						</p>
+					</div>
+				</div>
+
+				<div class="team-item">
+					<div class="team-img"><img src="/images/Vincent.png"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Vincent Mascart
+								<img class="flag" src="/images/flat/belgium.svg" title="Belgium" />
+								<a href="https://steemit.com/@arcange" target="_blank"><img class="flag" src="/images/steemit_team.svg" title="Steamit" /></a>
+								<a href="https://golos.io/@arcange" target="_blank"><img class="flag" src="/images/golos_team.svg" title="Golos" /></a>
+								<a href="https://www.linkedin.com/in/vincentmascart/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">Blockchain Enthusiast, Developer & Blogger</div>
+						</div>
+						<p class="team-p">Предприниматель, разработчик, один из ТОП-блогеров социальных блокчейнов Steemit и Golos, делегат многих DPOS-проектов, создатель нескольких успешных блокчейн-приложений.
+							Говорит на французском, английском, датском, итальянском и китайском языках, в настоящее время изучает русский язык.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>  <!-- advisers -->
+
+	<div id="team" class="section">
+		<div class="cont2 container">
+			<div class="h2-wrap">
+				<h2 class="h2" data-ix="l-init">Наша <span class="orange-span">Команда</span></h2>
+			</div>
+			<div class="team-cont" data-ix="l-init">
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Anton.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Антон Солодиков
+								<img class="flag" src="/../images/flat/russia.svg" title="Russia" />
+								<a href="https://bitcointalk.org/index.php?action=profile;u=941359" target="_blank"><img class="flag" src="/../images/bitcointalk_team.svg" title="Bitcointalk" /></a>
+								<a href="https://www.facebook.com/solodikov" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+								<a href="https://www.linkedin.com/in/solodikov/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">CEO</div>
+						</div>
+						<p class="team-p">IT-предприниматель, изобретатель, автор патента и международных заявок по продвижению контента, ранее CEO в Balalike LLP UK (разработка систем монетизации контента) и CMO в GOLOS.io (блокчейн и соцсеть, <span class="orange-span">токены х40</span>).</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Igor.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Игорь Караваев
+								<img class="flag" src="/../images/flat/russia.svg" title="Russia"/>
+								<a href="https://www.linkedin.com/in/igor-karavaev-80a0674/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">CBDO</div>
+						</div>
+						<p class="team-p">Экс-исполнительный директор Фонда Сколково, ведущего российского бизнес-инкубатора стартапов, а также директор по стратегии и развитию бизнеса ряда крупнейших международных корпораций.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Arkady.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Аркадий Ясашный
+								<img class="flag" src="/../images/flat/russia.svg" title="Russia"/>
+								<a href="https://www.linkedin.com/in/arkady-yasashnyy-20678638/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">CFO</div>
+						</div>
+						<p class="team-p">Экс-топ-менеджер крупнейших российских банков (ВТБ, МДМ, Союз), предприниматель, инвестор в хайтек-стартапы.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Aleksey.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Алексей Стукарчук
+								<img class="flag" src="/../images/flat/belarus.svg"  title="Belarus"/>
+								<a href="https://github.com/liketux" target="_blank"><img class="flag" src="/../images/github_team.svg" title="GitHub" /></a>
+								<!-- <a href="https://www.facebook.com/liketux" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a> -->
+								<a href="https://www.linkedin.com/in/liketux/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">CTO</div>
+						</div>
+						<p class="team-p">Блокчейн-энтузиаст, опытный разработчик ERP- и CRM-систем международных компаний (Skoda, Bosch, Ulmart), разработчик мобильных приложений (iOS, Android), руководитель команды разработчиков.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Valery.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">
+								Валерий Ющенко
+								<img class="flag" src="/../images/flat/australia.svg" title="Australia"/>
+								<!--img class="flag" src="/../images/flat/russia.svg" title="Russia"/-->
+								<a href="https://github.com/yushchenko" target="_blank"><img class="flag" src="/../images/github_team.svg" title="GitHub" /></a>
+								<a href="https://www.linkedin.com/in/yushchenko/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+							</div>
+							<div class="team-status">Software Engineer</div>
+						</div>
+						<p class="team-p">Высококвалифицированный Front-End, Full-Stack, Database и Mobile разработчик, долгое время работал в Qualcomm (Sydney, Australia) и других международных компаниях, в настоящее время полностью погрузился в блокчейн-технологии.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Ilya.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Илья Афанасьев
+								<img class="flag" src="/../images/flat/china.svg" title="China"/>
+								<a href="https://www.linkedin.com/in/ilya-afanasyev-b63460a8/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+								<a href="https://www.facebook.com/randomi3e" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+							</div>
+							<div class="team-status">Support Engineer</div>
+						</div>
+						<p class="team-p">Дипломированный специалист по автоматизированным системам обработки информации, проживает в Китае, говорит на английском, русском и китайском языках.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Levi.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Levi Yau
+								<img class="flag" src="/../images/flat/hong-kong.svg" title="Hong Kong"/>
+								<img class="flag" src="/../images/flat/china.svg" title="China"/>
+								<a href="https://www.linkedin.com/in/leviticus-yau/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+								<a href="https://www.facebook.com/leviticus.yau" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+							</div>
+							<div class="team-status">Regional Manager</div>
+						</div>
+						<p class="team-p">Предприниматель, веб-разработчик, создатель онлайн-площадки по путешествиям в Гонконге.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Mark.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">
+								Марк Вдовских
+								<img class="flag" src="/../images/flat/portugal.svg" title="Portugal" />
+								<a href="https://www.linkedin.com/in/mark-vdovskikh-544b497b/" target="_blank"><img class="flag" src="/../images/linkedin.svg" title="LinkedIn" /></a>
+								<a href="https://www.facebook.com/marc0sorte" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+							</div>
+							<div class="team-status">Marketing Manager</div>
+						</div>
+						<p class="team-p">Опытный маркетолог-международник, эксперт по стратегическому планированию и построению систем эффективных коммуникаций.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Katerina.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Катерина Молодова
+								<img class="flag" src="/../images/flat/russia.svg" title="Russia" />
+								<a href="https://www.facebook.com/profile.php?id=100001633474084" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+							</div>
+							<div class="team-status">SMM Manager</div>
+						</div>
+						<p class="team-p">Профессионал по связям с общественностью, имеет большой опыт работы в SMM, контент-менеджменте, рекламе и событийном маркетинге.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Olga.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">
+								Ольга Райнер
+								<img class="flag" src="/../images/flat/usa.svg" title="United States" />
+								<!-- <a href="" target="_blank"><img class="flag" src="/../images/bitcointalk_team.svg" title="Bitcointalk" /></a> -->
+								<a href="https://bitcointalk.org/index.php?action=profile;u=1408234" target="_blank"><img class="flag" src="/../images/bitcointalk_team.svg" title="Bitcointalk" /></a>
+							</div>
+							<div class="team-status">Community Manager</div>
+						</div>
+						<p class="team-p">Криптоэнтузиаст, филолог, профессиональный переводчик, владеет английским, французским и русским языками.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Daria.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">
+								Дарья Дрейманис
+								<img class="flag" src="/../images/flat/germany.svg" title="Germany" />
+								<a href="https://www.facebook.com/Dxox0" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+							</div>
+							<div class="team-status">Community Manager</div>
+						</div>
+						<p class="team-p">Специалист по межкультурным коммуникациям, координатор немецкого, европейского и испанского сообществ.</p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/../images/Vadim.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name">Вадим Щербак
+								<img class="flag" src="/../images/flat/russia.svg" title="Russia" />
+								<a href="https://www.facebook.com/vadim.vodolej" target="_blank"><img class="flag" src="/../images/facebook_team.svg" title="Facebook" /></a>
+							</div>
+							<div class="team-status">Community Manager</div>
+						</div>
+						<p class="team-p">Технологический евангелист, исследователь, инноватор, более 10 лет специализируется на IT-коммуникациях.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="events" class="section">
+		<div class="container">
+			<div id="events-text" data-ix="l-init">
+				<h2 class="h2"><span class="orange-span">Events</span></h2>
+				<p>Would you like <br /> to <span class="orange-span">meet us</span>?</p>
+				<p>We will be <span class="orange-span">here</span>:</p>
+			</div>
+			<div data-ix="r-init">
+				<img class="event-banner" src="/images/events/san-francisco.png" />
+				<img class="event-banner" src="/images/events/london.png" />
+				<img class="event-banner" src="/images/events/amsterdam.png" />
+				<img class="event-banner" src="/images/events/mumbai.png" />
+				<!-- <img class="event-banner" src="/images/events/singapore.png" /> -->
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="section sf">
+		<div class="container f-cont">
+			<div class="h-form-title hft2">Token Sale начнется 1 марта 2018 года</div>
+			<div class="fbf form-block w-form">
+				<form id="wf-form-Email" name="wf-form-Email" data-name="Email" action="https://sharpay.us17.list-manage.com/subscribe/post?u=9640eb44e1bee917058684b01&amp;amp;id=e65ae8e1a9" method="post" class="form">
+					<input type="email" class="text-field w-input" maxlength="256" name="Mail-2" data-name="EMAIL" placeholder="Введите Ваш email для подписки на новости" id="Mail-2">
+					<input type="submit" value="Подписаться" data-wait="Please wait..." class="form-btn w-button">
+				</form>
+				<div class="sm2 success-msg w-form-done">
+					<div>Спасибо! Ваша подписка оформлена.</div>
+				</div>
+				<div class="error-message w-form-fail">
+					<div>Упс, что-то пошло не так</div>
+				</div>
+			</div>
+			<div class="sl-f soc-links">
+				<a href="https://t.me/sharpay_io" target="_blank" class="sl-f soc-link w-inline-block" title="telegram"><img src="/../images/telegram.svg"></a>
+				<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="sl-f soc-link w-inline-block" title="Bitcointalk"><img src="/../images/bitcointalk.svg"></a>
+				<a href="https://www.facebook.com/sharpay.io" target="_blank" class="sl-f soc-link w-inline-block" title="Facebook"><img src="/../images/facebook.svg"></a>
+				<a href="https://twitter.com/sharpay_io" target="_blank" class="sl-f soc-link w-inline-block" title="Twitter"><img src="/../images/twitter.svg"></a>
+				<a href="https://github.com/sharpay-io" target="_blank" class="sl-f soc-link w-inline-block" title="GitHub"><img src="/../images/github.svg"></a>
+				<a href="https://medium.com/@sharpay" target="_blank" class="sl-f soc-link w-inline-block" title="Medium"><img src="/../images/medium.svg"></a>
+				<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="sl-f soc-link w-inline-block" title="Reddit"><img src="/images/reddit_1.svg"></a>
+				<a target="_blank" href="http://steemit.com/@sharpay" class="sl-f soc-link w-inline-block" title="Steemit"><img src="/../images/steemit.svg"></a>
+				<a href="http://golos.blog/@sharpay" target="_blank" class="sl-f soc-link w-inline-block" title="Golos"><img src="/../images/golos.svg"></a>
+				<a href="mailto:tokensale@sharpay.io" target="_blank" class="sl-f soc-link w-inline-block" title="E-Mail"><img src="/../images/mailto.svg"></a>
+				<a href="https://t.me/sharpay_admin" target="_blank" class="sl-f soc-link w-inline-block" title="Chat"><img src="/../images/chat.svg"></a>
+			</div>
+			<p class="f-p">Данный сайт является интеллектуальной собственностью компании Sharpay Inc. (Belize). Информация, изложенная на сайте, несет исключительно ознакомительный характер только для некоммерческого, личного использования, не предполагает никаких элементов договорных отношений, может быть неполной и обновляться в любое время, без предварительного уведомления, по решению и на усмотрение Sharpay Inc. Если специально не указано иное, вся информация на данном сайте является только ориентировочной. Sharpay Inc. не предоставляет никаких гарантий, явных или подразумеваемых, в отношении точности, полноты или надежности материалов и данных, упомянутых на данном сайте. При этом, Sharpay Inc. прилагает все возможные усилия к тому, чтобы вся информация на данном сайте была точной и актуальной на текущий момент времени. Информация, относящиеся к факту продажи токенов Sharpay  Inc., не должна рассматриваться в качестве побуждения к осуществлению покупки и единственным или достаточным поводом формирования такого решения. Принять участие в покупке токенов Sharpay  Inc. можно только в том случае, если это позволяет покупателю законодательство страны проживания (для физических лиц) или регистрации (для юридических лиц). Sharpay Inc. не несет ответственности за тех участников Token Sale, которые участвуют в этом мероприятии, нарушая законы своей страны, даже в случае, если нарушения этих законов по причине неведения. Sharpay Inc. также не несет ответственности за те требования, которые могут предъявить налоговые органы страны проживания (для физических лиц) или регистрации (для юридических лиц), вследствие покупки, владения и использования токенов Sharpay Inc. Держатели токенов Sharpay Inc. несут исключительную ответственность за определение, имеет ли потенциальная оценка или переоценка ценности токена Sharpay Inc. в долгосрочной перспективе какие-либо налоговые последствия в их юрисдикции. Sharpay Inc. стремится к тому, чтобы информация на данном сайте была максимально точной и актуальной, но снимает с себя любого рода ответственность за убытки, возникающие в связи с неточностью, неактуальностью или неполнотой информации, содержащейся на данном сайте. Sharpay Inc. рекомендует физическим и юридическим лицам обратиться за дополнительной консультацией к юридическим, налоговым, финансовым или иным профильным независимым специалистам,  прежде чем совершать какие-либо действия, вследствие ознакомления с изложенной информацией на данном сайте.</p>
+		</div>
+
+		<!-- <div id="trackico-rating-bottom">
+			<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="Sharpay on TrackICO">
+				<img src="/images/trackico_rating.svg" />
+			</a>
+			<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="Sharpay on kryptovergleich.org">
+				<img id="vergleich-rating-img" src="/images/vergleich-rating.png" />
+			</a>
+		</div> -->
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-2.2.0.min.js"><\/script>')</script>
+
+	<script src="/../js/webflow.js" type="text/javascript"></script>
+	<!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+	<script src="/../js/TimeCircles.js" type="text/javascript"></script>
+	<script src="/../js/particles.js" type="text/javascript"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+
+	<script src="/../js/sharpay.js?v=14" type="text/javascript"></script>
+	<script src="/../js/charts-ru.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109731082-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-109731082-2');
+	</script>
+</body>
+</html>
