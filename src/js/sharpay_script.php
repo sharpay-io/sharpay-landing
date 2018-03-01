@@ -99,13 +99,15 @@ $(function() {
 	txt = '<span class="green-cap">+'+( cap )+' ETH</span>';
     $('.progress-caption').eq(1).append(txt).animate({opacity: 1}, 500);
   });
-  
+
+
+  // MEDIA carousel
   // http://kenwheeler.github.io/slick/
+
   $('#media-carousel').slick({
     dots: false,
     infinite: true,
     variableWidth: true
-    // slidesToShow: 3,
   });
 
   Webflow.require('ix').init([

@@ -71,24 +71,35 @@ $mediaList = [
     margin: 10px 25px;
   }
 
+  /* logo is to long and narrow */
   .media-cryptorus {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
+  /* white background */
   .media-newsbtc, .media-cryptoninjias {
     background: white;
     border: solid 5px white;
   }
 
+  /* making logo bigger */
   .media-bitcoinnews {
     margin: 3px 25px 7px 25px;
     height: 70px;
   }
 
+  /* logo is too big - making it smaller */
   .media-cnn, .media-coinstaker {
     height: 36px;
     margin: 17px 25px;
+  }
+
+  @media (max-width:479px) {
+    
+    #media-carousel {
+      width: 100%;
+    }
   }
 
 </style>
@@ -97,7 +108,7 @@ $mediaList = [
   <div class="container">
 
     <div id="media-left" data-ix="l-init">
-      <h2 class="h2"><span class="orange-span">Featured&nbsp;in</span></h2>
+      <h2 class="h2"><span class="orange-span"><?=L::media_header?></span></h2>
       <p></p>
     </div>
 
@@ -106,7 +117,7 @@ $mediaList = [
         <? foreach ( $mediaList as $media ) { ?>
         <div>
           <a href="<?=$media['url']?>" target="_blank">
-            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>" <?= isset($media['id']) ? 'id="' . $media['id'] . '"' : '' ?>  src="<?=$media['image']?>" />
+            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
           </a>
         </div>
         <? } ?>
