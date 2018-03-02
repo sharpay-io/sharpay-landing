@@ -110,7 +110,7 @@ $(function() {
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg" /></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg" /></button>'
-  });
+  }).show();
 
   Webflow.require('ix').init([
     {"slug":"bg-logo-init","name":"bg logo init","value":{"style":{"display":"none","opacity":0},"triggers":[]}},

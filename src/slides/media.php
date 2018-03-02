@@ -97,13 +97,13 @@ $mediaList = [
     height: 36px;
     margin: 17px 25px;
   }
-  
+
 </style>
 
 <div id="media" class="section section-dark">
   <div class="container">
 
-    <div id="media-carousel">
+    <div id="media-carousel" style="display:none;">
       <? foreach ( $mediaList as $media ) { ?>
       <div>
         <a href="<?=$media['url']?>" target="_blank">
