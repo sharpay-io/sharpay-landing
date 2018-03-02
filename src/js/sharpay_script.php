@@ -108,8 +108,8 @@ $(function() {
     dots: false,
     infinite: true,
     variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg" /></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg" /></button>'
+    prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg?v=2" /></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg?v=2" /></button>'
   }).show();
 
   Webflow.require('ix').init([
