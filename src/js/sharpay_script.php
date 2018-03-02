@@ -84,6 +84,7 @@ $(function() {
         capUSD = 80
         raised = parseFloat(value),
         width = $('.progress').eq(1).width()*(raised/cap),
+		widthCont = $('.progress').eq(1).width(),
         //width = $('.progress').width(),
         lang = $('html').attr('lang'),
         txt = '<span class="cap"><?=L::head_progress?></span>';
@@ -93,6 +94,15 @@ $(function() {
 
 	if( $(window).width() <= 767 ) {
 		width = width < 46 ? 46 : width;
+	}
+	
+	if( ( widthCont - width ) < 20 ) {
+		var rad = 20 - ( widthCont - width );
+		if( $(window).width() <= 767 ) {
+			$('.progress-bar').eq(1).css('border-radius', '80px '+ rad * 4 +'px '+ rad * 4 +'px 80px');
+		} else {
+			$('.progress-bar').eq(1).css('border-radius', '0 '+ rad +'px '+ rad +'px 0');			
+		}
 	}
 
 	$('.progress-bar').eq(1).animate({ width: width}, 1500);
