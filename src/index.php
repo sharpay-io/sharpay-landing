@@ -23,7 +23,7 @@ include 'init.php'
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<link href="/css/slick.css" rel="stylesheet" type="text/css">
-	<link href="/css/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="/css/slick-theme.css?v=1" rel="stylesheet" type="text/css">
 	<link href="/css/sharpay2.webflow.css?v=<?=$timestamp?>" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
