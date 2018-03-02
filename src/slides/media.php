@@ -96,9 +96,11 @@ $mediaList = [
   }
 
   @media (max-width:479px) {
-    
+
     #media-carousel {
-      width: 100%;
+      width: auto;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 
