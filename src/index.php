@@ -834,12 +834,16 @@ include 'init.php'
 				<img class="event-banner" src="/images/events/san-francisco.png" />
 				<img class="event-banner" src="/images/events/london.png" />
 				<img class="event-banner" src="/images/events/amsterdam.png" />
-				<img class="event-banner" src="/images/events/mumbai.png" />
+				<img class="event-banner" src="/images/events/Seoul.png" />
+				<img class="event-banner" src="/images/events/Tokyo.png" />
+				<img class="event-banner" src="/images/events/Xiamen.png" />
+				<img class="event-banner" src="/images/events/Taipei.png" />
+				<img class="event-banner last" src="/images/events/mumbai.png" />
 			</div>
 		</div>
 	</div>
 
-	<div id="footer" class="section sf section-dark">
+	<div id="footer" class="section sf">
 		<div class="container f-cont">
 			<div class="h-form-title hft2"><?=L::footer_start?></div>
 			<div class="fbf form-block w-form">

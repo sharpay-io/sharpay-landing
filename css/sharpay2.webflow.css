@@ -1664,11 +1664,16 @@ html[lang="ko"] .progress .cap {
 
 #events-text {
   margin-right: 30px;
+  min-width: 180px;
 }
 
 #events img {
-  margin: 10px 14px;
+  margin: 10px 14px 18px 10px;
   height: 138px;
+}
+
+#events img.last {
+  margin-left: 14px;
 }
 
 #events p {
