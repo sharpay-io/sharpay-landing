@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -79,39 +79,39 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -50px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -50px;
     left: auto;
 }
-.slick-prev:before
+/* .slick-prev:before
 {
     content: '←';
 }
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
-}
+} */
 
 .slick-next
 {
-    right: -25px;
+    right: -50px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -50px;
 }
-.slick-next:before
+/* .slick-next:before
 {
     content: '→';
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+} */
 
 /* Dots */
 .slick-dotted.slick-slider

@@ -107,7 +107,9 @@ $(function() {
   $('#media-carousel').slick({
     dots: false,
     infinite: true,
-    variableWidth: true
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg" /></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg" /></button>'
   });
 
   Webflow.require('ix').init([

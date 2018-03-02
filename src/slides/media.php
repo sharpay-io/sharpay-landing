@@ -7,7 +7,7 @@ $mediaList = [
     'cls' => 'media-cnn'
   ],
   [
-    'url' => 'https://btcmanager.com/',
+    'url' => 'https://btcmanager.com/sharpay-ico-review/',
     'image' => '/images/media/btcmanager.png'
   ],
   [
@@ -57,13 +57,16 @@ $mediaList = [
 
 <style type="text/css">
 
-  #media-left {
-    margin-right: 30px;
-    padding-top: 15px;
+  button.slick-arrow img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
   }
 
   #media-carousel {
-    width: 950px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .media-img {
@@ -94,36 +97,20 @@ $mediaList = [
     height: 36px;
     margin: 17px 25px;
   }
-
-  @media (max-width:479px) {
-
-    #media-carousel {
-      width: auto;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  }
-
+  
 </style>
 
 <div id="media" class="section section-dark">
   <div class="container">
 
-    <div id="media-left" data-ix="l-init">
-      <h2 class="h2"><span class="orange-span"><?=L::media_header?></span></h2>
-      <p></p>
-    </div>
-
-    <div data-ix="r-init">
-      <div id="media-carousel">
-        <? foreach ( $mediaList as $media ) { ?>
-        <div>
-          <a href="<?=$media['url']?>" target="_blank">
-            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
-          </a>
-        </div>
-        <? } ?>
+    <div id="media-carousel">
+      <? foreach ( $mediaList as $media ) { ?>
+      <div>
+        <a href="<?=$media['url']?>" target="_blank">
+          <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
+        </a>
       </div>
+      <? } ?>
     </div>
 
   </div>
