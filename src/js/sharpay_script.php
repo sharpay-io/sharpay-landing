@@ -80,7 +80,7 @@ $(function() {
 
   $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
 
-    var cap = 1000,
+    var cap = 450,
         capUSD = 80
         raised = parseFloat(value),
         width = $('.progress').eq(1).width()*(raised/cap),
