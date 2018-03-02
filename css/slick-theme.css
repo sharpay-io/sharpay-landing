@@ -36,12 +36,12 @@
 
     cursor: pointer;
 
-    color: transparent;
+    /* color: transparent; */
     border: none;
     outline: none;
     background: transparent;
 }
-.slick-prev:hover,
+/* .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
@@ -49,7 +49,7 @@
     color: transparent;
     outline: none;
     background: transparent;
-}
+} */
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,

@@ -57,10 +57,20 @@ $mediaList = [
 
 <style type="text/css">
 
+  button.slick-arrow {
+    background: #313131;
+  }
+
   button.slick-arrow img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+
+    opacity: 0.3;
+  }
+
+  button.slick-arrow img:hover {
+    opacity: 1;
   }
 
   #media-carousel {
