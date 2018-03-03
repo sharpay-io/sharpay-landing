@@ -138,13 +138,13 @@
 						<div>One Pager</div>
 					</a>
 					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': 'en'});">
-						<div>Live Chat</div>
+						<div><span class="chat-online"></span>Live Chat</div>
 					</a>
 				</div>
 
 				<div id="head-marketing-msg">
 					<div id="head-marketing-msg-text">
-						<span class="orange-span">Soft Cap 3M$</span> &mdash; raised successfully!
+						<span class="orange-span">Soft Cap $3M</span> raised successfully!
 						<br />
 						Globally <span class="bright-green">TOP 5</span> active ICO rated by ICObench!<br />
 						Token Sale started on 1 March. <span class="orange-span">New bonus 40%!</span>					</div>
@@ -165,7 +165,7 @@
 					</div>
 					<div class="sales-wrap">
 						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': 'en'});">
-							Bue Now!
+							Buy Now!
 						</a>
 					</div>
 				</div>
@@ -176,14 +176,14 @@
 				
 				<script>
 				$(function(){
-					$.get('./raised-new.txt', function( raised ){
+					$.get('./raised-new.txt?t='  + new Date().getTime(), function( raised ){
 						raised = parseInt( raised );
 						$('.new-progress-grid').load('/images/chart/bar.svg', function( data ){
 							var shift = raised%1500;							
-							var right = 125 * shift / 500 - 375;
+							var right = 125 * shift / 500 - 400;
 							$('.new-progress-grid').css('right', right );
-							$('.new-progress-grid #text text').eq( (right/125).toFixed() - 3 ).text( ( (raised/500-1).toFixed() * 500  ) ).show();
-							$('.new-progress-grid #text text').eq( (right/125).toFixed() - 4 ).text( ( (raised/500-2).toFixed() * 500  ) ).show();
+							$('.new-progress-grid #text text').eq( Math.round(right/125).toFixed() - 3 ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
+							$('.new-progress-grid #text text').eq( Math.round(right/125).toFixed() - 4 ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
 						});
 						$('.new-progress-now').load('/images/chart/bar-cur.svg', function( data ){
 							$('.new-progress-now text').text( raised + ' ETH' ).show( 500 );
@@ -191,14 +191,48 @@
 						$('.new-progress-bg').load('/images/chart/bar-bg.svg');
 					});
 					
+					var glower = $('.chat-online');
+					setInterval(function() {
+						glower.animate({ opacity: 1 }, 1000, 
+							function(){
+								glower.animate({ opacity: 0.7 }, 3000);
+							});
+					}, 4000);
+					
 				});
 				</script>
 				<style>
+				#head {
+					padding-bottom: 90px;
+				}
+				#video {
+					width: 147px;
+					height: 73px;
+					background: url(/images/video_label_en.png) no-repeat center;
+					background-size: cover;
+					float: right;
+					margin-top: 9px;
+				}
+				#head-marketing-msg {
+					width: 100%;
+					max-width: 654px;
+				}
+				.chat-online:before {
+					content: '◉ ';
+					font-weight: normal;
+					color: #00ff00;
+				}
+				a:hover .chat-online:before {
+					/*visibility: hidden;*/
+				}
+				.nav-lang {
+					margin-top: 0;
+				}
 				.soc-links {
 					margin-top: 30px;
 				}
 				.progress-sale {
-					max-width: 650px;
+					max-width: 654px;
 					margin-top: 26px;
 				}
 				.new-progress {
@@ -243,7 +277,6 @@
 				}
 				.new-progress-now text {
 					display: none;
-					text-shadow: 0 1px 5px #000;
 				}
 				.new-progress-grid {
 					position: absolute;
