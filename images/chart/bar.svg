@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2834.69 130.39">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff9a1e;
+      }
+
+      .cls-2 {
+        font-size: 40px;
+        font-family: Verdana-Bold, Verdana;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <title>bar</title>
+  <g id="bg">
+    <rect id="foot" class="cls-1" y="124.72" width="2834.65" height="5.67"/>
+    <rect id="head" class="cls-1" width="2834.65" height="5.67"/>
+  </g>
+  <g id="grid">
+    <rect id="vline2" class="cls-1" x="642.13" y="62.36" width="130.39" height="5.67" transform="translate(772.53 -642.13) rotate(90)"/>
+    <rect id="vls" class="cls-1" x="55.36" y="12.76" width="28.35" height="2.83" transform="translate(83.7 -55.36) rotate(90)"/>
+    <rect id="vls-2" data-name="vls" class="cls-1" x="126.22" y="12.76" width="28.35" height="2.83" transform="translate(154.57 -126.22) rotate(90)"/>
+    <rect id="vls-3" data-name="vls" class="cls-1" x="197.09" y="12.76" width="28.35" height="2.83" transform="translate(225.44 -197.09) rotate(90)"/>
+    <rect id="vls-4" data-name="vls" class="cls-1" x="267.96" y="12.76" width="28.35" height="2.83" transform="translate(296.3 -267.96) rotate(90)"/>
+    <rect id="vls-5" data-name="vls" class="cls-1" x="55.36" y="114.8" width="28.35" height="2.83" transform="translate(185.75 46.69) rotate(90)"/>
+    <rect id="vls-6" data-name="vls" class="cls-1" x="126.22" y="114.8" width="28.35" height="2.83" transform="translate(256.62 -24.18) rotate(90)"/>
+    <rect id="vls-7" data-name="vls" class="cls-1" x="197.09" y="114.8" width="28.35" height="2.83" transform="translate(327.48 -95.04) rotate(90)"/>
+    <rect id="vls-8" data-name="vls" class="cls-1" x="267.96" y="114.8" width="28.35" height="2.83" transform="translate(398.35 -165.91) rotate(90)"/>
+    <rect id="vlsb" class="cls-1" x="287.8" y="63.78" width="130.39" height="2.83" transform="translate(418.19 -287.8) rotate(90)"/>
+    <rect id="vls-9" data-name="vls" class="cls-1" x="409.69" y="12.76" width="28.35" height="2.83" transform="translate(438.04 -409.69) rotate(90)"/>
+    <rect id="vls-10" data-name="vls" class="cls-1" x="480.56" y="12.76" width="28.35" height="2.83" transform="translate(508.9 -480.56) rotate(90)"/>
+    <rect id="vls-11" data-name="vls" class="cls-1" x="551.42" y="12.76" width="28.35" height="2.83" transform="translate(579.77 -551.42) rotate(90)"/>
+    <rect id="vls-12" data-name="vls" class="cls-1" x="622.29" y="12.76" width="28.35" height="2.83" transform="translate(650.64 -622.29) rotate(90)"/>
+    <rect id="vls-13" data-name="vls" class="cls-1" x="409.69" y="114.8" width="28.35" height="2.83" transform="translate(540.08 -307.64) rotate(90)"/>
+    <rect id="vls-14" data-name="vls" class="cls-1" x="480.56" y="114.8" width="28.35" height="2.83" transform="translate(610.95 -378.51) rotate(90)"/>
+    <rect id="vls-15" data-name="vls" class="cls-1" x="551.42" y="114.8" width="28.35" height="2.83" transform="translate(681.82 -449.38) rotate(90)"/>
+    <rect id="vls-16" data-name="vls" class="cls-1" x="622.29" y="114.8" width="28.35" height="2.83" transform="translate(752.68 -520.24) rotate(90)"/>
+    <rect id="vline2-2" data-name="vline2" class="cls-1" x="1351.13" y="62.36" width="130.39" height="5.67" transform="translate(1481.53 -1351.13) rotate(90)"/>
+    <rect id="vls-17" data-name="vls" class="cls-1" x="764.36" y="12.76" width="28.35" height="2.83" transform="translate(792.7 -764.36) rotate(90)"/>
+    <rect id="vls-18" data-name="vls" class="cls-1" x="835.22" y="12.76" width="28.35" height="2.83" transform="translate(863.57 -835.22) rotate(90)"/>
+    <rect id="vls-19" data-name="vls" class="cls-1" x="906.09" y="12.76" width="28.35" height="2.83" transform="translate(934.44 -906.09) rotate(90)"/>
+    <rect id="vls-20" data-name="vls" class="cls-1" x="976.96" y="12.76" width="28.35" height="2.83" transform="translate(1005.3 -976.96) rotate(90)"/>
+    <rect id="vls-21" data-name="vls" class="cls-1" x="764.36" y="114.8" width="28.35" height="2.83" transform="translate(894.75 -662.31) rotate(90)"/>
+    <rect id="vls-22" data-name="vls" class="cls-1" x="835.22" y="114.8" width="28.35" height="2.83" transform="translate(965.62 -733.18) rotate(90)"/>
+    <rect id="vls-23" data-name="vls" class="cls-1" x="906.09" y="114.8" width="28.35" height="2.83" transform="translate(1036.48 -804.04) rotate(90)"/>
+    <rect id="vls-24" data-name="vls" class="cls-1" x="976.96" y="114.8" width="28.35" height="2.83" transform="translate(1107.35 -874.91) rotate(90)"/>
+    <rect id="vlsb-2" data-name="vlsb" class="cls-1" x="996.8" y="63.78" width="130.39" height="2.83" transform="translate(1127.19 -996.8) rotate(90)"/>
+    <rect id="vls-25" data-name="vls" class="cls-1" x="1118.69" y="12.76" width="28.35" height="2.83" transform="translate(1147.04 -1118.69) rotate(90)"/>
+    <rect id="vls-26" data-name="vls" class="cls-1" x="1189.56" y="12.76" width="28.35" height="2.83" transform="translate(1217.9 -1189.56) rotate(90)"/>
+    <rect id="vls-27" data-name="vls" class="cls-1" x="1260.42" y="12.76" width="28.35" height="2.83" transform="translate(1288.77 -1260.42) rotate(90)"/>
+    <rect id="vls-28" data-name="vls" class="cls-1" x="1331.29" y="12.76" width="28.35" height="2.83" transform="translate(1359.64 -1331.29) rotate(90)"/>
+    <rect id="vls-29" data-name="vls" class="cls-1" x="1118.69" y="114.8" width="28.35" height="2.83" transform="translate(1249.08 -1016.64) rotate(90)"/>
+    <rect id="vls-30" data-name="vls" class="cls-1" x="1189.56" y="114.8" width="28.35" height="2.83" transform="translate(1319.95 -1087.51) rotate(90)"/>
+    <rect id="vls-31" data-name="vls" class="cls-1" x="1260.42" y="114.8" width="28.35" height="2.83" transform="translate(1390.82 -1158.38) rotate(90)"/>
+    <rect id="vls-32" data-name="vls" class="cls-1" x="1331.29" y="114.8" width="28.35" height="2.83" transform="translate(1461.68 -1229.24) rotate(90)"/>
+    <rect id="vline2-3" data-name="vline2" class="cls-1" x="2057.66" y="62.36" width="130.39" height="5.67" transform="translate(2188.05 -2057.66) rotate(90)"/>
+    <rect id="vls-33" data-name="vls" class="cls-1" x="1470.88" y="12.76" width="28.35" height="2.83" transform="translate(1499.23 -1470.88) rotate(90)"/>
+    <rect id="vls-34" data-name="vls" class="cls-1" x="1541.75" y="12.76" width="28.35" height="2.83" transform="translate(1570.1 -1541.75) rotate(90)"/>
+    <rect id="vls-35" data-name="vls" class="cls-1" x="1612.62" y="12.76" width="28.35" height="2.83" transform="translate(1640.96 -1612.62) rotate(90)"/>
+    <rect id="vls-36" data-name="vls" class="cls-1" x="1683.48" y="12.76" width="28.35" height="2.83" transform="translate(1711.83 -1683.48) rotate(90)"/>
+    <rect id="vls-37" data-name="vls" class="cls-1" x="1470.88" y="114.8" width="28.35" height="2.83" transform="translate(1601.28 -1368.84) rotate(90)"/>
+    <rect id="vls-38" data-name="vls" class="cls-1" x="1541.75" y="114.8" width="28.35" height="2.83" transform="translate(1672.14 -1439.7) rotate(90)"/>
+    <rect id="vls-39" data-name="vls" class="cls-1" x="1612.62" y="114.8" width="28.35" height="2.83" transform="translate(1743.01 -1510.57) rotate(90)"/>
+    <rect id="vls-40" data-name="vls" class="cls-1" x="1683.48" y="114.8" width="28.35" height="2.83" transform="translate(1813.88 -1581.44) rotate(90)"/>
+    <rect id="vlsb-3" data-name="vlsb" class="cls-1" x="1703.33" y="63.78" width="130.39" height="2.83" transform="translate(1833.72 -1703.33) rotate(90)"/>
+    <rect id="vls-41" data-name="vls" class="cls-1" x="1825.22" y="12.76" width="28.35" height="2.83" transform="translate(1853.56 -1825.22) rotate(90)"/>
+    <rect id="vls-42" data-name="vls" class="cls-1" x="1896.08" y="12.76" width="28.35" height="2.83" transform="translate(1924.43 -1896.08) rotate(90)"/>
+    <rect id="vls-43" data-name="vls" class="cls-1" x="1966.95" y="12.76" width="28.35" height="2.83" transform="translate(1995.3 -1966.95) rotate(90)"/>
+    <rect id="vls-44" data-name="vls" class="cls-1" x="2037.82" y="12.76" width="28.35" height="2.83" transform="translate(2066.16 -2037.82) rotate(90)"/>
+    <rect id="vls-45" data-name="vls" class="cls-1" x="1825.22" y="114.8" width="28.35" height="2.83" transform="translate(1955.61 -1723.17) rotate(90)"/>
+    <rect id="vls-46" data-name="vls" class="cls-1" x="1896.08" y="114.8" width="28.35" height="2.83" transform="translate(2026.48 -1794.04) rotate(90)"/>
+    <rect id="vls-47" data-name="vls" class="cls-1" x="1966.95" y="114.8" width="28.35" height="2.83" transform="translate(2097.34 -1864.9) rotate(90)"/>
+    <rect id="vls-48" data-name="vls" class="cls-1" x="2037.82" y="114.8" width="28.35" height="2.83" transform="translate(2168.21 -1935.77) rotate(90)"/>
+    <rect id="vline2-4" data-name="vline2" class="cls-1" x="2766.66" y="62.36" width="130.39" height="5.67" transform="translate(2897.05 -2766.66) rotate(90)"/>
+    <rect id="vls-49" data-name="vls" class="cls-1" x="2179.88" y="12.76" width="28.35" height="2.83" transform="translate(2208.23 -2179.88) rotate(90)"/>
+    <rect id="vls-50" data-name="vls" class="cls-1" x="2250.75" y="12.76" width="28.35" height="2.83" transform="translate(2279.1 -2250.75) rotate(90)"/>
+    <rect id="vls-51" data-name="vls" class="cls-1" x="2321.62" y="12.76" width="28.35" height="2.83" transform="translate(2349.96 -2321.62) rotate(90)"/>
+    <rect id="vls-52" data-name="vls" class="cls-1" x="2392.48" y="12.76" width="28.35" height="2.83" transform="translate(2420.83 -2392.48) rotate(90)"/>
+    <rect id="vls-53" data-name="vls" class="cls-1" x="2179.88" y="114.8" width="28.35" height="2.83" transform="translate(2310.28 -2077.84) rotate(90)"/>
+    <rect id="vls-54" data-name="vls" class="cls-1" x="2250.75" y="114.8" width="28.35" height="2.83" transform="translate(2381.14 -2148.7) rotate(90)"/>
+    <rect id="vls-55" data-name="vls" class="cls-1" x="2321.62" y="114.8" width="28.35" height="2.83" transform="translate(2452.01 -2219.57) rotate(90)"/>
+    <rect id="vls-56" data-name="vls" class="cls-1" x="2392.48" y="114.8" width="28.35" height="2.83" transform="translate(2522.88 -2290.44) rotate(90)"/>
+    <rect id="vlsb-4" data-name="vlsb" class="cls-1" x="2412.33" y="63.78" width="130.39" height="2.83" transform="translate(2542.72 -2412.33) rotate(90)"/>
+    <rect id="vls-57" data-name="vls" class="cls-1" x="2534.22" y="12.76" width="28.35" height="2.83" transform="translate(2562.56 -2534.22) rotate(90)"/>
+    <rect id="vls-58" data-name="vls" class="cls-1" x="2605.08" y="12.76" width="28.35" height="2.83" transform="translate(2633.43 -2605.08) rotate(90)"/>
+    <rect id="vls-59" data-name="vls" class="cls-1" x="2675.95" y="12.76" width="28.35" height="2.83" transform="translate(2704.3 -2675.95) rotate(90)"/>
+    <rect id="vls-60" data-name="vls" class="cls-1" x="2746.82" y="12.76" width="28.35" height="2.83" transform="translate(2775.16 -2746.82) rotate(90)"/>
+    <rect id="vls-61" data-name="vls" class="cls-1" x="2534.22" y="114.8" width="28.35" height="2.83" transform="translate(2664.61 -2432.17) rotate(90)"/>
+    <rect id="vls-62" data-name="vls" class="cls-1" x="2605.08" y="114.8" width="28.35" height="2.83" transform="translate(2735.48 -2503.04) rotate(90)"/>
+    <rect id="vls-63" data-name="vls" class="cls-1" x="2675.95" y="114.8" width="28.35" height="2.83" transform="translate(2806.34 -2573.9) rotate(90)"/>
+    <rect id="vls-64" data-name="vls" class="cls-1" x="2746.82" y="114.8" width="28.35" height="2.83" transform="translate(2877.21 -2644.77) rotate(90)"/>
+  </g>
+  <g id="text">
+    <text class="cls-2" transform="translate(120.47 80.09)">0500 ETH</text>
+    <text class="cls-2" transform="translate(475.47 80.09)">0000 ETH</text>
+    <text class="cls-2" transform="translate(826.47 80.09)">0500 ETH</text>
+    <text class="cls-2" transform="translate(1181.47 80.09)">0000 ETH</text>
+    <text class="cls-2" transform="translate(1537.47 80.09)">0500 ETH</text>
+    <text class="cls-2" transform="translate(1892.47 80.09)">0000 ETH</text>
+    <text class="cls-2" transform="translate(2243.47 80.09)">0500 ETH</text>
+    <text class="cls-2" transform="translate(2598.47 80.09)">0000 ETH</text>
+  </g>
+</svg>

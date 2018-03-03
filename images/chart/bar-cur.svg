@@ -1,0 +1,18 @@
+<svg id="now" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.32 130.39">
+  <defs>
+    <style>
+      .cur-1 {
+        font-size: 40px;
+        font-family: Verdana-Bold, Verdana;
+        font-weight: 700;
+      }
+
+      .cur-1, .cur-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>bar</title>
+  <text class="cur-1" transform="translate(829.47 80.09)">3500 ETH</text>
+  <rect id="curl" class="cur-2" x="1057.16" y="5.67" width="5.67" height="119.06"/>
+</svg>
