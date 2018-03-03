@@ -144,7 +144,8 @@
 
 				<div id="head-marketing-msg">
 					<div id="head-marketing-msg-text">
-						<span class="orange-span">3023</span> Presale contributors!<br />
+						<span class="orange-span">Soft Cap 3M$</span> &mdash; raised successfully!
+						<br />
 						Globally <span class="bright-green">TOP 5</span> active ICO rated by ICObench!<br />
 						Token Sale started on 1 March. <span class="orange-span">New bonus 40%!</span>					</div>
 					<div id="video"></div>
@@ -161,11 +162,10 @@
 							<div class="new-progress-grid"></div>
 							<div class="new-progress-bg"></div>
 						</div>
-						<p>Soft Cap 3000 ETH raised successfully! <span></span></p>
 					</div>
 					<div class="sales-wrap">
 						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': 'en'});">
-							Reserve Now
+							Bue Now!
 						</a>
 					</div>
 				</div>
@@ -178,13 +178,12 @@
 				$(function(){
 					$.get('./raised-new.txt', function( raised ){
 						raised = parseInt( raised );
-						$('.new-progress p span').text('Now ' + raised + ' ETH!');
 						$('.new-progress-grid').load('/images/chart/bar.svg', function( data ){
 							var shift = raised%1500;							
 							var right = 125 * shift / 500 - 375;
 							$('.new-progress-grid').css('right', right );
-							$('.new-progress-grid #text text').eq( (right/125).toFixed() - 3 ).text( ( (raised/500-1).toFixed() * 500  ) + ' ETH').show();
-							$('.new-progress-grid #text text').eq( (right/125).toFixed() - 4 ).text( ( (raised/500-2).toFixed() * 500  ) + ' ETH').show();
+							$('.new-progress-grid #text text').eq( (right/125).toFixed() - 3 ).text( ( (raised/500-1).toFixed() * 500  ) ).show();
+							$('.new-progress-grid #text text').eq( (right/125).toFixed() - 4 ).text( ( (raised/500-2).toFixed() * 500  ) ).show();
 						});
 						$('.new-progress-now').load('/images/chart/bar-cur.svg', function( data ){
 							$('.new-progress-now text').text( raised + ' ETH' ).show( 500 );
@@ -195,10 +194,17 @@
 				});
 				</script>
 				<style>
+				.soc-links {
+					margin-top: 30px;
+				}
+				.progress-sale {
+					max-width: 650px;
+					margin-top: 26px;
+				}
 				.new-progress {
 					margin-top: 0;
 					width:100%;
-					max-width: 500px;
+					max-width: 490px;
 					float: left;
 				}
 				.new-progress p {
@@ -428,8 +434,8 @@
 				<p class="p">From <span class="orange-span">Dec. 11, 2017</span> to <span class="orange-span">Feb. 11, 2018</span><br>
 					Token price:  <span class="orange-span">0.00003 ETH</span><br>
 					Minimum purchase:  <span class="orange-span">0.1 ETH</span><br>
-					Bonus: <span class="orange-span">50%</span><br>
-					Tokens for sale: <span class="orange-span">80 million</span> &mdash; <strong>SOLD!</strong>
+					Tokens for sale: <span class="orange-span">80 million</span> &mdash; <strong>SOLD!</strong><br>
+					<span class="orange-span">3023</span> Presale contributors!
 				</p>
 			</div>
 			<div class="r-col" data-ix="r-init">

@@ -5,14 +5,14 @@
         font-size: 40px;
         font-family: Verdana-Bold, Verdana;
         font-weight: 700;
+		fill: #fff;
       }
-
-      .cur-1, .cur-2 {
-        fill: #fff;
+	  .cur-2 {
+        fill: #ff9a1e;
       }
     </style>
   </defs>
   <title>bar</title>
-  <text class="cur-1" transform="translate(829.47 80.09)">3500 ETH</text>
-  <rect id="curl" class="cur-2" x="1057.16" y="5.67" width="5.67" height="119.06"/>
+  <text class="cur-1" transform="translate(890 80.09)">3500 ETH</text>
+  <rect id="curl" class="cur-2" x="1127.5" y="5.67" width="5.67" height="119.06"/>
 </svg>
