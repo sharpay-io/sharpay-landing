@@ -80,14 +80,14 @@ $(function() {
 
 	$.get('/raised.txt?t='  + new Date().getTime(), function( raised ){
 		raised = parseInt( raised );
-		$('.new-progress-grid').load('/images/chart/bar.svg?v=1', function( data ){
+		$('.new-progress-grid').load('/images/chart/bar-grid.svg?v=3', function( data ){
 			var shift = raised%1500;							
 			var right = 125 * shift / 500 - 400;
 			$('.new-progress-grid').css('right', right );
 			$('.new-progress-grid #text text').eq( Math.round(right/125).toFixed() - 3 ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
 			$('.new-progress-grid #text text').eq( Math.round(right/125).toFixed() - 4 ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
 		});
-		$('.new-progress-now').load('/images/chart/bar-cur.svg?v=1', function( data ){
+		$('.new-progress-now').load('/images/chart/bar-cur.svg?v=2', function( data ){
 			$('.new-progress-now text').text( raised + ' ETH' ).show( 500 );
 		});
 		$('.new-progress-bg').load('/images/chart/bar-bg.svg?v=1');
