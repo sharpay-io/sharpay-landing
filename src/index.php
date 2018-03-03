@@ -143,7 +143,7 @@ include 'init.php'
 						<div><?=L::head_one_pager?></div>
 					</a>
 					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': '<?=$lang?>'});">
-						<div><?=L::head_chat?></div>
+						<div><span class="chat-online"></span><?=L::head_chat?></div>
 					</a>
 				</div>
 
@@ -157,16 +157,12 @@ include 'init.php'
 				</div>
 
 				<div class="progress-sale">
-					<div class="progress-wrap">
-						<div class="progress">
-							<span class="progress-caption" style="opacity: 1"></span>
-							<div class="progress-bar" style="width: 100%;">&nbsp;</div>
-						</div>
-					</div>
-					<div class="progress-wrap progress-wrap2">
-						<div class="progress">
-							<span class="progress-caption" style="opacity: 0.5"></span>
-							<div class="progress-bar" style="width: 10px;">&nbsp;</div>
+					<div class="new-progress">
+						<div class="new-progress-wrap">
+							<div class="new-progress-grad"></div>
+							<div class="new-progress-now"></div>
+							<div class="new-progress-grid"></div>
+							<div class="new-progress-bg"></div>
 						</div>
 					</div>
 					<div class="sales-wrap">
@@ -175,6 +171,7 @@ include 'init.php'
 						</a>
 					</div>
 				</div>
+				
 				<div class="soc-links">
 					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram.svg"></a>
 					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
@@ -201,8 +198,8 @@ include 'init.php'
 				<p class="p"><?=L::token_presale_dates?><br>
 					<?=L::token_presale_price?><br>
 					<?=L::token_presale_min_purchase?><br>
-					<?=L::token_presale_bonus?><br>
-					<?=L::token_presale_amount?> &mdash; <strong><?=L::token_presale_sold?></strong>
+					<?=L::token_presale_amount?> &mdash; <strong><?=L::token_presale_sold?></strong><br>
+					<?=L::token_presale_contrib?>
 				</p>
 			</div>
 			<div class="r-col" data-ix="r-init">

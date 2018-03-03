@@ -78,37 +78,28 @@ $(function() {
 
   //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
-  $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
+	$.get('/raised.txt?t='  + new Date().getTime(), function( raised ){
+		raised = parseInt( raised );
+		$('.new-progress-grid').load('/images/chart/bar.svg?v=1', function( data ){
+			var shift = raised%1500;							
+			var right = 125 * shift / 500 - 400;
+			$('.new-progress-grid').css('right', right );
+			$('.new-progress-grid #text text').eq( Math.round(right/125).toFixed() - 3 ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
+			$('.new-progress-grid #text text').eq( Math.round(right/125).toFixed() - 4 ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
+		});
+		$('.new-progress-now').load('/images/chart/bar-cur.svg?v=1', function( data ){
+			$('.new-progress-now text').text( raised + ' ETH' ).show( 500 );
+		});
+		$('.new-progress-bg').load('/images/chart/bar-bg.svg?v=1');
+	});
 
-    var cap = 450,
-        capUSD = 80
-        raised = parseFloat(value),
-        width = $('.progress').eq(1).width()*(raised/cap),
-		widthCont = $('.progress').eq(1).width(),
-        //width = $('.progress').width(),
-        lang = $('html').attr('lang'),
-        txt = '<span class="cap"><?=L::head_progress?></span>';
-
-    //$('.progress-bar').animate({ width: width}, 1500);
-    $('.progress-caption').eq(0).append(txt);//.animate({opacity: 1}, 3000);
-
-	if( $(window).width() <= 767 ) {
-		width = width < 46 ? 46 : width;
-	}
-	
-	if( ( widthCont - width ) < 20 ) {
-		var rad = 20 - ( widthCont - width );
-		if( $(window).width() <= 767 ) {
-			$('.progress-bar').eq(1).css('border-radius', '80px '+ rad * 4 +'px '+ rad * 4 +'px 80px');
-		} else {
-			$('.progress-bar').eq(1).css('border-radius', '0 '+ rad +'px '+ rad +'px 0');			
-		}
-	}
-
-	$('.progress-bar').eq(1).animate({ width: width}, 1500);
-	txt = '<span class="green-cap">+'+( cap )+' ETH</span>';
-    $('.progress-caption').eq(1).append(txt).animate({opacity: 1}, 500);
-  });
+	var glower = $('.chat-online');
+	setInterval(function() {
+		glower.animate({ opacity: 1 }, 1000, 
+			function(){
+				glower.animate({ opacity: 0.3 }, 3000);
+			});
+	}, 4000);
 
 
   // MEDIA carousel

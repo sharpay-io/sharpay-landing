@@ -1515,7 +1515,7 @@ html[lang=jp] #head-marketing-msg {
 #video {
   width: 147px;
   height: 71px;
-  margin-left: 23px;
+  margin-left: 0;
   border: 1px solid #f93;
 
   box-shadow: 0 1px 24px 0 rgba(255,153,51,.5);
@@ -1533,7 +1533,11 @@ html[lang=zh] #video {
 }
 
 html[lang=ko] #video {
-  margin-left: 21px;
+ margin-left: 0;
+}
+html[lang=jp] .chat-online {
+	display: inline-block;
+    margin-left: -10px;
 }
 
 #video:hover {
@@ -3362,3 +3366,124 @@ html[lang="ko"] #events p {
   }
 
 }
+
+
+
+#head {
+	padding-bottom: 90px;
+}
+#video {
+	width: 147px;
+	height: 73px;
+	background: url(/images/video_label_en.png) no-repeat center;
+	background-size: cover;
+	float: right;
+	margin-top: 9px;
+}
+#head-marketing-msg {
+	width: 100%;
+	max-width: 654px;
+}
+.chat-online:before {
+	content: '◉ ';
+	font-weight: normal;
+	color: #00ff00;
+	font-size: 12px;
+	margin-right: 1px;
+}
+.nav-lang {
+	margin-top: 0;
+}
+.soc-links {
+	margin-top: 30px;
+}
+.progress-sale {
+	max-width: 654px;
+	margin-top: 26px;
+}
+.new-progress {
+	margin-top: 0;
+	width:100%;
+	max-width: 490px;
+	float: left;
+}
+.new-progress p {
+	font-size: 14px;
+	margin-top: 10px;
+}
+.new-progress-wrap {
+	position: relative;
+	height: 46px;
+	overflow: hidden;					
+	width:100%;
+}
+.new-progress-grad {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 46px;
+	width: 100%;
+	z-index: 4;
+	
+	background: -moz-linear-gradient(left, rgba(55,55,55,1) 0%, rgba(55,55,55,0) 20%, rgba(55,55,55,0) 80%, rgba(55,55,55,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(55,55,55,1) 0%,rgba(55,55,55,0) 20%,rgba(55,55,55,0) 80%,rgba(55,55,55,1) 100%);
+	background: linear-gradient(to right, rgba(55,55,55,1) 0%,rgba(55,55,55,0) 20%,rgba(55,55,55,0) 80%,rgba(55,55,55,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#373737',GradientType=1 );
+}
+.new-progress-wrap svg {
+	height: 46px;
+}
+.new-progress-now {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 46px;
+	width: 500px;
+	z-index: 3;
+}
+.new-progress-now text {
+	display: none;
+}
+.new-progress-grid {
+	position: absolute;
+	top: 0;
+	right: -250px;
+	height: 46px;
+	z-index: 2;
+}
+.new-progress-grid #text text {
+	display: none;
+}
+.new-progress-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 46px;
+	width: 500px;
+	z-index: 1;
+}
+.sales-wrap {
+	margin-top: 0;
+}
+@media (max-width: 767px) {
+	#video {
+		float: none;
+	}
+	.new-progress {
+		float: none;
+	}
+	.sales-wrap {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.new-progress p {
+		text-align: center;
+	}
+	.new-progress-grad {						
+		background: -moz-linear-gradient(left, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 20%, rgba(34,34,34,0) 80%, rgba(34,34,34,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
+		background: linear-gradient(to right, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222',GradientType=1 );
+	}
+}	
