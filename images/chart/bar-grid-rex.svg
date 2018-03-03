@@ -10,7 +10,6 @@
         font-weight: 700;
 		fill: #fff;}
 	.st3{font-size:40px;}
-	.st3{font-size:40px;}
 </style>
 <title>bar</title>
 <g id="bg">
@@ -84,20 +83,20 @@
 	<rect id="vls-64" x="2758.2" y="102.1" class="st0" width="5.7" height="28.4"/>
 </g>
 <g id="rex">
-	<rect id="vls-57_1_" x="2472.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_1_" x="2472.7" y="102.1" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-57_2_" x="2117.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_2_" x="2117.7" y="102.1" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-57_3_" x="1762.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_3_" x="1762.7" y="102.1" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-57_4_" x="1411.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_4_" x="1411.7" y="102.1" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-57_5_" x="1055.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_5_" x="1055.7" y="102.1" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-57_6_" x="702.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_6_" x="702.7" y="102.1" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-57_7_" x="346.7" y="0" class="st0" width="11.3" height="28.4"/>
-	<rect id="vls-61_7_" x="346.7" y="102.1" class="st0" width="11.3" height="28.4"/>
+	<polygon class="st0" points="352.9,29.2 366.8,5.2 339.1,5.2 	"/>
+	<polygon class="st0" points="352.9,101.2 339.1,125.2 366.8,125.2 	"/>
+	<polygon class="st0" points="707.9,29.2 721.8,5.2 694.1,5.2 	"/>
+	<polygon class="st0" points="707.9,101.2 694.1,125.2 721.8,125.2 	"/>
+	<polygon class="st0" points="1061.9,29.2 1075.8,5.2 1048.1,5.2 	"/>
+	<polygon class="st0" points="1061.9,101.2 1048.1,125.2 1075.8,125.2 	"/>
+	<polygon class="st0" points="1417.9,29.2 1431.8,5.2 1404.1,5.2 	"/>
+	<polygon class="st0" points="1417.9,101.2 1404.1,125.2 1431.8,125.2 	"/>
+	<polygon class="st0" points="1768.9,29.2 1782.8,5.2 1755.1,5.2 	"/>
+	<polygon class="st0" points="1768.9,101.2 1755.1,125.2 1782.8,125.2 	"/>
+	<polygon class="st0" points="2123.9,29.2 2137.8,5.2 2110.1,5.2 	"/>
+	<polygon class="st0" points="2123.9,101.2 2110.1,125.2 2137.8,125.2 	"/>
+	<polygon class="st0" points="2477.9,29.2 2491.8,5.2 2464.1,5.2 	"/>
+	<polygon class="st0" points="2477.9,101.2 2464.1,125.2 2491.8,125.2 	"/>
 </g>
 <g id="text">
 	<text transform="matrix(1 0 0 1 296.47 80.09)" class="st1 st2 st3">0500</text>
