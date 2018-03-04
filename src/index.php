@@ -166,7 +166,7 @@ include 'init.php'
 						</div>
 					</div>
 					<div class="sales-wrap">
-						<a href="https://sale.sharpay.io/cabinet/home" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});">
+						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});">
 							<?=L::head_reserve_now?>
 						</a>
 					</div>
