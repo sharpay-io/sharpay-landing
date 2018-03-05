@@ -2051,7 +2051,8 @@ html[lang="ko"] #events p {
     }
 
     .h-text-wrap {
-        max-width: 480px
+        max-width: 480px;
+		max-width: 654px;
     }
 
     .h1 {
