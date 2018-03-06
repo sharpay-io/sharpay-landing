@@ -213,6 +213,7 @@ include 'init.php'
 					<?=L::token_sale_price?><br>
 					<?=L::token_sale_min_purchase?><br />
 					<?=L::token_sale_bonus?><br />
+					<span class="orange-span"><?=L::token_sale_bonus2?></span><br />
 					<?=L::token_sale_amount?>
 				</p>
 			</div>
