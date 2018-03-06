@@ -102,13 +102,13 @@ include 'init.php'
 
 		<div id="trackico-rating-mob">
 			<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
-				<img src="/images/Rating_ICObench_Sharpay_4_7.svg" />
+				<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
 			</a>
 			<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
-				<img src="/images/trackico_rating.svg" />
+				<img src="/images/ratings/Rating_TrackICO_Sharpay_4_8.svg" />
 			</a>
 			<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
-				<img src="/images/Rating_Krypto_Sharpay_4_4.svg" />
+				<img src="/images/ratings/Rating_Krypto_Sharpay_4_4.svg" />
 			</a>
 		</div>
 
@@ -116,13 +116,13 @@ include 'init.php'
 
 			<div id="trackico-rating">
 				<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
-					<img src="/images/Rating_ICObench_Sharpay_4_7.svg" />
+					<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
 				</a>
 				<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
-					<img src="/images/trackico_rating.svg" />
+					<img src="/images/ratings/Rating_TrackICO_Sharpay_4_8.svg" />
 				</a>
 				<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
-					<img src="/images/Rating_Krypto_Sharpay_4_4.svg" />
+					<img src="/images/ratings/Rating_Krypto_Sharpay_4_4.svg" />
 				</a>
 			</div>
 
@@ -171,7 +171,7 @@ include 'init.php'
 						</a>
 					</div>
 				</div>
-				
+
 				<div class="soc-links">
 					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram.svg"></a>
 					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
