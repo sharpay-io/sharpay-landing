@@ -22,8 +22,8 @@ include 'init.php'
 
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
-	<link href="/css/slick.css" rel="stylesheet" type="text/css">
-	<link href="/css/slick-theme.css?v=<?=$timestamp?>" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
+	<!-- <link href="/css/slick-theme.css?v=<?=$timestamp?>" rel="stylesheet" type="text/css"> -->
 	<link href="/css/sharpay2.webflow.css?v=<?=$timestamp?>" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
@@ -189,9 +189,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<? include 'slides/media.php' ?>
-
-	<div id="token" class="section">
+	<div id="token" class="section section-dark">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::token_presale?></span></h2>
@@ -225,7 +223,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="view" class="section section-dark">
+	<div id="view" class="section">
 		<div class="cont2 container">
 			<div class="row-cont">
 				<div class="row-l-col" data-ix="l-init">
@@ -289,7 +287,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="sites" class="section">
+	<div id="sites" class="section section-dark">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::sites_how_it_works?></span></h2>
@@ -306,7 +304,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="users" class="section section-dark">
+	<div id="users" class="section">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::users_how_it_works?></h2>
@@ -324,7 +322,7 @@ include 'init.php'
 		</div>
 	</div>
 
-  <div id="add" class="section">
+  <div id="add" class="section section-dark">
 		<div class="c5 container">
 			<div class="l-col lc3" data-ix="l-init">
 				<h2 class="h2"><?=L::advantages_header?></h2>
@@ -362,7 +360,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="roadmap" class="section section-dark">
+	<div id="roadmap" class="section">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::roadmap_header?></h2>
@@ -482,7 +480,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="emission" class="section">
+	<div id="emission" class="section section-dark">
 		<div class="container">
 			<div class="l-col lc2" data-ix="l-init">
 				<h2 class="h2"><?=L::emission_header?></h2>
@@ -530,7 +528,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="vikup" class="section section-dark">
+	<div id="vikup" class="section">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::buyback_header?></h2>
@@ -544,7 +542,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="rashod" class="section">
+	<div id="rashod" class="section section-dark">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::expenses_header?></h2>
@@ -586,7 +584,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="advisers" class="section sf section-dark">
+	<div id="advisers" class="section sf">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::advisers_header?></h2>
@@ -641,7 +639,7 @@ include 'init.php'
 		</div>
 	</div>  <!-- advisers -->
 
-	<div id="team" class="section">
+	<div id="team" class="section section-dark">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::team_header?></h2>
@@ -821,7 +819,7 @@ include 'init.php'
 		</div>
 	</div>
 
-	<div id="events" class="section section-dark">
+	<div id="events" class="section">
 		<div class="container">
 			<div id="events-text" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::events_header?></span></h2>
@@ -840,6 +838,8 @@ include 'init.php'
 			</div>
 		</div>
 	</div>
+
+	<? include 'slides/media.php' ?>
 
 	<div id="footer" class="section sf">
 		<div class="container f-cont">

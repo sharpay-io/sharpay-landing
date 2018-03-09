@@ -57,7 +57,7 @@ $mediaList = [
 
 <style type="text/css">
 
-  button.slick-arrow {
+  /* button.slick-arrow {
     background: #313131;
   }
 
@@ -71,17 +71,22 @@ $mediaList = [
 
   button.slick-arrow img:hover {
     opacity: 1;
-  }
+  } */
 
   #media-carousel {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+
+  .media-item {
+    display: inline-block;
   }
 
   .media-img {
     height: 50px;
-    margin: 10px 25px;
+    margin: 20px 25px;
   }
 
   /* logo is to long and narrow */
@@ -113,9 +118,9 @@ $mediaList = [
 <div id="media" class="section section-dark">
   <div class="container">
 
-    <div id="media-carousel" style="display:none;">
+    <div id="media-carousel">
       <? foreach ( $mediaList as $media ) { ?>
-      <div>
+      <div class="media-item">
         <a href="<?=$media['url']?>" target="_blank">
           <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
         </a>

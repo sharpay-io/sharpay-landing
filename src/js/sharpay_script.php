@@ -5,7 +5,7 @@
 <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 
 <script src="/js/TimeCircles.js"></script>
-<script src="/js/slick.min.js"></script>
+<!-- <script src="/js/slick.min.js"></script> -->
 
 <!-- <script src="/js/particles.js"></script> -->
 
@@ -81,7 +81,7 @@ $(function() {
 	$.get('/raised.txt?t='  + new Date().getTime(), function( raised ){
 		raised = parseInt( raised );
 		$('.new-progress-grid').load('/images/chart/bar-grid.svg?v=4', function( data ){
-			var shift = raised%1500;							
+			var shift = raised%1500;
 			var right = 125 * shift / 500 - 400;
 			$('.new-progress-grid').css('right', right );
 			var ti = Math.round(right/125).toFixed();
@@ -99,7 +99,7 @@ $(function() {
 
 	var glower = $('.chat-online');
 	setInterval(function() {
-		glower.animate({ opacity: 1 }, 1000, 
+		glower.animate({ opacity: 1 }, 1000,
 			function(){
 				glower.animate({ opacity: 0.3 }, 3000);
 			});
@@ -109,13 +109,13 @@ $(function() {
   // MEDIA carousel
   // http://kenwheeler.github.io/slick/
 
-  $('#media-carousel').slick({
-    dots: false,
-    infinite: true,
-    variableWidth: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg?v=2" /></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg?v=2" /></button>'
-  }).show();
+  // $('#media-carousel').slick({
+  //   dots: false,
+  //   infinite: true,
+  //   variableWidth: true,
+  //   prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg?v=2" /></button>',
+  //   nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg?v=2" /></button>'
+  // }).show();
 
   Webflow.require('ix').init([
     {"slug":"bg-logo-init","name":"bg logo init","value":{"style":{"display":"none","opacity":0},"triggers":[]}},
