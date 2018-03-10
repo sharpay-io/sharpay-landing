@@ -3466,6 +3466,38 @@ html[lang="ko"] #events p {
 .sales-wrap {
 	margin-top: 0;
 }
+
+
+.btn-blink {
+	background: linear-gradient(300deg, #1e9a1e 45%, #f3f900 50%, #1e9a1e 55%);
+	background-size: 1000% 1000%;
+	-webkit-animation: blinkline 10s linear  infinite;
+	-moz-animation: blinkline 10s linear  infinite;
+	animation: blinkline 10s linear  infinite;
+}
+@-webkit-keyframes blinkline {
+    0%{background-position:100% 0%}
+	45%{background-position:100% 0%}
+	50%{background-position:0% 0%}
+    55%{background-position:0% 100%}
+    100%{background-position:0% 100%}
+}
+@-moz-keyframes blinkline {
+	0%{background-position:100% 0%}
+	45%{background-position:100% 0%}
+	50%{background-position:0% 0%}
+    55%{background-position:0% 100%}
+    100%{background-position:0% 100%}
+}
+@keyframes blinkline { 
+    0%{background-position:100% 0%}
+	45%{background-position:100% 0%}
+	50%{background-position:0% 0%}
+    55%{background-position:0% 100%}
+    100%{background-position:0% 100%}
+}
+
+
 @media (max-width: 767px) {
 	#video {
 		float: none;
