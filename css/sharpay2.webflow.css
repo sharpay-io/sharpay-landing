@@ -3469,8 +3469,8 @@ html[lang="ko"] #events p {
 
 
 .btn-blink {
-	background: linear-gradient(300deg, #1e9a1e 45%, #f3f900 49%, #f3f900 51%, #1e9a1e 55%);
-	background-size: 700% 700%;
+	background: linear-gradient(300deg, #1e9a1e 47%, #ff9a1e 49%, #ff9a1e 51%, #1e9a1e 53%);
+	background-size: 500% 500%;
 	-webkit-animation: blinkline 5s linear infinite;
 	-moz-animation: blinkline 5s linear infinite;
 	animation: blinkline 5s linear infinite;
