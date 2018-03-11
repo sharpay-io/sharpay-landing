@@ -129,7 +129,7 @@ include 'init.php'
 			<div class="h-text-wrap">
 				<h1 class="h1 sharpey-slogan"><?=L::head_slogan?></h1>
 				<div class="h-subtitle">
-          <?=L::head_subtitle?><br>
+					<?=L::head_subtitle?><br>
 					<?=L::head_status?>
 				</div>
 				<div class="h-btns">
@@ -166,9 +166,7 @@ include 'init.php'
 						</div>
 					</div>
 					<div class="sales-wrap">
-						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});">
-							<?=L::head_reserve_now?>
-						</a>
+						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});"><?=L::head_reserve_now?></a>
 					</div>
 				</div>
 
