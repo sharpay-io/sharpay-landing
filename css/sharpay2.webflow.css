@@ -1682,6 +1682,14 @@ html[lang="ko"] .progress .cap {
   justify-content: flex-start;
 }
 
+html[lang="es"] #events h2 {
+  font-size: 27px;
+}
+
+html[lang="es"] #event-baners {
+  margin-left: 25px;
+}
+
 #events-text {
   margin-right: 30px;
   min-width: 180px;
