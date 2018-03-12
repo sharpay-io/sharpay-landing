@@ -1057,12 +1057,18 @@ html[lang="es"] .nav-link {
 }
 
 
+#view .row-l-col {
+  max-width: 780px;
+}
+
 #btn-img-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 66px;
-  padding-bottom: 22px;
-  margin-left: 90px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.btn-img {
+  display: inline-block;
+  margin: 10px 10px 10px 0px;
 }
 
 #bi1,#bi3,#bi4 {
@@ -1073,13 +1079,20 @@ html[lang="es"] .nav-link {
     width: 200px;
 }
 
+/* ratio: 0.5625  */
+#what-is-that-video {
+  margin-top: 37px;
+  width: 450px;
+  height: 253px;
+}
+
 #soc-plugged {
     margin-top: 54px;
-    margin-left: 90px;
+    margin-left: 115px;
 }
 
 #soc-future {
-    margin-left: 90px;
+    margin-left: 115px;
     padding-top: 22px;
 }
 
@@ -2391,14 +2404,12 @@ html[lang="ko"] #events p {
         line-height: 16px
     }
 
-    .progress-sale {
-      /* margin-top: 60px; */
+    /* ratio: 0.5625  */
+    #what-is-that-video {
+      margin-top: 10px;
+      width: 300px;
+      height: 169px;
     }
-/*
-    #cool-rating {
-      font-size: 20px;
-      line-height: 24px;
-    } */
 }
 
 @media (max-width:767px) {

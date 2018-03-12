@@ -232,28 +232,31 @@ include 'init.php'
 					<h2 class="h2"><span class="orange-span"><?=L::view_what_is_that?></span></h2>
 					<p class="p"><?=L::view_p1?></p>
 					<p class="p"><?=L::view_p2?></p>
+					<div id="btn-img-container">
+						<div id="bi1" class="btn-img">
+							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+							<img src="/images/btn1.svg" />
+							</a>
+						</div>
+						<div id="bi2" class="btn-img">
+							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+							<img src="/images/share-btn3.svg">
+							</a>
+						</div>
+						<div id="bi3" class="r2 btn-img">
+							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+							<img src="/images/btn3.svg">
+							</a>
+						</div>
+						<div id="bi4" class="r2 btn-img">
+							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+							<img src="/images/custom-btn2x.png">
+							</a>
+						</div>
+					</div>
 				</div>
-				<div id="btn-img-container" class="row-r-col" data-ix="r-init">
-					<div id="bi1" class="btn-img">
-						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-						<img src="/images/btn1.svg" />
-						</a>
-					</div>
-					<div id="bi2" class="btn-img">
-						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-						<img src="/images/share-btn3.svg">
-						</a>
-					</div>
-					<div id="bi3" class="r2 btn-img">
-						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-						<img src="/images/btn3.svg">
-						</a>
-					</div>
-					<div id="bi4" class="r2 btn-img">
-						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
-						<img src="/images/custom-btn2x.png">
-						</a>
-					</div>
+				<div class="row-r-col" data-ix="r-init">
+					<iframe id="what-is-that-video" src="https://www.youtube.com/embed/eOac-9DljiI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="row-cont">
