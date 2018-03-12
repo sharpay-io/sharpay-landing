@@ -1081,9 +1081,10 @@ html[lang="es"] .nav-link {
 
 /* ratio: 0.5625  */
 #what-is-that-video {
-  margin-top: 37px;
-  width: 450px;
-  height: 253px;
+  margin-top: 24px;
+  margin-left: 36px;
+  width: 380px;
+  height: 213px;
 }
 
 #soc-plugged {
