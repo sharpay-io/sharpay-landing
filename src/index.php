@@ -832,14 +832,23 @@ include 'init.php'
 				<p><?=L::events_here?></p>
 			</div>
 			<div data-ix="r-init">
-				<img class="event-banner" src="/images/events/san-francisco.png" />
-				<img class="event-banner" src="/images/events/london.png" />
-				<img class="event-banner" src="/images/events/amsterdam.png" />
-				<img class="event-banner" src="/images/events/Seoul.png" />
-				<img class="event-banner" src="/images/events/Tokyo.png" />
-				<img class="event-banner" src="/images/events/Xiamen.png" />
-				<img class="event-banner" src="/images/events/Taipei.png" />
-				<img class="event-banner last" src="/images/events/mumbai.png" />
+				<!-- ls | sort | sed 's/.*/<img class="event-banner" src="\/images\/events\/&" \/>/' -->
+				<img class="event-banner" src="/images/events/0122_san-francisco.png" />
+				<img class="event-banner" src="/images/events/0125_London.png" />
+				<img class="event-banner" src="/images/events/0129_Amsterdam.png" />
+				<img class="event-banner" src="/images/events/0227_Seoul.png" />
+				<img class="event-banner" src="/images/events/0301_Tokyo.png" />
+				<img class="event-banner" src="/images/events/0303_Xiamen.png" />
+				<img class="event-banner" src="/images/events/0305_Taipei.png" />
+				<img class="event-banner" src="/images/events/0307_Shanghai.png" />
+				<img class="event-banner" src="/images/events/0313_Chengdu.png" />
+				<img class="event-banner" src="/images/events/0317_Beijing.png" />
+				<img class="event-banner" src="/images/events/0317_PuertoRico.png" />
+				<img class="event-banner" src="/images/events/0320_HongKong.png" />
+				<img class="event-banner" src="/images/events/0323_Shenzhen.png" />
+				<img class="event-banner" src="/images/events/0327_Changzhou.png" />
+				<img class="event-banner" src="/images/events/0423_mumbai.png" />
+				<img class="event-banner" src="/images/events/0426_singapore.png" />
 			</div>
 		</div>
 	</div>
