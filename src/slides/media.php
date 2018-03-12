@@ -78,6 +78,7 @@ $mediaList = [
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: -25px;
   }
 
   .media-item {
@@ -118,14 +119,20 @@ $mediaList = [
 <div id="media" class="section section-dark">
   <div class="container">
 
-    <div id="media-carousel">
-      <? foreach ( $mediaList as $media ) { ?>
-      <div class="media-item">
-        <a href="<?=$media['url']?>" target="_blank">
-          <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
-        </a>
+    <div id="media-text" data-ix="l-init">
+      <h2 class="h2"><span class="orange-span"><?=L::media_header?></span></h2>
+    </div>
+
+		<div id="media-baners" data-ix="r-init">
+      <div id="media-carousel">
+        <? foreach ( $mediaList as $media ) { ?>
+        <div class="media-item">
+          <a href="<?=$media['url']?>" target="_blank">
+            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
+          </a>
+        </div>
+        <? } ?>
       </div>
-      <? } ?>
     </div>
 
   </div>
