@@ -1502,9 +1502,12 @@ html[lang="ko"] #head-marketing-msg {
 }
 html[lang=jp] #head-marketing-msg {
 	letter-spacing: -2px;
-    font-size: 16px;
+  font-size: 16px;
 }
 
+html[lang=es] #head-marketing-msg {
+  font-size: 16px;
+}
 
 #head-marketing-msg div {
   display: inline-block;
