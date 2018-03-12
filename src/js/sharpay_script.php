@@ -87,14 +87,14 @@ $(function() {
 			var ti = Math.round(right/125).toFixed();
 			try {
 				$('.new-progress-grid #text text').eq( ti - 1 ).text( ( Math.round(raised/500+1).toFixed() * 500  ) ).show();
-				$('.new-progress-grid #text text').eq( ti - 2 ).text( ( Math.round(raised/500).toFixed() * 500  ) ).show();
+				//$('.new-progress-grid #text text').eq( ti - 2 ).text( ( Math.round(raised/500).toFixed() * 500  ) ).show();
 				$('.new-progress-grid #text text').eq( ti - 3 ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
 				$('.new-progress-grid #text text').eq( ti - 4 ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
 				$('.new-progress-grid #text text').eq( ti - 5 ).text( ( Math.round(raised/500-3).toFixed() * 500  ) ).show();
 			} catch ( e ) {  }
 		});
 		$('.new-progress-now').load('/images/chart/bar-cur.svg?v=4', function( data ){
-			$('.new-progress-now text').text( raised + ' ETH' );//.show( 500 );
+			$('.new-progress-now text').text( raised + ' ETH' ).show( 500 );
 		});
 		$('.new-progress-bg').load('/images/chart/bar-bg.svg?v=1');
 	});
