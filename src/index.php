@@ -831,7 +831,7 @@ include 'init.php'
 				<p><?=L::events_meet_us?></p>
 				<p><?=L::events_here?></p>
 			</div>
-			<div data-ix="r-init">
+			<div id="event-baners" data-ix="r-init">
 				<!-- ls | sort | sed 's/.*/<img class="event-banner" src="\/images\/events\/&" \/>/' -->
 				<img class="event-banner" src="/images/events/0122_san-francisco.png" />
 				<img class="event-banner" src="/images/events/0125_London.png" />
