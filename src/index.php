@@ -542,7 +542,7 @@ include 'init.php'
 				<p class="p p2"><?=L::buyback_p2?></p>
 			</div>
 			<div class="r-col" data-ix="r-init">
-				<div class="sheme2"><img src="/images/shema3xhdpi.svg" class="img"></div>
+				<div class="sheme2"><img src="/images/schemas/shema3xhdpi.svg" class="img"></div>
 			</div>
 		</div>
 	</div>
