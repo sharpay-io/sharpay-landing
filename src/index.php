@@ -74,6 +74,7 @@ include 'init.php'
 						<a href="/zh/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_zh?></a>
 						<a href="/ko/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ko?></a>
 						<a href="/jp/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_jp?></a>
+						<a href="/es/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_es?></a>
 						<a href="/ru/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ru?></a>
 					</div>
 				</nav>
@@ -89,6 +90,9 @@ include 'init.php'
 					</a>
 					<a href="/jp/" class="nav-link nl-lang w-nav-link">
 						<img class="flag" src="/images/flat/japanese.svg" title="<?=L::head_lang_menu_jp_title?>" />
+					</a>
+					<a href="/es/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/images/flat/spain.png" title="<?=L::head_lang_menu_es_title?>" />
 					</a>
 					<a href="/ru/" class="nav-link nl-lang w-nav-link">
 					<img class="flag" src="/images/flat/russia.svg" title="<?=L::head_lang_menu_ru_title?>" />

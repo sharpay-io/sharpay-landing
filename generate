@@ -15,4 +15,8 @@ php src/index.php ru > ru/index.html
 echo 'Generating japanese page...'
 php src/index.php jp > jp/index.html
 
+
+echo 'Generating spanish page...'
+php src/index.php es > es/index.html
+
 echo 'Done.'

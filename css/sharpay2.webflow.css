@@ -98,6 +98,9 @@ a {
     font-size: 13px;
     line-height: 15px
 }
+html[lang="es"] .nav-link {
+  margin-right: 15px;
+}
 
 .brand span,.nav-link:hover {
     color: #f93
@@ -108,7 +111,7 @@ a {
 }
 
 .nav-link.nl-lang {
-    margin-right: 0;
+    margin-right: 0 !important;
     margin-left: 0;
     display: inline-block;
     width: 25px
@@ -3415,7 +3418,7 @@ html[lang="ko"] #events p {
 .new-progress-wrap {
 	position: relative;
 	height: 46px;
-	overflow: hidden;					
+	overflow: hidden;
 	width:100%;
 }
 .new-progress-grad {
@@ -3425,7 +3428,7 @@ html[lang="ko"] #events p {
 	height: 46px;
 	width: 100%;
 	z-index: 4;
-	
+
 	background: -moz-linear-gradient(left, rgba(55,55,55,1) 0%, rgba(55,55,55,0) 20%, rgba(55,55,55,0) 80%, rgba(55,55,55,1) 100%);
 	background: -webkit-linear-gradient(left, rgba(55,55,55,1) 0%,rgba(55,55,55,0) 20%,rgba(55,55,55,0) 80%,rgba(55,55,55,1) 100%);
 	background: linear-gradient(to right, rgba(55,55,55,1) 0%,rgba(55,55,55,0) 20%,rgba(55,55,55,0) 80%,rgba(55,55,55,1) 100%);
@@ -3492,7 +3495,7 @@ html[lang="ko"] #events p {
     95%{background-position:0% 100%}
     100%{background-position:0% 100%}
 }
-@keyframes blinkline { 
+@keyframes blinkline {
     0%{background-position:100% 0%}
 	5%{background-position:100% 0%}
 	50%{background-position:0% 0%}
@@ -3516,10 +3519,10 @@ html[lang="ko"] #events p {
 	.new-progress p {
 		text-align: center;
 	}
-	.new-progress-grad {						
+	.new-progress-grad {
 		background: -moz-linear-gradient(left, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 20%, rgba(34,34,34,0) 80%, rgba(34,34,34,1) 100%);
 		background: -webkit-linear-gradient(left, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
 		background: linear-gradient(to right, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222',GradientType=1 );
 	}
-}	
+}

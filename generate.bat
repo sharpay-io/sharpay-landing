@@ -14,5 +14,8 @@ C:\xampp\php\php.exe -f src/index.php ru > ru/index.html
 ECHO Generating japanese page...
 C:\xampp\php\php.exe -f src/index.php jp > jp/index.html
 
+ECHO Generating spanish page...
+C:\xampp\php\php.exe -f src/index.php es > es/index.html
+
 ECHO Done.
 pause
