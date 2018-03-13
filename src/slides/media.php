@@ -22,7 +22,8 @@ $mediaList = [
   ],
   [
     'url' => 'http://bitcoinist.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
-    'image' => '/images/media/bitcoinist.png'
+    'image' => '/images/media/bitcoinist.png',
+    'cls' => 'bitcoinist'
   ],
   [
     'url' => 'https://themerkle.com/sharpay-share-buttons-successfully-raised-2400-eth-in-presale-and-announcing-token-sale/',
@@ -74,9 +75,6 @@ $mediaList = [
   } */
 
   #media-carousel {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     margin-top: -25px;
   }
@@ -87,7 +85,7 @@ $mediaList = [
 
   .media-img {
     height: 50px;
-    margin: 20px 25px;
+    margin: 20px 30px;
   }
 
   /* logo is to long and narrow */
@@ -112,6 +110,18 @@ $mediaList = [
   .media-cnn, .media-coinstaker {
     height: 36px;
     margin: 17px 25px;
+  }
+
+  /* a fix to make media list the same size as events banners on previous slide  */
+  .media-newsbtc, .bitcoinist {
+    margin-right: 54px;
+  }
+
+  @media (max-width:479px) {
+
+    #media-carousel {
+      margin-top: 20px;
+    }
   }
 
 </style>
