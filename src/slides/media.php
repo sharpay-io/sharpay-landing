@@ -75,8 +75,8 @@ $mediaList = [
   } */
 
   #media-carousel {
-    text-align: center;
     margin-top: -25px;
+    margin-left: 28px;
   }
 
   .media-item {
@@ -115,6 +115,9 @@ $mediaList = [
   /* to make the second row of banners the same width as banners block on Events slide */
   .media-newsbtc {
     margin-right: 13px;
+  }
+  .media-cnn {
+    margin-left: 31px;
   }
 
   @media (max-width:479px) {
