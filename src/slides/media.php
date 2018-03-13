@@ -16,6 +16,11 @@ $mediaList = [
     'cls' => 'media-cryptorus'
   ],
   [
+    'url' => 'http://www.livebitcoinnews.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
+    'image' => '/images/media/livebitcoinnews.png',
+    'cls' => 'media-bitcoinnews'
+  ],
+  [
     'url' => 'https://www.newsbtc.com/2018/02/23/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/',
     'image' => '/images/media/newsbtc.png',
     'cls' => 'media-newsbtc'
@@ -34,18 +39,13 @@ $mediaList = [
     'image' => '/images/media/bitscreener.png'
   ],
   [
-    'url' => 'http://www.livebitcoinnews.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
-    'image' => '/images/media/livebitcoinnews.png',
-    'cls' => 'media-bitcoinnews'
+    'url' => 'https://www.cryptoninjas.net/2018/02/23/sharpay-share-buttons-successfully-raises-2400-eth-presale/',
+    'image' => '/images/media/cryptoninjias.png',
+    'cls' => 'media-cryptoninjias'
   ],
   [
     'url' => 'https://coinjournal.net/pr-release/sharpay-share-buttons-successfully-raised-2400-eht-presale-now-announcing-token-sale/',
     'image' => '/images/media/coinjournal.png'
-  ],
-  [
-    'url' => 'https://www.cryptoninjas.net/2018/02/23/sharpay-share-buttons-successfully-raises-2400-eth-presale/',
-    'image' => '/images/media/cryptoninjias.png',
-    'cls' => 'media-cryptoninjias'
   ],
   [
     'url' => 'https://www.coinstaker.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
@@ -102,7 +102,7 @@ $mediaList = [
 
   /* making logo bigger */
   .media-bitcoinnews {
-    margin: 3px 25px 7px 25px;
+    margin: 3px 25px 7px 36px;
     height: 70px;
   }
 
@@ -112,9 +112,9 @@ $mediaList = [
     margin: 17px 25px;
   }
 
-  /* a fix to make media list the same size as events banners on previous slide  */
-  .media-newsbtc, .bitcoinist {
-    margin-right: 54px;
+  /* to make the second row of banners the same width as banners block on Events slide */
+  .media-newsbtc {
+    margin-right: 13px;
   }
 
   @media (max-width:479px) {
