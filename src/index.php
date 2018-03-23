@@ -106,28 +106,28 @@ include 'init.php'
 
 		<div id="trackico-rating-mob">
 			<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
-				<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
+				<img src="/images/ratings/Rating_ICObench_Sharpay_4_9.svg" />
 			</a>
 			<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
-				<img src="/images/ratings/Rating_TrackICO_Sharpay_4_8.svg" />
+				<img src="/images/ratings/Rating_TrackICO_Sharpay_5_0.svg" />
 			</a>
-			<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
+			<?/*<!--a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
 				<img src="/images/ratings/Rating_Krypto_Sharpay_4_4.svg" />
-			</a>
+			</a-->*/?>
 		</div>
 
 		<div class="container-head">
 
 			<div id="trackico-rating">
 				<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
-					<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
+					<img src="/images/ratings/Rating_ICObench_Sharpay_4_9.svg" />
 				</a>
 				<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
-					<img src="/images/ratings/Rating_TrackICO_Sharpay_4_8.svg" />
+					<img src="/images/ratings/Rating_TrackICO_Sharpay_5_0.svg" />
 				</a>
-				<a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
+				<?/*<!--a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
 					<img src="/images/ratings/Rating_Krypto_Sharpay_4_4.svg" />
-				</a>
+				</a-->*/?>
 			</div>
 
 			<div class="h-text-wrap">
