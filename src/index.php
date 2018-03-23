@@ -256,7 +256,7 @@ include 'init.php'
 					</div>
 				</div>
 				<div class="row-r-col" data-ix="r-init">
-					<iframe id="what-is-that-video" src="https://www.youtube.com/embed/eOac-9DljiI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe id="what-is-that-video" src="https://www.youtube.com/embed/eOac-9DljiI?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="row-cont">
