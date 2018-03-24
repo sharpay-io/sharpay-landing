@@ -81,16 +81,18 @@ $(function() {
 	$.get('/raised.txt?t='  + new Date().getTime(), function( raised ){
 		raised = parseInt( raised );
 		$('.new-progress-grid').load('/images/chart/bar-grid.svg?v=4', function( data ){
-			var shift = raised%1500;
+			var shift = raised%500;
 			var right = 125 * shift / 500 - 400;
 			$('.new-progress-grid').css('right', right );
-			var ti = Math.round(right/125).toFixed();
+			var ti = Math.round(shift/500).toFixed() - 1;
 			try {
-				$('.new-progress-grid #text text').eq( ti - 1 ).text( ( Math.round(raised/500+1).toFixed() * 500  ) ).show();
-				//$('.new-progress-grid #text text').eq( ti - 2 ).text( ( Math.round(raised/500).toFixed() * 500  ) ).show();
-				$('.new-progress-grid #text text').eq( ti - 3 ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
-				$('.new-progress-grid #text text').eq( ti - 4 ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
-				$('.new-progress-grid #text text').eq( ti - 5 ).text( ( Math.round(raised/500-3).toFixed() * 500  ) ).show();
+				var tis = 3;
+				$('.new-progress-grid #text text').eq( ti - 0 - tis ).text( ( Math.round(raised/500+1).toFixed() * 500  ) ).show();
+				//$('.new-progress-grid #text text').eq( ti - 1 - tis ).text( ( Math.round(raised/500).toFixed() * 500  ) ).show();
+				$('.new-progress-grid #text text').eq( ti - 2 - tis ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
+				$('.new-progress-grid #text text').eq( ti - 3 - tis ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
+				$('.new-progress-grid #text text').eq( ti - 4 - tis ).text( ( Math.round(raised/500-3).toFixed() * 500  ) ).show();
+				$('.new-progress-grid #text text').eq( ti - 5 - tis ).text( ( Math.round(raised/500-4).toFixed() * 500  ) ).show();
 			} catch ( e ) {  }
 		});
 		$('.new-progress-now').load('/images/chart/bar-cur.svg?v=4', function( data ){
