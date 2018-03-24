@@ -3530,6 +3530,15 @@ html[lang="ko"] #events p {
     100%{background-position:0% 100%}
 }
 
+.mvp-go {
+	background: url(../images/external-link.svg) no-repeat center center transparent;
+	background-size: contain;
+	display: inline-block;
+	width: 21px;
+    height: 16px;
+    margin-left: 10px;
+}
+
 
 @media (max-width: 767px) {
 	#video {

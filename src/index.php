@@ -43,7 +43,7 @@ include 'init.php'
 		<div id="singin-dialog" class="dialog">
 			<h2 class="h2"><?=L::singin_header?></h2>
 			<div class="row">
-				<div class="col"><a href="https://app.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'});">
+				<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'});">
           <div><?=L::singin_app_login?></div></a></div>
 				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': '<?=$lang?>'});">
           <div><?=L::singin_cabinet_login?></div></a></div>
@@ -134,7 +134,7 @@ include 'init.php'
 				<h1 class="h1 sharpey-slogan"><?=L::head_slogan?></h1>
 				<div class="h-subtitle">
 					<?=L::head_subtitle?><br>
-					<?=L::head_status?>
+					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-sharpay="srpio" data-lang="<?=$lang?>"> </a>
 				</div>
 				<div class="h-btns">
 					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': '<?=$lang?>'});">
