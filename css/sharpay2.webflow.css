@@ -1809,7 +1809,7 @@ html[lang="ko"] #events p {
         margin-left: 100px
     }
 
-    #sites .l-col,#sites .r-col,#token .l-col {
+    #sites .l-col,#sites .r-col {
         width: 25%!important;
         min-width: auto!important;
         max-width: none!important
@@ -1825,11 +1825,13 @@ html[lang="ko"] #events p {
     }
 
     #token .l-col {
-        width: 25%!important
+        width: 20%!important;
+		min-width: auto!important;
+        max-width: none!important;
     }
 
     #token .r-col {
-        width: 75%!important
+        width: 80%!important
     }
 
     .clock {
@@ -1837,13 +1839,13 @@ html[lang="ko"] #events p {
         margin-left: auto;
         margin-right: auto
     }
-
-    #clockChart,#tokenChart {
-        width: 800px
+	#tokenChart {
+        margin-top: -11px; 
+		width: 900px; 
+		float: right;
     }
-
-    #tokenChart {
-      margin-top: -24px;
+    #clockChart {
+        width: 800px
     }
 
     #clockChart {

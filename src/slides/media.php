@@ -74,8 +74,12 @@ $mediaList = [
     opacity: 1;
   } */
 
+  #media {
+	  padding-bottom: 52px;
+  }
+  
   #media-carousel {
-    margin-top: -25px;
+    margin-top: -22px;
     margin-left: 28px;
   }
 

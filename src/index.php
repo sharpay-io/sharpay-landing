@@ -193,22 +193,8 @@ include 'init.php'
 
 	<div id="token" class="section section-dark">
 		<div class="container">
-			<div class="l-col" data-ix="l-init">
-				<h2 class="h2"><span class="orange-span"><?=L::token_presale?></span></h2>
-				<p class="p"><?=L::token_presale_dates?><br>
-					<?=L::token_presale_price?><br>
-					<?=L::token_presale_min_purchase?><br>
-					<?=L::token_presale_amount?> &mdash; <strong><?=L::token_presale_sold?></strong><br>
-					<?=L::token_presale_contrib?>
-				</p>
-			</div>
-			<div class="r-col" data-ix="r-init">
-				<div id="tokenChart"></div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="l-col token-chart-col" data-ix="l-init">
-				<h2 class="h2 h2-2"><span class="orange-span"><?=L::token_sale?></span></h2>
+			<div class="-l-col" data-ix="l-init">
+				<h2 class="h2"><span class="orange-span"><?=L::token_sale?></span></h2>
 				<p class="p"><?=L::token_sale_dates?><br>
 					<?=L::token_sale_price?><br>
 					<?=L::token_sale_min_purchase?><br />
@@ -217,12 +203,26 @@ include 'init.php'
 					<?=L::token_sale_amount?>
 				</p>
 			</div>
-			<div class="r-col token-chart-col" data-ix="r-init">
-				<div id="clockChart">
-					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
-				</div>
+			<div class="-r-col" data-ix="r-init">
+				<div id="tokenChart"></div>
 			</div>
 		</div>
+		<?/*<div class="container">
+			<div class="l-col token-chart-col" data-ix="l-init">
+				<h2 class="h2 h2-2"><span class="orange-span"><?=L::token_presale?></span></h2>
+				<p class="p"><?=L::token_presale_dates?><br>
+					<?=L::token_presale_price?><br>
+					<?=L::token_presale_min_purchase?><br>
+					<?=L::token_presale_amount?> &mdash; <strong><?=L::token_presale_sold?></strong><br>
+					<?=L::token_presale_contrib?>
+				</p>
+			</div>
+			<div class="r-col token-chart-col" data-ix="r-init">
+				<!--div id="clockChart">
+					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
+				</div-->
+			</div>
+		</div>*/?>
 	</div>
 
 	<div id="view" class="section">
