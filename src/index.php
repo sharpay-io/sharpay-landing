@@ -897,7 +897,7 @@ include 'init.php'
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'UA-109731082-2');
+		gtag('config', 'UA-109731082-2', { 'linker': { 'domains': ['sale.sharpay.io'], 'accept_incoming': true } } );
 	</script>
 
 </body>
