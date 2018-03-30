@@ -134,7 +134,7 @@ include 'init.php'
 				<h1 class="h1 sharpey-slogan"><?=L::head_slogan?></h1>
 				<div class="h-subtitle">
 					<?=L::head_subtitle?><br>
-					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-sharpay="srpio" data-lang="<?=$lang?>"> </a>
+					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-sharpay="srpio" data-lang="<?=$lang?>" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});"> </a>
 				</div>
 				<div class="h-btns">
 					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': '<?=$lang?>'});">
