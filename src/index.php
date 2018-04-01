@@ -43,9 +43,9 @@ include 'init.php'
 		<div id="singin-dialog" class="dialog">
 			<h2 class="h2"><?=L::singin_header?></h2>
 			<div class="row">
-				<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'});">
+				<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');">
           <div><?=L::singin_app_login?></div></a></div>
-				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': '<?=$lang?>'});">
+				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('sale');">
           <div><?=L::singin_cabinet_login?></div></a></div>
 			</div>
 		</div>
@@ -134,19 +134,19 @@ include 'init.php'
 				<h1 class="h1 sharpey-slogan"><?=L::head_slogan?></h1>
 				<div class="h-subtitle">
 					<?=L::head_subtitle?><br>
-					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-sharpay="srpio" data-lang="<?=$lang?>" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});"> </a>
+					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-sharpay="srpio" data-lang="<?=$lang?>" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');"> </a>
 				</div>
 				<div class="h-btns">
-					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': '<?=$lang?>'});">
+					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('whitepaper');">
 						<div><?=L::head_white_paper?></div>
 					</a>
-					<a href="<?=L::head_presentation_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'presentation', {'lang': '<?=$lang?>'});">
+					<a href="<?=L::head_presentation_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'presentation', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('presentation');">
 						<div><?=L::head_presentation?></div>
 					</a>
-					<a href="<?=L::head_one_pager_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': '<?=$lang?>'});">
+					<a href="<?=L::head_one_pager_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('onepager');">
 						<div><?=L::head_one_pager?></div>
 					</a>
-					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': '<?=$lang?>'});">
+					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('chat');">
 						<div><span class="chat-online"></span><?=L::head_chat?></div>
 					</a>
 				</div>
@@ -170,7 +170,7 @@ include 'init.php'
 						</div>
 					</div>
 					<div class="sales-wrap">
-						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});"><?=L::head_reserve_now?></a>
+						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});  yaCounter48279077.reachGoal('buybtn');"><?=L::head_reserve_now?></a>
 					</div>
 				</div>
 
@@ -899,35 +899,9 @@ include 'init.php'
 		gtag('js', new Date());
 		gtag('config', 'UA-109731082-2', { 'linker': { 'domains': ['sale.sharpay.io'], 'accept_incoming': true } } );
 	</script>
-	
+
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-		(function (d, w, c) {
-			(w[c] = w[c] || []).push(function() {
-				try {
-					w.yaCounter48279077 = new Ya.Metrika({
-						id:48279077,
-						clickmap:true,
-						trackLinks:true,
-						accurateTrackBounce:true,
-						webvisor:true
-					});
-				} catch(e) { }
-			});
-
-			var n = d.getElementsByTagName("script")[0],
-				s = d.createElement("script"),
-				f = function () { n.parentNode.insertBefore(s, n); };
-			s.type = "text/javascript";
-			s.async = true;
-			s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-			if (w.opera == "[object Opera]") {
-				d.addEventListener("DOMContentLoaded", f, false);
-			} else { f(); }
-		})(document, window, "yandex_metrika_callbacks");
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/48279077" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48279077 = new Ya.Metrika({ id:48279077, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48279077?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
 	<!-- /Yandex.Metrika counter -->
 
 </body>
