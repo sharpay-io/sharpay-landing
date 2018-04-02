@@ -50,6 +50,11 @@ $(function() {
 	$('.dialog').click(function(e) {
 		e.stopPropagation();
 	});
+	
+	$('.nl-lang').click(function(){
+		var date = new Date(new Date().getTime() + 60*60*24 * 1000);
+		document.cookie = "language=true; path=/; expires=" + date.toUTCString();
+	});
 
   // VIDEO DIALOG
 
