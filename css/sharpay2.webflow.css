@@ -93,13 +93,13 @@ a {
 }
 
 .nav-link {
-    margin-right: 30px;
+    margin-right: 20px;
     padding: 0;
     font-size: 13px;
     line-height: 15px
 }
 html[lang="es"] .nav-link {
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .brand span,.nav-link:hover {
@@ -1840,8 +1840,8 @@ html[lang="ko"] #events p {
         margin-right: auto
     }
 	#tokenChart {
-        margin-top: -11px; 
-		width: 900px; 
+        margin-top: -11px;
+		width: 900px;
 		float: right;
     }
     #clockChart {

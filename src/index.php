@@ -75,6 +75,7 @@ include 'init.php'
 						<a href="/ko/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ko?></a>
 						<a href="/jp/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_jp?></a>
 						<a href="/es/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_es?></a>
+						<a href="/it/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_it?></a>
 						<a href="/ru/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ru?></a>
 					</div>
 				</nav>
@@ -93,6 +94,9 @@ include 'init.php'
 					</a>
 					<a href="/es/" class="nav-link nl-lang w-nav-link">
 						<img class="flag" src="/images/flat/spain.png" title="<?=L::head_lang_menu_es_title?>" />
+					</a>
+					<a href="/it/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/images/flat/italy.png" title="<?=L::head_lang_menu_es_title?>" />
 					</a>
 					<a href="/ru/" class="nav-link nl-lang w-nav-link">
 					<img class="flag" src="/images/flat/russia.svg" title="<?=L::head_lang_menu_ru_title?>" />
@@ -900,8 +904,8 @@ include 'init.php'
 		gtag('config', 'UA-109731082-2', { 'linker': { 'domains': ['sale.sharpay.io'], 'accept_incoming': true } } );
 	</script>
 
-	<!-- Yandex.Metrika counter --> 
-	<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48279077 = new Ya.Metrika2({ id:48279077, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48279077?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48279077 = new Ya.Metrika2({ id:48279077, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48279077?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
 
 </body>

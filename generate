@@ -1,22 +1,24 @@
 #!/bin/bash
 
-echo 'Generating default (english) page...'
+echo 'Generating default (English) page...'
 php src/index.php en > index.html
 
-echo 'Generating chinese page...'
+echo 'Generating Chinese page...'
 php src/index.php zh > zh/index.html
 
-echo 'Generating korian page...'
+echo 'Generating Korian page...'
 php src/index.php ko > ko/index.html
 
-echo 'Generating russian page...'
+echo 'Generating Russian page...'
 php src/index.php ru > ru/index.html
 
-echo 'Generating japanese page...'
+echo 'Generating Japanese page...'
 php src/index.php jp > jp/index.html
 
-
-echo 'Generating spanish page...'
+echo 'Generating Spanish page...'
 php src/index.php es > es/index.html
+
+echo 'Generating Italian page...'
+php src/index.php it > it/index.html
 
 echo 'Done.'
