@@ -21,4 +21,7 @@ php src/index.php es > es/index.html
 echo 'Generating Italian page...'
 php src/index.php it > it/index.html
 
+echo 'Generating Portugal page...'
+php src/index.php pt > pt/index.html
+
 echo 'Done.'

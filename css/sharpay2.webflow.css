@@ -98,9 +98,15 @@ a {
     font-size: 13px;
     line-height: 15px
 }
-html[lang="es"] .nav-link {
-  margin-right: 12px;
-}
+
+html[lang="ru"] .nav-link { margin-right:  15px; }
+
+html[lang="jp"] .nav-link { margin-right: 12px; }
+
+html[lang="es"] .nav-link { margin-right: 8px; }
+
+html[lang="pt"] .nav-link { margin-right: 1px; }
+html[lang="pt"] .w-nav-menu { margin-left: 5px; }
 
 .brand span,.nav-link:hover {
     color: #f93
@@ -221,6 +227,8 @@ html[lang="es"] .nav-link {
 html[lang="es"] .btn {
   padding: 11px 14px 14px;
 }
+
+html[lang="pt"] .btn { padding: 11px 10px 14px; }
 
 .h-form-title {
     font-size: 24px;
@@ -1525,6 +1533,10 @@ html[lang=jp] #head-marketing-msg {
 
 html[lang=es] #head-marketing-msg {
   font-size: 16px;
+}
+
+html[lang=pt] #head-marketing-msg {
+  font-size: 15px;
 }
 
 #head-marketing-msg div {

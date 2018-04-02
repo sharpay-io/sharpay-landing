@@ -20,5 +20,8 @@ C:\xampp\php\php.exe -f src/index.php es > es/index.html
 ECHO Generating Italian page...
 C:\xampp\php\php.exe -f src/index.php it > it/index.html
 
+ECHO Generating Portugal page...
+C:\xampp\php\php.exe -f src/index.php pt > pt/index.html
+
 ECHO Done.
 pause
