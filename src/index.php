@@ -97,7 +97,7 @@ include 'init.php'
 						<img class="flag" src="/images/flat/spain.png" title="<?=L::head_lang_menu_es_title?>" />
 					</a>
 					<a href="/it/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/italy.png" title="<?=L::head_lang_menu_es_title?>" />
+						<img class="flag" src="/images/flat/italy.png" title="<?=L::head_lang_menu_it_title?>" />
 					</a>
 					<a href="/pt/" class="nav-link nl-lang w-nav-link">
 						<img class="flag" src="/images/flat/portugal.png" title="<?=L::head_lang_menu_pt_title?>" />
