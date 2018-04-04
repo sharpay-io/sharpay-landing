@@ -9,7 +9,11 @@ async function handle(request)
 		if( url.hostname == 'sharpay.io' )
 		{
 			const langs = { 
-				'RU':'ru', 'UA':'ru', 'BY':'ru', 'KZ':'ru', 'CN':'zh', 'KR':'ko', 'KP':'ko', 'JP':'jp', 'IT':'it',
+				'RU':'ru', 'UA':'ru', 'BY':'ru', 'KZ':'ru', 
+				'CN':'zh', 'TW':'zh', 'SG':'zh', 'HK':'zh', 'MO':'zh', 
+				'KR':'ko', 'KP':'ko', 
+				'JP':'jp', 
+				'IT':'it', 
 				'ES':'es', 'PH':'es', 'GQ':'es', 'AR':'es', 'BO':'es', 'CL':'es', 'CO':'es', 'CR':'es', 'CU':'es', 'DO':'es', 'EC':'es', 'GT':'es', 'HN':'es', 'MX':'es', 'NI':'es', 'PA':'es', 'PY':'es', 'PE':'es', 'PR':'es', 'SV':'es', 'UY':'es', 'VE':'es',
 				'PT':'pt', 'AO':'pt', 'BR':'pt', 'TL':'pt', 'GW':'pt', 'CV':'pt', 'MZ':'pt', 'ST':'pt'
 			}
