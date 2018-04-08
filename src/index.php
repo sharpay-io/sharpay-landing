@@ -759,18 +759,16 @@ include 'init.php'
 					</div>
 				</div>
 				<div class="team-item">
-					<div class="team-img"><img src="/images/Mark.jpg"></div>
+					<div class="team-img"><img src="/images/Paulina.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
-							<div class="name"><?=L::team_mark?>
-								<img class="flag" src="/images/flat/portugal.svg" title="<?=L::portugal_title?>" />
-								<!--img class="flag" src="/images/flat/european.svg" title="<?=L::eu_title?>" /-->
-								<a href="https://www.linkedin.com/in/mark-vdovskikh-544b497b/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
-								<a href="https://www.facebook.com/marc0sorte" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="<?=L::facebook_title?>" /></a>
+							<div class="name"><?=L::team_paulina?>
+								<img class="flag" src="/images/flat/turkey.png" title="<?=L::turkey_title?>" />
+								<a href="https://www.linkedin.com/in/paulina-kulyukhina-92684a25/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
 							</div>
-							<div class="team-status"><?=L::team_mark_title?></div>
+							<div class="team-status"><?=L::team_paulina_title?></div>
 						</div>
-						<p class="team-p"><?=L::team_mark_bio?></p>
+						<p class="team-p"><?=L::team_paulina_bio?></p>
 					</div>
 				</div>
 				<div class="team-item">
@@ -787,32 +785,29 @@ include 'init.php'
 					</div>
 				</div>
 				<div class="team-item">
-					<div class="team-img"><img src="/images/Olga.jpg"></div>
+					<div class="team-img"><img src="/images/Dominica.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
-							<div class="name"><?=L::team_olga?>
-								<img class="flag" src="/images/flat/usa.svg" title="<?=L::us_title?>" />
-								<!--img class="flag" src="/images/flat/russia.svg" title="<?=L::russia_title?>" /-->
-								<!-- <a href="" target="_blank"><img class="flag" src="/images/bitcointalk_team.svg" title="<?=L::bitcointalk_title?>" /></a> -->
-								<a href="https://bitcointalk.org/index.php?action=profile;u=1408234" target="_blank"><img class="flag" src="/images/bitcointalk_team.svg" title="<?=L::bitcointalk_title?>" /></a>
+							<div class="name"><?=L::team_dominica?>
+								<img class="flag" src="/images/flat/russia.svg" title="<?=L::russia_title?>" />
+								<a href="https://www.linkedin.com/in/dominica-koks-97bb1a157/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
 							</div>
-							<div class="team-status"><?=L::team_olga_title?></div>
+							<div class="team-status"><?=L::team_dominica_title?></div>
 						</div>
-						<p class="team-p"><?=L::team_olga_bio?></p>
+						<p class="team-p"><?=L::team_dominica_bio?></p>
 					</div>
 				</div>
 				<div class="team-item">
-					<div class="team-img"><img src="/images/Daria.jpg"></div>
+					<div class="team-img"><img src="/images/William.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
-							<div class="name"><?=L::team_daria?>
-								<img class="flag" src="/images/flat/germany.svg" title="<?=L::germany_title?>" />
-								<!--img class="flag" src="/images/flat/european.svg" title="<?=L::eu_title?>" /-->
-								<a href="https://www.facebook.com/Dxox0" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="<?=L::facebook_title?>" /></a>
+							<div class="name"><?=L::team_william?>
+								<img class="flag" src="/images/flat/netherlands.png" title="<?=L::netherlands_title?>" />
+								<a href="https://bitcointalk.org/index.php?action=profile;u=1664749" target="_blank"><img class="flag" src="/images/bitcointalk_team.svg" title="<?=L::bitcointalk_title?>" /></a>
 							</div>
-							<div class="team-status"><?=L::team_daria_title?></div>
+							<div class="team-status"><?=L::team_william_title?></div>
 						</div>
-						<p class="team-p"><?=L::team_daria_bio?></p>
+						<p class="team-p"><?=L::team_william_bio?></p>
 					</div>
 				</div>
 				<div class="team-item">
