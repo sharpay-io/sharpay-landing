@@ -798,7 +798,7 @@ include 'init.php'
 					</div>
 				</div>
 				<div class="team-item">
-					<div class="team-img"><img src="/images/William.jpg"></div>
+					<div class="team-img"><img src="/images/William2.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
 							<div class="name"><?=L::team_william?>
