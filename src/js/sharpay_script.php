@@ -83,7 +83,10 @@ $(function() {
 
   //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
-	$.get('/raised.txt?t='  + new Date().getTime(), function( raised ){
+	$.getJSON('/raised.json?t='  + new Date().getTime(), function( data ) {
+		$('#contributors').text( data.contributors );
+		
+		var raised = data.raised;
 		raised = parseInt( raised );
 		$('.new-progress-grid').load('/images/chart/bar-grid.svg?v=4', function( data ){
 			var shift = raised%500;
