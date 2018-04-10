@@ -802,7 +802,7 @@ include 'init.php'
 					<div class="team-top">
 						<div class="team-top-text">
 							<div class="name"><?=L::team_william?>
-								<img class="flag" src="/images/flat/netherlands.png" title="<?=L::netherlands_title?>" />
+								<img class="flag" src="/images/flat/germany.svg" title="<?=L::germany_title?>" />
 								<a href="https://bitcointalk.org/index.php?action=profile;u=1664749" target="_blank"><img class="flag" src="/images/bitcointalk_team.svg" title="<?=L::bitcointalk_title?>" /></a>
 							</div>
 							<div class="team-status"><?=L::team_william_title?></div>
