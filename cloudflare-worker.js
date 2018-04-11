@@ -15,7 +15,8 @@ async function handle(request)
 				'JP':'jp', 
 				'IT':'it', 
 				'ES':'es', 'PH':'es', 'GQ':'es', 'AR':'es', 'BO':'es', 'CL':'es', 'CO':'es', 'CR':'es', 'CU':'es', 'DO':'es', 'EC':'es', 'GT':'es', 'HN':'es', 'MX':'es', 'NI':'es', 'PA':'es', 'PY':'es', 'PE':'es', 'PR':'es', 'SV':'es', 'UY':'es', 'VE':'es',
-				'PT':'pt', 'AO':'pt', 'BR':'pt', 'TL':'pt', 'GW':'pt', 'CV':'pt', 'MZ':'pt', 'ST':'pt'
+				'PT':'pt', 'AO':'pt', 'BR':'pt', 'TL':'pt', 'GW':'pt', 'CV':'pt', 'MZ':'pt', 'ST':'pt',
+				'IN':'hi', 'PK':'hi', 'FJ':'hi'
 			}
 			let cookies = request.headers.get('Cookie') || null
 			let useragent = request.headers.get('User-Agent') || null
