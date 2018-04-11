@@ -117,10 +117,10 @@ html[lang="pt"] .w-nav-menu { margin-left: 5px; }
 }
 
 .nav-link.nl-lang {
-    margin-right: 0 !important;
+    margin-right: -5px !important;
     margin-left: 0;
     display: inline-block;
-    width: 25px
+    width: 24px
 }
 
 .nav-link.nl-lang.w--current {
