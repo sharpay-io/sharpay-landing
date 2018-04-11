@@ -78,6 +78,7 @@ include 'init.php'
 						<a href="/it/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_it?></a>
 						<a href="/pt/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_pt?></a>
 						<a href="/ru/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ru?></a>
+						<a href="/hi/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_hi?></a>
 					</div>
 				</nav>
 				<div class="nav-lang">
@@ -103,7 +104,10 @@ include 'init.php'
 						<img class="flag" src="/images/flat/portugal.png" title="<?=L::head_lang_menu_pt_title?>" />
 					</a>
 					<a href="/ru/" class="nav-link nl-lang w-nav-link">
-					<img class="flag" src="/images/flat/russia.svg" title="<?=L::head_lang_menu_ru_title?>" />
+						<img class="flag" src="/images/flat/russia.svg" title="<?=L::head_lang_menu_ru_title?>" />
+					</a>
+					<a href="/hi/" class="nav-link nl-lang w-nav-link">
+						<img class="flag" src="/images/flat/india.svg" title="<?=L::head_lang_menu_hi_title?>" />
 					</a>
 				</div>
 				<div class="menu-btn w-nav-button">
