@@ -1100,7 +1100,7 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
 }
 
 #soc-plugged {
-    margin-top: 54px;
+    margin-top: 34px;
     margin-left: 115px;
 }
 
@@ -1111,6 +1111,16 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
 
 .soc-img {
     margin-right: 10px
+}
+
+.soc-img img {
+    width: 36px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.plus-icon {
+	width: 24px !important;
 }
 
 #soc-img-plus {

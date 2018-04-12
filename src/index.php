@@ -284,6 +284,9 @@ include 'init.php'
 					<div class="soc-img"><img src="/images/reddit.svg"></div>
 					<div class="soc-img"><img src="/images/tele.svg"></div>
 					<div class="soc-img"><img src="/images/tumblr.svg"></div>
+					<div class="soc-img"><img src="/images/sns/kakao.svg"></div>
+					<div class="soc-img"><img src="/images/sns/linkedin.svg"></div>
+					<div class="soc-img"><img src="/images/sns/ok.svg"></div>
 				</div>
 			</div>
 			<div class="row-cont">
@@ -291,8 +294,8 @@ include 'init.php'
 					<p class="p"><?=L::view_connections_p2?></p>
 				</div>
 				<div id="soc-future" class="row-r-col rr2" data-ix="r-init">
+					<div class="soc-img"><img src="/images/sns/pinterest.svg"></div>
 					<div class="soc-img"><img src="/images/wechat.svg"></div>
-					<div class="soc-img"><img src="/images/weibo.svg"></div>
 					<div class="soc-img"><img src="/images/qq.svg"></div>
 					<div class="soc-img"><img src="/images/gplus-icon.svg"></div>
 					<!-- <div class="soc-img"><img src="/images/snapchaat.svg"></div> -->
