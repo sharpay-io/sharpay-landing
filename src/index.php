@@ -810,6 +810,8 @@ include 'init.php'
 						<div class="team-top-text">
 							<div class="name"><?=L::team_william?>
 								<img class="flag" src="/images/flat/germany.svg" title="<?=L::germany_title?>" />
+								<a href="https://www.linkedin.com/in/william-bratsky/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
+								<a href="https://t.me/williambratsky" target="_blank"><img class="flag" src="/images/telegram-help-button.svg" title="<?=L::telegram_title?>" /></a>
 								<a href="https://bitcointalk.org/index.php?action=profile;u=1664749" target="_blank"><img class="flag" src="/images/bitcointalk_team.svg" title="<?=L::bitcointalk_title?>" /></a>
 							</div>
 							<div class="team-status"><?=L::team_william_title?></div>
