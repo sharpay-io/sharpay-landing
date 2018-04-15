@@ -51,6 +51,11 @@ $mediaList = [
     'url' => 'https://www.coinstaker.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
     'image' => '/images/media/coinstaker.png',
     'cls' => 'media-coinstaker'
+  ],
+  [
+    'url' => 'https://coincodex.com/ico-calendar/',
+    'image' => '/images/media/coincodex.svg',
+    'cls' => 'media-coincodex'
   ]
 ];
 
