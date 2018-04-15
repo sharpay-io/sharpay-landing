@@ -54,7 +54,7 @@ $mediaList = [
   ],
   [
     'url' => 'https://coincodex.com/ico-calendar/',
-    'image' => '/images/media/coincodex.svg',
+    'image' => '/images/media/coincodex-dark.svg',
     'cls' => 'media-coincodex'
   ]
 ];
