@@ -26,5 +26,8 @@ C:\xampp\php\php.exe -f src/index.php pt > pt/index.html
 ECHO Generating Hindi page...
 C:\xampp\php\php.exe -f src/index.php hi > hi/index.html
 
+ECHO 'Generating Filipino page...'
+C:\xampp\php\php.exe -f src/index.php ph > ph/index.html
+
 ECHO Done.
 pause

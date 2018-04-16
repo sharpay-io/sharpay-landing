@@ -27,4 +27,7 @@ php src/index.php pt > pt/index.html
 echo 'Generating Hindi page...'
 php src/index.php hi > hi/index.html
 
+echo 'Generating Filipino page...'
+php src/index.php ph > ph/index.html
+
 echo 'Done.'

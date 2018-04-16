@@ -105,6 +105,10 @@ html[lang="jp"] .nav-link { margin-right: 12px; }
 
 html[lang="es"] .nav-link { margin-right: 8px; }
 
+html[lang="ph"] .nav-link { margin-right: 8px; }
+html[lang="ph"] #head-marketing-msg div { line-height: 22px; }
+html[lang="ph"] .h1 { font-size: 48px; line-height: 64px; }
+
 html[lang="pt"] .nav-link { margin-right: 1px; }
 html[lang="pt"] .w-nav-menu { margin-left: 5px; }
 
