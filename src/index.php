@@ -183,7 +183,7 @@ include 'init.php'
 						</div>
 					</div>
 					<div class="sales-wrap">
-						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="gtag('event', 'buybtn', {'lang': '<?=$lang?>'});  yaCounter48279077.reachGoal('buybtn'); _mgq.push(['MgSensorInvoke', 'interest299708']);"><?=L::head_reserve_now?></a>
+						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="try{ gtag('event', 'buybtn', {'lang': '<?=$lang?>'}); } catch ( e ) {};  try{ yaCounter48279077.reachGoal('buybtn'); } catch ( e ) {};  try{ _mgq.push(['MgSensorInvoke', 'leadnew299708']);  } catch ( e ) {}"><?=L::head_reserve_now?></a>
 					</div>
 				</div>
 
