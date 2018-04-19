@@ -30,6 +30,10 @@ Webflow.push(function() {
 });
 */
 $(function() {
+	
+	if( /utm/i.test( document.location.search ) ) {
+		$('.btn-sale').attr('href', $('.btn-sale').attr('href') + '&' + document.location.search.substr(1) );
+	}
 
   $(window).resize(function() {
     var h = $(window).height();
