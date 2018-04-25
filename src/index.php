@@ -286,7 +286,7 @@ include 'init.php'
 					<div class="soc-img"><img src="/images/tele.svg"></div>
 					<div class="soc-img"><img src="/images/tumblr.svg"></div>
 					<div class="soc-img"><img src="/images/sns/kakao.svg"></div>
-					<div class="soc-img"><img src="/images/sns/linkedin.svg"></div>
+					<!--div class="soc-img"><img src="/images/sns/linkedin.svg"></div-->
 					<div class="soc-img"><img src="/images/sns/ok.svg"></div>
 				</div>
 			</div>
