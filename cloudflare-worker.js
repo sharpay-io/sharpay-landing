@@ -14,6 +14,7 @@ async function handle(request)
 				'KR':'ko', 'KP':'ko', 
 				'JP':'jp', 
 				'PH':'ph', 
+				'NL':'nl', 'BE':'nl', 'SR':'nl', 'AW':'nl', 'CW':'nl', 'SX':'nl', 
 				'IT':'it', 
 				'ES':'es', 'PH':'es', 'GQ':'es', 'AR':'es', 'BO':'es', 'CL':'es', 'CO':'es', 'CR':'es', 'CU':'es', 'DO':'es', 'EC':'es', 'GT':'es', 'HN':'es', 'MX':'es', 'NI':'es', 'PA':'es', 'PY':'es', 'PE':'es', 'PR':'es', 'SV':'es', 'UY':'es', 'VE':'es',
 				'PT':'pt', 'AO':'pt', 'BR':'pt', 'TL':'pt', 'GW':'pt', 'CV':'pt', 'MZ':'pt', 'ST':'pt',

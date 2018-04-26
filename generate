@@ -30,4 +30,7 @@ php src/index.php hi > hi/index.html
 echo 'Generating Filipino page...'
 php src/index.php ph > ph/index.html
 
+echo 'Generating Nederlands page...'
+php src/index.php nl > nl/index.html
+
 echo 'Done.'

@@ -29,5 +29,8 @@ C:\xampp\php\php.exe -f src/index.php hi > hi/index.html
 ECHO Generating Filipino page...
 C:\xampp\php\php.exe -f src/index.php ph > ph/index.html
 
+ECHO Generating Nederlands page...
+C:\xampp\php\php.exe -f src/index.php nl > nl/index.html
+
 ECHO Done.
 pause
