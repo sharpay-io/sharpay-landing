@@ -13,7 +13,7 @@ a {
 }
 
 .body>div {
-    z-index: 2
+    z-index: 30
 }
 
 #particles {
@@ -3568,6 +3568,63 @@ html[lang="ko"] #events p {
 }
 
 
+.nav-lang {
+	position: relative;
+	min-width: 175px;
+}
+.languagepicker {
+	background-color: #313131;
+	display: inline-block;
+	padding: 0;
+	height: 40px;
+	overflow: hidden;
+	transition: all .3s ease;
+	border-radius: 5px;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	font-size: 14px;
+}
+.languagepicker:hover, .languagepicker:active {
+	height: auto;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.languagepicker img {
+	width: 16px;
+}
+.languagepicker a{
+	color: #efefef;
+	text-decoration: none;
+}
+.languagepicker li {
+	display: block;
+	padding: 0px 20px;
+	line-height: 40px;
+	-border-top: 1px solid #333;
+}
+.languagepicker li:hover{
+	background-color: #333;
+}
+.languagepicker a:first-child li {
+	border: none;
+	background: #313131 !important;
+	
+}
+.languagepicker>li:after {
+	content: '▼';
+	float: right;
+    color: #999;
+	margin-left: 15px;
+}
+.languagepicker li img {
+	margin-right: 5px;
+}
+
+.nav-lang.nl-mob a {
+	display: inline-block;
+}
+
+
 @media (max-width: 767px) {
 	#video {
 		float: none;
@@ -3588,5 +3645,13 @@ html[lang="ko"] #events p {
 		background: -webkit-linear-gradient(left, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
 		background: linear-gradient(to right, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222',GradientType=1 );
+	}
+	
+	.nav-lang.nl-mob {
+		display: flex!important;
+		justify-content: space-between!important;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 15px 20px;
 	}
 }

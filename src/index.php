@@ -1,6 +1,20 @@
 <?php
 
-include 'init.php'
+include 'init.php';
+
+$langsArray = array(
+	'en' => array( 'lang' => 'EN', 'url' => '/', 'img' => '/images/flat/uk.svg', 'title' => 'English' ),
+	'zh' => array( 'lang' => 'ZH', 'url' => '/zh/', 'img' => '/images/flat/china.svg', 'title' => '漢語' ),
+	'ko' => array( 'lang' => 'KO', 'url' => '/ko/', 'img' => '/images/flat/korea.svg', 'title' => '한국어' ),
+	'jp' => array( 'lang' => 'JP', 'url' => '/jp/', 'img' => '/images/flat/japanese.svg', 'title' => '日本語' ),
+	'es' => array( 'lang' => 'ES', 'url' => '/es/', 'img' => '/images/flat/spain.png', 'title' => 'Español' ),
+	'it' => array( 'lang' => 'IT', 'url' => '/it/', 'img' => '/images/flat/italy.png', 'title' => 'Italiano' ),
+	'pt' => array( 'lang' => 'PT', 'url' => '/pt/', 'img' => '/images/flat/portugal.png', 'title' => 'Português' ),
+	'ru' => array( 'lang' => 'RU', 'url' => '/ru/', 'img' => '/images/flat/russia.svg', 'title' => 'Русский' ),
+	'hi' => array( 'lang' => 'HI', 'url' => '/hi/', 'img' => '/images/flat/india.svg', 'title' => 'हिंदी' ),
+	'ph' => array( 'lang' => 'PH', 'url' => '/ph/', 'img' => '/images/flat/philippines.svg', 'title' => 'Filipino' ),
+	'nl' => array( 'lang' => 'NL', 'url' => '/nl/', 'img' => '/images/flat/nederlands.svg', 'title' => 'Hollandsk' ),
+);
 
 ?><!DOCTYPE html>
 <html lang="<?=$lang?>">
@@ -67,21 +81,23 @@ include 'init.php'
 					<a href="#team" class="nav-link w-nav-link"><?=L::head_menu_team?></a>
 					<a href="#signin" class="nav-link w-nav-link orange-span"><?=L::head_menu_signin?></a>
 					<div class="nav-lang nl-mob">
-						<a href="/" class="nav-link nl-lang w-nav-link badge"><?=L::head_mob_lang_menu_en?></a>
-						<a href="/zh/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_zh?></a>
-						<a href="/ko/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ko?></a>
-						<a href="/jp/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_jp?></a>
-						<a href="/es/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_es?></a>
-						<a href="/it/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_it?></a>
-						<a href="/pt/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_pt?></a>
-						<a href="/ru/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ru?></a>
-						<a href="/hi/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_hi?></a>
-						<a href="/ph/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_ph?></a>
-						<a href="/nl/" class="nav-link nl-lang w-nav-link"><?=L::head_mob_lang_menu_nl?></a>
+					<? foreach( $langsArray as $lng => $item ) { 
+						?><a href="<?=$item['url']?>" class="nav-link nl-lang w-nav-link"><?=$item['lang']?></a><?
+					} ?>
 					</div>
 				</nav>
 				<div class="nav-lang">
-					<a href="/" class="nav-link nl-lang w-nav-link">
+					<ul class="languagepicker roundborders large">
+					<? if( isset( $langsArray[ $lang ] ) ) { 
+						?><li><img src="<?=$langsArray[ $lang ]['img']?>"/> <?=$langsArray[ $lang ]['title']?></li><? 
+						unset( $langsArray[ $lang ] );
+					} ?>
+
+					<? foreach( $langsArray as $lng => $item ) { ?>
+						<a href="<?=$item['url']?>"><li><img src="<?=$item['img']?>"/> <?=$item['title']?></li></a>
+					<? } ?>
+					</ul>
+					<?/*<a href="/" class="nav-link nl-lang w-nav-link">
 					<img class="flag" src="/images/flat/uk.svg" title="<?=L::head_lang_menu_en_title?>" />
 					</a>
 					<a href="/zh/" class="nav-link nl-lang w-nav-link">
@@ -113,7 +129,7 @@ include 'init.php'
 					</a>
 					<a href="/nl/" class="nav-link nl-lang w-nav-link">
 						<img class="flag" src="/images/flat/nederlands.svg" title="<?=L::head_lang_menu_nl_title?>" />
-					</a>
+					</a>*/?>
 				</div>
 				<div class="menu-btn w-nav-button">
 					<div class="w-icon-nav-menu"></div>
