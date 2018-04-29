@@ -203,7 +203,11 @@ $langsArray = array(
 						</div>
 					</div>
 					<div class="sales-wrap">
+					<? if( $lang == 'zh' ) { ?>
+						<a href="mailto:dyf9514@sina.com,408371426@qq.com?subject=%E8%B4%AD%E4%B9%B0Sharpay%20%28%E6%B2%99%E7%9A%AE%29%20%E4%BB%A3%E5%B8%81%E3%80%82&body=%E6%82%A8%E5%A5%BD%EF%BC%81%0D%0A%E6%88%91%E6%83%B3%E8%B4%AD%E4%B9%B0Sharpay%20%28%E6%B2%99%E7%9A%AE%29%20%E4%BB%A3%E5%B8%81%E3%80%82%0D%0A%E6%88%91%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%B4%AD%E4%B9%B0%E5%91%A2%EF%BC%9F" target="_blank" class="btn-sale btn-blink" onclick="try{ gtag('event', 'zhbuybtn', {'lang': '<?=$lang?>'}); } catch ( e ) {};  try{ yaCounter48279077.reachGoal('zhbuybtn'); } catch ( e ) {};"><?=L::head_reserve_now?></a>
+					<? } else { ?>
 						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="try{ gtag('event', 'buybtn', {'lang': '<?=$lang?>'}); } catch ( e ) {};  try{ yaCounter48279077.reachGoal('buybtn'); } catch ( e ) {};  try{ _mgq.push(['MgSensorInvoke', 'interestnew299708']);  } catch ( e ) {}"><?=L::head_reserve_now?></a>
+					<? } ?>
 					</div>
 				</div>
 
