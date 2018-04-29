@@ -54,10 +54,16 @@ $langsArray = array(
 		<div id="singin-dialog" class="dialog">
 			<h2 class="h2"><?=L::singin_header?></h2>
 			<div class="row">
-				<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');">
-          <div><?=L::singin_app_login?></div></a></div>
-				<div class="col"><a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('sale');">
-          <div><?=L::singin_cabinet_login?></div></a></div>
+				<? if( $lang != 'zh' ) { ?>
+				<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');"><div><?=L::singin_app_login?></div></a></div>
+				<div class="col">
+					<a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('sale');">
+						<div><?=L::singin_cabinet_login?></div>
+					</a>
+				</div>
+				<? } else { ?>
+				<a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');"><div><?=L::singin_app_login?></div></a>
+				<? } ?>
 			</div>
 		</div>
 	</div>
