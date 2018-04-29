@@ -101,7 +101,9 @@ $(function() {
 				var tis = 3;
 				$('.new-progress-grid #text text').eq( ti - 0 - tis ).text( ( Math.round(raised/500+1).toFixed() * 500  ) ).show();
 				//$('.new-progress-grid #text text').eq( ti - 1 - tis ).text( ( Math.round(raised/500).toFixed() * 500  ) ).show();
-				//$('.new-progress-grid #text text').eq( ti - 2 - tis ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
+				if( raised%500 < 240 || raised%500 > 300 ) {
+					$('.new-progress-grid #text text').eq( ti - 2 - tis ).text( ( Math.round(raised/500-1).toFixed() * 500  ) ).show();
+				}
 				$('.new-progress-grid #text text').eq( ti - 3 - tis ).text( ( Math.round(raised/500-2).toFixed() * 500  ) ).show();
 				$('.new-progress-grid #text text').eq( ti - 4 - tis ).text( ( Math.round(raised/500-3).toFixed() * 500  ) ).show();
 				$('.new-progress-grid #text text').eq( ti - 5 - tis ).text( ( Math.round(raised/500-4).toFixed() * 500  ) ).show();
