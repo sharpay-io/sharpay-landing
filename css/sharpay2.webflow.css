@@ -3611,10 +3611,14 @@ html[lang="ko"] #events p {
 	
 }
 .languagepicker>li:after {
-	content: '▼';
+	content: ' ';
 	float: right;
     color: #999;
 	margin-left: 15px;
+	background: url(../images/check.svg) no-repeat center center transparent;
+	background-size: contain;
+	width: 16px;
+	height: 40px;
 }
 .languagepicker li img {
 	margin-right: 5px;
