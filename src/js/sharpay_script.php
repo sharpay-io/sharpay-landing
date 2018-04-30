@@ -55,7 +55,7 @@ $(function() {
 		e.stopPropagation();
 	});
 	
-	$('.nl-lang').click(function(){
+	$('.nav-lang a').click(function(){
 		var date = new Date(new Date().getTime() + 60*60*24 * 1000);
 		document.cookie = "language=true; path=/; expires=" + date.toUTCString();
 	});
