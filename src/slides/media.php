@@ -56,6 +56,11 @@ $mediaList = [
     'url' => 'https://coincodex.com/ico-calendar/',
     'image' => '/images/media/coincodexdark.svg',
     'cls' => 'media-coincodex'
+  ],
+  [
+    'url' => 'https://icopulse.com/ico/sharpay',
+    'image' => '/images/media/icopulse.svg',
+    'cls' => 'media-icopulse'
   ]
 ];
 
@@ -128,7 +133,12 @@ $mediaList = [
   .media-cnn {
     margin-left: 31px;
   }
-
+	.media-coinstaker {
+		height: 30px;
+	}
+	.media-icopulse {
+		height: 35px;
+	}
   @media (max-width:479px) {
 
     #media-carousel {
