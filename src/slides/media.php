@@ -44,6 +44,11 @@ $mediaList = [
     'cls' => 'media-cryptoninjias'
   ],
   [
+    'url' => 'https://icopulse.com/ico/sharpay',
+    'image' => '/images/media/icopulse_white.svg',
+    'cls' => 'media-icopulse'
+  ],
+  [
     'url' => 'https://coinjournal.net/pr-release/sharpay-share-buttons-successfully-raised-2400-eht-presale-now-announcing-token-sale/',
     'image' => '/images/media/coinjournal.png'
   ],
@@ -53,14 +58,9 @@ $mediaList = [
     'cls' => 'media-coinstaker'
   ],
   [
-    'url' => 'https://coincodex.com/ico-calendar/',
+    'url' => 'https://coincodex.com/ico/sharpay/',
     'image' => '/images/media/coincodexdark.svg',
     'cls' => 'media-coincodex'
-  ],
-  [
-    'url' => 'https://icopulse.com/ico/sharpay',
-    'image' => '/images/media/icopulse.svg',
-    'cls' => 'media-icopulse'
   ]
 ];
 
