@@ -66,6 +66,77 @@ $mediaList = [
 
 ?>
 
+
+<?php
+
+$partnerList = [
+  [
+    //'url' => 'https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/',
+    'image' => '/images/partners/ace-capital.png',
+	'cls' => 'media-100'
+  ],
+  [
+    //'url' => 'https://btcmanager.com/sharpay-ico-review/',
+    'image' => '/images/partners/china-block-chain-alliance-club.png'
+  ],
+  [
+    //'url' => 'https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
+    'image' => '/images/partners/pecun.png',
+  ],
+];
+
+
+?>
+
+
+<div id="partners" class="section section-dark">
+  <div class="container">
+
+    <div id="partners-text" data-ix="l-init">
+      <h2 class="h2"><span class="orange-span"><?=L::partner_header?></span></h2>
+    </div>
+
+		<div id="partners-baners" data-ix="r-init">
+      <div id="partners-carousel">
+        <? foreach ( $partnerList as $media ) { ?>
+        <div class="media-item">
+         <? if( isset($media['url']) ) { ?><a href="<?=$media['url']?>" target="_blank"><? } ?>
+            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
+          <? if( isset($media['url']) ) { ?></a><? } ?>
+        </div>
+        <? } ?>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="media" class="section">
+  <div class="container">
+
+    <div id="media-text" data-ix="l-init">
+      <h2 class="h2"><span class="orange-span"><?=L::media_header?></span></h2>
+    </div>
+
+		<div id="media-baners" data-ix="r-init">
+      <div id="media-carousel">
+        <? foreach ( $mediaList as $media ) { ?>
+        <div class="media-item">
+          <a href="<?=$media['url']?>" target="_blank">
+            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
+          </a>
+        </div>
+        <? } ?>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
 <style type="text/css">
 
   /* button.slick-arrow {
@@ -89,6 +160,10 @@ $mediaList = [
   }
   
   #media-carousel {
+    margin-top: -22px;
+    margin-left: 28px;
+  }
+  #partners-carousel {
     margin-top: -22px;
     margin-left: 28px;
   }
@@ -139,33 +214,26 @@ $mediaList = [
 	.media-icopulse {
 		height: 35px;
 	}
+	
+	#partners-baners {
+		width: 100%;
+	}	
+	#partners .media-img {
+		height: 65px;
+	}
+	.media-100 {
+		height: 100px !important;
+	}
+	
   @media (max-width:479px) {
 
     #media-carousel {
+      margin-top: 20px;
+    }
+	#partners-carousel {
       margin-top: 20px;
     }
   }
 
 </style>
 
-<div id="media" class="section section-dark">
-  <div class="container">
-
-    <div id="media-text" data-ix="l-init">
-      <h2 class="h2"><span class="orange-span"><?=L::media_header?></span></h2>
-    </div>
-
-		<div id="media-baners" data-ix="r-init">
-      <div id="media-carousel">
-        <? foreach ( $mediaList as $media ) { ?>
-        <div class="media-item">
-          <a href="<?=$media['url']?>" target="_blank">
-            <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
-          </a>
-        </div>
-        <? } ?>
-      </div>
-    </div>
-
-  </div>
-</div>

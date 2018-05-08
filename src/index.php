@@ -899,7 +899,7 @@ $langsArray = array(
 
 	<? include 'slides/media.php' ?>
 
-	<div id="footer" class="section sf">
+	<div id="footer" class="section sf section-dark">
 		<div class="container f-cont">
 			<div class="h-form-title hft2"><?=L::footer_start?></div>
 			<div class="fbf form-block w-form">
