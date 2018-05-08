@@ -80,7 +80,7 @@ $partnerList = [
     'image' => '/images/partners/china-block-chain-alliance-club.png'
   ],
   [
-    //'url' => 'https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
+    'url' => 'https://pecun.io/',
     'image' => '/images/partners/pecun.png',
   ],
 ];
@@ -100,7 +100,7 @@ $partnerList = [
       <div id="partners-carousel">
         <? foreach ( $partnerList as $media ) { ?>
         <div class="media-item">
-         <? if( isset($media['url']) ) { ?><a href="<?=$media['url']?>" target="_blank"><? } ?>
+         <? if( isset($media['url']) ) { ?><a href="<?=$media['url']?>" target="_blank" rel="nofollow"><? } ?>
             <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
           <? if( isset($media['url']) ) { ?></a><? } ?>
         </div>
@@ -123,7 +123,7 @@ $partnerList = [
       <div id="media-carousel">
         <? foreach ( $mediaList as $media ) { ?>
         <div class="media-item">
-          <a href="<?=$media['url']?>" target="_blank">
+          <a href="<?=$media['url']?>" target="_blank" rel="nofollow">
             <img class="media-img <?= isset($media['cls']) ? $media['cls'] : ''?>"  src="<?=$media['image']?>" />
           </a>
         </div>
