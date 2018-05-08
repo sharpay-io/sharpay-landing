@@ -890,8 +890,9 @@ $langsArray = array(
 				<img class="event-banner" src="/images/events/0320_HongKong.png" />
 				<img class="event-banner" src="/images/events/0323_Shenzhen.png" />
 				<img class="event-banner" src="/images/events/0327_Changzhou.png" />
-				<img class="event-banner" src="/images/events/0423_mumbai.png" />
-				<img class="event-banner" src="/images/events/0426_singapore.png" />
+				<img class="event-banner" src="/images/events/0516_Monaco.png" />
+				<img class="event-banner" src="/images/events/0525_Seoul.png" />
+				<img class="event-banner" src="/images/events/0528_Xiamen.png" />
 			</div>
 		</div>
 	</div>
