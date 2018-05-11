@@ -941,7 +941,8 @@ $langsArray = array(
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'UA-109731082-2', { 'linker': { 'domains': ['sale.sharpay.io'], 'accept_incoming': true } } );
+		gtag('config', 'UA-109731082-2', { 'linker': { 'domains': ['sale.sharpay.io', 'sharpay.io'], 'accept_incoming': true } } );
+		gtag('config', 'UA-109731082-3', { 'linker': { 'domains': ['sale.sharpay.io', 'sharpay.io'], 'accept_incoming': true } } );
 	</script>
 
 	<!-- Yandex.Metrika counter -->
