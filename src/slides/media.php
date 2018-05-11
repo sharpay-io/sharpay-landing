@@ -61,6 +61,11 @@ $mediaList = [
     'url' => 'https://coincodex.com/ico/sharpay/',
     'image' => '/images/media/coincodexdark.svg',
     'cls' => 'media-coincodex'
+  ],
+  [
+    'url' => 'https://www.investing.com/studios/article-179',
+    'image' => '/images/media/invrsting.png',
+    'cls' => 'media-cnn'
   ]
 ];
 
