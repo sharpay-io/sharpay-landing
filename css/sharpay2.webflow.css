@@ -3629,6 +3629,9 @@ html[lang="ko"] #events p {
 }
 
 .soc-link[title="Telegram"] {
+	opacity: .8;
+}
+.soc-link[title="Telegram"]:hover {
 	opacity: 1;
 }
 .soc-link img {
