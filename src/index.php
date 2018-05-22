@@ -218,7 +218,7 @@ $langsArray = array(
 				</div>
 
 				<div class="soc-links">
-					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram.svg"></a>
+					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram-blue.svg"></a>
 					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
 					<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/" target="_blank" class="soc-link w-inline-block" title="<?=L::facebook_title?>"><img src="/images/facebook.svg"></a>
 					<a href="https://twitter.com/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::twitter_title?>"><img src="/images/twitter.svg"></a>

@@ -3628,6 +3628,10 @@ html[lang="ko"] #events p {
 	display: inline-block;
 }
 
+.soc-link[title="Telegram"] {
+	opacity: 1;
+}
+
 
 @media (max-width: 767px) {
 	#video {
