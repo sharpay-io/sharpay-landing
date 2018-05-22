@@ -3631,6 +3631,9 @@ html[lang="ko"] #events p {
 .soc-link[title="Telegram"] {
 	opacity: 1;
 }
+.soc-link img {
+	height: 32px;
+}
 
 
 @media (max-width: 767px) {
