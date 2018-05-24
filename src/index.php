@@ -928,6 +928,7 @@ $langsArray = array(
 				<a href="https://t.me/sharpay_admin" target="_blank" class="sl-f soc-link w-inline-block" title="<?=L::chat_title?>"><img src="/images/chat.svg"></a>
 			</div>
 			<p class="f-p"><?=L::footer_legal?></p>
+			<p class="f-p"><a href="/privacy-policy.html" class="text-muted nav-link">Privacy Policy</a></p>
 		</div>
 	</div>
 
