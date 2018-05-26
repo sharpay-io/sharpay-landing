@@ -233,8 +233,42 @@ $langsArray = array(
 			</div>
 		</div>
 	</div>
+	
+	<div id="token" class="section section-dark">
+		<div class="container">
+			<div class="-l-col" data-ix="l-init">
+				<h2 class="h2"><span class="orange-span"><?=L::token_sale?></span></h2>
+				<p class="p"><?=L::token_sale_dates?><br>
+					<?=L::token_sale_price?><br>
+					<?=L::token_sale_min_purchase?><br />
+					<?=L::token_sale_bonus?><br />
+					<span class="orange-span"><?=L::token_sale_bonus2?></span><br />
+					<?=L::token_sale_amount?>
+				</p>
+			</div>
+			<div class="-r-col" data-ix="r-init">
+				<div id="tokenChart"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="l-col token-chart-col" data-ix="l-init">
+				<h2 class="h2 h2-2"><span class="orange-span"><?=L::token_presale?></span></h2>
+				<p class="p"><?=L::token_presale_dates?><br>
+					<?=L::token_presale_price?><br>
+					<?=L::token_presale_min_purchase?><br>
+					<?=L::token_presale_amount?> &mdash; <strong><?=L::token_presale_sold?></strong><br>
+					<?=L::token_presale_contrib?>
+				</p>
+			</div>
+			<div class="r-col token-chart-col" data-ix="r-init">
+				<div id="clockChart">
+					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<div id="view" class="section section-dark">
+	<div id="view" class="section">
 		<div class="cont2 container">
 			<div class="row-cont">
 				<div class="row-l-col" data-ix="l-init">
@@ -304,7 +338,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="sites" class="section">
+	<div id="sites" class="section section-dark">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::sites_how_it_works?></span></h2>
@@ -321,7 +355,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="users" class="section section-dark">
+	<div id="users" class="section">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::users_how_it_works?></h2>
@@ -339,7 +373,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-  <div id="add" class="section">
+  <div id="add" class="section section-dark">
 		<div class="c5 container">
 			<div class="l-col lc3" data-ix="l-init">
 				<h2 class="h2"><?=L::advantages_header?></h2>
@@ -377,7 +411,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="roadmap" class="section section-dark">
+	<div id="roadmap" class="section">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::roadmap_header?></h2>
@@ -497,7 +531,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="emission" class="section">
+	<div id="emission" class="section section-dark">
 		<div class="container">
 			<div class="l-col lc2" data-ix="l-init">
 				<h2 class="h2"><?=L::emission_header?></h2>
@@ -545,7 +579,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="vikup" class="section section-dark">
+	<div id="vikup" class="section">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::buyback_header?></h2>
@@ -559,7 +593,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="rashod" class="section">
+	<div id="rashod" class="section section-dark">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::expenses_header?></h2>
@@ -601,39 +635,7 @@ $langsArray = array(
 		</div>
 	</div>
 	
-	<div id="token" class="section section-dark">
-		<div class="container">
-			<div class="-l-col" data-ix="l-init">
-				<h2 class="h2"><span class="orange-span"><?=L::token_sale?></span></h2>
-				<p class="p"><?=L::token_sale_dates?><br>
-					<?=L::token_sale_price?><br>
-					<?=L::token_sale_min_purchase?><br />
-					<?=L::token_sale_bonus?><br />
-					<span class="orange-span"><?=L::token_sale_bonus2?></span><br />
-					<?=L::token_sale_amount?>
-				</p>
-			</div>
-			<div class="-r-col" data-ix="r-init">
-				<div id="tokenChart"></div>
-			</div>
-		</div>
-		<?/*<div class="container">
-			<div class="l-col token-chart-col" data-ix="l-init">
-				<h2 class="h2 h2-2"><span class="orange-span"><?=L::token_presale?></span></h2>
-				<p class="p"><?=L::token_presale_dates?><br>
-					<?=L::token_presale_price?><br>
-					<?=L::token_presale_min_purchase?><br>
-					<?=L::token_presale_amount?> &mdash; <strong><?=L::token_presale_sold?></strong><br>
-					<?=L::token_presale_contrib?>
-				</p>
-			</div>
-			<div class="r-col token-chart-col" data-ix="r-init">
-				<!--div id="clockChart">
-					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
-				</div-->
-			</div>
-		</div>*/?>
-	</div>
+	
 
 	<div id="advisers" class="section sf">
 		<div class="cont2 container">

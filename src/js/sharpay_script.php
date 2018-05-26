@@ -11,7 +11,7 @@
 
 <script>
 var Webflow = Webflow || [];
-/*
+
 Webflow.push(function() {
   $('.clock').TimeCircles({
     circle_bg_color: 'rgba(255,255,255,0.05)',
@@ -28,7 +28,7 @@ Webflow.push(function() {
     $('.clock').TimeCircles().rebuild();
   });
 });
-*/
+
 $(function() {
 	
 	if( /utm/i.test( document.location.search ) ) {
