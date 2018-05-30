@@ -233,9 +233,56 @@ $langsArray = array(
 				<div id="tokenChart"></div>
 			</div>
 		</div>*/?>
-		<!--div class="container" data-ix="l-init">
-			<p class="p exchange"><?=L::token_exchange?></p>
-		</div-->
+		<? if ( $lang != 'zh' ) { ?>
+		
+		<?/*
+		<div class="container" style="margin-top: 20px;">
+			<div class="-l-col" data-ix="l-init">
+				<!--p class="p exchange"><?=L::token_exchange?></p-->
+				<h2 class="h2"><span class="orange-span">Listing the token</span></h2>
+			</div>
+			<div class="r-col token-chart-col" data-ix="r-init">
+				<p class="p exchange" style="margin-top: 7px; margin-left: 40px; font-size: 17px; line-height: 24px;">
+					Soon listing on a <span class="orange-span">centralized exchange</span> (negotiations are under way) and starting trades on <span class="orange-span">decentralized exchanges</span> such as <img src="/images/exchanges/idex.svg" alt="IDEX"> and <img src="/images/exchanges/tidex.svg" alt="Tidex">.
+				</p>
+			</div>
+		</div>
+		
+		
+		<div class="container" style="margin-top: 20px;">
+			<div class="-l-col" data-ix="l-init">
+				<!--p class="p exchange"><?=L::token_exchange?></p-->
+				<h2 class="h2"><span class="orange-span">Listing the token</span></h2>
+			</div>
+		</div>
+		<div class="container">
+			<div class="r-col token-chart-col" data-ix="r-init">
+				<p class="p exchange" style="max-width: 1140px;">
+					Soon listing on a <span class="orange-span">centralized exchange</span> (negotiations are under way) and starting trades on <span class="orange-span">decentralized exchanges</span> such as <img src="/images/exchanges/idex.svg" alt="IDEX"> and <img src="/images/exchanges/tidex.svg" alt="Tidex">.
+				</p>
+			</div>
+		</div>
+		*/?>
+		
+		<div class="container" style="margin-top: 20px;">
+			<div class="row-l-col" data-ix="l-init">
+				<!--p class="p exchange"></p-->
+				<h2 class="h2"><span class="orange-span"><?=L::token_listing?></span></h2>
+				
+				<p class="p exchange" style="max-width: 1140px; line-height: 24px;">
+					<?=L::token_exchange?>
+				</p>
+				
+			</div>
+			<div class="row-l-col token-chart-col" data-ix="r-init" style="line-height: 40px;margin-top: 65px; margin-left: 20px;">
+				<img src="/images/exchanges/unknown.svg" alt="?" style="margin-bottom: 30px;height:40px;margin-right: 20px;">
+				<img src="/images/exchanges/idex.svg" alt="IDEX" style="margin-bottom: 30px;height:40px;margin-right: 20px;">
+				<img src="/images/exchanges/tidex.svg" alt="Tidex" style="margin-bottom: 30px;height:40px;margin-right: 20px;">
+			</div>
+		</div>
+		
+		
+		<? } ?>
 	</div>
 
 	<div id="view" class="section">
