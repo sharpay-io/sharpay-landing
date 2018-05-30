@@ -1811,6 +1811,10 @@ html[lang="ko"] #events p {
   z-index: 99999;
 }
 
+.p.exchange img {
+	height: 14px;
+}
+
 @media (min-width:1280px) {
 
     .h1 {
@@ -1875,7 +1879,9 @@ html[lang="ko"] #events p {
     }
 
     #clockChart {
-      margin-top: 60px;
+      margin-top: 40px;
+	  margin-left: auto;
+	  margin-right: auto;
     }
 
     #rashod .l-col,#rashod .r-col,#token .r-col {

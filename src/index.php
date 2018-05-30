@@ -103,39 +103,6 @@ $langsArray = array(
 						<a href="<?=$item['url']?>"><li><img src="<?=$item['img']?>"/> <?=$item['title']?></li></a>
 					<? } ?>
 					</ul>
-					<?/*<a href="/" class="nav-link nl-lang w-nav-link">
-					<img class="flag" src="/images/flat/uk.svg" title="<?=L::head_lang_menu_en_title?>" />
-					</a>
-					<a href="/zh/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/china.svg" title="<?=L::head_lang_menu_zh_title?>" />
-					</a>
-					<a href="/ko/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/korea.svg" title="<?=L::head_lang_menu_ko_title?>" />
-					</a>
-					<a href="/jp/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/japanese.svg" title="<?=L::head_lang_menu_jp_title?>" />
-					</a>
-					<a href="/es/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/spain.png" title="<?=L::head_lang_menu_es_title?>" />
-					</a>
-					<a href="/it/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/italy.png" title="<?=L::head_lang_menu_it_title?>" />
-					</a>
-					<a href="/pt/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/portugal.png" title="<?=L::head_lang_menu_pt_title?>" />
-					</a>
-					<a href="/ru/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/russia.svg" title="<?=L::head_lang_menu_ru_title?>" />
-					</a>
-					<a href="/hi/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/india.svg" title="<?=L::head_lang_menu_hi_title?>" />
-					</a>
-					<a href="/ph/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/philippines.svg" title="<?=L::head_lang_menu_ph_title?>" />
-					</a>
-					<a href="/nl/" class="nav-link nl-lang w-nav-link">
-						<img class="flag" src="/images/flat/nederlands.svg" title="<?=L::head_lang_menu_nl_title?>" />
-					</a>*/?>
 				</div>
 				<div class="menu-btn w-nav-button">
 					<div class="w-icon-nav-menu"></div>
@@ -246,11 +213,13 @@ $langsArray = array(
 					<?=L::token_sale_amount?>
 				</p>
 			</div>
-			<div class="-r-col" data-ix="r-init">
-				<div id="tokenChart"></div>
+			<div class="r-col token-chart-col" data-ix="r-init">
+				<div id="clockChart">
+					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
+				</div>
 			</div>
 		</div>
-		<div class="container">
+		<?/*<div class="container">
 			<div class="l-col token-chart-col" data-ix="l-init">
 				<h2 class="h2 h2-2"><span class="orange-span"><?=L::token_presale?></span></h2>
 				<p class="p"><?=L::token_presale_dates?><br>
@@ -260,12 +229,13 @@ $langsArray = array(
 					<?=L::token_presale_contrib?>
 				</p>
 			</div>
-			<div class="r-col token-chart-col" data-ix="r-init">
-				<div id="clockChart">
-					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
-				</div>
+			<div class="-r-col" data-ix="r-init">
+				<div id="tokenChart"></div>
 			</div>
-		</div>
+		</div>*/?>
+		<!--div class="container" data-ix="l-init">
+			<p class="p exchange"><?=L::token_exchange?></p>
+		</div-->
 	</div>
 
 	<div id="view" class="section">

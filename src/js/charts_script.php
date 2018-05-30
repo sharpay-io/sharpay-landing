@@ -20,7 +20,7 @@ Highcharts.theme = {
    }
 };
 Highcharts.setOptions(Highcharts.theme);
-
+/*
 var tokenChart = Highcharts.chart('tokenChart', {
 	chart: { type: 'bar', height: 200, plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
     title: { enabled: false, text: '' },
@@ -48,7 +48,7 @@ var tokenChart = Highcharts.chart('tokenChart', {
 		{ name: '<?=L::token_chart_bonus50?>', data: [80] },
 	]
 });
-
+*/
 
 var emissionChart = Highcharts.chart('emissionChart', {
     chart: { margin: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
@@ -98,8 +98,8 @@ $(function(){
 		rashodChart.setSize(w, w);
 		w = $('#emissionChart').parent().width() - 40;
 		emissionChart.setSize(w, w);
-		w = $('#tokenChart').parent().width() * 1;
-		tokenChart.setSize(w, 200);
+		/*w = $('#tokenChart').parent().width() * 1;
+		tokenChart.setSize(w, 200);*/
 	}).resize();
 });
 
