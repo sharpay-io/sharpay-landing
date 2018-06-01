@@ -215,7 +215,7 @@ $langsArray = array(
 			</div>
 			<div class="r-col token-chart-col" data-ix="r-init">
 				<div id="clockChart">
-					<div class="clock" data-date="May 31 2018 23:59:59 GMT+0000"> </div>
+					<div class="clock" data-timer="0" -data-date="May 31 2018 23:59:59 GMT+0000"> </div>
 				</div>
 			</div>
 		</div>

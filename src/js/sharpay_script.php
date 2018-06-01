@@ -21,6 +21,7 @@ $(function() {
 		circle_bg_color: 'rgba(255,255,255,0.05)',
 		fg_width: 0.05,
 		bg_width: 1,
+		start: false,
 		time: {
 		  Days: { color: "#ff9a1e", text: "days" },
 		  Hours: { color: "#ff9a1e", text: "hours" },
