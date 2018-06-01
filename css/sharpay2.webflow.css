@@ -1815,6 +1815,67 @@ html[lang="ko"] #events p {
 	height: 14px;
 }
 
+
+.container-head .h-text-wrap {
+	position: relative;
+}
+.progress-sale {
+	opacity: 0.3;
+}
+
+.tokensale-close {
+	position: absolute;
+    bottom: 50px;
+    z-index: 10;
+    height: 175px;
+    width: 100%;
+	text-align: center;
+}
+.tokensale-close h3 {
+	position: absolute;
+    width: 100%;
+    z-index: 1;
+    font-weight: 400;
+	top: 19%;
+	/*-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);*/
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+}
+
+@media (min-width:980px) {
+	#video- {
+		z-index: 20;
+		position: absolute;
+		right: 21px;
+	}
+}
+@media (min-width:760px) {
+	#head-marketing-msg-text, #video {
+		opacity: 0.3;
+	}
+}
+@media (max-width:768px) {
+	.tokensale-close {
+		bottom: 10px;
+	}
+}
+@media (max-width:479px) {
+	.tokensale-close {
+		bottom: 140px;
+		height: 145px;
+	}
+	.tokensale-close h3 {
+		top: 4%;
+	}
+}
+
+
+	html[lang="zh"] #head-marketing-msg-text, html[lang="zh"] #video,  html[lang="zh"] .progress-sale {
+		opacity: 1 !important;
+	}
+
 @media (min-width:1280px) {
 
     .h1 {
