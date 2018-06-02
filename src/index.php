@@ -183,9 +183,9 @@ $langsArray = array(
 					<? } ?>
 					</div>
 				</div>
-				<? if( $lang != 'zh' ) { ?>
+				<?// if( $lang != 'zh' ) { ?>
 				<div class="tokensale-close"><h3><?=L::head_sale_close?></h3></div>
-				<? } ?>
+				<?// } ?>
 				<div class="soc-links">
 					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram-blue.svg?v2"></a>
 					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
