@@ -238,19 +238,13 @@ $langsArray = array(
 		<? if ( $lang != 'zh' ) { ?>
 		
 		<div class="container" style="margin-top: 20px;">
-			<div class="row-l-col" data-ix="l-init">
-				<!--p class="p exchange"></p-->
+			<div class="row-l-col" data-ix="l-init" style="width: 30%; min-width: 320px; white-space: nowrap;">
 				<h2 class="h2"><span class="orange-span"><?=L::token_listing?></span></h2>
-				
-				<p class="p exchange" style="max-width: 1140px; line-height: 24px;">
+			</div>
+			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
+				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<?=L::token_exchange?>
 				</p>
-				
-			</div>
-			<div class="row-l-col token-chart-col" data-ix="r-init" style="line-height: 40px;margin-top: 65px; margin-left: 20px;">
-				<img src="/images/exchanges/unknown.svg" alt="?" style="margin-bottom: 30px;height:40px;margin-right: 20px;">
-				<img src="/images/exchanges/idex.svg" alt="IDEX" style="margin-bottom: 30px;height:40px;margin-right: 20px;">
-				<img src="/images/exchanges/tidex.svg" alt="Tidex" style="margin-bottom: 30px;height:40px;margin-right: 20px;">
 			</div>
 		</div>		
 		
