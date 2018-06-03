@@ -1871,11 +1871,6 @@ html[lang="ko"] #events p {
 	}
 }
 
-
-	html[lang="zh"] #head-marketing-msg-text, html[lang="zh"] #video,  html[lang="zh"] .progress-sale {
-		opacity: 1 !important;
-	}
-
 @media (min-width:1280px) {
 
     .h1 {
