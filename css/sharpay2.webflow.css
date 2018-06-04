@@ -1574,6 +1574,11 @@ html[lang=pt] #head-marketing-msg {
   filter: brightness(0.8);
 }
 
+html[lang=ar] .section, html[lang=ar] .container-head {
+  text-align: right;
+}
+
+
 html[lang=ru] #video {
   margin-left: 22px;
 }

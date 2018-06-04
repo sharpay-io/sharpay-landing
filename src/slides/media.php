@@ -66,6 +66,11 @@ $mediaList = [
     'url' => 'https://www.investing.com/studios/article-179',
     'image' => '/images/media/invrsting.png',
     'cls' => 'media-cnn'
+  ],
+  [
+    'url' => 'https://coininfo.news/sharpay-the-share-button-with-blockchain-profit/',
+    'image' => '/images/media/coininfo-news.png',
+    'cls' => ''
   ]
 ];
 
