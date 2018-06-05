@@ -32,5 +32,8 @@ C:\xampp\php\php.exe -f src/index.php ph > ph/index.html
 ECHO Generating Nederlands page...
 C:\xampp\php\php.exe -f src/index.php nl > nl/index.html
 
+ECHO Generating Arabic page...
+C:\xampp\php\php.exe -f src/index.php ar > ar/index.html
+
 ECHO Done.
 pause

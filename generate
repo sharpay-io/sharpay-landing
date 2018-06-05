@@ -33,4 +33,7 @@ php src/index.php ph > ph/index.html
 echo 'Generating Nederlands page...'
 php src/index.php nl > nl/index.html
 
+echo 'Generating Arabic page...'
+php src/index.php ar > ar/index.html
+
 echo 'Done.'
