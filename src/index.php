@@ -14,6 +14,7 @@ $langsArray = array(
 	'hi' => array( 'lang' => 'HI', 'url' => '/hi/', 'img' => '/images/flat/india.svg', 'title' => 'हिंदी' ),
 	'ph' => array( 'lang' => 'PH', 'url' => '/ph/', 'img' => '/images/flat/philippines.svg', 'title' => 'Filipino' ),
 	'nl' => array( 'lang' => 'NL', 'url' => '/nl/', 'img' => '/images/flat/nederlands.svg', 'title' => 'Hollandsk' ),
+	// 'ar' => array( 'lang' => 'AR', 'url' => '/ar/', 'img' => '/images/flat/arabic.png', 'title' => 'العَرَبِيَّة' ),
 );
 
 ?><!DOCTYPE html>
