@@ -233,8 +233,8 @@ $langsArray = array(
 			</div>
 		</div>*/?>
 		
-		<div class="container">
-			<div class="row-l-col" data-ix="l-init" style="width: 21%; min-width: 240px; white-space: nowrap;">
+		<div class="container container-exchange">
+			<div class="row-l-col" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::token_listing?></span></h2>
 			</div>
 			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">

@@ -1820,6 +1820,13 @@ html[lang="ko"] #events p {
 	height: 14px;
 }
 
+.container-exchange .row-l-col {
+	width: 21%; 
+	min-width: 240px; 
+	white-space: nowrap;
+}
+
+
 
 .container-head .h-text-wrap {
 	position: relative;
@@ -3007,6 +3014,11 @@ html[lang="ko"] #events p {
 }
 
 @media (max-width:479px) {
+	
+	.container-exchange .row-l-col {
+		width:auto;
+	}
+
     .body {
         background-position: 89% 0;
         background-size: 800px
@@ -3715,6 +3727,7 @@ html[lang="ko"] #events p {
 .soc-link img {
 	height: 32px;
 }
+
 
 
 @media (max-width: 767px) {
