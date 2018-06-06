@@ -1825,7 +1825,7 @@ html[lang="ko"] #events p {
 	position: relative;
 }
 .progress-sale {
-	opacity: 0.3;
+	-opacity: 0.3;
 }
 
 .tokensale-close {
@@ -1858,7 +1858,7 @@ html[lang="ko"] #events p {
 }
 @media (min-width:760px) {
 	#head-marketing-msg-text, #video {
-		opacity: 0.3;
+		-opacity: 0.3;
 	}
 }
 @media (max-width:768px) {
@@ -3476,6 +3476,7 @@ html[lang="ko"] #events p {
 
   #head-marketing-msg-text {
     min-width: inherit;
+	white-space: nowrap;
   }
 
   #video {
@@ -3530,7 +3531,7 @@ html[lang="ko"] #events p {
 .new-progress {
 	margin-top: 0;
 	width:100%;
-	max-width: 490px;
+	width: 540px;
 	float: left;
 }
 .new-progress p {
@@ -3573,7 +3574,7 @@ html[lang="ko"] #events p {
 .new-progress-grid {
 	position: absolute;
 	top: 0;
-	right: -250px;
+	right: -430px;
 	height: 46px;
 	z-index: 2;
 }
@@ -3590,8 +3591,18 @@ html[lang="ko"] #events p {
 }
 .sales-wrap {
 	margin-top: 0;
+	 position: relative;
 }
-
+.sales-wrap img {
+	width: 100px;
+    position: absolute;
+    left: 33px;
+    top: -20px;
+    z-index: 10;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
 
 .btn-blink {
 	background: linear-gradient(300deg, #1e9a1e 45%, #c79a1e 50%, #1e9a1e 55%);
@@ -3707,6 +3718,9 @@ html[lang="ko"] #events p {
 
 
 @media (max-width: 767px) {
+	.new-progress {
+		width: 100%;
+	}
 	#video {
 		float: none;
 	}
@@ -3717,6 +3731,19 @@ html[lang="ko"] #events p {
 		width: 100%;
 		margin-left: 0;
 		margin-top: 20px;
+		height: 90px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.sales-wrap img {
+		width: 120px;
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		-webkit-transform: rotate(-20deg);
+		-ms-transform: rotate(-20deg);
+		transform: rotate(-20deg);
 	}
 	.new-progress p {
 		text-align: center;

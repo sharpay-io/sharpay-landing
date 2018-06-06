@@ -113,7 +113,7 @@ $langsArray = array(
 
 		<div id="trackico-rating-mob">
 			<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
-				<img src="/images/ratings/Rating_ICObench_Sharpay_4_9.svg" />
+				<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
 			</a>
 			<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
 				<img src="/images/ratings/Rating_TrackICO_Sharpay_5_0.svg" />
@@ -127,7 +127,7 @@ $langsArray = array(
 
 			<div id="trackico-rating">
 				<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
-					<img src="/images/ratings/Rating_ICObench_Sharpay_4_9.svg" />
+					<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
 				</a>
 				<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
 					<img src="/images/ratings/Rating_TrackICO_Sharpay_5_0.svg" />
@@ -171,22 +171,18 @@ $langsArray = array(
 					<div class="new-progress">
 						<div class="new-progress-wrap">
 							<div class="new-progress-grad"></div>
-							<div class="new-progress-now"></div>
-							<div class="new-progress-grid"></div>
-							<div class="new-progress-bg"></div>
+							<!--div class="new-progress-now"></div-->
+							<div class="new-progress-grid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2834.7 130.4"><defs><style>.a{fill:#1e9a1e;}.b{fill:#ff9a1e;}.c{isolation:isolate;font-size:40px;fill:#fff;font-family:Verdana-Bold, Verdana;font-weight:700;}</style></defs><title>bar-done</title><rect class="a" x="-3" width="2837.6" height="130.39"/><rect class="b" y="124.7" width="2834.6" height="5.7"/><rect class="b" width="2834.6" height="5.7"/><rect class="b" x="66.7" width="5.7" height="28.3"/><rect class="b" x="137.6" width="5.7" height="28.4"/><rect class="b" x="208.4" width="5.7" height="28.4"/><rect class="b" x="279.3" width="5.7" height="28.4"/><rect class="b" x="66.7" y="102" width="5.7" height="28.3"/><rect class="b" x="137.6" y="102" width="5.7" height="28.4"/><rect class="b" x="208.4" y="102" width="5.7" height="28.4"/><rect class="b" x="279.3" y="102" width="5.7" height="28.4"/><rect class="b" x="421" width="5.7" height="28.4"/><rect class="b" x="491.9" width="5.7" height="28.4"/><rect class="b" x="562.8" width="5.7" height="28.3"/><rect class="b" x="633.6" width="5.7" height="28.3"/><rect class="b" x="421" y="102" width="5.7" height="28.4"/><rect class="b" x="491.9" y="102" width="5.7" height="28.4"/><rect class="b" x="562.8" y="102" width="5.7" height="28.3"/><rect class="b" x="633.6" y="102" width="5.7" height="28.3"/><rect class="b" x="775.7" width="5.7" height="28.3"/><rect class="b" x="846.6" width="5.7" height="28.3"/><rect class="b" x="917.4" width="5.7" height="28.3"/><rect class="b" x="988.3" width="5.7" height="28.3"/><rect class="b" x="775.7" y="102" width="5.7" height="28.3"/><rect class="b" x="846.6" y="102" width="5.7" height="28.3"/><rect class="b" x="917.4" y="102.1" width="5.7" height="28.3"/><rect class="b" x="988.3" y="102.1" width="5.7" height="28.3"/><rect class="b" x="1130" width="5.7" height="28.3"/><rect class="b" x="1200.9" width="5.7" height="28.3"/><rect class="b" x="1271.8" width="5.7" height="28.3"/><rect class="b" x="1342.6" width="5.7" height="28.3"/><rect class="b" x="1130" y="102" width="5.7" height="28.3"/><rect class="b" x="1200.9" y="102.1" width="5.7" height="28.3"/><rect class="b" x="1271.8" y="102" width="5.7" height="28.3"/><rect class="b" x="1342.6" y="102.1" width="5.7" height="28.3"/><rect class="b" x="1482.2" width="5.7" height="28.3"/><rect class="b" x="1553.1" width="5.7" height="28.3"/><rect class="b" x="1624" width="5.7" height="28.3"/><rect class="b" x="1694.8" width="5.7" height="28.3"/><rect class="b" x="1482.2" y="102" width="5.7" height="28.3"/><rect class="b" x="1553.1" y="102.1" width="5.7" height="28.3"/><rect class="b" x="1624" y="102.1" width="5.7" height="28.3"/><rect class="b" x="1694.8" y="102" width="5.7" height="28.3"/><rect class="b" x="1836.6" width="5.7" height="28.3"/><rect class="b" x="1907.4" width="5.7" height="28.3"/><rect class="b" x="1978.3" width="5.7" height="28.3"/><rect class="b" x="2049.2" width="5.7" height="28.3"/><rect class="b" x="1836.6" y="102" width="5.7" height="28.3"/><rect class="b" x="1907.4" y="102" width="5.7" height="28.3"/><rect class="b" x="1978.3" y="102" width="5.7" height="28.3"/><rect class="b" x="2049.2" y="102" width="5.7" height="28.3"/><rect class="b" x="2191.2" width="5.7" height="28.4"/><rect class="b" x="2262.1" width="5.7" height="28.4"/><rect class="b" x="2333" width="5.7" height="28.4"/><rect class="b" x="2403.8" width="5.7" height="28.4"/><rect class="b" x="2191.2" y="102" width="5.7" height="28.4"/><rect class="b" x="2262.1" y="102.1" width="5.7" height="28.4"/><rect class="b" x="2333" y="102.1" width="5.7" height="28.4"/><rect class="b" x="2403.8" y="102" width="5.7" height="28.4"/><rect class="b" x="2545.6" width="5.7" height="28.4"/><rect class="b" x="2616.4" width="5.7" height="28.4"/><rect class="b" x="2687.3" width="5.7" height="28.4"/><rect class="b" x="2758.2" width="5.7" height="28.4"/><rect class="b" x="2545.6" y="102.1" width="5.7" height="28.4"/><rect class="b" x="2616.4" y="102" width="5.7" height="28.4"/><rect class="b" x="2687.3" y="102.1" width="5.7" height="28.4"/><rect class="b" x="2758.2" y="102.1" width="5.7" height="28.4"/><rect class="b" x="2472.7" width="11.3" height="28.4"/><rect class="b" x="2472.7" y="102.1" width="11.3" height="28.4"/><rect class="b" x="2117.7" width="11.3" height="28.4"/><rect class="b" x="2117.7" y="102.1" width="11.3" height="28.4"/><rect class="b" x="1762.7" width="11.3" height="28.4"/><rect class="b" x="1762.7" y="102.1" width="11.3" height="28.4"/><rect class="b" x="1411.7" width="11.3" height="28.4"/><rect class="b" x="1411.7" y="102.1" width="11.3" height="28.4"/><rect class="b" x="1055.7" width="11.3" height="28.4"/><rect class="b" x="1055.7" y="102.1" width="11.3" height="28.4"/><rect class="b" x="702.7" width="11.3" height="28.4"/><rect class="b" x="702.7" y="102.1" width="11.3" height="28.4"/><rect class="b" x="346.7" width="11.3" height="28.4"/><rect class="b" x="346.7" y="102.1" width="11.3" height="28.4"/><text class="c" transform="translate(296.47 80.09)">9000</text><text class="c" transform="translate(651.47 80.09)">9500</text><text class="c" transform="translate(987.47 80.09)">10000</text><text class="c" transform="translate(1342.47 80.09)">10500</text><text class="c" transform="translate(1698.47 80.09)">11000</text><text class="c" transform="translate(2053.47 80.09)">11500</text><text class="c" transform="translate(2404.47 80.09)">12000</text></svg></div>
+							<!--div class="new-progress-bg"></div-->
 						</div>
 					</div>
 					<div class="sales-wrap">
-					<? if( $lang == 'zh' ) { ?>
-						<a href="mailto:dyf9514@sina.com,408371426@qq.com?subject=%E8%B4%AD%E4%B9%B0Sharpay%20%28%E6%B2%99%E7%9A%AE%29%20%E4%BB%A3%E5%B8%81%E3%80%82&body=%E6%82%A8%E5%A5%BD%EF%BC%81%0D%0A%E6%88%91%E6%83%B3%E8%B4%AD%E4%B9%B0Sharpay%20%28%E6%B2%99%E7%9A%AE%29%20%E4%BB%A3%E5%B8%81%E3%80%82%0D%0A%E6%88%91%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E8%B4%AD%E4%B9%B0%E5%91%A2%EF%BC%9F%0D%0A%0D%0A--%0D%0A%E4%B9%B0%E5%AE%B6%E9%80%9A%E7%9F%A5%EF%BC%9A%0D%0ASharpay%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%BB%A3%E5%B8%81%E9%94%80%E5%94%AE%E6%98%AF%E7%94%B1%E6%88%91%E4%BB%AC%E7%9A%84%E7%8B%AC%E5%AE%B6%E5%90%88%E4%BD%9C%E4%BC%99%E4%BC%B4%20-%20%E7%8E%8B%E7%89%8C%E8%B5%84%E6%9C%AC%E8%BF%9B%E8%A1%8C%E3%80%82%0D%0A%E6%82%A8%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%AD%A4%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%90%91%E4%BB%96%E4%BB%AC%E8%B4%AD%E4%B9%B0%EF%BC%8C%E6%88%96%E8%80%85%E7%94%A8%E4%BB%A5%E4%B8%8B%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E8%B7%9F%E4%BB%96%E4%BB%AC%E8%81%94%E7%BB%9C%EF%BC%9A%0D%0A%20%2B8613810552418%2C%20%2B8613311134046%20%E9%82%93%E5%A5%B3%E5%A3%AB" target="_blank" class="btn-sale btn-blink" onclick="try{ gtag('event', 'zhbuybtn', {'lang': '<?=$lang?>'}); } catch ( e ) {};  try{ yaCounter48279077.reachGoal('zhbuybtn'); } catch ( e ) {};"><?=L::head_reserve_now?></a>
-					<? } else { ?>
-						<a href="https://sale.sharpay.io/cabinet/home?lang=<?=L::head_sale_lang?>" target="_blank" class="btn-sale btn-blink" onclick="try{ gtag('event', 'buybtn', {'lang': '<?=$lang?>'}); } catch ( e ) {};  try{ yaCounter48279077.reachGoal('buybtn'); } catch ( e ) {};  try{ _mgq.push(['MgSensorInvoke', 'interestnew299708']);  } catch ( e ) {}"><?=L::head_reserve_now?></a>
-					<? } ?>
+						<img src="/images/chart/raised.svg" alt="10757 ETH raised successfully!" title="10757 ETH raised successfully!">
 					</div>
 				</div>
-				<?// if( $lang != 'zh' ) { ?>
+				<?/* ?>
 				<div class="tokensale-close"><h3><?=L::head_sale_close?></h3></div>
-				<?// } ?>
+				<? */ ?>
 				<div class="soc-links">
 					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram-blue.svg?v2"></a>
 					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
@@ -205,7 +201,7 @@ $langsArray = array(
 	</div>
 	
 	<div id="token" class="section section-dark">
-		<div class="container">
+		<?/*<div class="container">
 			<div class="-l-col" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::token_sale?></span></h2>
 				<p class="p"><?=L::token_sale_dates?><br>
@@ -222,7 +218,7 @@ $langsArray = array(
 				</div>
 			</div>
 		</div>
-		<?/*<div class="container">
+		<div class="container">
 			<div class="l-col token-chart-col" data-ix="l-init">
 				<h2 class="h2 h2-2"><span class="orange-span"><?=L::token_presale?></span></h2>
 				<p class="p"><?=L::token_presale_dates?><br>
@@ -236,10 +232,9 @@ $langsArray = array(
 				<div id="tokenChart"></div>
 			</div>
 		</div>*/?>
-		<? if ( $lang != 'zh' ) { ?>
 		
-		<div class="container" style="margin-top: 20px;">
-			<div class="row-l-col" data-ix="l-init" style="width: 30%; min-width: 320px; white-space: nowrap;">
+		<div class="container">
+			<div class="row-l-col" data-ix="l-init" style="width: 21%; min-width: 240px; white-space: nowrap;">
 				<h2 class="h2"><span class="orange-span"><?=L::token_listing?></span></h2>
 			</div>
 			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
@@ -249,7 +244,6 @@ $langsArray = array(
 			</div>
 		</div>		
 		
-		<? } ?>
 	</div>
 
 	<div id="view" class="section">

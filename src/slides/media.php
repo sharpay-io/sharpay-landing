@@ -81,17 +81,18 @@ $mediaList = [
 
 $partnerList = [
   [
-    //'url' => 'https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/',
+    //'url' => '',
     'image' => '/images/partners/ace-capital.png',
 	'cls' => 'media-100'
   ],
   [
-    //'url' => 'https://btcmanager.com/sharpay-ico-review/',
+    //'url' => '',
     'image' => '/images/partners/china-block-chain-alliance-club.png'
   ],
   [
     'url' => 'https://pecun.io/',
     'image' => '/images/partners/pecun.png',
+	'cls' => 'media-50'
   ],
 ];
 
@@ -233,6 +234,12 @@ $partnerList = [
 	}
 	.media-100 {
 		height: 100px !important;
+		margin-right: 60px;
+		margin-left: 60px;
+	}
+	.media-50 {
+		height: 50px !important;
+		margin-left: 60px;
 	}
 	
   @media (max-width:479px) {

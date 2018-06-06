@@ -90,7 +90,7 @@ $(function() {
 
   //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
-	$.getJSON('/raised.json?t='  + new Date().getTime(), function( data ) {
+	/*$.getJSON('/raised.json?t='  + new Date().getTime(), function( data ) {
 		$('#contributors').text( data.contributors );
 		
 		var raised = data.raised;
@@ -116,7 +116,7 @@ $(function() {
 			$('.new-progress-now text').text( raised + ' ETH' ).show( 500 );
 		});
 		$('.new-progress-bg').load('/images/chart/bar-bg.svg?v=1');
-	});
+	});*/
 
 	var glower = $('.chat-online');
 	setInterval(function() {
