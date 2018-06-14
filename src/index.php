@@ -76,7 +76,7 @@ $langsArray = array(
 	<div id="head" data-ix="new-interaction" class="head-section">
 		<div id="main-menu" data-collapse="medium" data-animation="default" data-duration="400" class="h-nav w-nav">
 			<div class="h-nav-cont">
-				<a href="/" class="h-nav-logo w-nav-brand"><img src="/images/logo_sharpay_1_w.svg"></a>
+				<a href="/" class="h-nav-logo w-nav-brand"><img src="/images/logo-sharpay.svg"></a>
 				<nav role="navigation" class="h-menu w-nav-menu">
 					<a href="#view" class="nav-link w-nav-link"><?=L::head_menu_view?></a>
 					<a href="#sites" class="nav-link w-nav-link"><?=L::head_menu_sites?></a>
