@@ -1615,7 +1615,7 @@ html[lang=jp] .chat-online {
 .sales-wrap {
 	/*float: right;*/
 	width: auto;
-	margin-left: 76%;
+	margin-left: 76.7%;
 	text-align: right;
 	min-width: 157px;
 	margin-top: 10px;
@@ -3603,17 +3603,21 @@ html[lang="ko"] #events p {
 }
 .sales-wrap {
 	margin-top: 0;
-	 position: relative;
+	position: relative;
 }
 .sales-wrap img {
 	width: 100px;
     position: absolute;
-    left: 33px;
+    left: -4px;
     top: -20px;
     z-index: 10;
     -webkit-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
     transform: rotate(-20deg);
+}
+.sales-wrap img.kycrun {
+	left: 60px;
+    z-index: 11;
 }
 
 .btn-blink {
@@ -3647,6 +3651,31 @@ html[lang="ko"] #events p {
     95%{background-position:0% 100%}
     100%{background-position:0% 100%}
 }
+.sales-wrap div {
+	display: inline-block;
+    position: absolute;
+    top: -17px;
+    left: 1px;
+    width: 90px;
+    height: 90px;
+    z-index: 10;
+    border-radius: 100px;
+	background: rgba(199, 154, 30, 0.4);
+	background: linear-gradient(300deg, rgba(0,0,0,0) 49%, rgba(255, 255, 255, 0.3) 50%, rgba(0,0,0,0) 55%);
+	background-size: 500% 500%;
+	-webkit-animation: blinkline 7s linear infinite;
+	-moz-animation: blinkline 7s linear infinite;
+	animation: blinkline 7s linear infinite;
+}
+.sales-wrap div.kycblink {
+	top: -17px;
+    left: 65px;
+    z-index: 11;
+	-webkit-animation: blinkline 5s linear infinite;
+	-moz-animation: blinkline 5s linear infinite;
+	animation: blinkline 5s linear infinite;
+}
+
 
 .mvp-go {
 	background: url(../images/external-link.svg) no-repeat center center transparent;
@@ -3751,7 +3780,7 @@ html[lang="ko"] #events p {
 	.sales-wrap img {
 		width: 120px;
 		position: relative;
-		left: 0;
+		left: 0 !important;
 		top: 0;
 		z-index: 10;
 		-webkit-transform: rotate(-20deg);
