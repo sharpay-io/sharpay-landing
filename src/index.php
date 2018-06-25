@@ -177,8 +177,8 @@ $langsArray = array(
 						</div>
 					</div>
 					<div class="sales-wrap">
-						<img src="/images/chart/raised.svg" alt="10757 ETH raised successfully!" title="10757 ETH raised successfully!">
-						<img src="/images/chart/kyc-run.svg" class="kycrun" alt="KYC started via Sum And Substance Ltd!" title="KYC started via Sum And Substance Ltd!">
+						<img src="/images/chart/raised.png" alt="10757 ETH raised successfully!" title="10757 ETH raised successfully!">
+						<img src="/images/chart/kyc.png" class="kycrun" alt="KYC started via Sum And Substance Ltd!" title="KYC started via Sum And Substance Ltd!">
 						<div></div>
 						<a href="https://sale.sharpay.io/" target="_blank" class="btn-blink" title="KYC started"><div class="kycblink"></div></a>
 					</div>
