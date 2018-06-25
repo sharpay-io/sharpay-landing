@@ -3795,6 +3795,7 @@ html[lang="ko"] #events p {
 		transform: rotate(-20deg);
 	}
 	.sales-wrap div {
+		display:none;
 		width: 110px;
 		height: 110px;
 	}

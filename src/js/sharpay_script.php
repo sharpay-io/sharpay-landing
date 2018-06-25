@@ -48,11 +48,11 @@ $(function() {
 	if( w <= 767 ) {
 		if( $('.sales-wrap div').eq(0).length ) {
 			$('.sales-wrap div').eq(0).css('left', $('.sales-wrap img').eq(0).position().left + 20 );
-			$('.sales-wrap div').eq(0).css('top', $('.sales-wrap img').eq(0).position().top + 20 );
+			$('.sales-wrap div').eq(0).css('top', $('.sales-wrap img').eq(0).position().top + 20 ).show();
 		}
 		if( $('.sales-wrap div').eq(1).length ) {
 			$('.sales-wrap div').eq(1).css('left', $('.sales-wrap img').eq(1).position().left + 20 );
-			$('.sales-wrap div').eq(1).css('top', $('.sales-wrap img').eq(1).position().top + 20 );
+			$('.sales-wrap div').eq(1).css('top', $('.sales-wrap img').eq(1).position().top + 20 ).show();
 		}
 	} else {
 		$('.sales-wrap div').attr('style', '');
