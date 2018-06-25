@@ -3643,7 +3643,7 @@ html[lang="ko"] #events p {
     position: absolute;
     left: -4px;
 	
-	left: 33px;
+	/*left: 33px;*/
 	
     top: -20px;
     z-index: 10;
@@ -3661,7 +3661,7 @@ html[lang="ko"] #events p {
     top: -17px;
     left: 1px;
 	
-	left: 38px;
+	/*left: 38px;*/
 	
     width: 90px;
     height: 90px;
@@ -3670,17 +3670,17 @@ html[lang="ko"] #events p {
 	background: rgba(199, 154, 30, 0.4);
 	background: linear-gradient(300deg, rgba(0,0,0,0) 49%, rgba(255, 255, 255, 0.3) 50%, rgba(0,0,0,0) 55%);
 	background-size: 500% 500%;
-	-webkit-animation: blinkline 7s linear infinite;
-	-moz-animation: blinkline 7s linear infinite;
-	animation: blinkline 7s linear infinite;
+	-webkit-animation: blinkline 5s linear infinite;
+	-moz-animation: blinkline 5s linear infinite;
+	animation: blinkline 5s linear infinite;
 }
 .sales-wrap div.kycblink {
 	top: -17px;
     left: 65px;
     z-index: 11;
-	-webkit-animation: blinkline 5s linear infinite;
-	-moz-animation: blinkline 5s linear infinite;
-	animation: blinkline 5s linear infinite;
+	-webkit-animation: blinkline 3s linear infinite;
+	-moz-animation: blinkline 3s linear infinite;
+	animation: blinkline 3s linear infinite;
 }
 
 
