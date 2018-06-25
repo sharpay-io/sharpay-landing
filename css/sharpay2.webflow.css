@@ -3601,24 +3601,6 @@ html[lang="ko"] #events p {
 	width: 500px;
 	z-index: 1;
 }
-.sales-wrap {
-	margin-top: 0;
-	position: relative;
-}
-.sales-wrap img {
-	width: 100px;
-    position: absolute;
-    left: 33px;
-    top: -20px;
-    z-index: 10;
-    -webkit-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-}
-.sales-wrap img.kycrun {
-	left: 60px;
-    z-index: 11;
-}
 
 .btn-blink {
 	background: linear-gradient(300deg, #1e9a1e 45%, #c79a1e 50%, #1e9a1e 55%);
@@ -3651,11 +3633,36 @@ html[lang="ko"] #events p {
     95%{background-position:0% 100%}
     100%{background-position:0% 100%}
 }
+
+.sales-wrap {
+	margin-top: 0;
+	position: relative;
+}
+.sales-wrap img {
+	width: 100px;
+    position: absolute;
+    left: -4px;
+	
+	left: 33px;
+	
+    top: -20px;
+    z-index: 10;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.sales-wrap img.kycrun {
+	left: 60px;
+    z-index: 11;
+}
 .sales-wrap div {
 	display: inline-block;
     position: absolute;
     top: -17px;
     left: 1px;
+	
+	left: 38px;
+	
     width: 90px;
     height: 90px;
     z-index: 10;
@@ -3773,9 +3780,9 @@ html[lang="ko"] #events p {
 		width: 100%;
 		margin-left: 0;
 		margin-top: 20px;
-		height: 90px;
 		text-align: center;
-		margin-bottom: 20px;
+		height: 120px;
+		margin-bottom: 0;
 	}
 	.sales-wrap img {
 		width: 120px;
@@ -3786,6 +3793,10 @@ html[lang="ko"] #events p {
 		-webkit-transform: rotate(-20deg);
 		-ms-transform: rotate(-20deg);
 		transform: rotate(-20deg);
+	}
+	.sales-wrap div {
+		width: 110px;
+		height: 110px;
 	}
 	.new-progress p {
 		text-align: center;

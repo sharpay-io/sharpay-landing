@@ -43,6 +43,17 @@ $(function() {
     var w = $(window).width();
     // $('#particles').width(w).height(h);
     $('.modal').width(w).height(h);
+	
+  
+	if( w <= 767 ) {
+		$('.sales-wrap div').eq(0).css('left', $('.sales-wrap img').eq(0).position().left + 20 );
+		$('.sales-wrap div').eq(0).css('top', $('.sales-wrap img').eq(0).position().top + 20 );
+		
+		$('.sales-wrap div').eq(1).css('left', $('.sales-wrap img').eq(1).position().left + 20 );
+		$('.sales-wrap div').eq(1).css('top', $('.sales-wrap img').eq(1).position().top + 20 );
+	} else {
+		$('.sales-wrap div').attr('style', '');
+	}
   }).resize();
 
 	$('a[href="#signin"]').click(function(){
