@@ -58,6 +58,9 @@ $(function() {
 		$('.sales-wrap div').attr('style', '');
 	}
   }).resize();
+  
+	$('.sales-wrap div').eq(0).addClass('kycblink');
+	setTimeout( function() { $('.sales-wrap div').eq(1).addClass('kycblink'); }, 1500 );
 
 	$('a[href="#signin"]').click(function(){
 		$('#singin-modal').show();
