@@ -1,7 +1,13 @@
-<?xml version="1.0" ?>
-<svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-<defs><style>.cls-1{fill:none;stroke:#333;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style></defs>
-<title/>
-<path fill="#FFFFFF" d="M1,34A32,32,0,1,0,33,2,32,32,0,0,0,1,34Z"/>
-<path class="cls-1" d="M38.53,43.27l-6,8.73-6-8.73H17.19a1.08,1.08,0,0,1-1.1-1.06V26.35A6.47,6.47,0,0,1,22.67,20H47.9A1.08,1.08,0,0,1,49,21.06V42.21a1.08,1.08,0,0,1-1.1,1.06H38.53Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0088CC;}
+	.st1{fill:#FFFFFF;stroke:#333333;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title></title>
+<path class="st0" d="M0.5,16.5C0.5,25.1,7.4,32,16,32s15.5-6.9,15.5-15.5S24.6,1,16,1S0.5,7.9,0.5,16.5z"/>
+<path class="st1" d="M18.7,21l-2.9,4.2L12.9,21H8.3c-0.3,0-0.5-0.2-0.5-0.5c0,0,0,0,0,0v-7.7c0-1.7,1.5-3.1,3.2-3.1h12.2
+	c0.3,0,0.5,0.2,0.5,0.5c0,0,0,0,0,0v10.3c0,0.3-0.2,0.5-0.5,0.5c0,0,0,0,0,0H18.7z"/>
 </svg>

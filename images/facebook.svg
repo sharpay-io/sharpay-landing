@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>facebook</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="лендинг" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Sharpay-home-Copy" transform="translate(-284.000000, -765.000000)" fill-rule="nonzero" fill="#FFFFFF">
-            <g id="facebook" transform="translate(284.000000, 765.000000)">
-                <path d="M0,16 C0,7.16346667 7.16346667,0 16,0 C24.8365333,0 32,7.16346667 32,16 C32,24.8365333 24.8365333,32 16,32 C7.16346667,32 0,24.8365333 0,16 Z M17.66768,25.4076267 L17.66768,16.7027733 L20.0705973,16.7027733 L20.3890357,13.7030347 L17.6676811,13.7030347 L17.6717636,12.2016373 C17.6717636,11.4192587 17.7461001,11.0000427 18.8698222,11.0000427 L20.3720302,11.0000427 L20.3720302,7.99996267 L17.9687716,7.99996267 C15.0820729,7.99996267 14.0660302,9.45515733 14.0660302,11.9023413 L14.0660302,13.7033707 L12.2666489,13.7033707 L12.2666489,16.7031093 L14.0660302,16.7031093 L14.0660302,25.4075893 L17.6676836,25.4075893 L17.66768,25.4076267 Z" id="Combined-Shape"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#3E5B98;}
+</style>
+<title>facebook</title>
+<desc>Created with Sketch.</desc>
+<path class="st0" d="M16,3.2C8.9,3.2,3.2,8.9,3.2,16c0,7.1,5.7,12.8,12.8,12.8S28.8,23.1,28.8,16C28.8,8.9,23.1,3.2,16,3.2z"/>
+<path id="Combined-Shape" class="st1" d="M0,16C0,7.2,7.2,0,16,0s16,7.2,16,16s-7.2,16-16,16S0,24.8,0,16z M17.7,25.4v-8.7h2.4
+	l0.3-3h-2.7l0-1.5c0-0.8,0.1-1.2,1.2-1.2h1.5V8H18c-2.9,0-3.9,1.5-3.9,3.9v1.8h-1.8v3h1.8v8.7L17.7,25.4L17.7,25.4z"/>
 </svg>

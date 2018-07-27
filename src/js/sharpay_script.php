@@ -60,7 +60,7 @@ $(function() {
   }).resize();
   
 	$('.sales-wrap div').eq(0).addClass('kycblink');
-	setTimeout( function() { $(window).resize(); $('.sales-wrap div').eq(1).addClass('kycblink'); }, 1500 );
+	setTimeout( function() { $(window).resize(); $('.sales-wrap div').eq(1).addClass('kycblink'); }, 750 );
 
 	$('a[href="#signin"]').click(function(){
 		$('#singin-modal').show();

@@ -319,7 +319,7 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
 }
 
 .soc-link {
-    margin-right: 10px
+    margin-right: 7px
 }
 
 .soc-link:hover {
@@ -333,7 +333,7 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
 }
 
 .soc-link,.soc-link.sl-f:hover {
-    opacity: .3
+    opacity: .7
 }
 
 .section {
@@ -3137,8 +3137,9 @@ html[lang="ko"] #events p {
     }
 
     .soc-links {
-        max-width: 210px;
-        margin-right: 0;
+		margin: 0 auto 40px;
+		max-width: 300px;
+		
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -3534,7 +3535,7 @@ html[lang="ko"] #events p {
 	margin-top: 0;
 }
 .soc-links {
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 .progress-sale {
 	max-width: 654px;
