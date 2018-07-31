@@ -88,15 +88,15 @@ $langsArray = array(
 					<a href="#team" class="nav-link w-nav-link"><?=L::head_menu_team?></a>
 					<a href="#signin" class="nav-link w-nav-link orange-span"><?=L::head_menu_signin?></a>
 					<div class="nav-lang nl-mob">
-					<? foreach( $langsArray as $lng => $item ) { 
+					<? foreach( $langsArray as $lng => $item ) {
 						?><a href="<?=$item['url']?>" class="nav-link nl-lang w-nav-link"><?=$item['lang']?></a><?
 					} ?>
 					</div>
 				</nav>
 				<div class="nav-lang">
 					<ul class="languagepicker roundborders large">
-					<? if( isset( $langsArray[ $lang ] ) ) { 
-						?><li><img src="<?=$langsArray[ $lang ]['img']?>"/> <?=$langsArray[ $lang ]['title']?></li><? 
+					<? if( isset( $langsArray[ $lang ] ) ) {
+						?><li><img src="<?=$langsArray[ $lang ]['img']?>"/> <?=$langsArray[ $lang ]['title']?></li><?
 						unset( $langsArray[ $lang ] );
 					} ?>
 
@@ -193,11 +193,11 @@ $langsArray = array(
 				<?/* ?>
 				<div class="tokensale-close"><h3><?=L::head_sale_close?></h3></div>
 				<? */ ?>
-				
+
 			</div>
 		</div>
 	</div>
-	
+
 	<div id="token" class="section section-dark">
 		<?/*<div class="container">
 			<div class="-l-col" data-ix="l-init">
@@ -230,7 +230,7 @@ $langsArray = array(
 				<div id="tokenChart"></div>
 			</div>
 		</div>*/?>
-		
+
 		<div class="container container-exchange">
 			<div class="row-l-col" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::token_listing?></span></h2>
@@ -240,11 +240,13 @@ $langsArray = array(
 					<?=L::token_exchange?>
 				</p>
 			</div>
-		</div>		
-		
+		</div>
+
 	</div>
 
-	<div id="view" class="section">
+	<? include 'slides/news.php' ?>
+
+	<div id="view" class="section section-dark">
 		<div class="cont2 container">
 			<div class="row-cont">
 				<div class="row-l-col" data-ix="l-init">
@@ -314,7 +316,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="sites" class="section section-dark">
+	<div id="sites" class="section">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::sites_how_it_works?></span></h2>
@@ -331,7 +333,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="users" class="section">
+	<div id="users" class="section section-dark">
 		<div class="container">
 			<div class="l-col lc22" data-ix="l-init">
 				<h2 class="h2"><?=L::users_how_it_works?></h2>
@@ -349,7 +351,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-  <div id="add" class="section section-dark">
+  <div id="add" class="section">
 		<div class="c5 container">
 			<div class="l-col lc3" data-ix="l-init">
 				<h2 class="h2"><?=L::advantages_header?></h2>
@@ -387,7 +389,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="roadmap" class="section">
+	<div id="roadmap" class="section section-dark">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::roadmap_header?></h2>
@@ -507,7 +509,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="emission" class="section section-dark">
+	<div id="emission" class="section">
 		<div class="container">
 			<div class="l-col lc2" data-ix="l-init">
 				<h2 class="h2"><?=L::emission_header?></h2>
@@ -555,7 +557,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="vikup" class="section">
+	<div id="vikup" class="section section-dark">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::buyback_header?></h2>
@@ -569,7 +571,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="rashod" class="section section-dark">
+	<div id="rashod" class="section">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::expenses_header?></h2>
@@ -610,10 +612,8 @@ $langsArray = array(
 			</div>
 		</div>
 	</div>
-	
-	
 
-	<div id="advisers" class="section sf">
+	<div id="advisers" class="section sf section-dark">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::advisers_header?></h2>
@@ -668,7 +668,7 @@ $langsArray = array(
 		</div>
 	</div>  <!-- advisers -->
 
-	<div id="team" class="section section-dark">
+	<div id="team" class="section">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::team_header?></h2>
@@ -845,7 +845,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="events" class="section">
+	<div id="events" class="section section-dark">
 		<div class="container">
 			<div id="events-text" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::events_header?></span></h2>
@@ -927,11 +927,11 @@ $langsArray = array(
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48279077 = new Ya.Metrika2({ id:48279077, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48279077" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
-	
-	
-	<!-- Mgid Sensor --> 
-	<script type="text/javascript"> (function() { var d = document, w = window; w.MgSensorData = w.MgSensorData || []; w.MgSensorData.push({cid:299708, lng:"us" , project: "a.mgid.com"}); var l = "a.mgid.com"; var n = d.getElementsByTagName("script")[0]; var s = d.createElement("script"); s.type = "text/javascript"; s.async = true; var dt = !Date.now?new Date().valueOf():Date.now(); s.src = "//" + l + "/mgsensor.js?d=" + dt; n.parentNode.insertBefore(s, n); })(); </script> 
-	<!-- /Mgid Sensor --> 
+
+
+	<!-- Mgid Sensor -->
+	<script type="text/javascript"> (function() { var d = document, w = window; w.MgSensorData = w.MgSensorData || []; w.MgSensorData.push({cid:299708, lng:"us" , project: "a.mgid.com"}); var l = "a.mgid.com"; var n = d.getElementsByTagName("script")[0]; var s = d.createElement("script"); s.type = "text/javascript"; s.async = true; var dt = !Date.now?new Date().valueOf():Date.now(); s.src = "//" + l + "/mgsensor.js?d=" + dt; n.parentNode.insertBefore(s, n); })(); </script>
+	<!-- /Mgid Sensor -->
 
 </body>
 </html>

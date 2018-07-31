@@ -528,7 +528,7 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
     line-height: 15px
 }
 
-.team-cont {
+.team-cont, .news-container {
     width: 100%;
     margin-left: -20px;
     -webkit-flex-wrap: wrap;
@@ -537,14 +537,14 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
     margin-top: 10px
 }
 
-.team-cont,.team-item,.team-top {
+.team-cont,.team-item,.team-top,.news-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex
 }
 
-.team-item {
+.team-item,.news-item {
     width: 33.33333333%;
     max-width: 460px;
     margin-top: 50px;
@@ -600,6 +600,17 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
     font-size: 10px;
     line-height: 18px;
     text-align: center
+}
+
+.news-item a {
+	color: #ff9933;
+	text-decoration: none;
+}
+
+.news-item p {
+	word-wrap: break-word;
+	font-size: 13px;
+	line-height: 15px;
 }
 
 .success-msg {
@@ -1821,8 +1832,8 @@ html[lang="ko"] #events p {
 }
 
 .container-exchange .row-l-col {
-	width: 21%; 
-	min-width: 240px; 
+	width: 21%;
+	min-width: 240px;
 	white-space: nowrap;
 }
 
@@ -2730,7 +2741,7 @@ html[lang="ko"] #events p {
         line-height: 18px
     }
 
-    .team-cont {
+    .team-cont, .news-container {
         margin-left: 0;
         -webkit-box-pack: start;
         -webkit-justify-content: flex-start;
@@ -2740,11 +2751,18 @@ html[lang="ko"] #events p {
 
     .team-item {
         width: 100%;
+				max-width: 100%;
         padding-right: 0;
         padding-left: 0;
         text-align: center
     }
-
+		.news-item {
+        width: 100%;
+				max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+				margin-top: 10px;
+    }
     .team-top {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3014,7 +3032,7 @@ html[lang="ko"] #events p {
 }
 
 @media (max-width:479px) {
-	
+
 	.container-exchange .row-l-col {
 		width:auto;
 	}
@@ -3139,7 +3157,7 @@ html[lang="ko"] #events p {
     .soc-links {
 		margin: 0 auto 40px;
 		max-width: 300px;
-		
+
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -3286,14 +3304,14 @@ html[lang="ko"] #events p {
         margin-top: 0
     }
 
-    .team-item,.team-top {
+    .team-item,.team-top, .news-item {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center
     }
 
-    .team-item {
+    .team-item, .news-item {
         margin-top: 40px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3657,7 +3675,7 @@ html[lang="ko"] #events p {
 	display: inline-block;
     position: absolute;
     top: -17px;
-    left: 1px;	
+    left: 1px;
     width: 90px;
     height: 90px;
     z-index: 10;
@@ -3729,7 +3747,7 @@ html[lang="ko"] #events p {
 .languagepicker a:first-child li {
 	border: none;
 	background: #313131 !important;
-	
+
 }
 .languagepicker>li:after {
 	content: ' ';
@@ -3803,7 +3821,7 @@ html[lang="ko"] #events p {
 		background: linear-gradient(to right, rgba(34,34,34,1) 0%,rgba(34,34,34,0) 20%,rgba(34,34,34,0) 80%,rgba(34,34,34,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222',GradientType=1 );
 	}
-	
+
 	.nav-lang.nl-mob {
 		display: flex!important;
 		justify-content: space-between!important;

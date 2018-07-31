@@ -15,7 +15,7 @@ var Webflow = Webflow || [];
 
 
 $(function() {
-	
+
 	Webflow.push(function() {
 	  $('.clock').TimeCircles({
 		circle_bg_color: 'rgba(255,255,255,0.05)',
@@ -33,7 +33,7 @@ $(function() {
 		$('.clock').TimeCircles().rebuild();
 	  });
 	});
-	
+
 	if( /utm/i.test( document.location.search ) ) {
 		$('.btn-sale').attr('href', $('.btn-sale').attr('href') + '&' + document.location.search.substr(1) );
 	}
@@ -43,8 +43,8 @@ $(function() {
     var w = $(window).width();
     // $('#particles').width(w).height(h);
     $('.modal').width(w).height(h);
-	
-  
+
+
 	if( w <= 767 ) {
 		if( $('.sales-wrap div').eq(0).length ) {
 			$('.sales-wrap div').eq(0).css('left', $('.sales-wrap img').eq(0).position().left + 20 );
@@ -58,7 +58,7 @@ $(function() {
 		$('.sales-wrap div').attr('style', '');
 	}
   }).resize();
-  
+
 	$('.sales-wrap div').eq(0).addClass('kycblink');
 	setTimeout( function() { $(window).resize(); $('.sales-wrap div').eq(1).addClass('kycblink'); }, 750 );
 
@@ -74,7 +74,7 @@ $(function() {
 	$('.dialog').click(function(e) {
 		e.stopPropagation();
 	});
-	
+
 	$('.nav-lang a').click(function(){
 		var date = new Date(new Date().getTime() + 60*60*24 * 1000);
 		document.cookie = "language=true; path=/; expires=" + date.toUTCString();
@@ -109,7 +109,7 @@ $(function() {
 
 	/*$.getJSON('/raised.json?t='  + new Date().getTime(), function( data ) {
 		$('#contributors').text( data.contributors );
-		
+
 		var raised = data.raised;
 		raised = parseInt( raised );
 		$('.new-progress-grid').load('/images/chart/bar-grid.svg?v=4', function( data ){
@@ -154,6 +154,31 @@ $(function() {
   //   prevArrow: '<button type="button" class="slick-prev"><img src="/images/carousel/previous.svg?v=2" /></button>',
   //   nextArrow: '<button type="button" class="slick-next"><img src="/images/carousel/next.svg?v=2" /></button>'
   // }).show();
+
+	// NEWS FROM MEDIUM
+	$.get('https://app.sharpay.io/proxy/medium?count=3', function(news) {
+
+		const CONTENT_SIZE_LIMIT = 500;
+
+		for (var i = 0; i < news.length; i += 1) {
+
+			var content = news[i].content;
+			content = $.trim(content).substring(0, CONTENT_SIZE_LIMIT).split(' ').slice(0, -1).join(' ');
+			content += '...';
+
+			var html =
+			'<div class="news-item">' +
+				'<a href="' + news[i].link + '" target="_blank" rel="nofollow">' +
+					news[i].title +
+				'</a>' +
+				'<p>' +
+					content
+				'</p>' +
+ 			'</div>';
+			$('.news-container').append(html);
+			$('.news-container a').attr('target', '_blank').attr('rel', 'nofollow');
+		}
+	});
 
   Webflow.require('ix').init([
     {"slug":"bg-logo-init","name":"bg logo init","value":{"style":{"display":"none","opacity":0},"triggers":[]}},
