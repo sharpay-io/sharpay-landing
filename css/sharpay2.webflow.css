@@ -552,6 +552,16 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
     padding-left: 13px
 }
 
+.news-item p {
+	margin-top: 10px;
+	word-wrap: break-word;
+}
+
+.news-item .header {
+	display: inline-block;
+	height: 40px;
+}
+
 .team-top {
     margin-left: 20px;
     -webkit-box-orient: vertical;

@@ -158,21 +158,22 @@ $(function() {
 	// NEWS FROM MEDIUM
 	$.get('https://app.sharpay.io/proxy/medium?count=3', function(news) {
 
-		const CONTENT_SIZE_LIMIT = 500;
+		const CONTENT_SIZE_LIMIT = 320;
 
 		for (var i = 0; i < news.length; i += 1) {
 
 			var content = news[i].content;
+			//.replace(/<p>/g, ' ').replace(/<\/p>/g, '')
 			content = $.trim(content).substring(0, CONTENT_SIZE_LIMIT).split(' ').slice(0, -1).join(' ');
-			content += '...';
 
 			var html =
 			'<div class="news-item">' +
-				'<a href="' + news[i].link + '" target="_blank" rel="nofollow">' +
+				'<a class="header" href="' + news[i].link + '" target="_blank" rel="nofollow">' +
 					news[i].title +
 				'</a>' +
 				'<p>' +
-					content
+					content +
+					'&nbsp;<a href="' + news[i].link + '" target="_blank" rel="nofollow">&gt;&gt;&gt;</a>' +
 				'</p>' +
  			'</div>';
 			$('.news-container').append(html);
