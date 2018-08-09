@@ -156,7 +156,7 @@ $(function() {
   // }).show();
 
 	// NEWS FROM MEDIUM
-	$.get('http://app.sharpay.local/proxy/medium?count=3', function(news) {
+	$.get('https://app.sharpay.io/proxy/medium?count=3', function(news) {
 
 		const CONTENT_SIZE_LIMIT = 320;
 
