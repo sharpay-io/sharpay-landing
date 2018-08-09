@@ -156,7 +156,7 @@ $(function() {
   // }).show();
 
 	// NEWS FROM MEDIUM
-	$.get('https://app.sharpay.io/proxy/medium?count=3', function(news) {
+	$.get('http://app.sharpay.local/proxy/medium?count=3', function(news) {
 
 		const CONTENT_SIZE_LIMIT = 320;
 
@@ -171,10 +171,9 @@ $(function() {
 				'<a class="header" href="' + news[i].link + '" target="_blank" rel="nofollow">' +
 					news[i].title +
 				'</a>' +
-				'<p>' +
-					content +
-					'&nbsp;<a href="' + news[i].link + '" target="_blank" rel="nofollow">&gt;&gt;&gt;</a>' +
-				'</p>' +
+				content +
+				'&nbsp;<a href="' + news[i].link + '" target="_blank" rel="nofollow">&gt;&gt;&gt;</a>' +
+				'<p><span class="orange-span">' + news[i].date + '</span></p>' +
  			'</div>';
 			$('.news-container').append(html);
 			$('.news-container a').attr('target', '_blank').attr('rel', 'nofollow');

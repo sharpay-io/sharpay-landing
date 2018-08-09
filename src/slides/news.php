@@ -1,4 +1,4 @@
-<div id="news" class="section">
+<div id="news" class="section section-dark">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init"><?=L::news_header?></h2>

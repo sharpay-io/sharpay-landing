@@ -78,12 +78,13 @@ $langsArray = array(
 			<div class="h-nav-cont">
 				<a href="/" class="h-nav-logo w-nav-brand"><img src="/images/logo-sharpay.svg"></a>
 				<nav role="navigation" class="h-menu w-nav-menu">
+					<a href="#news" class="nav-link w-nav-link"><?=L::head_menu_news?></a>
 					<a href="#view" class="nav-link w-nav-link"><?=L::head_menu_view?></a>
 					<a href="#sites" class="nav-link w-nav-link"><?=L::head_menu_sites?></a>
 					<a href="#users" class="nav-link w-nav-link"><?=L::head_menu_users?></a>
 					<a href="#roadmap" class="nav-link w-nav-link"><?=L::head_menu_roadmap?></a>
 					<a href="#emission" class="nav-link w-nav-link"><?=L::head_menu_emission?></a>
-					<a href="#token" class="nav-link w-nav-link"><?=L::head_menu_token?></a>
+					<!-- <a href="#token" class="nav-link w-nav-link"><?=L::head_menu_token?></a> -->
 					<a href="#advisers" class="nav-link w-nav-link"><?=L::head_menu_advisers?></a>
 					<a href="#team" class="nav-link w-nav-link"><?=L::head_menu_team?></a>
 					<a href="#signin" class="nav-link w-nav-link orange-span"><?=L::head_menu_signin?></a>
@@ -198,7 +199,9 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="token" class="section section-dark">
+	<? include 'slides/news.php' ?>
+
+	<div id="token" class="section">
 		<?/*<div class="container">
 			<div class="-l-col" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::token_sale?></span></h2>
@@ -243,8 +246,6 @@ $langsArray = array(
 		</div>
 
 	</div>
-
-	<? include 'slides/news.php' ?>
 
 	<div id="view" class="section section-dark">
 		<div class="cont2 container">

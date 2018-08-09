@@ -544,12 +544,12 @@ html[lang="pt"] .btn { padding: 11px 10px 14px; }
     display: flex
 }
 
-.team-item,.news-item {
+.team-item, .news-item {
     width: 33.33333333%;
     max-width: 460px;
     margin-top: 50px;
     padding-right: 13px;
-    padding-left: 13px
+    padding-left: 21px
 }
 
 .news-item p {
