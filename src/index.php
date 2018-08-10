@@ -187,8 +187,12 @@ $langsArray = array(
 					<div class="sales-wrap">
 						<img src="/images/chart/raised.png" alt="10757 ETH raised successfully!" title="10757 ETH raised successfully!">
 						<img src="/images/chart/kyc.png" class="kycrun" alt="KYC started via Sum And Substance Ltd!" title="KYC started via Sum And Substance Ltd!">
+						<img src="/images/chart/emission.png" class="emissionrun" alt="Successfully ERC20 token emission!" title="Successfully ERC20 token emission!">
+						<img src="/images/chart/withdrawal.png" class="withdrawalrun" alt="Active withdrawal to personal ETH addresses!" title="Active withdrawal to personal ETH addresses!">
 						<div></div>
 						<a href="https://sale.sharpay.io/" target="_blank" title="KYC started"><div class="kychover"></div></a>
+						<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank" title="ERC20 token"><div class="emissionhover"></div></a>
+						<a href="https://sale.sharpay.io/" target="_blank" title="Withdrawal"><div class="withdrawalhover"></div></a>
 					</div>
 				</div>
 				<?/* ?>
