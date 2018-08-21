@@ -88,17 +88,23 @@ h1 {
 }
 .mt-10 {
 	margin-top: 80px;
-	margin-top: 20vh;
 }
 .container {
 	min-height: 100vh;
 }
-
+.messages {
+	display: none;
+}
+.error {
+	color: red;
+}
+.ready {
+	color: green;
+}
 
 @media (max-width: 768px) {
 	.mt-10 {
-		margin-top: 20px;
-		margin-top: 20vh;
+		margin-top: 30px;
 	}
 	h1 {
 		font-size: 52px;
