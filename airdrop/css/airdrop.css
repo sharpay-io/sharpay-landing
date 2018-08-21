@@ -63,11 +63,12 @@ h1 {
 	padding-right: 10px;
 }
 .input-group input, .input-group button {
-	background: none !important;
+	background: #373737CC !important;
 	border: none !important;
 	outline: 0 none !important;
 	box-shadow: none !important;	
 	font-size: 15px;
+	border-radius: 10px;
 }
 .input-group input {
 	color: #efefef !important;
