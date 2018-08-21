@@ -61,9 +61,10 @@ h1 {
 	border-radius: 80px;
 	padding-left: 10px;
 	padding-right: 10px;
+	background: #373737CC !important;
 }
 .input-group input, .input-group button {
-	background: #373737CC !important;
+	background: none !important;
 	border: none !important;
 	outline: 0 none !important;
 	box-shadow: none !important;	
@@ -87,6 +88,9 @@ h1 {
     line-height: 15px;
 	color: #ff9a1e !important;	
 }
+.form-text {
+	font-size: 15px;
+}
 .mt-10 {
 	margin-top: 80px;
 }
@@ -100,7 +104,7 @@ h1 {
 	color: red;
 }
 .ready {
-	color: green;
+	color: #00ce00;
 }
 
 @media (max-width: 768px) {

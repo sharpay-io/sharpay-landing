@@ -28,10 +28,12 @@ $(function(){
 		if ( /^(0x)?[0-9a-f]{40}$/i.test( address ) ) 
 		{
 			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-			$.post(airdrop, {code: code, address: address}, function( data ){
-				if( data.message == 'OK' ) {
+			$.post(airdrop, {code: code, address: address}, function( data ){				
+				if( data.code ) {
 					code = data.code;
 					window.localStorage.setItem('airdrop', data.code);
+				}
+				if( data.message == 'OK' ) {
 					$('.messages').removeClass('error').addClass('ready').text('Your address has been successfully added.').show();
 					$('input', 'form').val('');
 				} else {
