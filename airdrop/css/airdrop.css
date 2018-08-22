@@ -108,6 +108,18 @@ h1 {
 .ready {
 	color: #00ce00;
 }
+small {
+	font-size: 12px;
+}
+.soc-links img {
+	width: 32px;
+}
+.soc-links img {
+	margin: 5px 5px;
+}
+.small {
+	line-height: 80%;
+}
 
 @media (max-width: 768px) {
 	.mt-10 {
@@ -118,7 +130,7 @@ h1 {
 		line-height: 64px;
 	}
 	body {
-		background-position: 80% 0%;
+		background-position: 80% 0;
 		background-size: 1100px;
 	}
 	.container {
@@ -134,7 +146,7 @@ h1 {
 		line-height: 48px;
 	}
 	body {
-		background-position: 80% 20%;
+		background-position: 80% 30px;
 		background-size: 720px;
 	}
 	.container {
