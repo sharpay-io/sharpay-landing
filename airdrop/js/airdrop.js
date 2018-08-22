@@ -2,25 +2,17 @@ $(function(){
 	var code;
 	var airdrop = 'https://app.sharpay.io/airdrop';
 	
-	if( ! ( code = window.localStorage.getItem('airdrop') ) )
-	{
-		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-		$.get(airdrop, function( data ) {
-			if( data.message == 'OK' ) {
-				code = data.code;
-				window.localStorage.setItem('airdrop', data.code);
-				$('form button').attr('disabled', false);
-			} else {
-				$('.messages').addClass('error').text('Network error. Please try again later.').show();
-			}
-		}, 'json').fail(function(){
+	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+	$.get(airdrop, function( data ) {
+		if( data.message == 'OK' ) {
+			code = data.code;
+			$('form button').attr('disabled', false);
+		} else {
 			$('.messages').addClass('error').text('Network error. Please try again later.').show();
-		});
-	}
-	else
-	{
-		$('form button').attr('disabled', false);
-	}
+		}
+	}, 'json').fail(function(){
+		$('.messages').addClass('error').text('Network error. Please try again later.').show();
+	});
 	
 	$(document).on('submit', 'form', function(){
 		$('form button').attr('disabled', true);
@@ -31,7 +23,6 @@ $(function(){
 			$.post(airdrop, {code: code, address: address}, function( data ){				
 				if( data.code ) {
 					code = data.code;
-					window.localStorage.setItem('airdrop', data.code);
 				}
 				if( data.message == 'OK' ) {
 					$('.messages').removeClass('error').addClass('ready').text('Your address has been successfully added.').show();
@@ -75,6 +66,11 @@ $(function(){
 				});
 				$('.messages').hide();
 				$('form button').attr('disabled', false);
+			}
+			else if( /(0x)?[0-9a-f]{40}/i.test( address ) )
+			{
+				var tmp = /(0x?[0-9a-f]{40})/i.exec( address )
+				$(this).val( tmp[0] ).change();
 			}
 			else 
 			{
