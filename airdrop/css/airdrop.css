@@ -73,6 +73,7 @@ h1 {
 }
 .input-group input {
 	color: #efefef !important;
+	padding-right: 0px;
 }
 .input-group input.is-invalid {
 	color: red !important;
