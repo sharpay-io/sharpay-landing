@@ -118,7 +118,7 @@ small {
 	margin: 5px 5px;
 }
 .small {
-	line-height: 80%;
+	line-height: 120%;
 }
 
 @media (max-width: 768px) {
