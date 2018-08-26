@@ -28,7 +28,7 @@ $(function(){
 					$('.messages').removeClass('error').addClass('ready').text('Your address has been successfully added.').show();
 					$('input', 'form').val('');
 				} else {
-					$('.messages').removeClass('ready').addClass('error').text( data.message ).show();
+					$('.messages').removeClass('ready').addClass( ( /already/i.test(data.message) ? 'orange' : 'error' ) ).text( data.message ).show();
 				}
 				$('form button').attr('disabled', false);
 			}, 'json').fail(function(){
