@@ -189,10 +189,12 @@ $langsArray = array(
 						<img src="/images/chart/kyc.png" class="kycrun" alt="KYC started via Sum And Substance Ltd!" title="KYC started via Sum And Substance Ltd!">
 						<img src="/images/chart/emission.png" class="emissionrun" alt="Successfully ERC20 token emission!" title="Successfully ERC20 token emission!">
 						<img src="/images/chart/withdrawal.png" class="withdrawalrun" alt="Active withdrawal to personal ETH addresses!" title="Active withdrawal to personal ETH addresses!">
+						<img src="/images/chart/listing.png" class="listingrun" alt="The first exchange where you can officially buy and sell our S tokens is SIMEX!" title="The first exchange where you can officially buy and sell our S tokens is SIMEX!">
 						<div></div>
 						<a href="https://sale.sharpay.io/" target="_blank" title="KYC started"><div class="kychover"></div></a>
 						<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank" title="ERC20 token"><div class="emissionhover"></div></a>
 						<a href="https://sale.sharpay.io/" target="_blank" title="Withdrawal"><div class="withdrawalhover"></div></a>
+						<a href="https://simex.global/en/exchange/s/eth" target="_blank" title="First listing"><div class="listinghover"></div></a>
 					</div>
 				</div>
 				<?/* ?>

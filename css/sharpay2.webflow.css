@@ -2012,7 +2012,7 @@ html[lang="ko"] #events p {
 .sales-wrap {
 	margin-top: 0;
 	position: relative;
-    margin-left: 56%;
+    margin-left: 50%;
 }
 .sales-wrap img {
 	width: 100px;
@@ -2036,6 +2036,10 @@ html[lang="ko"] #events p {
 .sales-wrap img.withdrawalrun {
     left: 188px;
     z-index: 13;
+}
+.sales-wrap img.listingrun {
+    left: 252px;
+    z-index: 14;
 }
 
 
@@ -2071,6 +2075,11 @@ html[lang="ko"] #events p {
 	top: -17px;
     left: 195px;
     z-index: 13;
+}
+.sales-wrap div.listinghover {
+	top: -17px;
+    left: 258px;
+    z-index: 14;
 }
 
 
@@ -3822,7 +3831,7 @@ html[lang="ko"] #events p {
 
 @media (max-width: 767px) {
 	#head {
-		padding-bottom: 200px;
+		padding-bottom: 300px;
 	}
 	.new-progress {
 		width: 100%;
