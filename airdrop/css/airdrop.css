@@ -61,7 +61,7 @@ a {
 	text-decoration: underline;
 }
 .orange {
-    color: #ff9a1e;
+    color: #ff9a1e !important;
 }
 .nav-link {
     color: rgba(255,255,255,.5);
@@ -140,6 +140,57 @@ ol li, ul li {
 }
 ul {
 	list-style: none;
+}
+
+
+.modal {
+	z-index: 1100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.dialog {
+	z-index: 1110;
+	background: #373737;
+	width: 80%;
+	margin: 5% auto 0 auto;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+#singin-dialog {
+    max-width: 500px;
+  	min-height: 100px;
+}
+#singin-dialog h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#singin-dialog .row .col p {
+	margin: 0 5% 0 5%;
+}
+#singin-dialog .btn {
+    padding: 11px 20px 14px;
+    border: 2px solid #f93;
+    border-radius: 80px;
+    color: #fff  !important;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+	width: 100%;
+	margin: 10px 0 20px 0;
+	font-weight: normal;
+}
+#singin-dialog .btn:hover {
+	background-color: #f93;
+}
+#singin-dialog .btn:hover .orange {
+	color: #fff  !important;
 }
 
 @media (max-width: 768px) {

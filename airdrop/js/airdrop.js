@@ -2,6 +2,20 @@ $(function(){
 	var code;
 	var airdrop = 'https://app.sharpay.io/airdrop';
 	
+	$(window).resize(function() {
+		var h = $(window).height();
+		var w = $(window).width();
+		$('.modal').width(w).height(h);
+	}).resize();
+	
+	$('a[href="#signin"]').click(function(){
+		$('#singin-modal').show();
+		return false;
+	});
+	$('#singin-modal').click(function(){
+		$('#singin-modal').hide();
+	});
+	
 	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 	$.get(airdrop, function( data ) {
 		if( data.message == 'OK' ) {
