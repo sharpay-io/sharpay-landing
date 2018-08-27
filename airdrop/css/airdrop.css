@@ -46,6 +46,10 @@ h1 {
     font-size: 64px;
     line-height: 72px;
 }
+p {
+	font-weight: normal !important;
+	font-style: normal !important;	
+}
 a {
 	color: #ff9a1e;
 	text-decoration: underline;
