@@ -15,7 +15,8 @@ $(function(){
 	});
 	
 	$(document).on('submit', 'form', function(){
-		$('form button').attr('disabled', true);
+		var thisForm = $(this);
+		$('button', thisForm).attr('disabled', true);
 		var address = $('input', this).val();
 		if ( /^(0x)?[0-9a-f]{40}$/i.test( address ) ) 
 		{
@@ -25,29 +26,31 @@ $(function(){
 					code = data.code;
 				}
 				if( data.message == 'OK' ) {
-					$('.messages').removeClass('error').addClass('ready').text('Your address has been successfully added.').show();
-					$('input', 'form').val('');
+					$('.messages', thisForm).removeClass('error').addClass('ready').text('Your address has been successfully added.').show();
+					$('input', thisForm).val('');
 				} else {
-					$('.messages').removeClass('ready').addClass( ( /already/i.test(data.message) ? 'orange' : 'error' ) ).text( data.message ).show();
+					$('.messages', thisForm).removeClass('ready').removeClass('error').addClass( ( /already/i.test(data.message) ? 'orange' : 'error' ) ).text( data.message ).show();
 				}
-				$('form button').attr('disabled', false);
+				$('button', thisForm).attr('disabled', false);
 			}, 'json').fail(function(){
-				$('.messages').removeClass('ready').addClass('error').text('Network error. Please try again later.').show();
-				$('form button').attr('disabled', false);
+				$('.messages', thisForm).removeClass('ready').addClass('error').text('Network error. Please try again later.').show();
+				$('button', thisForm).attr('disabled', false);
 			});
 		}
 		else
 		{
-			$('.messages').removeClass('ready').addClass('error').text('Enter the correct ethereum address.').show();
-			$('form button').attr('disabled', false);
+			$('.messages', thisForm).removeClass('ready').addClass('error').text('Enter the correct ethereum address.').show();
+			$('button', thisForm).attr('disabled', false);
 		}
 		
 		return false;
 	});
 	
-	$('#inputAddress').change(function () {
-		var address = $(this).val().trim();
-		$(this).removeClass('is-valid').removeClass('is-invalid');
+	$('.inputAddress').change(function () {
+		var thisInput = $(this);
+		var thisForm = $(this).parents('form').eq(0);
+		var address = thisInput.val().trim();
+		thisInput.removeClass('is-valid').removeClass('is-invalid');
 		if( address != '' ) 
 		{
 			if ( /^(0x)?[0-9a-f]{40}$/i.test( address ) ) 
@@ -57,26 +60,26 @@ $(function(){
 					if( data.message == 'OK' )
 					{
 						if( data.result > 0 ) {
-							$('#inputAddress').addClass('is-valid');
+							thisInput.addClass('is-valid');
 						} else {
-							$('.messages').removeClass('ready').addClass('error').text('Your address does not have Sharpay tokens.').show();
-							$('form button').attr('disabled', true);
+							$('.messages', thisForm).removeClass('ready').addClass('error').text('Your address does not have Sharpay tokens.').show();
+							$('button', thisForm).attr('disabled', true);
 						}
 					}
 				});
-				$('.messages').hide();
-				$('form button').attr('disabled', false);
+				$('.messages', thisForm).hide();
+				$('button', thisForm).attr('disabled', false);
 			}
 			else if( /(0x)?[0-9a-f]{40}/i.test( address ) )
 			{
-				var tmp = /(0x?[0-9a-f]{40})/i.exec( address )
-				$(this).val( tmp[0] ).change();
+				var tmp = /(0x?[0-9a-f]{40})/i.exec( address );
+				thisInput.val( tmp[0] ).change();
 			}
 			else 
 			{
-				$('form button').attr('disabled', true);
-				$(this).addClass('is-invalid');
-				$('.messages').removeClass('ready').addClass('error').text('Enter the correct ethereum address.').show();
+				$('button', thisForm).attr('disabled', true);
+				thisInput.addClass('is-invalid');
+				$('.messages', thisForm).removeClass('ready').addClass('error').text('Enter the correct ethereum address.').show();
 			}
 		}
 	});

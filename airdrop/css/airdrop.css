@@ -46,6 +46,12 @@ h1 {
     font-size: 64px;
     line-height: 72px;
 }
+h2 {
+	font-size: 1.9rem;
+}
+h2, h3 {
+	font-weight: 400;
+}
 p {
 	font-weight: normal !important;
 	font-style: normal !important;	
@@ -129,8 +135,11 @@ small {
 .small {
 	line-height: 120%;
 }
-ol li {
-	margin-bottom: 10px;
+ol li, ul li {
+	margin-bottom: 1px;
+}
+ul {
+	list-style: none;
 }
 
 @media (max-width: 768px) {
