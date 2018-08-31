@@ -8,11 +8,13 @@ $(function(){
 	} catch ( e ) {}
 
 	if( document.location.hash == '#zh' || lang == 'zh' ) {
-		$('body>.container').load('i18n/zh.html');
+		$('body>.container').load('i18n/zh.html', function(){ $('body>.container').fadeTo(500, 1); });
 	} else if( document.location.hash == '#en' ) {
-		$('body>.container').load('i18n/en.html');
+		$('body>.container').load('i18n/en.html', function(){ $('body>.container').fadeTo(500, 1); });
+	} else {
+		$('body>.container').fadeTo(500, 1);
 	}
-	$('body>.container').fadeTo(500, 1);
+	
 	
 	$(window).resize(function() {
 		var h = $(window).height();
