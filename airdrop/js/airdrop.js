@@ -2,30 +2,33 @@ $(function(){
 	var code;
 	var airdrop = 'https://app.sharpay.io/airdrop';
 	
+	var lang = 'en';
+	try {
+		lang = ( window.navigator.userLanguage || window.navigator.language ).substr(0,2).toLowerCase();
+	} catch ( e ) {}
+
+	if( document.location.hash == '#zh' || lang == 'zh' ) {
+		$('body>.container').load('i18n/zh.html');
+	} else if( document.location.hash == '#en' ) {
+		$('body>.container').load('i18n/en.html');
+	}
+	$('body>.container').fadeTo(500, 1);
+	
 	$(window).resize(function() {
 		var h = $(window).height();
 		var w = $(window).width();
 		$('.modal').width(w).height(h);
 	}).resize();
 	
-	$('a[href="#signin"]').click(function(){
+	$(document).on('click', 'a[href="#signin"]', function(){
 		$('#singin-modal').show();
 		return false;
 	});
-	$('#singin-modal').click(function(){
+	$(document).on('click', '#singin-modal', function(){
 		$('#singin-modal').hide();
 	});
-	
-	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-	$.get(airdrop, function( data ) {
-		if( data.message == 'OK' ) {
-			code = data.code;
-			$('form button').attr('disabled', false);
-		} else {
-			$('.messages').addClass('error').text('Network error. Please try again later.').show();
-		}
-	}, 'json').fail(function(){
-		$('.messages').addClass('error').text('Network error. Please try again later.').show();
+	$(document).on('click', '.dropdown-menu a', function(){
+		document.location.reload();
 	});
 	
 	$(document).on('submit', 'form', function(){
@@ -60,7 +63,7 @@ $(function(){
 		return false;
 	});
 	
-	$('.inputAddress').change(function () {
+	$(document).on('change', '.inputAddress', function () {
 		var thisInput = $(this);
 		var thisForm = $(this).parents('form').eq(0);
 		var address = thisInput.val().trim();
@@ -97,4 +100,17 @@ $(function(){
 			}
 		}
 	});
+	
+	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+	$.get(airdrop, function( data ) {
+		if( data.message == 'OK' ) {
+			code = data.code;
+			$('form button').attr('disabled', false);
+		} else {
+			$('.messages').addClass('error').text('Network error. Please try again later.').show();
+		}
+	}, 'json').fail(function(){
+		$('.messages').addClass('error').text('Network error. Please try again later.').show();
+	});
+	
 });

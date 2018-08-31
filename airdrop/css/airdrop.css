@@ -192,6 +192,30 @@ ul {
 #singin-dialog .btn:hover .orange {
 	color: #fff  !important;
 }
+.nav-item:first-child>a {
+	padding-left: 0;
+}
+.nav-item:last-child>a {
+	padding-right: 0;
+}
+.nav-item img {
+	width: 24px;
+}
+.dropdown-menu {	
+	min-width: 44px;
+	padding: 0;
+	margin-left: 4px;
+}
+.dropdown-menu a {
+	padding: 10px;
+}
+.dropdown-menu a:hover {
+	background-color: #373737
+}
+
+body>.container {
+	opacity : 0;
+}
 
 @media (max-width: 768px) {
 	.mt-10 {
