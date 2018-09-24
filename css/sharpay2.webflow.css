@@ -1582,6 +1582,19 @@ html[lang=pt] #head-marketing-msg {
   min-width: 409px;
 }
 
+.font165 {
+	font-size: 15.5px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.font165:hover {
+	text-decoration: underline !important;
+}
+.font165:hover span {
+	text-decoration: underline !important;
+}
+
+
 
 #video {
   width: 147px;
@@ -1599,17 +1612,21 @@ html[lang=ar] .section, html[lang=ar] .container-head {
   text-align: right;
 }
 
-
-html[lang=ru] #video {
-  margin-left: 22px;
-}
-
 html[lang=zh] #video {
   background-image: url("/images/video_button_zh.jpg");
 }
 
 html[lang=ko] #video {
  margin-left: 0;
+}
+html[lang=es] .font165 {
+    font-size: 13.5px;
+}
+html[lang=ph] .font165 {
+    font-size: 14.5px;
+}
+html[lang=it] .font165 {
+    font-size: 14px;
 }
 html[lang=jp] .chat-online {
 	display: inline-block;
@@ -1838,7 +1855,8 @@ html[lang="ko"] #events p {
 }
 
 .p.exchange img {
-	height: 14px;
+	height: 18px;
+    margin-left: 10px;
 }
 
 .container-exchange .row-l-col {
@@ -3804,16 +3822,23 @@ html[lang="ko"] #events p {
 
   #head-marketing-msg {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #head-marketing-msg-text {
     min-width: inherit;
 	white-space: nowrap;
   }
+  #head-marketing-msg-text a {
+    white-space: normal;
+  }
 
   #video {
     margin-top: 20px;
+  }
+  
+  .font165 {
+	  font-size: 13px;
   }
 
 }

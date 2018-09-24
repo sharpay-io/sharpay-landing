@@ -113,13 +113,13 @@ $langsArray = array(
 		</div>
 
 		<div id="trackico-rating-mob">
-			<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
+			<?/*<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
 				<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
 			</a>
 			<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
 				<img src="/images/ratings/Rating_TrackICO_Sharpay_5_0.svg" />
 			</a>
-			<?/*<!--a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
+			<!--a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
 				<img src="/images/ratings/Rating_Krypto_Sharpay_4_4.svg" />
 			</a-->*/?>
 		</div>
@@ -127,13 +127,13 @@ $langsArray = array(
 		<div class="container-head">
 
 			<div id="trackico-rating">
-				<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
+				<?/*<a href="https://icobench.com/ico/sharpay" target="_blank" title="<?=L::head_trackers_icobench_title?>">
 					<img src="/images/ratings/Rating_ICObench_Sharpay_4_8.svg" />
 				</a>
 				<a href="https://www.trackico.io/ico/sharpay/" target="_blank" title="<?=L::head_trackers_trackico_title?>">
 					<img src="/images/ratings/Rating_TrackICO_Sharpay_5_0.svg" />
 				</a>
-				<?/*<!--a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
+				<!--a href="http://www.kryptovergleich.org/ico/sharpay-ico/" target="_blank" title="<?=L::head_trackers_kryptovergleich_title?>">
 					<img src="/images/ratings/Rating_Krypto_Sharpay_4_4.svg" />
 				</a-->*/?>
 			</div>
@@ -163,7 +163,7 @@ $langsArray = array(
 					<div id="head-marketing-msg-text">
 						<?=L::head_marketing_msg_1?><br />
 						<?=L::head_marketing_msg_2?><br />
-						<?=L::head_marketing_msg_3?>
+						<a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><?=L::head_marketing_msg_3?></a>
 					</div>
 					<div id="video"></div>
 				</div>
@@ -246,7 +246,12 @@ $langsArray = array(
 			</div>
 			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
-					<?=L::token_exchange?>
+					<?=L::token_exchange?> 
+					<a href="https://simex.global/en/exchange/s/eth" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
+					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
+				</p>
+				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
+					<?=L::token_exchange_p2?>
 				</p>
 			</div>
 		</div>
@@ -781,7 +786,7 @@ $langsArray = array(
 						<p class="team-p"><?=L::team_levi_bio?></p>
 					</div>
 				</div>
-				<div class="team-item">
+				<?/*<div class="team-item">
 					<div class="team-img"><img src="/images/Paulina.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
@@ -793,7 +798,7 @@ $langsArray = array(
 						</div>
 						<p class="team-p"><?=L::team_paulina_bio?></p>
 					</div>
-				</div>
+				</div>*/?>
 				<div class="team-item">
 					<div class="team-img"><img src="/images/Katerina.jpg"></div>
 					<div class="team-top">
@@ -807,7 +812,7 @@ $langsArray = array(
 						<p class="team-p"><?=L::team_katerina_bio?></p>
 					</div>
 				</div>
-				<div class="team-item">
+				<?/*<div class="team-item">
 					<div class="team-img"><img src="/images/Dominica.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
@@ -819,7 +824,7 @@ $langsArray = array(
 						</div>
 						<p class="team-p"><?=L::team_dominica_bio?></p>
 					</div>
-				</div>
+				</div>*/?>
 				<?/*<div class="team-item">
 					<div class="team-img"><img src="/images/William2.jpg"></div>
 					<div class="team-top">
@@ -852,7 +857,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="events" class="section section-dark">
+	<?/*<div id="events" class="section section-dark">
 		<div class="container">
 			<div id="events-text" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::events_header?></span></h2>
@@ -860,7 +865,6 @@ $langsArray = array(
 				<p><?=L::events_here?></p>
 			</div>
 			<div id="event-baners" data-ix="r-init">
-				<!-- ls | sort | sed 's/.*/<img class="event-banner" src="\/images\/events\/&" \/>/' -->
 				<img class="event-banner" src="/images/events/0122_san-francisco.png" />
 				<img class="event-banner" src="/images/events/0125_London.png" />
 				<img class="event-banner" src="/images/events/0129_Amsterdam.png" />
@@ -880,11 +884,11 @@ $langsArray = array(
 				<img class="event-banner" src="/images/events/0528_Xiamen.png" />
 			</div>
 		</div>
-	</div>
+	</div>*/?>
 
 	<? include 'slides/media.php' ?>
 
-	<div id="footer" class="section sf section-dark">
+	<div id="footer" class="section sf">
 		<div class="container f-cont">
 			<div class="h-form-title hft2"><?=L::footer_start?></div>
 			<div class="fbf form-block w-form">

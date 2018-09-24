@@ -2,6 +2,11 @@
 
 $mediaList = [
   [
+    'url' => 'https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259',
+    'image' => '/images/media/nasdaq.png',
+    'cls' => ''
+  ],
+  [
     'url' => 'https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/',
     'image' => '/images/media/ccn.svg',
     'cls' => 'media-cnn'
@@ -9,11 +14,6 @@ $mediaList = [
   [
     'url' => 'https://btcmanager.com/sharpay-ico-review/',
     'image' => '/images/media/btcmanager.png'
-  ],
-  [
-    'url' => 'https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
-    'image' => '/images/media/cryptosrus.png',
-    'cls' => 'media-cryptorus'
   ],
   [
     'url' => 'http://www.livebitcoinnews.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
@@ -68,6 +68,11 @@ $mediaList = [
     'cls' => 'media-cnn'
   ],
   [
+    'url' => 'https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/',
+    'image' => '/images/media/cryptosrus.png',
+    'cls' => 'media-cryptorus'
+  ],
+  [
     'url' => 'https://coininfo.news/sharpay-the-share-button-with-blockchain-profit/',
     'image' => '/images/media/coininfo-news.png',
     'cls' => ''
@@ -100,7 +105,7 @@ $partnerList = [
 ?>
 
 
-<div id="partners" class="section section-dark">
+<?/*<div id="partners" class="section section-dark">
   <div class="container">
 
     <div id="partners-text" data-ix="l-init">
@@ -120,10 +125,10 @@ $partnerList = [
     </div>
 
   </div>
-</div>
+</div>*/?>
 
 
-<div id="media" class="section">
+<div id="media" class="section section-dark">
   <div class="container">
 
     <div id="media-text" data-ix="l-init">
