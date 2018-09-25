@@ -13,7 +13,7 @@ $langsArray = array(
 	'ru' => array( 'lang' => 'RU', 'url' => '/ru/', 'img' => '/images/flat/russia.svg', 'title' => 'Русский' ),
 	'hi' => array( 'lang' => 'HI', 'url' => '/hi/', 'img' => '/images/flat/india.svg', 'title' => 'हिंदी' ),
 	'ph' => array( 'lang' => 'PH', 'url' => '/ph/', 'img' => '/images/flat/philippines.svg', 'title' => 'Filipino' ),
-	'nl' => array( 'lang' => 'NL', 'url' => '/nl/', 'img' => '/images/flat/nederlands.svg', 'title' => 'Hollandsk' ),
+	'nl' => array( 'lang' => 'NL', 'url' => '/nl/', 'img' => '/images/flat/nederlands.svg', 'title' => 'Nederlands' ),
 	// 'ar' => array( 'lang' => 'AR', 'url' => '/ar/', 'img' => '/images/flat/arabic.png', 'title' => 'العَرَبِيَّة' ),
 );
 
