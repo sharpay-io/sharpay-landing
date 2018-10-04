@@ -128,7 +128,7 @@ $partnerList = [
 </div>*/?>
 
 
-<div id="media" class="section section-dark">
+<div id="media" class="section">
   <div class="container">
 
     <div id="media-text" data-ix="l-init">

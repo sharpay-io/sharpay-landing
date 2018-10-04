@@ -248,6 +248,7 @@ $langsArray = array(
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<?=L::token_exchange?> 
 					<a href="https://simex.global/en/exchange/s/eth" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
+					<a href="https://idex.market/eth/s" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX"></a>
 					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
 				</p>
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
@@ -569,21 +570,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="vikup" class="section section-dark">
-		<div class="container">
-			<div class="l-col" data-ix="l-init">
-				<h2 class="h2"><?=L::buyback_header?></h2>
-				<div class="big-p"><?=L::buyback_subheader?></div>
-				<p class="p p2"<?=L::buyback_p1?></p>
-				<p class="p p2"><?=L::buyback_p2?></p>
-			</div>
-			<div class="r-col" data-ix="r-init">
-				<div class="sheme2"><img src="/images/schemas/shema3xhdpi.svg" class="img"></div>
-			</div>
-		</div>
-	</div>
-
-	<div id="rashod" class="section">
+	<div id="rashod" class="section section-dark">
 		<div class="container">
 			<div class="l-col" data-ix="l-init">
 				<h2 class="h2"><?=L::expenses_header?></h2>
@@ -625,7 +612,7 @@ $langsArray = array(
 		</div>
 	</div>
 
-	<div id="advisers" class="section sf section-dark">
+	<div id="advisers" class="section sf">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::advisers_header?></h2>
@@ -680,7 +667,7 @@ $langsArray = array(
 		</div>
 	</div>  <!-- advisers -->
 
-	<div id="team" class="section">
+	<div id="team" class="section section-dark">
 		<div class="cont2 container">
 			<div class="h2-wrap">
 				<h2 class="h2" data-ix="l-init"><?=L::team_header?></h2>
@@ -888,7 +875,7 @@ $langsArray = array(
 
 	<? include 'slides/media.php' ?>
 
-	<div id="footer" class="section sf">
+	<div id="footer" class="section sf section-dark">
 		<div class="container f-cont">
 			<div class="h-form-title hft2"><?=L::footer_start?></div>
 			<div class="fbf form-block w-form">
