@@ -1899,6 +1899,7 @@ html[lang="ko"] #events p {
 
 #head {
 	padding-bottom: 120px;
+	min-height: 100vh;
 }
 #video {
 	width: 147px;
@@ -1926,8 +1927,9 @@ html[lang="ko"] #events p {
 	margin-top: 0;
 }
 .soc-link {
-	margin-right: 15px;
-    margin-bottom: 18px;
+	margin-right: 8px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 .progress-sale {
 	max-width: 654px;
@@ -2030,12 +2032,12 @@ html[lang="ko"] #events p {
 .sales-wrap {
 	margin-top: 0;
 	position: relative;
-    margin-left: 50%;
+	margin-left: 0;
 }
 .sales-wrap img {
 	width: 100px;
     position: absolute;
-    left: -4px;
+    left: 0;
     top: -20px;
     z-index: 10;
     -webkit-transform: rotate(-20deg);
@@ -2044,20 +2046,33 @@ html[lang="ko"] #events p {
 	margin-bottom: 20px;
 }
 .sales-wrap img.kycrun {
-	left: 60px;
+	left: 75px;
     z-index: 11;
 }
 .sales-wrap img.emissionrun {
-    left: 124px;
+    left: 150px;
     z-index: 12;
 }
 .sales-wrap img.withdrawalrun {
-    left: 188px;
+    left: 225px;
     z-index: 13;
 }
-.sales-wrap img.listingrun {
-    left: 252px;
+.sales-wrap img.cmcrun {
+    left: 300px;
     z-index: 14;
+}
+
+.sales-wrap img.listingrun {
+    left: 375px;
+    z-index: 15;
+}
+.sales-wrap img.idexrun {
+    left: 450px;
+    z-index: 16;
+}
+.sales-wrap img.airdroprun {
+    left: 525px;
+    z-index: 17;
 }
 
 
@@ -2065,7 +2080,7 @@ html[lang="ko"] #events p {
 	display: inline-block;
     position: absolute;
     top: -17px;
-    left: 1px;
+    left: 5px;
     width: 90px;
     height: 90px;
     z-index: 10;
@@ -2076,28 +2091,43 @@ html[lang="ko"] #events p {
 }
 .sales-wrap div.kychover {
 	top: -17px;
-    left: 65px;
+    left: 80px;
     z-index: 11;
 }
 .sales-wrap div.kycblink {
-	-webkit-animation: blinkline 5s linear infinite;
-	-moz-animation: blinkline 5s linear infinite;
-	animation: blinkline 5s linear infinite;
+	-webkit-animation: blinkline 7s linear infinite;
+	-moz-animation: blinkline 7s linear infinite;
+	animation: blinkline 7s linear infinite;
 }
 .sales-wrap div.emissionhover {
 	top: -17px;
-    left: 130px;
+    left: 155px;
     z-index: 12;
 }
 .sales-wrap div.withdrawalhover {
 	top: -17px;
-    left: 195px;
+    left: 230px;
     z-index: 13;
+}
+.sales-wrap div.cmchover {
+	top: -17px;
+    left: 305px;
+    z-index: 14;
 }
 .sales-wrap div.listinghover {
 	top: -17px;
-    left: 258px;
-    z-index: 14;
+    left: 380px;
+    z-index: 15;
+}
+.sales-wrap div.idexhover {
+	top: -17px;
+    left: 455px;
+    z-index: 16;
+}
+.sales-wrap div.airdrophover {
+	top: -17px;
+    left: 530px;
+    z-index: 17;
 }
 
 
@@ -3856,7 +3886,7 @@ html[lang="ko"] #events p {
 
 @media (max-width: 767px) {
 	#head {
-		padding-bottom: 300px;
+		padding-bottom: 220px;
 	}
 	.new-progress {
 		width: 100%;
@@ -3876,7 +3906,7 @@ html[lang="ko"] #events p {
 		margin-bottom: 0;
 	}
 	.sales-wrap img {
-		width: 120px;
+		width: 90px;
 		position: relative;
 		left: 0 !important;
 		top: 0;
@@ -3887,8 +3917,8 @@ html[lang="ko"] #events p {
 	}
 	.sales-wrap div {
 		display:none;
-		width: 110px;
-		height: 110px;
+		width: 75px;
+		height: 75px;
 	}
 	.new-progress p {
 		text-align: center;

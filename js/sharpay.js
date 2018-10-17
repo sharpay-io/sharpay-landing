@@ -66,7 +66,7 @@ $(function() {
 
   //particlesJS.load('particles', '/js/particlesjs-config.json', function() { });
 
-  $.get('/raised.txt?_='  + new Date().getTime(), function(value) {
+  /*$.get('/raised.txt?_='  + new Date().getTime(), function(value) {
 
     var cap = 840,
         capUSD = 80
@@ -82,7 +82,7 @@ $(function() {
 
     $('.progress-bar').animate({ width: width}, 1500);
     $('#progress-caption').append(txt).animate({opacity: 1}, 3000);
-  });
+  });*/
 
 
 

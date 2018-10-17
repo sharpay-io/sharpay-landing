@@ -160,41 +160,51 @@ $langsArray = array(
 				</div>
 
 				<div id="head-marketing-msg">
+					<div id="video"></div>
+					<div class="soc-links">
+						<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram-blue.svg?v2"></a>
+						<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
+						<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/" target="_blank" class="soc-link w-inline-block" title="<?=L::facebook_title?>"><img src="/images/facebook.svg"></a>
+						<a href="https://twitter.com/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::twitter_title?>"><img src="/images/twitter.svg"></a>
+						<a href="https://github.com/sharpay-io" target="_blank" class="soc-link w-inline-block" title="<?=L::github_title?>"><img src="/images/github.svg"></a>
+						<a href="https://medium.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::medium_title?>"><img src="/images/medium.svg"></a>
+						<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="soc-link w-inline-block" title="<?=L::reddit_title?>"><img src="/images/reddit_1.svg"></a>
+						<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::steemit_title?>"><img src="/images/steemit.svg"></a>
+						<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::golos_title?>"><img src="/images/golos.svg"></a>
+						<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block" title="<?=L::email_title?>"><img src="/images/mailto.svg"></a>
+						<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="<?=L::chat_title?>"><img src="/images/chat.svg"></a>
+					</div>
 					<div id="head-marketing-msg-text">
-						<?=L::head_marketing_msg_1?><br />
-						<?=L::head_marketing_msg_2?><br />
+						<?/*=L::head_marketing_msg_1?><br />
+						<?=L::head_marketing_msg_2?><br />*/?>
 						<a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><?=L::head_marketing_msg_3?></a>
 					</div>
-					<div id="video"></div>
 				</div>
 
 				<div class="progress-sale">
-					<div class="new-progress">
-						<div class="soc-links">
-							<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::telegram_title?>"><img src="/images/telegram-blue.svg?v2"></a>
-							<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="<?=L::bitcointalk_title?>"><img src="/images/bitcointalk.svg"></a>
-							<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/" target="_blank" class="soc-link w-inline-block" title="<?=L::facebook_title?>"><img src="/images/facebook.svg"></a>
-							<a href="https://twitter.com/sharpay_io" target="_blank" class="soc-link w-inline-block" title="<?=L::twitter_title?>"><img src="/images/twitter.svg"></a>
-							<a href="https://github.com/sharpay-io" target="_blank" class="soc-link w-inline-block" title="<?=L::github_title?>"><img src="/images/github.svg"></a>
-							<a href="https://medium.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::medium_title?>"><img src="/images/medium.svg"></a>
-							<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="soc-link w-inline-block" title="<?=L::reddit_title?>"><img src="/images/reddit_1.svg"></a>
-							<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::steemit_title?>"><img src="/images/steemit.svg"></a>
-							<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::golos_title?>"><img src="/images/golos.svg"></a>
-							<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block" title="<?=L::email_title?>"><img src="/images/mailto.svg"></a>
-							<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="<?=L::chat_title?>"><img src="/images/chat.svg"></a>
-						</div>
-					</div>
 					<div class="sales-wrap">
 						<img src="/images/chart/raised.png" alt="10757 ETH raised successfully!" title="10757 ETH raised successfully!">
 						<img src="/images/chart/kyc.png" class="kycrun" alt="KYC started via Sum And Substance Ltd!" title="KYC started via Sum And Substance Ltd!">
-						<img src="/images/chart/emission.png" class="emissionrun" alt="Successfully ERC20 token emission!" title="Successfully ERC20 token emission!">
+						<img src="/images/chart/emission.png?v=2" class="emissionrun" alt="Successfully ERC20 token emission!" title="Successfully ERC20 token emission!">
 						<img src="/images/chart/withdrawal.png" class="withdrawalrun" alt="Active withdrawal to personal ETH addresses!" title="Active withdrawal to personal ETH addresses!">
 						<img src="/images/chart/listing.png" class="listingrun" alt="The first exchange where you can officially buy and sell our S tokens is SIMEX!" title="The first exchange where you can officially buy and sell our S tokens is SIMEX!">
+						
+						<img src="/images/chart/idex.png" class="idexrun" alt="Good Listing IDEX Top exchange" title="Good Listing IDEX Top exchange">
+						<img src="/images/chart/cmc.png" class="cmcrun" alt="Must have S token on CoinMarketCap.com" title="Must have S token on CoinMarketCap.com">
+						<img src="/images/chart/airdrop.png" class="airdroprun" alt="For free airdrop Get +5% S tokens" title="For free airdrop Get +5% S tokens">
+						
 						<div></div>
 						<a href="https://sale.sharpay.io/" target="_blank" title="KYC started"><div class="kychover"></div></a>
 						<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank" title="ERC20 token"><div class="emissionhover"></div></a>
 						<a href="https://sale.sharpay.io/" target="_blank" title="Withdrawal"><div class="withdrawalhover"></div></a>
+						
+						<a href="https://coinmarketcap.com/currencies/sharpay/" target="_blank" title="S token on CoinMarketCap"><div class="cmchover"></div></a>
+						
 						<a href="https://simex.global/en/exchange/s/eth" target="_blank" title="First listing"><div class="listinghover"></div></a>
+						
+						<a href="https://idex.market/eth/s" target="_blank" title="Good Listing IDEX"><div class="idexhover"></div></a>
+						
+						<a href="/airdrop/" target="_blank" title="Airdrop get +5% S tokens"><div class="airdrophover"></div></a>
 					</div>
 				</div>
 				<?/* ?>
