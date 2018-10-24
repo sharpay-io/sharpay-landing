@@ -251,12 +251,14 @@ body>.container {
 	.container {
 		background-color: rgba(55, 55, 55, 0.7);
 	}
+	/*	
 	#sharpay_widget_floating {
 		width: 50px !important;
 	}
 	#sharpay_widget_floating iframe {
 		width: 90px !important;
 	}
+	*/
 }
 
 
