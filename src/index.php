@@ -255,6 +255,7 @@ $langsArray = array(
 					<a href="https://simex.global/en/exchange/s/eth" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
 					<a href="https://idex.market/eth/s" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
 					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
+					<a href="https://oex.com/trading-center?zoneId=8&coinId=269" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
 				</p>
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<?=L::token_exchange_p2?>
