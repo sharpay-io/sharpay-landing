@@ -191,6 +191,7 @@ $langsArray = array(
 						<img src="/images/chart/idex<?=$badgeAdd?>.png" class="idexrun" alt="Good Listing IDEX Top exchange">
 						<img src="/images/chart/cmc<?=$badgeAdd?>.png" class="cmcrun" alt="Must have S token on CoinMarketCap.com">
 						<img src="/images/chart/airdrop<?=$badgeAdd?>.png" class="airdroprun" alt="For free airdrop Get +5% S tokens">
+						<img src="/images/chart/oex<?=$badgeAdd?>.png" class="oexrun" alt="Good Listing OEX Top 25 exchange">
 						
 						<div></div>
 						<a href="https://sale.sharpay.io/" target="_blank"><div class="kychover"></div></a>
@@ -200,6 +201,7 @@ $langsArray = array(
 						<a href="https://simex.global/en/exchange/s/eth" target="_blank"><div class="listinghover"></div></a>
 						<a href="https://idex.market/eth/s" target="_blank"><div class="idexhover"></div></a>
 						<a href="/airdrop/" target="_blank"><div class="airdrophover"></div></a>
+						<a href="https://oex.com/trading-center?zoneId=8&coinId=269" target="_blank"><div class="oexhover"></div></a>
 					</div>
 				</div>
 				<?/* ?>

@@ -2047,32 +2047,43 @@ html[lang="ko"] #events p {
 }
 .sales-wrap img.kycrun {
 	left: 75px;
+	left: 70px;
     z-index: 11;
 }
 .sales-wrap img.emissionrun {
     left: 150px;
+    left: 140px;
     z-index: 12;
 }
 .sales-wrap img.withdrawalrun {
     left: 225px;
+    left: 210px;
     z-index: 13;
 }
 .sales-wrap img.cmcrun {
     left: 300px;
+    left: 280px;
     z-index: 14;
 }
-
 .sales-wrap img.listingrun {
     left: 375px;
+    left: 350px;
     z-index: 15;
 }
 .sales-wrap img.idexrun {
     left: 450px;
+    left: 420px;
     z-index: 16;
 }
 .sales-wrap img.airdroprun {
     left: 525px;
+    left: 490px;
     z-index: 17;
+}
+.sales-wrap img.oexrun {
+    left: 600px;
+    left: 560px;
+    z-index: 18;
 }
 
 
@@ -2092,6 +2103,7 @@ html[lang="ko"] #events p {
 .sales-wrap div.kychover {
 	top: -17px;
     left: 80px;
+    left: 75px;
     z-index: 11;
 }
 .sales-wrap div.kycblink {
@@ -2102,32 +2114,44 @@ html[lang="ko"] #events p {
 .sales-wrap div.emissionhover {
 	top: -17px;
     left: 155px;
+    left: 145px;
     z-index: 12;
 }
 .sales-wrap div.withdrawalhover {
 	top: -17px;
     left: 230px;
+    left: 215px;
     z-index: 13;
 }
 .sales-wrap div.cmchover {
 	top: -17px;
     left: 305px;
+    left: 285px;
     z-index: 14;
 }
 .sales-wrap div.listinghover {
 	top: -17px;
     left: 380px;
+    left: 355px;
     z-index: 15;
 }
 .sales-wrap div.idexhover {
 	top: -17px;
     left: 455px;
+    left: 425px;
     z-index: 16;
 }
 .sales-wrap div.airdrophover {
 	top: -17px;
     left: 530px;
+    left: 495px;
     z-index: 17;
+}
+.sales-wrap div.oexhover {
+	top: -17px;
+    left: 605px;
+    left: 565px;
+    z-index: 18;
 }
 
 
