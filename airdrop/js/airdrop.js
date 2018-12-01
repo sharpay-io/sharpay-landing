@@ -34,6 +34,9 @@ $(function(){
 	});
 	
 	$(document).on('submit', 'form', function(){
+		return false;
+		
+		
 		var thisForm = $(this);
 		$('button', thisForm).attr('disabled', true);
 		var address = $('input', this).val();
@@ -66,6 +69,8 @@ $(function(){
 	});
 	
 	$(document).on('change', '.inputAddress', function () {
+		return false;
+		
 		var thisInput = $(this);
 		var thisForm = $(this).parents('form').eq(0);
 		var address = thisInput.val().trim();
