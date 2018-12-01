@@ -221,6 +221,10 @@ body>.container {
 	background: transparent;
     box-shadow: none;
 	max-width: 600px;
+	margin-top: 10%;
+}
+.modal {
+	background-color: rgba(0,0,0,0.4);
 }
 
 @media (max-width: 768px) {
