@@ -1,4 +1,7 @@
 $(function(){
+	
+	$('#done-modal').modal('show');
+	
 	var code;
 	var airdrop = 'https://app.sharpay.io/airdrop';
 	
