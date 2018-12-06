@@ -154,7 +154,7 @@ $langsArray = array(
 					<a href="<?=L::head_one_pager_path?>" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('onepager');">
 						<div><?=L::head_one_pager?></div>
 					</a>
-					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('chat');">
+					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="sharpayAPI.send('live-chat'); gtag('event', 'chat', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('chat');">
 						<div><span class="chat-online"></span><?=L::head_chat?></div>
 					</a>
 				</div>
@@ -172,7 +172,7 @@ $langsArray = array(
 						<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::steemit_title?>"><img src="/images/steemit.svg"></a>
 						<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block" title="<?=L::golos_title?>"><img src="/images/golos.svg"></a>
 						<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block" title="<?=L::email_title?>"><img src="/images/mailto.svg"></a>
-						<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="<?=L::chat_title?>"><img src="/images/chat.svg"></a>
+						<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="<?=L::chat_title?>" onclick="sharpayAPI.send('live-chat');"><img src="/images/chat.svg"></a>
 					</div>
 					<div id="head-marketing-msg-text">
 						<?/*=L::head_marketing_msg_1?><br />
@@ -198,10 +198,10 @@ $langsArray = array(
 						<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank"><div class="emissionhover"></div></a>
 						<a href="https://sale.sharpay.io/" target="_blank"><div class="withdrawalhover"></div></a>
 						<a href="https://coinmarketcap.com/currencies/sharpay/" target="_blank"><div class="cmchover"></div></a>
-						<a href="https://simex.global/en/exchange/s/eth" target="_blank"><div class="listinghover"></div></a>
-						<a href="https://idex.market/eth/s" target="_blank"><div class="idexhover"></div></a>
+						<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><div class="listinghover"></div></a>
+						<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><div class="idexhover"></div></a>
 						<a href="/airdrop/" target="_blank"><div class="airdrophover"></div></a>
-						<a href="https://oex.com/trading-center?zoneId=8&coinId=269" target="_blank"><div class="oexhover"></div></a>
+						<a href="https://oex.com/trading-center?zoneId=8&coinId=269" onclick="sharpayAPI.send('trading');" target="_blank"><div class="oexhover"></div></a>
 					</div>
 				</div>
 				<?/* ?>
@@ -254,10 +254,10 @@ $langsArray = array(
 			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<?=L::token_exchange?> 
-					<a href="https://simex.global/en/exchange/s/eth" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
-					<a href="https://idex.market/eth/s" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
-					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
-					<a href="https://oex.com/trading-center?zoneId=8&coinId=269" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
+					<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
+					<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
+					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
+					<a href="https://oex.com/trading-center?zoneId=8&coinId=269" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
 				</p>
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<?=L::token_exchange_p2?>

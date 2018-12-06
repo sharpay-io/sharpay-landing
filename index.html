@@ -19,8 +19,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20181130095553" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20181130095553" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20181206081247" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20181206081247" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
 	<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
@@ -113,7 +113,7 @@
 					<a href="/files/Sharpay_One_Pager_EN.pdf" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': 'en'}); yaCounter48279077.reachGoal('onepager');">
 						<div>One Pager</div>
 					</a>
-					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'chat', {'lang': 'en'}); yaCounter48279077.reachGoal('chat');">
+					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="sharpayAPI.send('live-chat'); gtag('event', 'chat', {'lang': 'en'}); yaCounter48279077.reachGoal('chat');">
 						<div><span class="chat-online"></span>Live Chat</div>
 					</a>
 				</div>
@@ -131,7 +131,7 @@
 						<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="Steemit"><img src="/images/steemit.svg"></a>
 						<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block" title="Golos"><img src="/images/golos.svg"></a>
 						<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block" title="E-Mail"><img src="/images/mailto.svg"></a>
-						<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="Chat"><img src="/images/chat.svg"></a>
+						<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="Chat" onclick="sharpayAPI.send('live-chat');"><img src="/images/chat.svg"></a>
 					</div>
 					<div id="head-marketing-msg-text">
 												<a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><span class="orange-span">Nasdaq</span>: SIMEX exchange launches <span class="orange-span">Sharpay&nbsp;(S)</span> token trading!</a>
@@ -154,10 +154,10 @@
 						<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank"><div class="emissionhover"></div></a>
 						<a href="https://sale.sharpay.io/" target="_blank"><div class="withdrawalhover"></div></a>
 						<a href="https://coinmarketcap.com/currencies/sharpay/" target="_blank"><div class="cmchover"></div></a>
-						<a href="https://simex.global/en/exchange/s/eth" target="_blank"><div class="listinghover"></div></a>
-						<a href="https://idex.market/eth/s" target="_blank"><div class="idexhover"></div></a>
+						<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><div class="listinghover"></div></a>
+						<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><div class="idexhover"></div></a>
 						<a href="/airdrop/" target="_blank"><div class="airdrophover"></div></a>
-						<a href="https://oex.com/trading-center?zoneId=8&coinId=269" target="_blank"><div class="oexhover"></div></a>
+						<a href="https://oex.com/trading-center?zoneId=8&coinId=269" onclick="sharpayAPI.send('trading');" target="_blank"><div class="oexhover"></div></a>
 					</div>
 				</div>
 				
@@ -184,10 +184,10 @@
 			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<span class="orange-span">Successful</span> listing and trading:  
-					<a href="https://simex.global/en/exchange/s/eth" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
-					<a href="https://idex.market/eth/s" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
-					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
-					<a href="https://oex.com/trading-center?zoneId=8&coinId=269" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
+					<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
+					<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
+					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
+					<a href="https://oex.com/trading-center?zoneId=8&coinId=269" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
 				</p>
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					Soon: listing on other <span class="orange-span">centralized</span> and <span class="orange-span">decentralized</span> exchanges. Negotiations are in process.				</p>
