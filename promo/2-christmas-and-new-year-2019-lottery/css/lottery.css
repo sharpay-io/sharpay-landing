@@ -148,6 +148,46 @@ ul {
     padding-top: 0.6rem;
 }
 
+.btn-orange {
+    padding: 11px 20px 14px;
+    border: 2px solid #f93;
+    border-radius: 80px;
+    color: #fff  !important;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+	width: 100%;
+	margin: 10px 0 20px 0;
+	font-weight: 700;
+}
+.btn-orange:hover {
+	background-color: #f93;
+}
+.table-orange {
+	border: 2px solid #f93;
+    border-radius: 20px;
+}
+.table-orange td, .table-orange th {
+	border-right: 2px solid #f93 !important;
+}
+.table-orange tr td:last-child, .table-orange tr th:last-child {
+	border-right: none !important;
+}
+.table-orange th {
+	border-right: 2px solid #f93 !important;
+	border-bottom: 2px solid #f93 !important;
+	vertical-align: middle !important;
+	color: #f93;
+	font-weight: 400;
+	
+}
+table {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+
 .modal {
 	z-index: 1100;
 	position: fixed;
@@ -232,14 +272,12 @@ body>.container {
 	background-color: rgba(0,0,0,0.4);
 }
 
-
 .modal-open {
     overflow: auto !important; // you will need important here to override
 }
 .modal-backdrop {
     display: none !important;
 }
-
 
 @media (max-width: 768px) {
 	.mt-10 {
