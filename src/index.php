@@ -200,7 +200,7 @@ $langsArray = array(
 						<a href="https://coinmarketcap.com/currencies/sharpay/" target="_blank"><div class="cmchover"></div></a>
 						<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><div class="listinghover"></div></a>
 						<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><div class="idexhover"></div></a>
-						<a href="/airdrop/" target="_blank"><div class="airdrophover"></div></a>
+						<a href="/promo/1-fisrt-listing-airdrop/" target="_blank"><div class="airdrophover"></div></a>
 						<a href="https://oex.com/trading-center?zoneId=8&coinId=269" onclick="sharpayAPI.send('trading');" target="_blank"><div class="oexhover"></div></a>
 					</div>
 				</div>

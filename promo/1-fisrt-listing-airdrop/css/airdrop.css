@@ -33,7 +33,7 @@ input[readonly] {
 
 body {
     background-color: #373737;
-    background-image: url(../../images/hero-bg.jpg);
+    background-image: url(../../../images/hero-bg.jpg);
     background-position: 35% 0;
     background-size: 1440px;
     background-repeat: no-repeat;
@@ -226,6 +226,15 @@ body>.container {
 .modal {
 	background-color: rgba(0,0,0,0.4);
 }
+
+
+.modal-open {
+    overflow: auto !important; // you will need important here to override
+}
+.modal-backdrop {
+    display: none !important;
+}
+
 
 @media (max-width: 768px) {
 	.mt-10 {
