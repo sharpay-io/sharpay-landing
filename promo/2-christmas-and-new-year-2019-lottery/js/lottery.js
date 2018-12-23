@@ -92,9 +92,9 @@ $(function(){
 	} catch ( e ) {}
 
 	if( document.location.hash == '#zh' || lang == 'zh' ) {
-		$('body>.container').load('i18n/zh.html', function(){ auth(); $('body>.container').fadeTo(500, 1); });
+		$('body>.container').load('i18n/zh.html', { rand: (Math.floor(Math.random()*1000)) }, function(){ auth(); $('body>.container').fadeTo(500, 1); });
 	} else if( document.location.hash == '#en' ) {
-		$('body>.container').load('i18n/en.html', function(){ auth(); $('body>.container').fadeTo(500, 1); });
+		$('body>.container').load('i18n/en.html', { rand: (Math.floor(Math.random()*1000)) }, function(){ auth(); $('body>.container').fadeTo(500, 1); });
 	} else {
 		auth();
 		$('body>.container').fadeTo(500, 1);
