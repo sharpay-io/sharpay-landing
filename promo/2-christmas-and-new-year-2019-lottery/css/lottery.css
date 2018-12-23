@@ -63,6 +63,15 @@ a {
 .orange {
     color: #ff9a1e !important;
 }
+.alert-orange {
+	border: 2px solid #f93;
+	background-color: #f93;
+	border-radius: 80px;
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+	font-family: monospace;
+}
 .nav-link {
     color: rgba(255,255,255,.5);
     font-size: 13px;
@@ -104,6 +113,9 @@ a {
     font-size: 13px;
     line-height: 15px;
 	color: #ff9a1e !important;	
+}
+.badge {
+	font-size: 100%;
 }
 .form-text {
 	font-size: 15px;
@@ -160,6 +172,7 @@ ul {
 	width: 100%;
 	margin: 10px 0 20px 0;
 	font-weight: 700;
+	background: transparent;
 }
 .btn-orange:hover {
 	background-color: #f93;
@@ -271,12 +284,19 @@ body>.container {
 .modal {
 	background-color: rgba(0,0,0,0.4);
 }
-
 .modal-open {
-    overflow: auto !important; // you will need important here to override
+    overflow: auto !important;
 }
 .modal-backdrop {
     display: none !important;
+}
+
+.auth, .join, .done {
+	display: none;
+}
+.loader {
+	min-height: 200px;
+	background: url(/promo/images/balls.svg) no-repeat center center transparent;
 }
 
 @media (max-width: 768px) {
