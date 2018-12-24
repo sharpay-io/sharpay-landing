@@ -130,7 +130,7 @@ a {
 	display: none;
 }
 .error {
-	color: red;
+	color: #f33;
 }
 .ready {
 	color: #00ce00;
