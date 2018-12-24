@@ -3,7 +3,7 @@ $(function(){
 	$('#done-modal').modal('show');
 	
 	var code;
-	var airdrop = 'https://app.sharpay.io/airdrop';
+	var airdrop = 'https://app.sharpay.io/promo/airdrop';
 	
 	var lang = 'en';
 	try {
