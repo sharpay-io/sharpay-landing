@@ -76,6 +76,11 @@ $mediaList = [
     'url' => 'https://coininfo.news/sharpay-the-share-button-with-blockchain-profit/',
     'image' => '/images/media/coininfo-news.png',
     'cls' => ''
+  ],
+  [
+    'url' => 'https://cryptorunner.com/sharpay-share-button-blockchain-rewards/',
+    'image' => '/images/media/cryptorunner.jpeg',
+    'cls' => ''
   ]
 ];
 
