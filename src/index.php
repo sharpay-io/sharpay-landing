@@ -27,6 +27,9 @@ $langsArray = array(
   <meta content="<?=L::meta_og_title?>" property="og:title">
   <meta content="<?=L::meta_og_description?>" property="og:description">
 	<meta content="https://sharpay.io/images/og_image.jpg" property="og:image">
+	<meta content="https://sharpay.io/" property="og:url">
+	<meta content="website" property="og:type">
+	<meta content="452051938203917" property="fb:app_id">
 	<meta content="summary" name="twitter:card">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="theme-color" content="#2f2f2f">
