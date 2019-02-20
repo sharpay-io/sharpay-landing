@@ -1924,7 +1924,7 @@ html[lang="ko"] #events p {
 	margin-top: 0;
 }
 .soc-links {
-	margin-top: 0;
+	margin-top: 20px;
 }
 .soc-link {
 	margin-right: 8px;
@@ -1934,6 +1934,7 @@ html[lang="ko"] #events p {
 .progress-sale {
 	max-width: 654px;
 	margin-top: 45px;
+	margin-top: 25px;
 }
 .new-progress {
 	margin-top: -10px;

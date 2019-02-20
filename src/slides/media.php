@@ -1,11 +1,11 @@
 <?php
 
 $mediaList = [
-  [
+  /*[
     'url' => 'https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259',
     'image' => '/images/media/nasdaq.png',
     'cls' => ''
-  ],
+  ],*/
   [
     'url' => 'https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/',
     'image' => '/images/media/ccn.svg',

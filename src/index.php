@@ -180,7 +180,7 @@ $langsArray = array(
 					<div id="head-marketing-msg-text">
 						<?/*=L::head_marketing_msg_1?><br />
 						<?=L::head_marketing_msg_2?><br />*/?>
-						<a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><?=L::head_marketing_msg_3?></a>
+						<!--a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><?=L::head_marketing_msg_3?></a-->
 					</div>
 				</div>
 
