@@ -298,7 +298,12 @@ $langsArray = array(
 							<img src="/images/custom-btn2x.png">
 							</a>
 						</div>
+						
+						<div style="text-align: left; margin-top: 20px;" class="sharpay_widget_simple" data-sharpay="srpio" data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger"></div>
+<script async src="https://app.sharpay.io/api/script.js"></script>
+
 					</div>
+					
 				</div>
 				<div class="row-r-col" data-ix="r-init">
 					<iframe id="what-is-that-video" src="https://www.youtube-nocookie.com/embed/eOac-9DljiI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
