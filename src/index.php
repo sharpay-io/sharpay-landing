@@ -678,6 +678,21 @@ $langsArray = array(
 						<p class="team-p"><?=L::advisers_vincent_bio?></p>
 					</div>
 				</div>
+				
+				<div class="team-item">
+					<div class="team-img"><img src="/images/Igor.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name"><?=L::team_igor?>
+								<img class="flag" src="/images/flat/russia.svg" title="<?=L::russia_title?>"/>
+								<a href="https://www.linkedin.com/in/igor-karavaev-80a0674/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
+							</div>
+							<div class="team-status"><?=L::team_igor_title?></div>
+						</div>
+						<p class="team-p"><?=L::team_igor_bio?></p>
+					</div>
+				</div>
+				
 			</div>
 
 		</div>
@@ -702,19 +717,6 @@ $langsArray = array(
 							<div class="team-status"><?=L::team_anton_title?></div>
 						</div>
 						<p class="team-p"><?=L::team_anton_bio?></p>
-					</div>
-				</div>
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Igor.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name"><?=L::team_igor?>
-								<img class="flag" src="/images/flat/russia.svg" title="<?=L::russia_title?>"/>
-								<a href="https://www.linkedin.com/in/igor-karavaev-80a0674/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
-							</div>
-							<div class="team-status"><?=L::team_igor_title?></div>
-						</div>
-						<p class="team-p"><?=L::team_igor_bio?></p>
 					</div>
 				</div>
 				<div class="team-item">
