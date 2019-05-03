@@ -204,7 +204,7 @@ $langsArray = array(
 						<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><div class="listinghover"></div></a>
 						<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><div class="idexhover"></div></a>
 						<a href="/promo/1-fisrt-listing-airdrop/" target="_blank"><div class="airdrophover"></div></a>
-						<a href="https://www.oex.cn/trade" onclick="sharpayAPI.send('trading');" target="_blank"><div class="oexhover"></div></a>
+						<a href="https://www.oex.cn/trade/S_ETH" onclick="sharpayAPI.send('trading');" target="_blank"><div class="oexhover"></div></a>
 					</div>
 				</div>
 				<?/* ?>
@@ -260,7 +260,7 @@ $langsArray = array(
 					<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
 					<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
 					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
-					<a href="https://oex.com/trading-center?zoneId=8&coinId=269" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
+					<a href="https://www.oex.cn/trade/S_ETH" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
 				</p>
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
 					<?=L::token_exchange_p2?>
