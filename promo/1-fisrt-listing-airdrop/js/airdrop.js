@@ -1,3 +1,9 @@
+if( window.self !== window.top ) {
+	try{ window.top.location.href = window.self.location.href; } catch( e ) { }
+	document.getElementsByTagName('body')[0].parentNode.removeChild(document.getElementsByTagName('body')[0]);
+}
+
+
 $(function(){
 	
 	$('#done-modal').modal('show');
