@@ -51,7 +51,7 @@ $langsArray = array(
 </head>
 
 <body class="body">
-	<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="<?=$lang?>" data-sharecount="true" data-sharecount-mode="site"></div>
+	<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="<?=$lang?>" data-sharecount="true" data-sharecount-mode="site" data-modal="true"></div>
 	<!-- <div id="particles"></div> -->
 
 	<div id="singin-modal" class="modal">
@@ -145,7 +145,7 @@ $langsArray = array(
 				<h1 class="h1 sharpey-slogan"><?=L::head_slogan?></h1>
 				<div class="h-subtitle">
 					<?=L::head_subtitle?><br>
-					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-sharpay="srpio" data-lang="<?=$lang?>" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');"> </a>
+					<?=L::head_status?> <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-modal="true" data-sharpay="srpio" data-lang="<?=$lang?>" onclick="gtag('event', 'app', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('app');"> </a>
 				</div>
 				<div class="h-btns">
 					<a href="<?=L::head_white_paper_path?>" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': '<?=$lang?>'}); yaCounter48279077.reachGoal('whitepaper');">
@@ -279,7 +279,7 @@ $langsArray = array(
 					<p class="p"><?=L::view_p2?></p>
 					<div id="btn-img-container">
 						<div id="bi1" class="btn-img">
-							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
 							<img src="/images/btn1.svg" />
 							</a>
 						</div>
@@ -289,7 +289,7 @@ $langsArray = array(
 							</a>
 						</div>
 						<div id="bi3" class="r2 btn-img">
-							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
 							<img src="/images/btn3.svg">
 							</a>
 						</div>
