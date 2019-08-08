@@ -763,20 +763,6 @@ $langsArray = array(
 					</div>
 				</div>*/?>
 				<div class="team-item">
-					<div class="team-img"><img src="/images/Ilya.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name"><?=L::team_ilya?>
-								<img class="flag" src="/images/flat/china.svg" title="<?=L::china_title?>"/>
-								<a href="https://www.linkedin.com/in/ilya-afanasyev-b63460a8/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
-								<a href="https://www.facebook.com/randomi3e" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="<?=L::facebook_title?>" /></a>
-							</div>
-							<div class="team-status"><?=L::team_ilya_title?></div>
-						</div>
-						<p class="team-p"><?=L::team_ilya_bio?></p>
-					</div>
-				</div>
-				<div class="team-item">
 					<div class="team-img"><img src="/images/Levi.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
@@ -789,6 +775,20 @@ $langsArray = array(
 							<div class="team-status"><?=L::team_levi_title?></div>
 						</div>
 						<p class="team-p"><?=L::team_levi_bio?></p>
+					</div>
+				</div>
+				<div class="team-item">
+					<div class="team-img"><img src="/images/Ilya.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name"><?=L::team_ilya?>
+								<img class="flag" src="/images/flat/china.svg" title="<?=L::china_title?>"/>
+								<a href="https://www.linkedin.com/in/ilya-afanasyev-b63460a8/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
+								<a href="https://www.facebook.com/randomi3e" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="<?=L::facebook_title?>" /></a>
+							</div>
+							<div class="team-status"><?=L::team_ilya_title?></div>
+						</div>
+						<p class="team-p"><?=L::team_ilya_bio?></p>
 					</div>
 				</div>
 				<?/*<div class="team-item">
