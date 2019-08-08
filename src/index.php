@@ -259,7 +259,6 @@ $langsArray = array(
 					<?=L::token_exchange?> 
 					<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
 					<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
-					<a href="https://etherdelta.com/#0x96b0bf939d9460095c15251f71fda11e41dcbddb-ETH" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/etherdelta.svg" title="EtherDelta"></a>
 					<a href="https://www.oex.cn/trade/S_ETH" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/oex.svg" title="OEX"></a>
 				</p>
 				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
@@ -693,6 +692,20 @@ $langsArray = array(
 					</div>
 				</div>
 				
+				<div class="team-item">
+					<div class="team-img"><img src="/images/Arkady.jpg"></div>
+					<div class="team-top">
+						<div class="team-top-text">
+							<div class="name"><?=L::team_arkady?>
+								<img class="flag" src="/images/flat/russia.svg" title="<?=L::russia_title?>"/>
+								<a href="https://www.linkedin.com/in/arkady-yasashnyy-20678638/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
+							</div>
+							<div class="team-status"><?=L::team_arkady_title?></div>
+						</div>
+						<p class="team-p"><?=L::team_arkady_bio?></p>
+					</div>
+				</div>
+				
 			</div>
 
 		</div>
@@ -720,19 +733,6 @@ $langsArray = array(
 					</div>
 				</div>
 				<div class="team-item">
-					<div class="team-img"><img src="/images/Arkady.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name"><?=L::team_arkady?>
-								<img class="flag" src="/images/flat/russia.svg" title="<?=L::russia_title?>"/>
-								<a href="https://www.linkedin.com/in/arkady-yasashnyy-20678638/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="<?=L::linkedin_title?>" /></a>
-							</div>
-							<div class="team-status"><?=L::team_arkady_title?></div>
-						</div>
-						<p class="team-p"><?=L::team_arkady_bio?></p>
-					</div>
-				</div>
-				<div class="team-item">
 					<div class="team-img"><img src="/images/Aleksey.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
@@ -747,7 +747,7 @@ $langsArray = array(
 						<p class="team-p"><?=L::team_alexey_bio?></p>
 					</div>
 				</div>
-				<div class="team-item">
+				<?/*<div class="team-item">
 					<div class="team-img"><img src="/images/Valery.jpg"></div>
 					<div class="team-top">
 						<div class="team-top-text">
@@ -761,7 +761,7 @@ $langsArray = array(
 						</div>
 						<p class="team-p"><?=L::team_valery_bio?></p>
 					</div>
-				</div>
+				</div>*/?>
 				<div class="team-item">
 					<div class="team-img"><img src="/images/Ilya.jpg"></div>
 					<div class="team-top">
