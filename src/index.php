@@ -295,7 +295,9 @@ $langsArray = array(
 							</a>
 						</div>
 						
-						<div style="text-align: left; margin-top: 20px;" class="sharpay_widget_simple" data-sharecount="true" data-sharecount-mode="site" data-sharpay="srpio" data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
+						<div style="text-align: left; margin-top: 20px;" data-limit="3" class="sharpay_widget_simple" data-sharpay="srpio" data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
+						
+						
 <script async src="https://app.sharpay.io/api/script.js"></script>
 
 					</div>

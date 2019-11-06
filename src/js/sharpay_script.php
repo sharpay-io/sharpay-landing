@@ -258,4 +258,26 @@ $(function() {
 
 });
 
+$(function(){
+	var shrpRegistrationCheck = function(){
+		try {
+			if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') )
+			{
+				clearInterval( iframeWait );
+				if( sharpayAPI.identity() ) {
+					$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+					$(function(){
+						$.get('https://app.sharpay.io/promo/auth', function( data ){
+							if( ! data.ok ) {
+								sharpayAPI.send('sign-up');
+							}
+						}, 'json');
+					});
+				}
+			}
+		} catch ( e ) {}
+	},
+	iframeWait = setInterval(shrpRegistrationCheck, 500);	
+});
+
 </script>
