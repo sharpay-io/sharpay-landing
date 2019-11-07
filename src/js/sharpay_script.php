@@ -259,21 +259,31 @@ $(function() {
 });
 
 $(function(){
-	var shrpRegistrationCheck = function(){
+	var iframeWait,
+	shrpReferral = function(){
+		if( iframeWait ) { clearInterval( iframeWait ); }
+		if( sharpayAPI.identity() ) {
+			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+			$(function(){
+				$.get('https://app.sharpay.io/promo/auth', function( data ){
+					if( ! data.ok ) {
+						sharpayAPI.send('sign-up');
+					}
+				}, 'json');
+			});
+		}
+	},
+	shrpRegistrationCheck = function(){
 		try {
-			if( sharpayAPI.identity() ) {
-				$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-				$(function(){
-					$.get('https://app.sharpay.io/promo/auth', function( data ){
-						if( ! data.ok ) {
-							sharpayAPI.send('sign-up');
-						}
-					}, 'json');
-				});
+			if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
+			{
+				shrpReferral();
 			}
 		} catch ( e ) {}
 	};
-	setTimeout(shrpRegistrationCheck, 5000);
+	iframeWait = setInterval(shrpRegistrationCheck, 500);	
+	setTimeout(shrpReferral, 20000);
 });
+
 
 </script>
