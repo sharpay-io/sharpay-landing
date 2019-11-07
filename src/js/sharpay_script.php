@@ -261,9 +261,11 @@ $(function() {
 $(function(){
 	var shrpRegistrationCheck = function(){
 		try {
-			if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') )
+			if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
 			{
-				clearInterval( iframeWait );
+				if( iframeWait ) {
+					clearInterval( iframeWait );
+				}
 				if( sharpayAPI.identity() ) {
 					$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 					$(function(){
@@ -276,8 +278,25 @@ $(function(){
 				}
 			}
 		} catch ( e ) {}
-	},
-	iframeWait = setInterval(shrpRegistrationCheck, 500);	
+	}, iframeWait;
+	
+	if( ! isMobile() ) {
+		iframeWait = setInterval(shrpRegistrationCheck, 500);	
+	} else {
+		setTimeout(shrpRegistrationCheck, 5000);
+	}
 });
+
+function isMobile() {
+  var nav = ( navigator.userAgent||navigator.vendor||window.opera );
+  return ( nav.match(/Android/i)
+      || nav.match(/webOS/i)
+      || nav.match(/iPhone/i)
+      || nav.match(/iPad/i)
+      || nav.match(/iPod/i)
+      || nav.match(/BlackBerry/i)
+      || nav.match(/Windows Phone/i)
+  );
+}
 
 </script>
