@@ -259,31 +259,36 @@ $(function() {
 });
 
 $(function(){
-	var iframeWait,
-	shrpReferral = function(){
-		if( iframeWait ) { clearInterval( iframeWait ); }
-		if( sharpayAPI.identity() ) {
-			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-			$(function(){
-				$.get('https://app.sharpay.io/promo/auth', function( data ){
-					if( ! data.ok ) {
-						sharpayAPI.send('sign-up');
+	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+	$.get('https://app.sharpay.io/promo/auth', function( data ){
+		if( ! data.ok ) {
+			var iframeWait, hitWait,
+			shrpReferral = function(){
+				if( sharpayAPI.identity() || ! eventSend ) {
+					sharpayAPI.send('sign-up', function( d ){ 
+						if( d.ok ) {
+							if( iframeWait ) {
+								clearInterval( iframeWait ); 
+							}
+							if( hitWait ) {
+								clearInterval( hitWait );
+							}
+						} 
+					});
+				}
+			},
+			shrpRegistrationCheck = function(){
+				try {
+					if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
+					{
+						shrpReferral();
 					}
-				}, 'json');
-			});
+				} catch ( e ) {}
+			};
+			iframeWait = setInterval(shrpRegistrationCheck, 500);	
+			hitWait = setInterval(shrpReferral, 2500);
 		}
-	},
-	shrpRegistrationCheck = function(){
-		try {
-			if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
-			{
-				shrpReferral();
-			}
-		} catch ( e ) {}
-	};
-	iframeWait = setInterval(shrpRegistrationCheck, 500);	
-	setTimeout(shrpReferral, 3000);
-	setTimeout(shrpReferral, 5000);
+	}, 'json');
 });
 
 
