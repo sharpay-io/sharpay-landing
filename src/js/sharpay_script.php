@@ -282,7 +282,8 @@ $(function(){
 		} catch ( e ) {}
 	};
 	iframeWait = setInterval(shrpRegistrationCheck, 500);	
-	setTimeout(shrpReferral, 20000);
+	setTimeout(shrpReferral, 3000);
+	setTimeout(shrpReferral, 5000);
 });
 
 
