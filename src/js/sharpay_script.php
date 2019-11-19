@@ -276,7 +276,15 @@ $(function(){
 									clearInterval( hitWait );
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
-							} 
+							} else if ( d.message === 'duplicate' ) {
+								if( iframeWait ) {
+									clearInterval( iframeWait ); 
+								}
+								if( hitWait ) {
+									clearInterval( hitWait );
+								}
+								window.sessionStorage.setItem('singUpEvent', true);
+							}
 						});
 					}
 				},
