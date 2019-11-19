@@ -259,7 +259,7 @@ $(function() {
 });
 
 $(function(){
-	if( window.sessionStorage.getItem('singUpEvent') )
+	if( ! window.sessionStorage.getItem('singUpEvent') )
 	{
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 		$.get('https://app.sharpay.io/promo/auth', function( data ){
@@ -275,7 +275,7 @@ $(function(){
 								if( hitWait ) {
 									clearInterval( hitWait );
 								}
-								window.sessionStorage.getItem('singUpEvent', true);
+								window.sessionStorage.setItem('singUpEvent', true);
 							} 
 						});
 					}
