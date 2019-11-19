@@ -259,36 +259,40 @@ $(function() {
 });
 
 $(function(){
-	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-	$.get('https://app.sharpay.io/promo/auth', function( data ){
-		if( ! data.ok ) {
-			var iframeWait, hitWait,
-			shrpReferral = function(){
-				if( sharpayAPI.identity() || ! eventSend ) {
-					sharpayAPI.send('sign-up', function( d ){ 
-						if( d.ok ) {
-							if( iframeWait ) {
-								clearInterval( iframeWait ); 
-							}
-							if( hitWait ) {
-								clearInterval( hitWait );
-							}
-						} 
-					});
-				}
-			},
-			shrpRegistrationCheck = function(){
-				try {
-					if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
-					{
-						shrpReferral();
+	if( window.sessionStorage.getItem('singUpEvent') )
+	{
+		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+		$.get('https://app.sharpay.io/promo/auth', function( data ){
+			if( ! data.ok ) {
+				var iframeWait, hitWait,
+				shrpReferral = function(){
+					if( sharpayAPI.identity() || ! eventSend ) {
+						sharpayAPI.send('sign-up', function( d ){ 
+							if( d.ok ) {
+								if( iframeWait ) {
+									clearInterval( iframeWait ); 
+								}
+								if( hitWait ) {
+									clearInterval( hitWait );
+								}
+								window.sessionStorage.getItem('singUpEvent', true);
+							} 
+						});
 					}
-				} catch ( e ) {}
-			};
-			iframeWait = setInterval(shrpRegistrationCheck, 500);	
-			hitWait = setInterval(shrpReferral, 2500);
-		}
-	}, 'json');
+				},
+				shrpRegistrationCheck = function(){
+					try {
+						if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
+						{
+							shrpReferral();
+						}
+					} catch ( e ) {}
+				};
+				iframeWait = setInterval(shrpRegistrationCheck, 500);	
+				hitWait = setInterval(shrpReferral, 2500);
+			}
+		}, 'json');
+	}
 });
 
 
