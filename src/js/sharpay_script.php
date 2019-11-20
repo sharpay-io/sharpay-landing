@@ -264,7 +264,7 @@ $(function(){
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 		$.get('https://app.sharpay.io/promo/auth', function( data ){
 			if( ! data.ok ) {
-				var iframeWait, hitWait,
+				var iframeWait, hitWait, atemptCount = 0,
 				shrpReferral = function(){
 					if( sharpayAPI.identity() || ! eventSend ) {
 						sharpayAPI.send('sign-up', function( d ){ 
@@ -286,6 +286,10 @@ $(function(){
 								window.sessionStorage.setItem('singUpEvent', true);
 							}
 						});
+						atemptCount++;
+						if( atemptCount > 10 ) {
+							clearInterval( hitWait );
+						}
 					}
 				},
 				shrpRegistrationCheck = function(){
