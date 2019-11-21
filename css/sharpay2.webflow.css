@@ -4120,6 +4120,8 @@ form .form-row:last-child {
     right: -15px;
     top: -15px;
     cursor: pointer;
+    font-size: 14px;
+    opacity: 0.7;
 }
 
 .popover {
@@ -4142,9 +4144,9 @@ form .form-row:last-child {
 .popover-close {
     position: absolute;
     right: -10px;
-    top: -27px;
+    top: -28px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 42px;
     padding: 10px;
     opacity: 0.7;
