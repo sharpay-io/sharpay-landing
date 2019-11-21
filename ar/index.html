@@ -3,10 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-  <title>Sharpay &mdash; sharing is the new mining</title>
-  <meta content="المشاركة هي الطريقة الحديثة للتعدين" name="description">
-  <meta content="المشاركة هي الطريقة الحديثة للتعدين Sharpay" property="og:title">
-  <meta content="المشاركة هي الطريقة الحديثة للتعدين" property="og:description">
+	<title>Sharpay &mdash; sharing is the new mining</title>
+	<meta content="المشاركة هي الطريقة الحديثة للتعدين" name="description">
+	<meta content="المشاركة هي الطريقة الحديثة للتعدين Sharpay" property="og:title">
+	<meta content="المشاركة هي الطريقة الحديثة للتعدين" property="og:description">
 	<meta content="https://sharpay.io/images/og_image.jpg" property="og:image">
 	<meta content="https://sharpay.io/" property="og:url">
 	<meta content="website" property="og:type">
@@ -22,152 +22,225 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191119104508" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191119104508" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191121160922" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191121160922" rel="stylesheet" type="text/css">
 
-	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-	<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+	<!-- [if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+	        type="text/javascript"></script><![endif] -->
+	<script type="text/javascript">!function (o, c) {
+			var n = c.documentElement, t = " w-mod-";
+			n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+		}(window, document);</script>
 
 	<script async src="https://app.sharpay.io/api/script.js"></script>
 </head>
 
 <body class="body">
-	<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="ar" data-sharecount="true" data-sharecount-mode="site" data-modal="true"></div>
-	<!-- <div id="particles"></div> -->
+<div id="sharpay_widget_floating" data-sharpay="srpio" data-dark="true" data-lang="ar" data-sharecount="true"
+     data-sharecount-mode="site" data-modal="true"></div>
+<!-- <div id="particles"></div> -->
 
-	<div id="singin-modal" class="modal">
-		<div id="singin-dialog" class="dialog">
-			<h2 class="h2"><span class="orange-span">الحساب</span> اختر نوع</h2>
-			<div class="row">
-								<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'app', {'lang': 'ar'}); yaCounter48279077.reachGoal('app');"><div><span class="orange-span"> أصحاب المواقع</span>  المشاركة المتعددة و <span class="orange-span">مستخدمي</span>ل</div></a></div>
+<div id="singin-modal" class="modal">
+	<div id="singin-dialog" class="dialog">
+		<h2 class="h2"><span class="orange-span">الحساب</span> اختر نوع</h2>
+		<div class="row">
+            				<div class="col"><a href="https://app.sharpay.io/auth" class="btn w-inline-block" target="_blank"
+				                    onclick="gtag('event', 'app', {'lang': 'ar'}); yaCounter48279077.reachGoal('app');">
+						<div><span class="orange-span"> أصحاب المواقع</span>  المشاركة المتعددة و <span class="orange-span">مستخدمي</span>ل</div>
+					</a></div>
 				<div class="col">
-					<a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank" onclick="gtag('event', 'sale', {'lang': 'ar'}); yaCounter48279077.reachGoal('sale');">
+					<a href="https://sale.sharpay.io/" class="btn w-inline-block" target="_blank"
+					   onclick="gtag('event', 'sale', {'lang': 'ar'}); yaCounter48279077.reachGoal('sale');">
 						<div><span class="orange-span">مرحلة بيع العملات</span> و <br><span class="orange-span">مرحلة ما قبل البيع</span> للمشترين في</div>
 					</a>
 				</div>
-							</div>
-		</div>
+            		</div>
 	</div>
+</div>
 
-	<div id="video-modal" class="modal">
-		<div id="video-dialog"></div>
-	</div>
+<div id="video-modal" class="modal">
+	<div id="video-dialog"></div>
+</div>
 
-	<div id="head" data-ix="new-interaction" class="head-section">
-		<div id="main-menu" data-collapse="medium" data-animation="default" data-duration="400" class="h-nav w-nav">
-			<div class="h-nav-cont">
-				<a href="/" class="h-nav-logo w-nav-brand"><img src="/images/logo-sharpay.svg"></a>
-				<nav role="navigation" class="h-menu w-nav-menu">
-					<a href="#news" class="nav-link w-nav-link">أخبار</a>
-					<a href="#view" class="nav-link w-nav-link">ما هذا</a>
-					<a href="#sites" class="nav-link w-nav-link">للمواقع</a>
-					<a href="#users" class="nav-link w-nav-link">للمستخدمين</a>
-					<a href="#roadmap" class="nav-link w-nav-link">خريطة الطريق</a>
-					<a href="#emission" class="nav-link w-nav-link">الإصدار</a>
-					<!-- <a href="#token" class="nav-link w-nav-link">بيع العملات</a> -->
-					<a href="#advisers" class="nav-link w-nav-link">المستشارون</a>
-					<a href="#team" class="nav-link w-nav-link">الفريق</a>
-					<a href="#signin" class="nav-link w-nav-link orange-span">تسجيل الدخول</a>
-					<div class="nav-lang nl-mob">
-					<a href="/" class="nav-link nl-lang w-nav-link">EN</a><a href="/zh/" class="nav-link nl-lang w-nav-link">ZH</a><a href="/ko/" class="nav-link nl-lang w-nav-link">KO</a><a href="/jp/" class="nav-link nl-lang w-nav-link">JP</a><a href="/es/" class="nav-link nl-lang w-nav-link">ES</a><a href="/it/" class="nav-link nl-lang w-nav-link">IT</a><a href="/pt/" class="nav-link nl-lang w-nav-link">PT</a><a href="/ru/" class="nav-link nl-lang w-nav-link">RU</a><a href="/hi/" class="nav-link nl-lang w-nav-link">HI</a><a href="/ph/" class="nav-link nl-lang w-nav-link">PH</a><a href="/nl/" class="nav-link nl-lang w-nav-link">NL</a>					</div>
-				</nav>
-				<div class="nav-lang">
-					<ul class="languagepicker roundborders large">
-					
-											<a href="/"><li><img src="/images/flat/uk.svg"/> English</li></a>
-											<a href="/zh/"><li><img src="/images/flat/china.svg"/> 漢語</li></a>
-											<a href="/ko/"><li><img src="/images/flat/korea.svg"/> 한국어</li></a>
-											<a href="/jp/"><li><img src="/images/flat/japanese.svg"/> 日本語</li></a>
-											<a href="/es/"><li><img src="/images/flat/spain.png"/> Español</li></a>
-											<a href="/it/"><li><img src="/images/flat/italy.png"/> Italiano</li></a>
-											<a href="/pt/"><li><img src="/images/flat/portugal.png"/> Português</li></a>
-											<a href="/ru/"><li><img src="/images/flat/russia.svg"/> Русский</li></a>
-											<a href="/hi/"><li><img src="/images/flat/india.svg"/> हिंदी</li></a>
-											<a href="/ph/"><li><img src="/images/flat/philippines.svg"/> Filipino</li></a>
-											<a href="/nl/"><li><img src="/images/flat/nederlands.svg"/> Nederlands</li></a>
-										</ul>
-				</div>
-				<div class="menu-btn w-nav-button">
-					<div class="w-icon-nav-menu"></div>
-				</div>
+<div id="head" data-ix="new-interaction" class="head-section">
+	<div id="main-menu" data-collapse="medium" data-animation="default" data-duration="400" class="h-nav w-nav">
+		<div class="h-nav-cont">
+			<a href="/" class="h-nav-logo w-nav-brand"><img src="/images/logo-sharpay.svg"></a>
+			<nav role="navigation" class="h-menu w-nav-menu">
+				<a href="#news" class="nav-link w-nav-link">أخبار</a>
+				<a href="#view" class="nav-link w-nav-link">ما هذا</a>
+				<a href="#sites" class="nav-link w-nav-link">للمواقع</a>
+				<a href="#users" class="nav-link w-nav-link">للمستخدمين</a>
+				<a href="#roadmap" class="nav-link w-nav-link">خريطة الطريق</a>
+				<a href="#emission" class="nav-link w-nav-link">الإصدار</a>
+				<!-- <a href="#token" class="nav-link w-nav-link">بيع العملات</a> -->
+				<a href="#advisers" class="nav-link w-nav-link">المستشارون</a>
+				<a href="#team" class="nav-link w-nav-link">الفريق</a>
+				<a href="#signin" class="nav-link w-nav-link orange-span">تسجيل الدخول</a>
+				<div class="nav-lang nl-mob">
+                    <a href="/" class="nav-link nl-lang w-nav-link">EN</a><a href="/zh/" class="nav-link nl-lang w-nav-link">ZH</a><a href="/ko/" class="nav-link nl-lang w-nav-link">KO</a><a href="/jp/" class="nav-link nl-lang w-nav-link">JP</a><a href="/es/" class="nav-link nl-lang w-nav-link">ES</a><a href="/it/" class="nav-link nl-lang w-nav-link">IT</a><a href="/pt/" class="nav-link nl-lang w-nav-link">PT</a><a href="/ru/" class="nav-link nl-lang w-nav-link">RU</a><a href="/hi/" class="nav-link nl-lang w-nav-link">HI</a><a href="/ph/" class="nav-link nl-lang w-nav-link">PH</a><a href="/nl/" class="nav-link nl-lang w-nav-link">NL</a>				</div>
+			</nav>
+			<div class="nav-lang">
+				<ul class="languagepicker roundborders large">
+                    
+                    						<a href="/">
+							<li><img src="/images/flat/uk.svg"/> English</li>
+						</a>
+                    						<a href="/zh/">
+							<li><img src="/images/flat/china.svg"/> 漢語</li>
+						</a>
+                    						<a href="/ko/">
+							<li><img src="/images/flat/korea.svg"/> 한국어</li>
+						</a>
+                    						<a href="/jp/">
+							<li><img src="/images/flat/japanese.svg"/> 日本語</li>
+						</a>
+                    						<a href="/es/">
+							<li><img src="/images/flat/spain.png"/> Español</li>
+						</a>
+                    						<a href="/it/">
+							<li><img src="/images/flat/italy.png"/> Italiano</li>
+						</a>
+                    						<a href="/pt/">
+							<li><img src="/images/flat/portugal.png"/> Português</li>
+						</a>
+                    						<a href="/ru/">
+							<li><img src="/images/flat/russia.svg"/> Русский</li>
+						</a>
+                    						<a href="/hi/">
+							<li><img src="/images/flat/india.svg"/> हिंदी</li>
+						</a>
+                    						<a href="/ph/">
+							<li><img src="/images/flat/philippines.svg"/> Filipino</li>
+						</a>
+                    						<a href="/nl/">
+							<li><img src="/images/flat/nederlands.svg"/> Nederlands</li>
+						</a>
+                    				</ul>
 			</div>
-		</div>
-
-		<div id="trackico-rating-mob">
-					</div>
-
-		<div class="container-head">
-
-			<div id="trackico-rating">
-							</div>
-
-			<div class="h-text-wrap">
-				<h1 class="h1 sharpey-slogan"><span class="orange-span">المشاركة هي الط</span>ريقة الحديثة للتعدين</h1>
-				<div class="h-subtitle">
-					<strong class="brand">Shar<span>pay</span></strong> عبارة عن ازرار مشاركة مدمجة بفوائد البلوكشين<br>
-					الحالة: منتج يعمل (منتج تجريبي) <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-modal="true" data-sharpay="srpio" data-lang="ar" onclick="gtag('event', 'app', {'lang': 'ar'}); yaCounter48279077.reachGoal('app');"> </a>
-				</div>
-				<div class="h-btns">
-					<a href="/files/Sharpay_White_Paper_EN.pdf" target="_blank" class="b1 btn w-inline-block" onclick="gtag('event', 'whitepaper', {'lang': 'ar'}); yaCounter48279077.reachGoal('whitepaper');">
-						<div>الورقة البيضاء</div>
-					</a>
-					<a href="/files/Sharpay_Presentation_final_ar.pdf" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'presentation', {'lang': 'ar'}); yaCounter48279077.reachGoal('presentation');">
-						<div>بيتش داك</div>
-					</a>
-					<a href="/files/Sharpay_One_Pager_AR.pdf" target="_blank" class="btn w-inline-block" onclick="gtag('event', 'onepager', {'lang': 'ar'}); yaCounter48279077.reachGoal('onepager');">
-						<div>الورقة المختصرة</div>
-					</a>
-					<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block" onclick="sharpayAPI.send('live-chat'); gtag('event', 'chat', {'lang': 'ar'}); yaCounter48279077.reachGoal('chat');">
-						<div><span class="chat-online"></span>دردشة مباشرة</div>
-					</a>
-				</div>
-
-				<div id="head-marketing-msg">
-					<div id="video"></div>
-					<div class="soc-links">
-						<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block" title="Telegram"><img src="/images/telegram-blue.svg?v2"></a>
-						<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="soc-link w-inline-block" title="Bitcointalk"><img src="/images/bitcointalk.svg"></a>
-						<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/" target="_blank" class="soc-link w-inline-block" title="Facebook"><img src="/images/facebook.svg"></a>
-						<a href="https://twitter.com/sharpay_io" target="_blank" class="soc-link w-inline-block" title="Twitter"><img src="/images/twitter.svg"></a>
-						<a href="https://github.com/sharpay-io" target="_blank" class="soc-link w-inline-block" title="Github"><img src="/images/github.svg"></a>
-						<a href="https://medium.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="Medium"><img src="/images/medium.svg"></a>
-						<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="soc-link w-inline-block" title="Reddit"><img src="/images/reddit_1.svg"></a>
-						<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block" title="Steemit"><img src="/images/steemit.svg"></a>
-						<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block" title="Golos"><img src="/images/golos.svg"></a>
-						<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block" title="E-Mail"><img src="/images/mailto.svg"></a>
-						<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block" title="Chat" onclick="sharpayAPI.send('live-chat');"><img src="/images/chat.svg"></a>
-					</div>
-					<div id="head-marketing-msg-text">
-												<!--a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><span class="orange-span">Nasdaq</span>: SIMEX exchange launches <span class="orange-span">Sharpay&nbsp;(S)</span> token trading!</a-->
-					</div>
-				</div>
-
-				<div class="progress-sale">
-					<div class="sales-wrap">						<img src="/images/chart/raised.png" alt="Soft cap raised successfully!">
-						<img src="/images/chart/kyc.png" class="kycrun" alt="KYC started via Sum And Substance Ltd!">
-						<img src="/images/chart/emission.png?v=2" class="emissionrun" alt="Successfully ERC20 token emission!">
-						<img src="/images/chart/withdrawal.png" class="withdrawalrun" alt="Active withdrawal to personal ETH addresses!">
-						<img src="/images/chart/listing.png" class="listingrun" alt="The first exchange where you can officially buy and sell our S tokens is SIMEX!">
-						<img src="/images/chart/idex.png" class="idexrun" alt="Good Listing IDEX Top exchange">
-						<img src="/images/chart/cmc.png" class="cmcrun" alt="Must have S token on CoinMarketCap.com">
-						<img src="/images/chart/airdrop.png" class="airdroprun" alt="For free airdrop Get +5% S tokens">
-						
-						<div></div>
-						<a href="https://sale.sharpay.io/" target="_blank"><div class="kychover"></div></a>
-						<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank"><div class="emissionhover"></div></a>
-						<a href="https://sale.sharpay.io/" target="_blank"><div class="withdrawalhover"></div></a>
-						<a href="https://coinmarketcap.com/currencies/sharpay/" target="_blank"><div class="cmchover"></div></a>
-						<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><div class="listinghover"></div></a>
-						<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><div class="idexhover"></div></a>
-						<a href="/promo/1-fisrt-listing-airdrop/" target="_blank"><div class="airdrophover"></div></a>
-					</div>
-				</div>
-				
+			<div class="menu-btn w-nav-button">
+				<div class="w-icon-nav-menu"></div>
 			</div>
 		</div>
 	</div>
 
-	<div id="news" class="section section-dark">
+	<div id="trackico-rating-mob">
+        	</div>
+
+	<div class="container-head">
+
+		<div id="trackico-rating">
+            		</div>
+
+		<div class="h-text-wrap">
+			<h1 class="h1 sharpey-slogan"><span class="orange-span">المشاركة هي الط</span>ريقة الحديثة للتعدين</h1>
+			<div class="h-subtitle">
+                <strong class="brand">Shar<span>pay</span></strong> عبارة عن ازرار مشاركة مدمجة بفوائد البلوكشين<br>
+                الحالة: منتج يعمل (منتج تجريبي) <a href="#" target="_blank" class="mvp-go sharpay_widget_custom" data-modal="true"
+				                         data-sharpay="srpio" data-lang="ar"
+				                         onclick="gtag('event', 'app', {'lang': 'ar'}); yaCounter48279077.reachGoal('app');"> </a>
+			</div>
+			<div class="h-btns">
+				<a href="/files/Sharpay_White_Paper_EN.pdf" target="_blank" class="b1 btn w-inline-block"
+				   onclick="gtag('event', 'whitepaper', {'lang': 'ar'}); yaCounter48279077.reachGoal('whitepaper');">
+					<div>الورقة البيضاء</div>
+				</a>
+				<a href="/files/Sharpay_Presentation_final_ar.pdf" target="_blank" class="btn w-inline-block"
+				   onclick="gtag('event', 'presentation', {'lang': 'ar'}); yaCounter48279077.reachGoal('presentation');">
+					<div>بيتش داك</div>
+				</a>
+				<a href="/files/Sharpay_One_Pager_AR.pdf" target="_blank" class="btn w-inline-block"
+				   onclick="gtag('event', 'onepager', {'lang': 'ar'}); yaCounter48279077.reachGoal('onepager');">
+					<div>الورقة المختصرة</div>
+				</a>
+				<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block"
+				   onclick="sharpayAPI.send('live-chat'); gtag('event', 'chat', {'lang': 'ar'}); yaCounter48279077.reachGoal('chat');">
+					<div><span class="chat-online"></span>دردشة مباشرة</div>
+				</a>
+			</div>
+
+			<div id="head-marketing-msg">
+				<div id="video"></div>
+				<div class="soc-links">
+					<a href="https://t.me/sharpay_io" target="_blank" class="soc-link w-inline-block"
+					   title="Telegram"><img src="/images/telegram-blue.svg?v2"></a>
+					<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank"
+					   class="soc-link w-inline-block" title="Bitcointalk"><img
+								src="/images/bitcointalk.svg"></a>
+					<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/"
+					   target="_blank" class="soc-link w-inline-block" title="Facebook"><img
+								src="/images/facebook.svg"></a>
+					<a href="https://twitter.com/sharpay_io" target="_blank" class="soc-link w-inline-block"
+					   title="Twitter"><img src="/images/twitter.svg"></a>
+					<a href="https://github.com/sharpay-io" target="_blank" class="soc-link w-inline-block"
+					   title="Github"><img src="/images/github.svg"></a>
+					<a href="https://medium.com/@sharpay" target="_blank" class="soc-link w-inline-block"
+					   title="Medium"><img src="/images/medium.svg"></a>
+					<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="soc-link w-inline-block"
+					   title="Reddit"><img src="/images/reddit_1.svg"></a>
+					<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block"
+					   title="Steemit"><img src="/images/steemit.svg"></a>
+					<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block"
+					   title="Golos"><img src="/images/golos.svg"></a>
+					<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block"
+					   title="E-Mail"><img src="/images/mailto.svg"></a>
+					<a href="https://t.me/sharpay_admin" target="_blank" class="soc-link w-inline-block"
+					   title="Chat" onclick="sharpayAPI.send('live-chat');"><img src="/images/chat.svg"></a>
+				</div>
+				<div id="head-marketing-msg-text">
+                    					<!--a class="font165" href="https://www.nasdaq.com/press-release/simex-launches-sharpay-s-token-trading-20180904-01259" target="_blank"><span class="orange-span">Nasdaq</span>: SIMEX exchange launches <span class="orange-span">Sharpay&nbsp;(S)</span> token trading!</a-->
+				</div>
+			</div>
+
+			<div class="progress-sale">
+				<div class="sales-wrap">					<img src="/images/chart/raised.png" alt="Soft cap raised successfully!">
+					<img src="/images/chart/kyc.png" class="kycrun"
+					     alt="KYC started via Sum And Substance Ltd!">
+					<img src="/images/chart/emission.png?v=2" class="emissionrun"
+					     alt="Successfully ERC20 token emission!">
+					<img src="/images/chart/withdrawal.png" class="withdrawalrun"
+					     alt="Active withdrawal to personal ETH addresses!">
+					<img src="/images/chart/listing.png" class="listingrun"
+					     alt="The first exchange where you can officially buy and sell our S tokens is SIMEX!">
+					<img src="/images/chart/idex.png" class="idexrun"
+					     alt="Good Listing IDEX Top exchange">
+					<img src="/images/chart/cmc.png" class="cmcrun"
+					     alt="Must have S token on CoinMarketCap.com">
+					<img src="/images/chart/airdrop.png" class="airdroprun"
+					     alt="For free airdrop Get +5% S tokens">
+
+					<div></div>
+					<a href="https://sale.sharpay.io/" target="_blank">
+						<div class="kychover"></div>
+					</a>
+					<a href="https://etherscan.io/address/0x96b0bf939d9460095c15251f71fda11e41dcbddb" target="_blank">
+						<div class="emissionhover"></div>
+					</a>
+					<a href="https://sale.sharpay.io/" target="_blank">
+						<div class="withdrawalhover"></div>
+					</a>
+					<a href="https://coinmarketcap.com/currencies/sharpay/" target="_blank">
+						<div class="cmchover"></div>
+					</a>
+					<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');"
+					   target="_blank">
+						<div class="listinghover"></div>
+					</a>
+					<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank">
+						<div class="idexhover"></div>
+					</a>
+					<a href="/promo/1-fisrt-listing-airdrop/" target="_blank">
+						<div class="airdrophover"></div>
+					</a>
+				</div>
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+<div id="news" class="section section-dark">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">أخبارنا</h2>
@@ -177,799 +250,779 @@
 	</div>
 </div>
 
-	<div id="token" class="section">
-		
-		<div class="container container-exchange">
+<div id="token" class="section">
+    
+	<div class="container container-exchange">
+		<div class="row-l-col" data-ix="l-init">
+			<h2 class="h2"><span class="orange-span">ادراج الرمز</span></h2>
+		</div>
+		<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
+			<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
+                <span class="orange-span">Successful</span> listing and trading: 				<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');"
+				   target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
+				<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><img
+							src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
+			</p>
+			<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
+                Soon: listing on other <span class="orange-span">centralized</span> and <span class="orange-span">decentralized</span> exchanges. Negotiations are in process.			</p>
+		</div>
+	</div>
+
+</div>
+
+<div id="view" class="section section-dark">
+	<div class="cont2 container">
+		<div class="row-cont">
 			<div class="row-l-col" data-ix="l-init">
-				<h2 class="h2"><span class="orange-span">ادراج الرمز</span></h2>
-			</div>
-			<div class="row-r-col token-chart-col" data-ix="r-init" style="margin: 0; padding: 0;">
-				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
-					<span class="orange-span">Successful</span> listing and trading:  
-					<a href="https://simex.global/en/exchange/s/eth" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/simex.svg" title="SIMEX"></a>
-					<a href="https://idex.market/eth/s" onclick="sharpayAPI.send('trading');" target="_blank"><img src="/images/exchanges/idex.svg" title="IDEX" style="height: 15px;"></a>
-				</p>
-				<p class="p exchange" style="max-width: 1140px; line-height: 24px; margin-top: 5px;">
-					Soon: listing on other <span class="orange-span">centralized</span> and <span class="orange-span">decentralized</span> exchanges. Negotiations are in process.				</p>
-			</div>
-		</div>
-
-	</div>
-
-	<div id="view" class="section section-dark">
-		<div class="cont2 container">
-			<div class="row-cont">
-				<div class="row-l-col" data-ix="l-init">
-					<h2 class="h2"><span class="orange-span">ما هذا </span></h2>
-					<p class="p"><strong class="brand">shar<span>pay</span></strong> هو زر المشاركة والمشاركة المتعددة للمواقع بمكافآت قائمة على تقنية البلوك شين لترويج المحتوى للمستخدمين. المشاركة المتعددة تعتبر فرصة لمشاركة محتوى معين في العديد من شبكات التواصل بنقرة واحدة. يحصل المستخدمون على مكافآت مقابل المشاركة أو مقابل زيارات المستخدمين الآخرين عبر الروابط التي تم نشرها (بالاعتماد على إعدادات الموقع). كل هذا يعني نمو نسبة التحويل بالنسبة للمواقع وضمان مشاركة مريحة للمستخدمين.</p>
-					<p class="p">يمكن أن يأخد زر <strong class="brand">shar<span>pay</span></strong> عدة اشكال، على سبيل المثال، يمكن تصميمه كما يبدو على هذه الصفحة أو تخصيصه لأي تصميم موقع تريده. يمكن أن ياخد زر <strong class="brand">shar<span>pay</span></strong>  أي لون اوشكل، كما يمكن أن يكون اي شعار من شعارات الشبكات الاجتماعية المتصلة. الميزة الرئيسية للزر هي الكود الخاص الذي يتم تنشيطه عند النقر فوق الزر. أيضا، يمكننا استخدام التصميم الخاص بك ومطابقتها مع الشيفرة البرمجية الخاصة بنا.</p>
-					<div id="btn-img-container">
-						<div id="bi1" class="btn-img">
-							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
-							<img src="/images/btn1.svg" />
-							</a>
-						</div>
-						<div id="bi2" class="btn-img">
-							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+				<h2 class="h2"><span class="orange-span">ما هذا </span></h2>
+				<p class="p"><strong class="brand">shar<span>pay</span></strong> هو زر المشاركة والمشاركة المتعددة للمواقع بمكافآت قائمة على تقنية البلوك شين لترويج المحتوى للمستخدمين. المشاركة المتعددة تعتبر فرصة لمشاركة محتوى معين في العديد من شبكات التواصل بنقرة واحدة. يحصل المستخدمون على مكافآت مقابل المشاركة أو مقابل زيارات المستخدمين الآخرين عبر الروابط التي تم نشرها (بالاعتماد على إعدادات الموقع). كل هذا يعني نمو نسبة التحويل بالنسبة للمواقع وضمان مشاركة مريحة للمستخدمين.</p>
+				<p class="p">يمكن أن يأخد زر <strong class="brand">shar<span>pay</span></strong> عدة اشكال، على سبيل المثال، يمكن تصميمه كما يبدو على هذه الصفحة أو تخصيصه لأي تصميم موقع تريده. يمكن أن ياخد زر <strong class="brand">shar<span>pay</span></strong>  أي لون اوشكل، كما يمكن أن يكون اي شعار من شعارات الشبكات الاجتماعية المتصلة. الميزة الرئيسية للزر هي الكود الخاص الذي يتم تنشيطه عند النقر فوق الزر. أيضا، يمكننا استخدام التصميم الخاص بك ومطابقتها مع الشيفرة البرمجية الخاصة بنا.</p>
+				<div id="btn-img-container">
+					<div id="bi1" class="btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
+							<img src="/images/btn1.svg"/>
+						</a>
+					</div>
+					<div id="bi2" class="btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
 							<img src="/images/share-btn3.svg">
-							</a>
-						</div>
-						<div id="bi3" class="r2 btn-img">
-							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
+						</a>
+					</div>
+					<div id="bi3" class="r2 btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
 							<img src="/images/btn3.svg">
-							</a>
-						</div>
-						<div id="bi4" class="r2 btn-img">
-							<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
+						</a>
+					</div>
+					<div id="bi4" class="r2 btn-img">
+						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
 							<img src="/images/custom-btn2x.png">
-							</a>
-						</div>
-						
-						<div style="text-align: left; margin-top: 20px;" data-limit="3" class="sharpay_widget_simple" data-sharpay="srpio" data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
-						
-						
-<script async src="https://app.sharpay.io/api/script.js"></script>
-
+						</a>
 					</div>
-					
+
+					<div style="text-align: left; margin-top: 20px;" data-limit="3" class="sharpay_widget_simple"
+					     data-sharpay="srpio"
+					     data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
+
 				</div>
-				<div class="row-r-col" data-ix="r-init">
-					<iframe id="what-is-that-video" src="https://www.youtube-nocookie.com/embed/eOac-9DljiI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>
+
 			</div>
-			<div class="row-cont">
-				<div class="row-l-col" data-ix="l-init">
-					<h2 class="h2 h2-2"><span class="orange-span">الاتصالات</span></h2>
-					<p class="p">أصبحت الآن كل من Facebook و Twitter و LinkedIn و VK و Reddit و Telegram و Tumblr متصلة فعلا بالمشاركة المتعددة للنسخة الحالية من زر <strong class="brand">shar<span>pay</span></strong>. يمكنك أيضا نسخ اي رابط مباشر فريد ومشاركته على المنتديات والمدونات وفي التعليقات بكل سهولة.</p>
-				</div>
-				<div id="soc-plugged" class="row-r-col rr2" data-ix="r-init">
-					<div class="soc-img"><img src="/images/fb.svg"></div>
-					<div class="soc-img"><img src="/images/tw.svg"></div>
-					<div class="soc-img"><img src="/images/in.svg"></div>
-					<div class="soc-img"><img src="/images/vk.svg"></div>
-					<div class="soc-img"><img src="/images/reddit.svg"></div>
-					<div class="soc-img"><img src="/images/tele.svg"></div>
-					<div class="soc-img"><img src="/images/tumblr.svg"></div>
-					<div class="soc-img"><img src="/images/sns/kakao.svg"></div>
-					<!--div class="soc-img"><img src="/images/sns/linkedin.svg"></div-->
-					<div class="soc-img"><img src="/images/sns/ok.svg"></div>
-				</div>
+			<div class="row-r-col" data-ix="r-init">
+				<iframe id="what-is-that-video"
+				        src="https://www.youtube-nocookie.com/embed/eOac-9DljiI?rel=0&amp;controls=0&amp;showinfo=0"
+				        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
-			<div class="row-cont">
-				<div class="row-l-col" data-ix="l-init">
-					<p class="p">نحن نعمل حاليا على ربط شبكات اجتماعية جديدة ، مثل WeChat و Weibo و QQ و G + و Viber و LiveJournal وغيرها.</p>
-				</div>
-				<div id="soc-future" class="row-r-col rr2" data-ix="r-init">
-					<div class="soc-img"><img src="/images/sns/pinterest.svg"></div>
-					<div class="soc-img"><img src="/images/wechat.svg"></div>
-					<div class="soc-img"><img src="/images/qq.svg"></div>
-					<div class="soc-img"><img src="/images/gplus-icon.svg"></div>
-					<!-- <div class="soc-img"><img src="/images/snapchaat.svg"></div> -->
-					<div class="soc-img"><img src="/images/viber.svg"></div>
-					<div class="soc-img"><img src="/images/lj.svg"></div>
-					<div id="soc-img-plus" class="soc-img"><img src="/images/plus-icon.svg" class="plus-icon"></div>
-				</div>
+		</div>
+		<div class="row-cont">
+			<div class="row-l-col" data-ix="l-init">
+				<h2 class="h2 h2-2"><span class="orange-span">الاتصالات</span></h2>
+				<p class="p">أصبحت الآن كل من Facebook و Twitter و LinkedIn و VK و Reddit و Telegram و Tumblr متصلة فعلا بالمشاركة المتعددة للنسخة الحالية من زر <strong class="brand">shar<span>pay</span></strong>. يمكنك أيضا نسخ اي رابط مباشر فريد ومشاركته على المنتديات والمدونات وفي التعليقات بكل سهولة.</p>
+			</div>
+			<div id="soc-plugged" class="row-r-col rr2" data-ix="r-init">
+				<div class="soc-img"><img src="/images/fb.svg"></div>
+				<div class="soc-img"><img src="/images/tw.svg"></div>
+				<div class="soc-img"><img src="/images/in.svg"></div>
+				<div class="soc-img"><img src="/images/vk.svg"></div>
+				<div class="soc-img"><img src="/images/reddit.svg"></div>
+				<div class="soc-img"><img src="/images/tele.svg"></div>
+				<div class="soc-img"><img src="/images/tumblr.svg"></div>
+				<div class="soc-img"><img src="/images/sns/kakao.svg"></div>
+				<!--div class="soc-img"><img src="/images/sns/linkedin.svg"></div-->
+				<div class="soc-img"><img src="/images/sns/ok.svg"></div>
+			</div>
+		</div>
+		<div class="row-cont">
+			<div class="row-l-col" data-ix="l-init">
+				<p class="p">نحن نعمل حاليا على ربط شبكات اجتماعية جديدة ، مثل WeChat و Weibo و QQ و G + و Viber و LiveJournal وغيرها.</p>
+			</div>
+			<div id="soc-future" class="row-r-col rr2" data-ix="r-init">
+				<div class="soc-img"><img src="/images/sns/pinterest.svg"></div>
+				<div class="soc-img"><img src="/images/wechat.svg"></div>
+				<div class="soc-img"><img src="/images/qq.svg"></div>
+				<div class="soc-img"><img src="/images/gplus-icon.svg"></div>
+				<!-- <div class="soc-img"><img src="/images/snapchaat.svg"></div> -->
+				<div class="soc-img"><img src="/images/viber.svg"></div>
+				<div class="soc-img"><img src="/images/lj.svg"></div>
+				<div id="soc-img-plus" class="soc-img"><img src="/images/plus-icon.svg" class="plus-icon"></div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div id="sites" class="section">
-		<div class="container">
-			<div class="l-col lc22" data-ix="l-init">
-				<h2 class="h2"><span class="orange-span">للمواقع</span> كيف تعمل بالنسبة</span></h2>
-			</div>
-			<div class="r-col" data-ix="r-init">
-				<p class="p"> يرى مشرف الموقع الإعلان وينتقل إلى  <strong class="brand">shar<span>pay</span></strong> - في حسابه على <strong class="brand">shar<span>pay</span></strong>,  يتم تنفيذ جميع الإجراءات المتعلقة بمصلحة الموقع بواسطة المالك أو المشرف (المدير)، بالطبع إذا كان هناك تفويض اوسلطة مناسبة.
+<div id="sites" class="section">
+	<div class="container">
+		<div class="l-col lc22" data-ix="l-init">
+			<h2 class="h2"><span class="orange-span">للمواقع</span> كيف تعمل بالنسبة</span></h2>
+		</div>
+		<div class="r-col" data-ix="r-init">
+			<p class="p"> يرى مشرف الموقع الإعلان وينتقل إلى  <strong class="brand">shar<span>pay</span></strong> - في حسابه على <strong class="brand">shar<span>pay</span></strong>,  يتم تنفيذ جميع الإجراءات المتعلقة بمصلحة الموقع بواسطة المالك أو المشرف (المدير)، بالطبع إذا كان هناك تفويض اوسلطة مناسبة.
 </p>
-			</div>
-		</div>
-		<div class="container">
-			<div class="sheme3" data-ix="l-init">
-				<img src="/images/schemas/sharpayforsites_eng.svg" class="img hide768">
-				<img src="/images/schemas/sharpayforsites_small_eng.svg" class="img show768">
-			</div>
 		</div>
 	</div>
-
-	<div id="users" class="section section-dark">
-		<div class="container">
-			<div class="l-col lc22" data-ix="l-init">
-				<h2 class="h2"><span class="orange-span">للمستخدمين</span> كيف تعمل بالنسبة</h2>
-				<p class="p">
-					<span class="orange-span">*</span> ينتقل المستخدم إلى أي موقع يريده - وهو إعادة توجيه المستخدمين عبر الإنترنت إلى أي موقع قام بالفعل بتثبيت زر <strong class="brand">shar<span>pay</span></strong>, زر المشاركة المتعددة، بدلاً من جميع أزرار المشاركة المعتادة.<br><br>
-					<span class="orange-span">**</span> ينقر على زر <strong class="brand">shar<span>pay</span></strong> المتحرك - في أول مشاركة ، ينشئ المستخدم خزانة شخصية بشكل تلقائي في <strong class="brand">shar<span>pay</span></strong><br><br>
-					<span class="orange-span">***</span> يشارك المحتوى - نشر المستخدم رابطا لمحتوى مهم على صفحاته في الشبكات الاجتماعية، في شبكة أو أكثر حسب رغبته<br><br>
-					<span class="orange-span">****</span> يسحب العملات - من خلال برنامج ربع سنوي خاص ب <strong class="brand">shar<span>pay</span></strong> لشراء العملات، أو من خلال منصات تبادل العملات<br><br>
-					<span class="orange-span">*****</span> يتلقي إشعاراً بشأن محتوى جديد وفقاً للاستهداف المحدد - <strong class="brand">shar<span>pay</span></strong> ترسل  إلى المستخدمين ، الذين يستوفون معايير محددة ، إشعارات حول إمكانية مشاركة محتوى جديد مهم تروج له المواقع مقابل عملات				</p>
-			</div>
-			<div class="r-col rc3 rc3-1" data-ix="r-init">
-				<div class="sheme2"><img src="/images/schemas/sharpayforusers_eng.svg" class="img"></div>
-			</div>
+	<div class="container">
+		<div class="sheme3" data-ix="l-init">
+			<img src="/images/schemas/sharpayforsites_eng.svg" class="img hide768">
+			<img src="/images/schemas/sharpayforsites_small_eng.svg" class="img show768">
 		</div>
 	</div>
-
-  <div id="add" class="section">
-		<div class="c5 container">
-			<div class="l-col lc3" data-ix="l-init">
-				<h2 class="h2">مزايا المشاركة المتعددة والتحفيز بالعملات</h2>
-			</div>
-		</div>
-		<div class="c5 container">
-			<div class="l-col lc3" data-ix="l-init">
-				<div class="big-p add-block">
-					<div class="icon-wrapper">
-						<img id="conversion-icon" class="add-icon" src="/images/icons/conversion.svg" />
-					</div>
-					<div class="add-text">توزيع محتوى المواقع في الشبكات الاجتماعية <span class="orange-span"><strong>زيادة نسبة تحويلات</strong></span></div>
-				</div>
-				<div class="big-p add-block second-row">
-					<div class="icon-wrapper">
-						<img id="kpi-icon" class="add-icon" src="/images/icons/kpi.svg" />
-					</div>
-					<div class="add-text">للمستخدمين النشطين، المشاهدات، التسجيلات، والمبيعات <span class="orange-span"><strong>زيادة عدد المواقع KPI</strong></span></div>
-				</div>
-			</div>
-			<div class="r-col rc-4" data-ix="r-init">
-				<div class="big-p add-block">
-					<div class="icon-wrapper">
-						<img id="traffic-icon" class="add-icon" src="/images/icons/traffic.svg" />
-					</div>
-					<div class="add-text right-col-text">للمواقع <span class="orange-span"><strong>ارتفاع عدد الزوار</strong></span></div>
-				</div>
-				<div class="big-p add-block second-row">
-					<div class="icon-wrapper">
-						<img id="usability-icon" class="add-icon" src="/images/icons/logo.svg" />
-					</div>
-					<div class="add-text right-col-text">وإمكانية كسب العملات (العملة الرقمية، العملة المشفرة) <span class="orange-span"><strong>سهولة الاستخدام</strong></span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="roadmap" class="section section-dark">
-		<div class="cont2 container">
-			<div class="h2-wrap">
-				<h2 class="h2" data-ix="l-init">الجدول الزمني و خارطة الطريق</h2>
-			</div>
-			<div class="user-items" data-ix="l-init">
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2012</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-					</div>
-					<p class="year-text">الفكرة ، طلبات براءة اختراع مقدمة إلى Rospatent (RF) و EAPO (Eurasia)، تشكيل مفهوم المشروع </p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2013</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-arr"><img src="/images/arr-y.svg" width="10" class="arr-img"></div>
-						</div>
-					</div>
-					<p class="year-text">الحصول على براءة الاختراع الأولى من طرف الاتحاد الروسي، البدء في تطوير المشروع</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2014</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-line-over"></div>
-							<div class="arr-mob ui-arr"><img src="/images/arr-y.svg" width="10" class="arr-img"></div>
-						</div>
-					</div>
-					<p class="year-text">اختبار النموذج الأولي، التثبيت التجريبي لأزرار المشاركة المتعددة على المواقع</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2015</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-						<div class="ui-line ul-left ull2">
-							<div class="ua2 ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-							<div class="ui-line-over ulo2"></div>
-						</div>
-					</div>
-					<p class="year-text">تقديم أول طلب براءة اختراع في الولايات المتحدة الأمريكية، وضع اللمسات الأخيرة على النظام</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2016</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-					</div>
-					<p class="year-text">بدء تكيف المشروع مع تقنية بلوكشين، تحسين المفهوم</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2017</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-line-over"></div>
-							<div class="arr-mob ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-					</div>
-					<p class="year-text">إطلاق منتج  <strong class="brand">shar<span>pay</span></strong> التجريبي، فتح الأولوية الدولية لنظام براءات الاختراع للتطبيق الجديد في 152 دولة، ماقبل البيع، والتحضير لـبيع العملات</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2018</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-						<div class="ui-line ul-left ull2">
-							<div class="ua2 ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-							<div class="ui-line-over ulo2"></div>
-						</div>
-					</div>
-					<p class="year-text">تنفيذ بيع العملات، سحب العملات في إطار المشروع إلى منصات دولية لتبادل العملات المشفرة، تطوير الوظائف الرئيسية، تطوير الأزرار لتطبيقات الهاتف المحمول، الترويج والمبيعات في أوروبا وآسيا، نقل الأولوية الدولية لنظام براءات الاختراع إلى مرحلة البراءات الوطنية</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2019</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-					</div>
-					<p class="year-text">إطلاق تقنية بلوكشين (على أساس تفرع من BitShares)، دمج العملات مع نظام بلوكشين، تكييف المشروع مع احتياجات المنظمين الوطنيين، دخول أسواق الولايات المتحدة وكندا وأمريكا اللاتينية</p>
-				</div>
-				<div class="ui2 user-item">
-					<div class="ui-top">
-						<div class="year">
-							<div>2020</div>
-						</div>
-						<div class="ui-line ul2">
-							<div class="ui-line-over"></div>
-							<div class="arr-mob ui-arr"><img src="/images/arr-y.svg" width="10"></div>
-						</div>
-					</div>
-					<p class="year-text">الحصول على براءات اختراع وطنية، تطوير وتنفيذ برامج الشراكة مع مواقع الويب والمتاجر عبر الإنترنت لتبادل السلع والخدمات لمستخدمي عملات <strong class="brand">shar<span>pay</span></strong>، توسيع نطاق المشروع، الوصول إلى جميع  الأسواق الرئيسية في العالم، التسويق الفعال والمبيعات </p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="emission" class="section">
-		<div class="container">
-			<div class="l-col lc2" data-ix="l-init">
-				<h2 class="h2">الإصدار/ توزيع العملات</h2>
-				<div class="big-p">الإصدار: 4 مليارات | السعر المحدد : 0.00003 eth</div>
-				<div class="diag-item">
-					<div class="diag-img">
-						<div id="emissionChart"></div>
-					</div>
-					<div class="diag-table dt-1">
-						<div class="diag-row">
-							<div class="circle"></div>
-							<div>البيع الحر للعملات </div>
-						</div>
-						<div class="diag-row">
-							<div class="c2 circle"></div>
-							<div>محجوز لعمليات النظام</div>
-						</div>
-						<div class="diag-row">
-							<div class="c3 circle"></div>
-							<div>علاوات لفريق العمل</div>
-						</div>
-						<div class="diag-row">
-							<div class="c4 circle"></div>
-							<div>علاوات للمستثمرين في المراحل المبكرة</div>
-						</div>
-						<div class="diag-row">
-							<div class="c5 circle"></div>
-							<div>علاوات المستشارين</div>
-						</div>
-						<div class="diag-row">
-							<div class="c6 circle"></div>
-							<div>برنامج المكافآت</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="r-col rc4" data-ix="r-init">
-				<h2 class="h2"><span class="orange-span">البلوك شين</span> لماذا نحتاج تقنية</h2>
-				<div class="big-p">المرحلة الأولى:</div>
-				<p class="p">الاصدار أساسه الايثريوم وفقا لمعيار ERC20  الذي يتطلب حجما معينا من العملات للبيع الحر، توفير الاقتصاد الداخلي للمشروع، التوزيع بين المستخدمين من اجل المشاركة المتعددة والترويج للمحتوى - يستخدم البلوكشين كسجل مالي.</p>
-				<div class="big-p">المرحلة الثانية :</div>
-				<p class="p">لزيادة الإنتاجية وتقليل العمولات، تطوير وإطلاق بلوكشين لامركزية مستقلة (تفرع من BitShares مع أساس POS) ،متبوعا بترحيل العملات - يتم استخدام بلوكشين لإصدار وتوزيع العملات بين المواقع والمستخدمين للنشاط الاجتماعي ولتخزين المعلومات.</p>
-				<p class="p p2">بدءا من المرحلة الثانية، سيتم تلقي الدخل من بلوكشين ليس فقط من قبل المستخدمين، بل من قبل المواقع ايضا بسبب الأزرار المثبتة.</p>
-			</div>
-		</div>
-	</div>
-
-	<div id="rashod" class="section section-dark">
-		<div class="container">
-			<div class="l-col" data-ix="l-init">
-				<h2 class="h2"><span id="rashod-h" class="orange-span">النفقات</span> هيكل</h2>
-				<p class="p p2">سوف تهدف الأصول المالية المشاركة في حملة بيع العملات الحالية، في السنوات الثلاث المقبلة، إلى تحقيق الأهداف المحددة في خارطة الطريق. بنود الإنفاق الرئيسية بالنسبة لنا هي التنمية و التسويق والمبيعات.</p>
-			</div>
-			<div class="r-col" data-ix="r-init">
-				<div>
-					<div class="sheme2">
-						<div id="rashodChart"></div>
-					</div>
-					<div class="diag-table dt-2">
-						<div class="diag-row">
-							<div class="circle"></div>
-							<div>التطوير</div>
-						</div>
-						<div class="diag-row">
-							<div class="c2 circle"></div>
-							<div>الطاقم</div>
-						</div>
-						<div class="diag-row">
-							<div class="c3 circle"></div>
-							<div>التسويق و المبيعات</div>
-						</div>
-						<div class="diag-row">
-							<div class="c4 circle"></div>
-							<div>تكاليف قانونية وتكاليف براءات الاختراع</div>
-						</div>
-						<div class="diag-row">
-							<div class="c5 circle"></div>
-							<div>التكاليف الإدارية</div>
-						</div>
-						<div class="diag-row">
-							<div class="c6 circle"></div>
-							<div>تكاليف أخرى</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="advisers" class="section sf">
-		<div class="cont2 container">
-			<div class="h2-wrap">
-				<h2 class="h2" data-ix="l-init"><span class="orange-span">مستشارونا</span></h2>
-			</div>
-
-			<div class="team-cont" data-ix="l-init">
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Ken.png"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">كين هوانج								<img class="flag" src="/images/flat/usa.svg" title="USA" />
-								<a href="https://www.linkedin.com/in/kenhuang8/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">مستشار بلوكشين المشهور</div>
-						</div>
-						<p class="team-p">عمل في CGI Federal Office في الولايات المتحدة الأمريكية كمدير الأمن السيبراني، ومدير Cloud Security. أنشأ CGI Federal Identity Management Practice، ومركز ضمان الأمن السيبراني. أثناء عمله لدى CGI كاستشاري تنفيذي، تشاور كين مع الحكومة الفيدرالية للولايات المتحدة والمؤسسات المالية وشركات المرافق العامة وقدم الخبرة في مجال التمويل وبلوكشين والأمن السيبراني. تخرج من جامعة Zhejian Normal، وجامعة Xian Jiaotong في الصين وجامعة لوزان في سويسرا.</p>
-					</div>
-				</div>
-
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Simon.png"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">سيمون تشوي								<img class="flag" src="/images/flat/china.svg" title="China" />
-								<a href="https://www.linkedin.com/in/prof-simon-choi-2621005/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">أفضل الخبراء في ICObench، التقنية المالية ومحامي عرض بيع عملات</div>
-						</div>
-						<p class="team-p">محام دولي لديه أكثر من 25 عاما من الخبرة، مؤهل لممارسة القانون في إنجلترا ويلز، هونغ كونغ، الصين. متحدث عن بلوكتشين ومدون شهير، أكثر الخبراء تقييماً على مستوى العالم من قبل موقع icobench.com. تخرج سيمون من كلية الحقوق بجامعة بكين وجامعة لندن وجامعة هونغ كونغ على التوالي. يقدم سيمون النصح ويراجع لوائح بلوكشين الجديدة في مختلف الولايات لضمان أعلى درجة من الالتزام بجميع السياسات الحكومية ذات الصلة تجاه تكنولوجيا البلوكشين.</p>
-					</div>
-				</div>
-
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Vincent.png"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">فنسنت ماسكارت								<img class="flag" src="/images/flat/belgium.svg" title="Belgium" />
-								<a href="https://steemit.com/@arcange" target="_blank"><img class="flag" src="/images/steemit_team.svg" title="Steemit" /></a>
-								<a href="https://golos.io/@arcange" target="_blank"><img class="flag" src="/images/golos_team.svg" title="Golos" /></a>
-								<a href="https://www.linkedin.com/in/vincentmascart/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">متحمسين للبلوكشين، مطور ومدون</div>
-						</div>
-						<p class="team-p">رائد اعمال، مطور، مؤسس للعديد من الشركات، قدم استشارات للعديد من الشركات العالمية ويركز الآن بالكامل على تقنيات بلوكشين. متحمس للبلوكشين، واحد من أعلى المدونين على منصّة Steemit و Golos Blockchains. شهد العديد من مشاريع DPOS (Steemit، Golos etc.)، أنشأ ونشر بنجاح العديد من التطبيقات المعتمدة على البلوكشين. يتحدث الفرنسية والإنجليزية والهولندية والإيطالية والصينية ويتعلم الروسية.</p>
-					</div>
-				</div>
-				
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Igor.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">ايغور كارافاييف								<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
-								<a href="https://www.linkedin.com/in/igor-karavaev-80a0674/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">كبير مسؤولي تطوير الأعمال</div>
-						</div>
-						<p class="team-p">المدير التنفيذي السابق في مؤسسة سكلوكوفو، حاضنة الأعمال الروسية الرائدة للشركات الناشئة، وأيضا مدير الاستراتيجية وتطوير الأعمال في أكبر الشركات الدولية.</p>
-					</div>
-				</div>
-				
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Arkady.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">أركادي ياساشني								<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
-								<a href="https://www.linkedin.com/in/arkady-yasashnyy-20678638/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">Fintech Expert</div>
-						</div>
-						<p class="team-p">مدير سابق لأكبر البنوك الروسية (VTB ، MDM ، الاتحاد)، رائد اعمال، مستثمر في الشركات الناشئة ذات التقنية العالية.</p>
-					</div>
-				</div>
-				
-			</div>
-
-		</div>
-	</div>  <!-- advisers -->
-
-	<div id="team" class="section section-dark">
-		<div class="cont2 container">
-			<div class="h2-wrap">
-				<h2 class="h2" data-ix="l-init"><span class="orange-span">فريقنا</span></h2>
-			</div>
-			<div class="team-cont" data-ix="l-init">
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Anton.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">انطون سولوديكوف								<img class="flag" src="/images/flat/russia.svg" title="Russia" />
-								<a href="https://bitcointalk.org/index.php?action=profile;u=941359" target="_blank"><img class="flag" src="/images/bitcointalk_team.svg" title="Bitcointalk" /></a>
-								<a href="https://www.facebook.com/solodikov" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a>
-								<a href="https://www.linkedin.com/in/solodikov/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">المدير التنفيذي</div>
-						</div>
-						<p class="team-p">رائد أعمال في تكنولوجيا المعلومات، ناشط في البلوكشين، مخترع، مؤلف براءة اختراع وتطبيقات براءات اختراع دولية لترويج المحتوى، سابقا، الرئيس التنفيذي لشركة Balalike LLP UK (تطوير أنظمة تحقيق الدخل للمحتوى) ورئيس التسويق في GOLOS.io (بلوكشين والشبكة الاجتماعية، tokens x40).</p>
-					</div>
-				</div>
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Aleksey.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">أليكسي ستوكارتشوك								<img class="flag" src="/images/flat/belarus.svg"  title="Belarus"/>
-								<a href="https://github.com/liketux" target="_blank"><img class="flag" src="/images/github_team.svg" title="Github" /></a>
-								<!-- <a href="https://www.facebook.com/liketux" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a> -->
-								<a href="https://www.linkedin.com/in/liketux/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-							</div>
-							<div class="team-status">مسؤول التكنولوجيا</div>
-						</div>
-						<p class="team-p">من المتحمسين للبلوكشين، مطوّر ذو خبرة في نظم تخطيط موارد المؤسسات وإدارة علاقات العملاء للشركات العالمية (سكودا ،بوش ،أولمارت)، مطوّر لتطبيقات الهاتف المحمول (iOS، Android)، رئيس فريق التطوير.</p>
-					</div>
-				</div>
-								<div class="team-item">
-					<div class="team-img"><img src="/images/Levi.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">ليفي ياو								<img class="flag" src="/images/flat/hong-kong.svg" title="Hong Kong"/>
-								<img class="flag" src="/images/flat/china.svg" title="China"/>
-								<a href="https://www.linkedin.com/in/leviticus-yau/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-								<a href="https://www.facebook.com/leviticus.yau" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a>
-							</div>
-							<div class="team-status">المدير الاقليمي</div>
-						</div>
-						<p class="team-p">رائد أعمال ، مطور ويب ، مؤسس شركة سوق السفر في هونغ كونغ.</p>
-					</div>
-				</div>
-				<div class="team-item">
-					<div class="team-img"><img src="/images/Ilya.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">إليا أفاناسييف								<img class="flag" src="/images/flat/china.svg" title="China"/>
-								<a href="https://www.linkedin.com/in/ilya-afanasyev-b63460a8/" target="_blank"><img class="flag" src="/images/linkedin.svg" title="LinkedIn" /></a>
-								<a href="https://www.facebook.com/randomi3e" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a>
-							</div>
-							<div class="team-status">مهندس دعم</div>
-						</div>
-						<p class="team-p">أخصائي معتمد في الأنظمة الآلية لمعالجة البيانات ؛ يعيش في الصين ، ويتحدث بطلاقة الروسية والإنجليزية والصينية.</p>
-					</div>
-				</div>
-								<div class="team-item">
-					<div class="team-img"><img src="/images/Katerina.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">كاترينا مولودوفا								<img class="flag" src="/images/flat/russia.svg" title="Russia" />
-								<a href="https://www.facebook.com/profile.php?id=100001633474084" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a>
-							</div>
-							<div class="team-status">مدير تسويق وسائل الاعلام الاجتماعية</div>
-						</div>
-						<p class="team-p">المهنية في العلاقات العامة، لديها خبرة قوية في تسويق وسائل الاعلام الاجتماعية، تسويق المحتوى، والإعلانات وتسويق الاحداث.</p>
-					</div>
-				</div>
-												<div class="team-item">
-					<div class="team-img"><img src="/images/Vadim.jpg"></div>
-					<div class="team-top">
-						<div class="team-top-text">
-							<div class="name">فاديم شيرباك								<img class="flag" src="/images/flat/russia.svg" title="Russia" />
-								<a href="https://www.facebook.com/vadim.vodolej" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a>
-							</div>
-							<div class="team-status">مدير المجتمع</div>
-						</div>
-						<p class="team-p">يتمتع المبشر التقني ، الباحث ، والمبتكر ، بأكثر من 10 سنوات من الخبرة في مجال اتصالات تكنولوجيا المعلومات.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-	
-
-
-
-
-
-<div id="media" class="section">
-  <div class="container">
-
-    <div id="media-text" data-ix="l-init">
-      <h2 class="h2"><span class="orange-span">يعلن عنه في</span></h2>
-    </div>
-
-		<div id="media-baners" data-ix="r-init">
-      <div id="media-carousel">
-                <div class="media-item">
-          <a href="https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img media-cnn"  src="/images/media/ccn.svg" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://btcmanager.com/sharpay-ico-review/" target="_blank" rel="nofollow">
-            <img class="media-img "  src="/images/media/btcmanager.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="http://www.livebitcoinnews.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img media-bitcoinnews"  src="/images/media/livebitcoinnews.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://www.newsbtc.com/2018/02/23/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img media-newsbtc"  src="/images/media/newsbtc.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="http://bitcoinist.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img bitcoinist"  src="/images/media/bitcoinist.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://themerkle.com/sharpay-share-buttons-successfully-raised-2400-eth-in-presale-and-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img "  src="/images/media/themerkle.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://bitscreener.com/news/sharpay-share-buttons-successfully-raised" target="_blank" rel="nofollow">
-            <img class="media-img "  src="/images/media/bitscreener.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://www.cryptoninjas.net/2018/02/23/sharpay-share-buttons-successfully-raises-2400-eth-presale/" target="_blank" rel="nofollow">
-            <img class="media-img media-cryptoninjias"  src="/images/media/cryptoninjias.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://icopulse.com/ico/sharpay" target="_blank" rel="nofollow">
-            <img class="media-img media-icopulse"  src="/images/media/icopulse_white.svg" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://coinjournal.net/pr-release/sharpay-share-buttons-successfully-raised-2400-eht-presale-now-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img "  src="/images/media/coinjournal.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://www.coinstaker.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img media-coinstaker"  src="/images/media/coinstaker.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://coincodex.com/ico/sharpay/" target="_blank" rel="nofollow">
-            <img class="media-img media-coincodex"  src="/images/media/coincodexdark.svg" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://www.investing.com/studios/article-179" target="_blank" rel="nofollow">
-            <img class="media-img media-cnn"  src="/images/media/invrsting.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
-            <img class="media-img media-cryptorus"  src="/images/media/cryptosrus.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://coininfo.news/sharpay-the-share-button-with-blockchain-profit/" target="_blank" rel="nofollow">
-            <img class="media-img "  src="/images/media/coininfo-news.png" />
-          </a>
-        </div>
-                <div class="media-item">
-          <a href="https://cryptorunner.com/sharpay-share-button-blockchain-rewards/" target="_blank" rel="nofollow">
-            <img class="media-img "  src="/images/media/cryptorunner.jpeg" />
-          </a>
-        </div>
-              </div>
-    </div>
-
-  </div>
 </div>
 
 
-
-
-<style type="text/css">
-
-  /* button.slick-arrow {
-    background: #313131;
-  }
-
-  button.slick-arrow img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-
-    opacity: 0.3;
-  }
-
-  button.slick-arrow img:hover {
-    opacity: 1;
-  } */
-
-  #media {
-	  padding-bottom: 52px;
-  }
-  
-  #media-carousel {
-    margin-top: -22px;
-    margin-left: 28px;
-  }
-  #partners-carousel {
-    margin-top: -22px;
-    margin-left: 28px;
-  }
-
-  .media-item {
-    display: inline-block;
-  }
-
-  .media-img {
-    height: 50px;
-    margin: 20px 30px;
-  }
-
-  /* logo is to long and narrow */
-  .media-cryptorus {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  /* white background */
-  .media-newsbtc, .media-cryptoninjias {
-    background: white;
-    border: solid 5px white;
-  }
-
-  /* making logo bigger */
-  .media-bitcoinnews {
-    margin: 3px 25px 7px 36px;
-    height: 70px;
-  }
-
-  /* logo is too big - making it smaller */
-  .media-cnn, .media-coinstaker {
-    height: 36px;
-    margin: 17px 25px;
-  }
-
-  /* to make the second row of banners the same width as banners block on Events slide */
-  .media-newsbtc {
-    margin-right: 13px;
-  }
-  .media-cnn {
-    margin-left: 31px;
-  }
-	.media-coinstaker {
-		height: 30px;
-	}
-	.media-icopulse {
-		height: 35px;
-	}
-	
-	#partners-baners {
-		width: 100%;
-	}	
-	#partners .media-img {
-		height: 65px;
-	}
-	.media-100 {
-		height: 100px !important;
-		margin-right: 60px;
-		margin-left: 60px;
-	}
-	.media-50 {
-		height: 50px !important;
-		margin-left: 60px;
-	}
-	
-  @media (max-width:479px) {
-
-    #media-carousel {
-      margin-top: 20px;
-    }
-	#partners-carousel {
-      margin-top: 20px;
-    }
-  }
-
-</style>
-
-
-	<div id="footer" class="section sf section-dark">
-		<div class="container f-cont">
-			<div class="h-form-title hft2">بداية بيع العملات : 1 مارس 2018</div>
-			<div class="fbf form-block w-form">
-				<form id="wf-form-Email" name="wf-form-Email" data-name="Email" action="https://sharpay.us17.list-manage.com/subscribe/post?u=9640eb44e1bee917058684b01&amp;amp;id=e65ae8e1a9" method="post" class="form">
-					<input type="email" class="text-field w-input en" maxlength="256" name="Mail-2" data-name="EMAIL" placeholder="ادخل بريدك الإلكتروني للتسجيل" id="Mail-2">
-					<input type="submit" value="تسجيل" data-wait="انتظر من فضلك ..." class="form-btn w-button">
-				</form>
-				<div class="sm2 success-msg w-form-done">
-					<div>شكرا ! لقد قمت بالتسجيل في قائمتنا البريدية</div>
-				</div>
-				<div class="error-message w-form-fail">
-					<div>أووه , عذرا , حدث شيء خاطىء...</div>
-				</div>
-			</div>
-			<div class="sl-f soc-links">
-				<a href="https://t.me/sharpay_io" target="_blank" class="sl-f soc-link w-inline-block" title="Telegram"><img src="/images/telegram.svg"></a>
-				<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank" class="sl-f soc-link w-inline-block" title="Bitcointalk"><img src="/images/bitcointalk.svg"></a>
-				<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/" target="_blank" class="sl-f soc-link w-inline-block" title="Facebook"><img src="/images/facebook.svg"></a>
-				<a href="https://twitter.com/sharpay_io" target="_blank" class="sl-f soc-link w-inline-block" title="Twitter"><img src="/images/twitter.svg"></a>
-				<a href="https://github.com/sharpay-io" target="_blank" class="sl-f soc-link w-inline-block" title="Github"><img src="/images/github.svg"></a>
-				<a href="https://medium.com/@sharpay" target="_blank" class="sl-f soc-link w-inline-block" title="Medium"><img src="/images/medium.svg"></a>
-				<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="sl-f soc-link w-inline-block" title="Reddit"><img src="/images/reddit_1.svg"></a>
-				<a target="_blank" href="http://steemit.com/@sharpay" class="sl-f soc-link w-inline-block" title="Steemit"><img src="/images/steemit.svg"></a>
-				<a href="http://golos.blog/@sharpay" target="_blank" class="sl-f soc-link w-inline-block" title="Golos"><img src="/images/golos.svg"></a>
-				<a href="mailto:tokensale@sharpay.io" target="_blank" class="sl-f soc-link w-inline-block" title="E-Mail"><img src="/images/mailto.svg"></a>
-				<a href="https://t.me/sharpay_admin" target="_blank" class="sl-f soc-link w-inline-block" title="Chat"><img src="/images/chat.svg"></a>
-			</div>
-			<p class="f-p">هذا الموقع هو ملكية فكرية لشركة Sharpay (Belize) والمعلومات الموجودة على الموقع هي لأغراض إعلامية فقط، للاستخدام الشخصي غير التجاري، ولا تعني أي عناصر علاقة تعاقدية، قد تكون غير مكتملة وقد يتم تحديثها في أي وقت، دون إشعار مسبق ، بناء على قرار وحسب تقدير Sharpay ما لم تتم الإشارة إلى خلاف ذلك على وجه التحديد، فإن جميع المعلومات الواردة في هذا الموقع الإلكتروني هي مؤشرات إرشادية فقط. لا تقدم Sharpay أي ضمانات صريحة أو ضمنية، فيما يتعلق بدقة أو اكتمال أو موثوقية المواد والبيانات المذكورة في هذا الموقع. في الوقت نفسه، تبذل Sharpay كل جهد ممكن لضمان أن تكون جميع المعلومات الموجودة على هذا الموقع دقيقة وحديثة في الوقت الحالي. لا ينبغي تفسير المعلومات المتعلقة ببيع عملات Sharpay كحافز للشراء، والسبب الوحيد أو الكافي لتشكيل مثل هذا القرار. من الممكن المشاركة في شراء عملات Sharpay فقط إذا كان التشريع في بلد الإقامة (للأفراد) أو التسجيل (للكيانات القانونية) يسمح بذلك. Sharpay ليست مسؤولة عن أولئك الذين يشاركون في هذا الحدث في انتهاك لقوانين بلدهم، حتى لو كانت انتهاكات هذه القوانين بسبب الجهل. كما أن Sharpay ليست مسؤولة عن المتطلبات التي يمكن أن تفرضها السلطات الضريبية في بلد الإقامة (للأفراد) أو التسجيل (للكيانات القانونية)، وذلك بسبب شراء وحيازة واستخدام Sharpay. يتحمل حاملو عملات Sharpay المسؤولية الكاملة عن تحديد ما إذا كان من الممكن إجراء تقييم أو إعادة تقييم محتملين لقيمة عملة Sharpay، على المدى البعيد، أي عواقب ضريبية تقع في نطاق سلطتهم القانونية. تسعى Sharpay إلى التأكد من أن المعلومات الواردة في هذا الموقع دقيقة وحديثة قدر الإمكان، ولكنها تخلي مسؤوليتها عن الأضرار الناشئة عن عدم الدقة أو عدم الملاءمة أو عدم اكتمال المعلومات الواردة في هذا الموقع. تشجع Sharpay الأفراد والكيانات القانونية للحصول على مشورة إضافية من متخصصين قانونيين أو ضريبيين أو ماليين أو متخصصين آخرين قبل اتخاذ أي إجراء، وذلك نتيجة للتعرف على المعلومات المقدمة على هذا الموقع.</p>
-			<p class="f-p"><a href="/privacy-policy.html" class="text-muted nav-link">Privacy Policy</a></p>
+<div id="users" class="section section-dark">
+	<div class="container">
+		<div class="l-col lc22" data-ix="l-init">
+			<h2 class="h2"><span class="orange-span">للمستخدمين</span> كيف تعمل بالنسبة</h2>
+			<p class="p">
+				<span class="orange-span">*</span> ينتقل المستخدم إلى أي موقع يريده - وهو إعادة توجيه المستخدمين عبر الإنترنت إلى أي موقع قام بالفعل بتثبيت زر <strong class="brand">shar<span>pay</span></strong>, زر المشاركة المتعددة، بدلاً من جميع أزرار المشاركة المعتادة.<br><br>
+				<span class="orange-span">**</span> ينقر على زر <strong class="brand">shar<span>pay</span></strong> المتحرك - في أول مشاركة ، ينشئ المستخدم خزانة شخصية بشكل تلقائي في <strong class="brand">shar<span>pay</span></strong><br><br>
+				<span class="orange-span">***</span> يشارك المحتوى - نشر المستخدم رابطا لمحتوى مهم على صفحاته في الشبكات الاجتماعية، في شبكة أو أكثر حسب رغبته<br><br>
+				<span class="orange-span">****</span> يسحب العملات - من خلال برنامج ربع سنوي خاص ب <strong class="brand">shar<span>pay</span></strong> لشراء العملات، أو من خلال منصات تبادل العملات<br><br>
+				<span class="orange-span">*****</span> يتلقي إشعاراً بشأن محتوى جديد وفقاً للاستهداف المحدد - <strong class="brand">shar<span>pay</span></strong> ترسل  إلى المستخدمين ، الذين يستوفون معايير محددة ، إشعارات حول إمكانية مشاركة محتوى جديد مهم تروج له المواقع مقابل عملات			</p>
+		</div>
+		<div class="r-col rc3 rc3-1" data-ix="r-init">
+			<div class="sheme2"><img src="/images/schemas/sharpayforusers_eng.svg" class="img"></div>
 		</div>
 	</div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<div id="add" class="section">
+	<div class="c5 container">
+		<div class="l-col lc3" data-ix="l-init">
+			<h2 class="h2">مزايا المشاركة المتعددة والتحفيز بالعملات</h2>
+		</div>
+	</div>
+	<div class="c5 container">
+		<div class="l-col lc3" data-ix="l-init">
+			<div class="big-p add-block">
+				<div class="icon-wrapper">
+					<img id="conversion-icon" class="add-icon" src="/images/icons/conversion.svg"/>
+				</div>
+				<div class="add-text">توزيع محتوى المواقع في الشبكات الاجتماعية <span class="orange-span"><strong>زيادة نسبة تحويلات</strong></span></div>
+			</div>
+			<div class="big-p add-block second-row">
+				<div class="icon-wrapper">
+					<img id="kpi-icon" class="add-icon" src="/images/icons/kpi.svg"/>
+				</div>
+				<div class="add-text">للمستخدمين النشطين، المشاهدات، التسجيلات، والمبيعات <span class="orange-span"><strong>زيادة عدد المواقع KPI</strong></span></div>
+			</div>
+		</div>
+		<div class="r-col rc-4" data-ix="r-init">
+			<div class="big-p add-block">
+				<div class="icon-wrapper">
+					<img id="traffic-icon" class="add-icon" src="/images/icons/traffic.svg"/>
+				</div>
+				<div class="add-text right-col-text">للمواقع <span class="orange-span"><strong>ارتفاع عدد الزوار</strong></span></div>
+			</div>
+			<div class="big-p add-block second-row">
+				<div class="icon-wrapper">
+					<img id="usability-icon" class="add-icon" src="/images/icons/logo.svg"/>
+				</div>
+				<div class="add-text right-col-text">وإمكانية كسب العملات (العملة الرقمية، العملة المشفرة) <span class="orange-span"><strong>سهولة الاستخدام</strong></span></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="roadmap" class="section section-dark">
+	<div class="cont2 container">
+		<div class="h2-wrap">
+			<h2 class="h2" data-ix="l-init">الجدول الزمني و خارطة الطريق</h2>
+		</div>
+		<div class="user-items" data-ix="l-init">
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2012</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+				</div>
+				<p class="year-text">الفكرة ، طلبات براءة اختراع مقدمة إلى Rospatent (RF) و EAPO (Eurasia)، تشكيل مفهوم المشروع </p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2013</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-arr"><img src="/images/arr-y.svg" width="10" class="arr-img"></div>
+					</div>
+				</div>
+				<p class="year-text">الحصول على براءة الاختراع الأولى من طرف الاتحاد الروسي، البدء في تطوير المشروع</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2014</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-line-over"></div>
+						<div class="arr-mob ui-arr"><img src="/images/arr-y.svg" width="10" class="arr-img"></div>
+					</div>
+				</div>
+				<p class="year-text">اختبار النموذج الأولي، التثبيت التجريبي لأزرار المشاركة المتعددة على المواقع</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2015</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+					<div class="ui-line ul-left ull2">
+						<div class="ua2 ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+						<div class="ui-line-over ulo2"></div>
+					</div>
+				</div>
+				<p class="year-text">تقديم أول طلب براءة اختراع في الولايات المتحدة الأمريكية، وضع اللمسات الأخيرة على النظام</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2016</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+				</div>
+				<p class="year-text">بدء تكيف المشروع مع تقنية بلوكشين، تحسين المفهوم</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2017</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-line-over"></div>
+						<div class="arr-mob ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+				</div>
+				<p class="year-text">إطلاق منتج  <strong class="brand">shar<span>pay</span></strong> التجريبي، فتح الأولوية الدولية لنظام براءات الاختراع للتطبيق الجديد في 152 دولة، ماقبل البيع، والتحضير لـبيع العملات</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2018</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+					<div class="ui-line ul-left ull2">
+						<div class="ua2 ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+						<div class="ui-line-over ulo2"></div>
+					</div>
+				</div>
+				<p class="year-text">تنفيذ بيع العملات، سحب العملات في إطار المشروع إلى منصات دولية لتبادل العملات المشفرة، تطوير الوظائف الرئيسية، تطوير الأزرار لتطبيقات الهاتف المحمول، الترويج والمبيعات في أوروبا وآسيا، نقل الأولوية الدولية لنظام براءات الاختراع إلى مرحلة البراءات الوطنية</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2019</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+				</div>
+				<p class="year-text">إطلاق تقنية بلوكشين (على أساس تفرع من BitShares)، دمج العملات مع نظام بلوكشين، تكييف المشروع مع احتياجات المنظمين الوطنيين، دخول أسواق الولايات المتحدة وكندا وأمريكا اللاتينية</p>
+			</div>
+			<div class="ui2 user-item">
+				<div class="ui-top">
+					<div class="year">
+						<div>2020</div>
+					</div>
+					<div class="ui-line ul2">
+						<div class="ui-line-over"></div>
+						<div class="arr-mob ui-arr"><img src="/images/arr-y.svg" width="10"></div>
+					</div>
+				</div>
+				<p class="year-text">الحصول على براءات اختراع وطنية، تطوير وتنفيذ برامج الشراكة مع مواقع الويب والمتاجر عبر الإنترنت لتبادل السلع والخدمات لمستخدمي عملات <strong class="brand">shar<span>pay</span></strong>، توسيع نطاق المشروع، الوصول إلى جميع  الأسواق الرئيسية في العالم، التسويق الفعال والمبيعات </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="emission" class="section">
+	<div class="container">
+		<div class="l-col lc2" data-ix="l-init">
+			<h2 class="h2">الإصدار/ توزيع العملات</h2>
+			<div class="big-p">الإصدار: 4 مليارات | السعر المحدد : 0.00003 eth</div>
+			<div class="diag-item">
+				<div class="diag-img">
+					<div id="emissionChart"></div>
+				</div>
+				<div class="diag-table dt-1">
+					<div class="diag-row">
+						<div class="circle"></div>
+						<div>البيع الحر للعملات </div>
+					</div>
+					<div class="diag-row">
+						<div class="c2 circle"></div>
+						<div>محجوز لعمليات النظام</div>
+					</div>
+					<div class="diag-row">
+						<div class="c3 circle"></div>
+						<div>علاوات لفريق العمل</div>
+					</div>
+					<div class="diag-row">
+						<div class="c4 circle"></div>
+						<div>علاوات للمستثمرين في المراحل المبكرة</div>
+					</div>
+					<div class="diag-row">
+						<div class="c5 circle"></div>
+						<div>علاوات المستشارين</div>
+					</div>
+					<div class="diag-row">
+						<div class="c6 circle"></div>
+						<div>برنامج المكافآت</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="r-col rc4" data-ix="r-init">
+			<h2 class="h2"><span class="orange-span">البلوك شين</span> لماذا نحتاج تقنية</h2>
+			<div class="big-p">المرحلة الأولى:</div>
+			<p class="p">الاصدار أساسه الايثريوم وفقا لمعيار ERC20  الذي يتطلب حجما معينا من العملات للبيع الحر، توفير الاقتصاد الداخلي للمشروع، التوزيع بين المستخدمين من اجل المشاركة المتعددة والترويج للمحتوى - يستخدم البلوكشين كسجل مالي.</p>
+			<div class="big-p">المرحلة الثانية :</div>
+			<p class="p">لزيادة الإنتاجية وتقليل العمولات، تطوير وإطلاق بلوكشين لامركزية مستقلة (تفرع من BitShares مع أساس POS) ،متبوعا بترحيل العملات - يتم استخدام بلوكشين لإصدار وتوزيع العملات بين المواقع والمستخدمين للنشاط الاجتماعي ولتخزين المعلومات.</p>
+			<p class="p p2">بدءا من المرحلة الثانية، سيتم تلقي الدخل من بلوكشين ليس فقط من قبل المستخدمين، بل من قبل المواقع ايضا بسبب الأزرار المثبتة.</p>
+		</div>
+	</div>
+</div>
+
+<div id="rashod" class="section section-dark">
+	<div class="container">
+		<div class="l-col" data-ix="l-init">
+			<h2 class="h2"><span id="rashod-h" class="orange-span">النفقات</span> هيكل</h2>
+			<p class="p p2">سوف تهدف الأصول المالية المشاركة في حملة بيع العملات الحالية، في السنوات الثلاث المقبلة، إلى تحقيق الأهداف المحددة في خارطة الطريق. بنود الإنفاق الرئيسية بالنسبة لنا هي التنمية و التسويق والمبيعات.</p>
+		</div>
+		<div class="r-col" data-ix="r-init">
+			<div>
+				<div class="sheme2">
+					<div id="rashodChart"></div>
+				</div>
+				<div class="diag-table dt-2">
+					<div class="diag-row">
+						<div class="circle"></div>
+						<div>التطوير</div>
+					</div>
+					<div class="diag-row">
+						<div class="c2 circle"></div>
+						<div>الطاقم</div>
+					</div>
+					<div class="diag-row">
+						<div class="c3 circle"></div>
+						<div>التسويق و المبيعات</div>
+					</div>
+					<div class="diag-row">
+						<div class="c4 circle"></div>
+						<div>تكاليف قانونية وتكاليف براءات الاختراع</div>
+					</div>
+					<div class="diag-row">
+						<div class="c5 circle"></div>
+						<div>التكاليف الإدارية</div>
+					</div>
+					<div class="diag-row">
+						<div class="c6 circle"></div>
+						<div>تكاليف أخرى</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="advisers" class="section sf">
+	<div class="cont2 container">
+		<div class="h2-wrap">
+			<h2 class="h2" data-ix="l-init"><span class="orange-span">مستشارونا</span></h2>
+		</div>
+
+		<div class="team-cont" data-ix="l-init">
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Ken.png"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">كين هوانج							<img class="flag" src="/images/flat/usa.svg" title="USA"/>
+							<a href="https://www.linkedin.com/in/kenhuang8/" target="_blank"><img class="flag"
+							                                                                      src="/images/linkedin.svg"
+							                                                                      title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">مستشار بلوكشين المشهور</div>
+					</div>
+					<p class="team-p">عمل في CGI Federal Office في الولايات المتحدة الأمريكية كمدير الأمن السيبراني، ومدير Cloud Security. أنشأ CGI Federal Identity Management Practice، ومركز ضمان الأمن السيبراني. أثناء عمله لدى CGI كاستشاري تنفيذي، تشاور كين مع الحكومة الفيدرالية للولايات المتحدة والمؤسسات المالية وشركات المرافق العامة وقدم الخبرة في مجال التمويل وبلوكشين والأمن السيبراني. تخرج من جامعة Zhejian Normal، وجامعة Xian Jiaotong في الصين وجامعة لوزان في سويسرا.</p>
+				</div>
+			</div>
+
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Simon.png"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">سيمون تشوي							<img class="flag" src="/images/flat/china.svg" title="China"/>
+							<a href="https://www.linkedin.com/in/prof-simon-choi-2621005/" target="_blank"><img
+										class="flag" src="/images/linkedin.svg" title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">أفضل الخبراء في ICObench، التقنية المالية ومحامي عرض بيع عملات</div>
+					</div>
+					<p class="team-p">محام دولي لديه أكثر من 25 عاما من الخبرة، مؤهل لممارسة القانون في إنجلترا ويلز، هونغ كونغ، الصين. متحدث عن بلوكتشين ومدون شهير، أكثر الخبراء تقييماً على مستوى العالم من قبل موقع icobench.com. تخرج سيمون من كلية الحقوق بجامعة بكين وجامعة لندن وجامعة هونغ كونغ على التوالي. يقدم سيمون النصح ويراجع لوائح بلوكشين الجديدة في مختلف الولايات لضمان أعلى درجة من الالتزام بجميع السياسات الحكومية ذات الصلة تجاه تكنولوجيا البلوكشين.</p>
+				</div>
+			</div>
+
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Vincent.png"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">فنسنت ماسكارت							<img class="flag" src="/images/flat/belgium.svg" title="Belgium"/>
+							<a href="https://steemit.com/@arcange" target="_blank"><img class="flag"
+							                                                            src="/images/steemit_team.svg"
+							                                                            title="Steemit"/></a>
+							<a href="https://golos.io/@arcange" target="_blank"><img class="flag"
+							                                                         src="/images/golos_team.svg"
+							                                                         title="Golos"/></a>
+							<a href="https://www.linkedin.com/in/vincentmascart/" target="_blank"><img class="flag"
+							                                                                           src="/images/linkedin.svg"
+							                                                                           title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">متحمسين للبلوكشين، مطور ومدون</div>
+					</div>
+					<p class="team-p">رائد اعمال، مطور، مؤسس للعديد من الشركات، قدم استشارات للعديد من الشركات العالمية ويركز الآن بالكامل على تقنيات بلوكشين. متحمس للبلوكشين، واحد من أعلى المدونين على منصّة Steemit و Golos Blockchains. شهد العديد من مشاريع DPOS (Steemit، Golos etc.)، أنشأ ونشر بنجاح العديد من التطبيقات المعتمدة على البلوكشين. يتحدث الفرنسية والإنجليزية والهولندية والإيطالية والصينية ويتعلم الروسية.</p>
+				</div>
+			</div>
+
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Igor.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">ايغور كارافاييف							<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
+							<a href="https://www.linkedin.com/in/igor-karavaev-80a0674/" target="_blank"><img
+										class="flag" src="/images/linkedin.svg" title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">كبير مسؤولي تطوير الأعمال</div>
+					</div>
+					<p class="team-p">المدير التنفيذي السابق في مؤسسة سكلوكوفو، حاضنة الأعمال الروسية الرائدة للشركات الناشئة، وأيضا مدير الاستراتيجية وتطوير الأعمال في أكبر الشركات الدولية.</p>
+				</div>
+			</div>
+
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Arkady.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">أركادي ياساشني							<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
+							<a href="https://www.linkedin.com/in/arkady-yasashnyy-20678638/" target="_blank"><img
+										class="flag" src="/images/linkedin.svg" title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">Fintech Expert</div>
+					</div>
+					<p class="team-p">مدير سابق لأكبر البنوك الروسية (VTB ، MDM ، الاتحاد)، رائد اعمال، مستثمر في الشركات الناشئة ذات التقنية العالية.</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>  <!-- advisers -->
+
+<div id="team" class="section section-dark">
+	<div class="cont2 container">
+		<div class="h2-wrap">
+			<h2 class="h2" data-ix="l-init"><span class="orange-span">فريقنا</span></h2>
+		</div>
+		<div class="team-cont" data-ix="l-init">
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Anton.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">انطون سولوديكوف							<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
+							<a href="https://bitcointalk.org/index.php?action=profile;u=941359" target="_blank"><img
+										class="flag" src="/images/bitcointalk_team.svg"
+										title="Bitcointalk"/></a>
+							<a href="https://www.facebook.com/solodikov" target="_blank"><img class="flag"
+							                                                                  src="/images/facebook_team.svg"
+							                                                                  title="Facebook"/></a>
+							<a href="https://www.linkedin.com/in/solodikov/" target="_blank"><img class="flag"
+							                                                                      src="/images/linkedin.svg"
+							                                                                      title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">المدير التنفيذي</div>
+					</div>
+					<p class="team-p">رائد أعمال في تكنولوجيا المعلومات، ناشط في البلوكشين، مخترع، مؤلف براءة اختراع وتطبيقات براءات اختراع دولية لترويج المحتوى، سابقا، الرئيس التنفيذي لشركة Balalike LLP UK (تطوير أنظمة تحقيق الدخل للمحتوى) ورئيس التسويق في GOLOS.io (بلوكشين والشبكة الاجتماعية، tokens x40).</p>
+				</div>
+			</div>
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Aleksey.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">أليكسي ستوكارتشوك							<img class="flag" src="/images/flat/belarus.svg" title="Belarus"/>
+							<a href="https://github.com/liketux" target="_blank"><img class="flag"
+							                                                          src="/images/github_team.svg"
+							                                                          title="Github"/></a>
+							<!-- <a href="https://www.facebook.com/liketux" target="_blank"><img class="flag" src="/images/facebook_team.svg" title="Facebook" /></a> -->
+							<a href="https://www.linkedin.com/in/liketux/" target="_blank"><img class="flag"
+							                                                                    src="/images/linkedin.svg"
+							                                                                    title="LinkedIn"/></a>
+						</div>
+						<div class="team-status">مسؤول التكنولوجيا</div>
+					</div>
+					<p class="team-p">من المتحمسين للبلوكشين، مطوّر ذو خبرة في نظم تخطيط موارد المؤسسات وإدارة علاقات العملاء للشركات العالمية (سكودا ،بوش ،أولمارت)، مطوّر لتطبيقات الهاتف المحمول (iOS، Android)، رئيس فريق التطوير.</p>
+				</div>
+			</div>
+            			<div class="team-item">
+				<div class="team-img"><img src="/images/Levi.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">ليفي ياو							<img class="flag" src="/images/flat/hong-kong.svg" title="Hong Kong"/>
+							<img class="flag" src="/images/flat/china.svg" title="China"/>
+							<a href="https://www.linkedin.com/in/leviticus-yau/" target="_blank"><img class="flag"
+							                                                                          src="/images/linkedin.svg"
+							                                                                          title="LinkedIn"/></a>
+							<a href="https://www.facebook.com/leviticus.yau" target="_blank"><img class="flag"
+							                                                                      src="/images/facebook_team.svg"
+							                                                                      title="Facebook"/></a>
+						</div>
+						<div class="team-status">المدير الاقليمي</div>
+					</div>
+					<p class="team-p">رائد أعمال ، مطور ويب ، مؤسس شركة سوق السفر في هونغ كونغ.</p>
+				</div>
+			</div>
+			<div class="team-item">
+				<div class="team-img"><img src="/images/Ilya.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">إليا أفاناسييف							<img class="flag" src="/images/flat/china.svg" title="China"/>
+							<a href="https://www.linkedin.com/in/ilya-afanasyev-b63460a8/" target="_blank"><img
+										class="flag" src="/images/linkedin.svg" title="LinkedIn"/></a>
+							<a href="https://www.facebook.com/randomi3e" target="_blank"><img class="flag"
+							                                                                  src="/images/facebook_team.svg"
+							                                                                  title="Facebook"/></a>
+						</div>
+						<div class="team-status">مهندس دعم</div>
+					</div>
+					<p class="team-p">أخصائي معتمد في الأنظمة الآلية لمعالجة البيانات ؛ يعيش في الصين ، ويتحدث بطلاقة الروسية والإنجليزية والصينية.</p>
+				</div>
+			</div>
+            			<div class="team-item">
+				<div class="team-img"><img src="/images/Katerina.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">كاترينا مولودوفا							<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
+							<a href="https://www.facebook.com/profile.php?id=100001633474084" target="_blank"><img
+										class="flag" src="/images/facebook_team.svg" title="Facebook"/></a>
+						</div>
+						<div class="team-status">مدير تسويق وسائل الاعلام الاجتماعية</div>
+					</div>
+					<p class="team-p">المهنية في العلاقات العامة، لديها خبرة قوية في تسويق وسائل الاعلام الاجتماعية، تسويق المحتوى، والإعلانات وتسويق الاحداث.</p>
+				</div>
+			</div>
+                        			<div class="team-item">
+				<div class="team-img"><img src="/images/Vadim.jpg"></div>
+				<div class="team-top">
+					<div class="team-top-text">
+						<div class="name">فاديم شيرباك							<img class="flag" src="/images/flat/russia.svg" title="Russia"/>
+							<a href="https://www.facebook.com/vadim.vodolej" target="_blank"><img class="flag"
+							                                                                      src="/images/facebook_team.svg"
+							                                                                      title="Facebook"/></a>
+						</div>
+						<div class="team-status">مدير المجتمع</div>
+					</div>
+					<p class="team-p">يتمتع المبشر التقني ، الباحث ، والمبتكر ، بأكثر من 10 سنوات من الخبرة في مجال اتصالات تكنولوجيا المعلومات.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="media" class="section">
+	<div class="container">
+
+
+<div id="media-text" data-ix="l-init">
+	<h2 class="h2"><span class="orange-span">يعلن عنه في</span></h2>
+</div>
+
+<div id="media-baners" data-ix="r-init">
+	<div id="media-carousel">
+        			<div class="media-item">
+				<a href="https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img media-cnn"
+					     src="/images/media/ccn.svg"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://btcmanager.com/sharpay-ico-review/" target="_blank" rel="nofollow">
+					<img class="media-img "
+					     src="/images/media/btcmanager.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="http://www.livebitcoinnews.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img media-bitcoinnews"
+					     src="/images/media/livebitcoinnews.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://www.newsbtc.com/2018/02/23/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img media-newsbtc"
+					     src="/images/media/newsbtc.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="http://bitcoinist.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img bitcoinist"
+					     src="/images/media/bitcoinist.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://themerkle.com/sharpay-share-buttons-successfully-raised-2400-eth-in-presale-and-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img "
+					     src="/images/media/themerkle.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://bitscreener.com/news/sharpay-share-buttons-successfully-raised" target="_blank" rel="nofollow">
+					<img class="media-img "
+					     src="/images/media/bitscreener.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://www.cryptoninjas.net/2018/02/23/sharpay-share-buttons-successfully-raises-2400-eth-presale/" target="_blank" rel="nofollow">
+					<img class="media-img media-cryptoninjias"
+					     src="/images/media/cryptoninjias.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://icopulse.com/ico/sharpay" target="_blank" rel="nofollow">
+					<img class="media-img media-icopulse"
+					     src="/images/media/icopulse_white.svg"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://coinjournal.net/pr-release/sharpay-share-buttons-successfully-raised-2400-eht-presale-now-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img "
+					     src="/images/media/coinjournal.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://www.coinstaker.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img media-coinstaker"
+					     src="/images/media/coinstaker.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://coincodex.com/ico/sharpay/" target="_blank" rel="nofollow">
+					<img class="media-img media-coincodex"
+					     src="/images/media/coincodexdark.svg"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://www.investing.com/studios/article-179" target="_blank" rel="nofollow">
+					<img class="media-img media-cnn"
+					     src="/images/media/invrsting.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://cryptosrus.com/sharpay-share-buttons-successfully-raised-2400-eht-presale-announcing-token-sale/" target="_blank" rel="nofollow">
+					<img class="media-img media-cryptorus"
+					     src="/images/media/cryptosrus.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://coininfo.news/sharpay-the-share-button-with-blockchain-profit/" target="_blank" rel="nofollow">
+					<img class="media-img "
+					     src="/images/media/coininfo-news.png"/>
+				</a>
+			</div>
+        			<div class="media-item">
+				<a href="https://cryptorunner.com/sharpay-share-button-blockchain-rewards/" target="_blank" rel="nofollow">
+					<img class="media-img "
+					     src="/images/media/cryptorunner.jpeg"/>
+				</a>
+			</div>
+        	</div>
+</div>
+
+
+	</div>
+</div>
+
+<div id="footer" class="section section-dark sf">
+	<div class="container f-cont">
+		<div class="h-form-title hft2">بداية بيع العملات : 1 مارس 2018</div>
+		<div class="fbf form-block w-form">
+			<form id="wf-form-Email" name="wf-form-Email" data-name="Email"
+			      action="https://sharpay.us17.list-manage.com/subscribe/post?u=9640eb44e1bee917058684b01&amp;amp;id=e65ae8e1a9"
+			      method="post" class="form">
+				<input type="email" class="text-field w-input en" maxlength="256" name="Mail-2" data-name="EMAIL"
+				       placeholder="ادخل بريدك الإلكتروني للتسجيل" id="Mail-2">
+				<input type="submit" value="تسجيل" data-wait="انتظر من فضلك ..."
+				       class="form-btn w-button">
+			</form>
+			<div class="sm2 success-msg w-form-done">
+				<div>شكرا ! لقد قمت بالتسجيل في قائمتنا البريدية</div>
+			</div>
+			<div class="error-message w-form-fail">
+				<div>أووه , عذرا , حدث شيء خاطىء...</div>
+			</div>
+		</div>
+		<div class="sl-f soc-links">
+			<a href="https://t.me/sharpay_io" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Telegram"><img src="/images/telegram.svg"></a>
+			<a href="https://bitcointalk.org/index.php?topic=2518528.0" target="_blank"
+			   class="sl-f soc-link w-inline-block" title="Bitcointalk"><img
+						src="/images/bitcointalk.svg"></a>
+			<a href="https://www.facebook.com/SHARPAYio-Share-button-with-blockchain-profit-804507049710585/"
+			   target="_blank" class="sl-f soc-link w-inline-block" title="Facebook"><img
+						src="/images/facebook.svg"></a>
+			<a href="https://twitter.com/sharpay_io" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Twitter"><img src="/images/twitter.svg"></a>
+			<a href="https://github.com/sharpay-io" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Github"><img src="/images/github.svg"></a>
+			<a href="https://medium.com/@sharpay" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Medium"><img src="/images/medium.svg"></a>
+			<a href="https://www.reddit.com/user/sharpay-io/" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Reddit"><img src="/images/reddit_1.svg"></a>
+			<a target="_blank" href="http://steemit.com/@sharpay" class="sl-f soc-link w-inline-block"
+			   title="Steemit"><img src="/images/steemit.svg"></a>
+			<a href="http://golos.blog/@sharpay" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Golos"><img src="/images/golos.svg"></a>
+			<a href="mailto:tokensale@sharpay.io" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="E-Mail"><img src="/images/mailto.svg"></a>
+			<a href="https://t.me/sharpay_admin" target="_blank" class="sl-f soc-link w-inline-block"
+			   title="Chat"><img src="/images/chat.svg"></a>
+		</div>
+		<p class="f-p">هذا الموقع هو ملكية فكرية لشركة Sharpay (Belize) والمعلومات الموجودة على الموقع هي لأغراض إعلامية فقط، للاستخدام الشخصي غير التجاري، ولا تعني أي عناصر علاقة تعاقدية، قد تكون غير مكتملة وقد يتم تحديثها في أي وقت، دون إشعار مسبق ، بناء على قرار وحسب تقدير Sharpay ما لم تتم الإشارة إلى خلاف ذلك على وجه التحديد، فإن جميع المعلومات الواردة في هذا الموقع الإلكتروني هي مؤشرات إرشادية فقط. لا تقدم Sharpay أي ضمانات صريحة أو ضمنية، فيما يتعلق بدقة أو اكتمال أو موثوقية المواد والبيانات المذكورة في هذا الموقع. في الوقت نفسه، تبذل Sharpay كل جهد ممكن لضمان أن تكون جميع المعلومات الموجودة على هذا الموقع دقيقة وحديثة في الوقت الحالي. لا ينبغي تفسير المعلومات المتعلقة ببيع عملات Sharpay كحافز للشراء، والسبب الوحيد أو الكافي لتشكيل مثل هذا القرار. من الممكن المشاركة في شراء عملات Sharpay فقط إذا كان التشريع في بلد الإقامة (للأفراد) أو التسجيل (للكيانات القانونية) يسمح بذلك. Sharpay ليست مسؤولة عن أولئك الذين يشاركون في هذا الحدث في انتهاك لقوانين بلدهم، حتى لو كانت انتهاكات هذه القوانين بسبب الجهل. كما أن Sharpay ليست مسؤولة عن المتطلبات التي يمكن أن تفرضها السلطات الضريبية في بلد الإقامة (للأفراد) أو التسجيل (للكيانات القانونية)، وذلك بسبب شراء وحيازة واستخدام Sharpay. يتحمل حاملو عملات Sharpay المسؤولية الكاملة عن تحديد ما إذا كان من الممكن إجراء تقييم أو إعادة تقييم محتملين لقيمة عملة Sharpay، على المدى البعيد، أي عواقب ضريبية تقع في نطاق سلطتهم القانونية. تسعى Sharpay إلى التأكد من أن المعلومات الواردة في هذا الموقع دقيقة وحديثة قدر الإمكان، ولكنها تخلي مسؤوليتها عن الأضرار الناشئة عن عدم الدقة أو عدم الملاءمة أو عدم اكتمال المعلومات الواردة في هذا الموقع. تشجع Sharpay الأفراد والكيانات القانونية للحصول على مشورة إضافية من متخصصين قانونيين أو ضريبيين أو ماليين أو متخصصين آخرين قبل اتخاذ أي إجراء، وذلك نتيجة للتعرف على المعلومات المقدمة على هذا الموقع.</p>
+		<p class="f-p"><a href="/privacy-policy.html" class="text-muted nav-link">Privacy Policy</a></p>
+	</div>
+</div>
+
+<div class="popover" id="welcomeReward">
+	<div class="popover-body">
+		<div class="popover-close">&#10005;</div>
+		<h2>Get an <span class="orange-span">extra reward</span> for my first sharing!</h2>
+		<p>I need to activate my <strong class="brand">shar<span>pay</span></strong> account right now and get <span class="orange-span">100&nbsp;S</span> as a welcome extra reward for sharing this page through this button:</p>
+		<div data-limit="3" class="sharpay_widget_simple" style="min-height: 24px"
+		     data-sharpay="srpio"
+		     data-hover="lighter"
+		     data-height="24"
+		     data-color="#ff9933"
+		     data-form="no"
+		     data-lang="ar"
+		     data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
+
+	</div>
+</div>
+
+<div class="cookie-info">
+	<div class="container">
+		<div>We inform you that this site uses own, technical and third parties cookies to make sure our web page is user-friendly and to guarantee a high functionality of the website. By continuing to browse this website, you declare to accept the use of cookies. You can find more information in the <a href="/privacy-policy.html#cookies">Privacy Policy</a>.</div>
+	</div>
+</div>
+
+<script async src="https://app.sharpay.io/api/script.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery-2.2.0.min.js"><\/script>')</script>
 
 <script src="/js/webflow.js"></script>
@@ -1247,6 +1300,7 @@ $(function(){
 									clearInterval( hitWait );
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
+								$('#welcomeReward').show();
 							} else if ( d.message === 'duplicate' ) {
 								if( iframeWait ) {
 									clearInterval( iframeWait ); 
@@ -1255,6 +1309,7 @@ $(function(){
 									clearInterval( hitWait );
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
+								$('#welcomeReward').show();
 							}
 						});
 					}
@@ -1272,12 +1327,69 @@ $(function(){
 			}
 		}, 'json');
 	}
+	else {
+		if( ! window.sessionStorage.getItem('welcomeRewardHide') ) {
+			$('#welcomeReward').show();
+		}
+    }
+
+	$(document).on('submit', '#webmasterForm', function () {
+        var result = true;
+		$('input:visible', this).each(function () {
+			if( $(this).val().length > 0 ) {
+				result = result && true;
+				$(this).removeClass('error');
+            } else {
+				result = result && false;
+				$(this).addClass('error');
+            }
+        });
+		$('.error-data', this).remove();
+
+		if( result ) {
+			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+			$.post('https://app.sharpay.io/auth/signupAjax', $(this).serialize(), function( data ){
+                if( data.ok ) {
+                	window.location.href = data.go;
+                } else {
+                	$('#webmasterForm').append('<div class="form-row error-data">' + data.error + '</div>');
+	                grecaptcha.execute('6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY', {action: 'wmlead'}).then(function(token) {
+		                $('.g-recaptcha').html('<input type="hidden" name="g-recaptcha-response" value="'+token+'">');
+	                });
+                }
+			}, 'json');
+        }
+		return false;
+    });
+	$(document).on('click', '.popover-close', function () {
+        $(this).parent().parent().hide();
+		window.sessionStorage.setItem('welcomeRewardHide', true);
+	});
+
+	if( ! window.localStorage.getItem('cookieHide') ) {
+		$('.cookie-info').show();
+    }
+    $(document).on('click', '.cookie-info a', function (e) {
+    	e.stopPropagation();
+    });
+    $(document).on('click', '.cookie-info', function () {
+        $(this).hide();
+		window.localStorage.setItem('cookieHide', true);
+	});
+
+
+});
+
+grecaptcha.ready(function() {
+	grecaptcha.execute('6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY', {action: 'wmlead'}).then(function(token) {
+		$('.g-recaptcha').html('<input type="hidden" name="g-recaptcha-response" value="'+token+'">');
+	});
 });
 
 
 </script>
 
-  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 
 <script>
 
@@ -1353,19 +1465,60 @@ $(function(){
 
 </script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109731082-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-109731082-2', { 'linker': { 'domains': ['sale.sharpay.io', 'sharpay.io'], 'accept_incoming': true } } );
-		gtag('config', 'UA-109731082-3', { 'linker': { 'domains': ['sale.sharpay.io', 'sharpay.io'], 'accept_incoming': true } } );
-	</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109731082-2"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
 
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48279077 = new Ya.Metrika2({ id:48279077, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48279077" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag('js', new Date());
+	gtag('config', 'UA-109731082-2', {
+		'linker': {
+			'domains': ['sale.sharpay.io', 'sharpay.io'],
+			'accept_incoming': true
+		}
+	});
+	gtag('config', 'UA-109731082-3', {
+		'linker': {
+			'domains': ['sale.sharpay.io', 'sharpay.io'],
+			'accept_incoming': true
+		}
+	});
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+		(w[c] = w[c] || []).push(function () {
+			try {
+				w.yaCounter48279077 = new Ya.Metrika2({
+					id: 48279077,
+					clickmap: true,
+					trackLinks: true,
+					accurateTrackBounce: true,
+					trackHash: true
+				});
+			} catch (e) {
+			}
+		});
+		var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+			n.parentNode.insertBefore(s, n);
+		};
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js";
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else {
+			f();
+		}
+	})(document, window, "yandex_metrika_callbacks2"); </script>
+<noscript>
+	<div><img src="https://mc.yandex.ru/watch/48279077" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 
 </body>
 </html>

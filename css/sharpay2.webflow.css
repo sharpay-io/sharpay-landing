@@ -3963,3 +3963,219 @@ html[lang="ko"] #events p {
 		padding: 15px 20px;
 	}
 }
+
+#media {
+    padding-bottom: 52px;
+}
+
+#media-carousel {
+    margin-top: -22px;
+    margin-left: 28px;
+}
+#partners-carousel {
+    margin-top: -22px;
+    margin-left: 28px;
+}
+
+.media-item {
+    display: inline-block;
+}
+
+.media-img {
+    height: 50px;
+    margin: 20px 30px;
+}
+
+/* logo is to long and narrow */
+.media-cryptorus {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* white background */
+.media-newsbtc, .media-cryptoninjias {
+    background: white;
+    border: solid 5px white;
+}
+
+/* making logo bigger */
+.media-bitcoinnews {
+    margin: 3px 25px 7px 36px;
+    height: 70px;
+}
+
+/* logo is too big - making it smaller */
+.media-cnn, .media-coinstaker {
+    height: 36px;
+    margin: 17px 25px;
+}
+
+/* to make the second row of banners the same width as banners block on Events slide */
+.media-newsbtc {
+    margin-right: 13px;
+}
+.media-cnn {
+    margin-left: 31px;
+}
+.media-coinstaker {
+    height: 30px;
+}
+.media-icopulse {
+    height: 35px;
+}
+
+#partners-baners {
+    width: 100%;
+}
+#partners .media-img {
+    height: 65px;
+}
+.media-100 {
+    height: 100px !important;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.media-50 {
+    height: 50px !important;
+    margin-left: 60px;
+}
+
+@media (max-width:479px) {
+
+    #media-carousel {
+        margin-top: 20px;
+    }
+    #partners-carousel {
+        margin-top: 20px;
+    }
+}
+
+input:focus, button:focus {
+    outline: none!important;
+}
+.orange-input {
+    border: 2px solid #f93;
+    border-radius: 80px;
+    padding: 10px 20px;
+    background: #373737CC !important;
+}
+input.error {
+    border: 2px solid red;
+}
+.form-row {
+    margin-bottom: 20px;
+}
+form .form-row:last-child {
+    margin-bottom: 0;
+}
+.form-row button, .form-row input {
+    width: 100%;
+    margin: 0;
+}
+.col-3 {
+    width: 33.3333333%;
+    margin: 0 -10px;
+    padding: 0 10px;
+}
+.col-3 p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.error-data {
+    color: red;
+}
+.grecaptcha-badge {
+    opacity: 0;
+}
+
+@media (max-width:479px) {
+    .col-3 {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px 30px 15px;
+    }
+}
+
+.cookie-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #373737;
+    opacity: 0.8;
+    padding: 20px;
+    font-size: 14px;
+    box-shadow: 0 1px 24px 0 rgba(255,153,51,.5);
+    display: none;
+}
+.cookie-info:hover {
+    opacity: 1;
+}
+.cookie-info a {
+    color: inherit;
+}
+.cookie-info>div:after {
+    content: "✕";
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+}
+
+.popover {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10001 !important;
+    background: #373737;
+    width: 480px;
+    min-height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 24px 0 rgba(255,153,51,.5);
+    font-size: 14px;
+    display: none;
+}
+.popover-body {
+    position: relative;
+}
+.popover-close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    font-size: 37px;
+    line-height: 42px;
+    padding: 10px;
+}
+.popover-body h2 {
+    margin: 0 30px 20px 0;
+    font-size: 37px;
+    line-height: 42px;
+}
+.popover-body p {
+    margin-bottom: 20px;
+}
+.sharpay-dsw-dialog {
+    z-index: 10002 !important;
+}
+.popover .sharpay_widget_simple .sharpay-dsw-append-24 {
+    /*font-size: 17px !important;*/
+}
+@media (max-width: 479px) {
+    .popover {
+        width: calc( 100% - 40px );
+        left: 20px;
+    }
+    .popover-body h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .popover-close {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+
+

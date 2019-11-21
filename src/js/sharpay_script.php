@@ -276,6 +276,7 @@ $(function(){
 									clearInterval( hitWait );
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
+								$('#welcomeReward').show();
 							} else if ( d.message === 'duplicate' ) {
 								if( iframeWait ) {
 									clearInterval( iframeWait ); 
@@ -284,6 +285,7 @@ $(function(){
 									clearInterval( hitWait );
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
+								$('#welcomeReward').show();
 							}
 						});
 					}
@@ -301,6 +303,63 @@ $(function(){
 			}
 		}, 'json');
 	}
+	else {
+		if( ! window.sessionStorage.getItem('welcomeRewardHide') ) {
+			$('#welcomeReward').show();
+		}
+    }
+
+	$(document).on('submit', '#webmasterForm', function () {
+        var result = true;
+		$('input:visible', this).each(function () {
+			if( $(this).val().length > 0 ) {
+				result = result && true;
+				$(this).removeClass('error');
+            } else {
+				result = result && false;
+				$(this).addClass('error');
+            }
+        });
+		$('.error-data', this).remove();
+
+		if( result ) {
+			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+			$.post('https://app.sharpay.io/auth/signupAjax', $(this).serialize(), function( data ){
+                if( data.ok ) {
+                	window.location.href = data.go;
+                } else {
+                	$('#webmasterForm').append('<div class="form-row error-data">' + data.error + '</div>');
+	                grecaptcha.execute('6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY', {action: 'wmlead'}).then(function(token) {
+		                $('.g-recaptcha').html('<input type="hidden" name="g-recaptcha-response" value="'+token+'">');
+	                });
+                }
+			}, 'json');
+        }
+		return false;
+    });
+	$(document).on('click', '.popover-close', function () {
+        $(this).parent().parent().hide();
+		window.sessionStorage.setItem('welcomeRewardHide', true);
+	});
+
+	if( ! window.localStorage.getItem('cookieHide') ) {
+		$('.cookie-info').show();
+    }
+    $(document).on('click', '.cookie-info a', function (e) {
+    	e.stopPropagation();
+    });
+    $(document).on('click', '.cookie-info', function () {
+        $(this).hide();
+		window.localStorage.setItem('cookieHide', true);
+	});
+
+
+});
+
+grecaptcha.ready(function() {
+	grecaptcha.execute('6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY', {action: 'wmlead'}).then(function(token) {
+		$('.g-recaptcha').html('<input type="hidden" name="g-recaptcha-response" value="'+token+'">');
+	});
 });
 
 
