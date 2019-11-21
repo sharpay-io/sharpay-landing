@@ -4142,11 +4142,12 @@ form .form-row:last-child {
 .popover-close {
     position: absolute;
     right: -10px;
-    top: -10px;
+    top: -27px;
     cursor: pointer;
-    font-size: 37px;
+    font-size: 17px;
     line-height: 42px;
     padding: 10px;
+    opacity: 0.7;
 }
 .popover-body h2 {
     margin: 0 30px 20px 0;
