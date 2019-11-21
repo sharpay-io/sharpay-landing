@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191121160921" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191121160921" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191121161617" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191121161617" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -1010,7 +1010,7 @@
 
 <div class="cookie-info">
 	<div class="container">
-		<div>Мы сообщаем вам, что этот сайт использует собственные, технические и сторонние файлы cookie, чтобы обеспечить удобство использования нашей веб-страницы и гарантировать высокую функциональность сайта. Продолжая просматривать этот веб-сайт, вы подтверждаете согласие на использование файлов cookie. Вы можете найти больше информации в <a href="/privacy-policy.html#cookies">Политике Конфиденциальности</a>.</div>
+		<div>Мы сообщаем вам, что этот сайт использует собственные, технические и сторонние файлы cookie, чтобы обеспечить удобство использования нашей веб-страницей и гарантировать высокую функциональность сайта. Продолжая просматривать этот веб-сайт, вы подтверждаете свое согласие на использование файлов cookie. Вы можете найти больше информации в <a href="/privacy-policy.html#cookies">Политике Конфиденциальности</a>.</div>
 	</div>
 </div>
 
@@ -1284,7 +1284,7 @@ $(function(){
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 		$.get('https://app.sharpay.io/promo/auth', function( data ){
 			if( ! data.ok ) {
-				var iframeWait, hitWait,
+				var iframeWait, hitWait, atemptCount = 0,
 				shrpReferral = function(){
 					if( sharpayAPI.identity() || ! eventSend ) {
 						sharpayAPI.send('sign-up', function( d ){ 
@@ -1308,6 +1308,10 @@ $(function(){
 								$('#welcomeReward').show();
 							}
 						});
+						atemptCount++;
+						if( atemptCount > 10 ) {
+							clearInterval( hitWait );
+						}
 					}
 				},
 				shrpRegistrationCheck = function(){
