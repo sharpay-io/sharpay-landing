@@ -259,6 +259,16 @@ $(function() {
 });
 
 $(function(){
+
+	function showExtraReward() {
+		if( window.localStorage.getItem('sharpayRsrpio') ) {
+			var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
+			$('.sharpay-flip-card-back').each(function () {
+				this.innerText = r.extra + ' ' + r.currency;
+			});
+		}
+	}
+
 	if( ! window.sessionStorage.getItem('singUpEvent') )
 	{
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
@@ -277,6 +287,7 @@ $(function(){
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
 								$('#welcomeReward').show();
+								showExtraReward();
 								eventSend = true;
 							} else if ( d.message === 'duplicate' ) {
 								if( iframeWait ) {
@@ -287,6 +298,7 @@ $(function(){
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
 								$('#welcomeReward').show();
+								showExtraReward();
 								eventSend = true;
 							}
 						});
@@ -313,6 +325,7 @@ $(function(){
 		if( ! window.sessionStorage.getItem('welcomeRewardHide') ) {
 			$('#welcomeReward').show();
 		}
+		showExtraReward();
     }
 
 	$(document).on('submit', '#webmasterForm', function () {

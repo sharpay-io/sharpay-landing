@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191122094152" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191122094152" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191122131650" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191122131650" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -1280,6 +1280,16 @@ $(function() {
 });
 
 $(function(){
+
+	function showExtraReward() {
+		if( window.localStorage.getItem('sharpayRsrpio') ) {
+			var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
+			$('.sharpay-flip-card-back').each(function () {
+				this.innerText = r.extra + ' ' + r.currency;
+			});
+		}
+	}
+
 	if( ! window.sessionStorage.getItem('singUpEvent') )
 	{
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
@@ -1298,6 +1308,7 @@ $(function(){
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
 								$('#welcomeReward').show();
+								showExtraReward();
 								eventSend = true;
 							} else if ( d.message === 'duplicate' ) {
 								if( iframeWait ) {
@@ -1308,6 +1319,7 @@ $(function(){
 								}
 								window.sessionStorage.setItem('singUpEvent', true);
 								$('#welcomeReward').show();
+								showExtraReward();
 								eventSend = true;
 							}
 						});
@@ -1334,6 +1346,7 @@ $(function(){
 		if( ! window.sessionStorage.getItem('welcomeRewardHide') ) {
 			$('#welcomeReward').show();
 		}
+		showExtraReward();
     }
 
 	$(document).on('submit', '#webmasterForm', function () {
