@@ -422,6 +422,35 @@ $langsArray = array(
 
 <? $d = 1; ?>
 
+<?/*
+<div id="webmasters" class="section<? print $d%2?' section-dark':''; $d++; ?>">
+	<div class="container">
+		<div class="col-3" data-ix="l-init">
+			<h2 class="h2"><?= L::sites_webmasters_title ?></h2>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<p class="p partnerRewardInfo" style="display: block">
+				<?= L::sites_webmasters_reward ?>
+			</p>
+			<p class="p">
+				<?= L::sites_webmasters_create ?>
+			</p>
+			<p class="p">
+				<?= L::sites_webmasters_confirm ?>
+			</p>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<form action="https://app.sharpay.io/auth/signup?back=%2Fwebmaster%2Fadd" method="post" id="webmasterForm">
+				<div class="form-row"><input type="text" name="domain" required value="" placeholder="<?= L::sites_form_domain ?>" class="orange-input"></div>
+				<div class="form-row"><input type="email" name="mail" required value="" placeholder="<?= L::sites_form_mail ?>" class="orange-input"></div>
+				<div class="form-row"><button name="do" value="yes" type="submit" class="b1 btn w-inline-block"><?= L::sites_form_continue ?></button></div>
+				<div class="g-recaptcha"></div>
+			</form>
+
+		</div>
+	</div>
+</div>*/?>
+
 <div id="users" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="container">
 		<div class="l-col lc22" data-ix="l-init">
