@@ -7,8 +7,8 @@ h2 {
 }
 
 a {
-    -webkit-transition: opacity 500ms ease,box-shadow 500ms ease,color 500ms ease,background-color 500ms ease;
-    transition: opacity 500ms ease,box-shadow 500ms ease,color 500ms ease,background-color 500ms ease;
+    -webkit-transition: opacity 500ms ease, box-shadow 500ms ease,color 500ms ease, background-color 500ms ease, background-image 500ms ease;
+    transition: opacity 500ms ease, box-shadow 500ms ease, color 500ms ease, background-color 500ms ease, background-image 500ms ease;
     text-decoration: underline
 }
 
@@ -4114,14 +4114,19 @@ form .form-row:last-child {
 .cookie-info a {
     color: inherit;
 }
-.cookie-info>div:after {
-    content: "✕";
+.cookie-info>div {
+    position: relative;
+}
+.cookie-info .cookie-close {
     position: absolute;
     right: -15px;
     top: -15px;
     cursor: pointer;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.5;
+}
+.cookie-info .cookie-close:hover {
+    opacity: 1;
 }
 
 .popover {
@@ -4144,12 +4149,15 @@ form .form-row:last-child {
 .popover-close {
     position: absolute;
     right: -10px;
-    top: -28px;
+    top: -14px;
     cursor: pointer;
     font-size: 14px;
-    line-height: 42px;
+    line-height: 14px;
     padding: 10px;
-    opacity: 0.7;
+    opacity: 0.5;
+}
+.popover-close:hover {
+    opacity: 1;
 }
 .popover-body h2 {
     margin: 0 30px 20px 0;
@@ -4181,4 +4189,14 @@ form .form-row:last-child {
 }
 
 
+a.doted {
+    text-decoration: none;
+    background-image: linear-gradient(to right, white 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 3px 1px;
+    background-repeat: repeat-x;
+}
+a.doted.nav-link:hover {
+    background-image: linear-gradient(to right,  #f93 33%, rgba(255,255,255,0) 0%);
+}
 

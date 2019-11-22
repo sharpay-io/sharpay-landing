@@ -1036,7 +1036,7 @@ $langsArray = array(
 			   title="<?= L::chat_title ?>"><img src="/images/chat.svg"></a>
 		</div>
 		<p class="f-p"><?= L::footer_legal ?></p>
-		<p class="f-p"><a href="/privacy-policy.html" class="text-muted nav-link">Privacy Policy</a></p>
+		<p class="f-p"><a href="/privacy-policy.html" class="text-muted nav-link doted">Privacy Policy</a></p>
 	</div>
 </div>
 
@@ -1045,20 +1045,21 @@ $langsArray = array(
 		<div class="popover-close">&#10005;</div>
 		<h2><?= L::referral_title ?></h2>
 		<p><?= L::referral_text ?></p>
-		<div data-limit="3" class="sharpay_widget_simple" style="min-height: 24px"
+		<div data-limit="4" class="sharpay_widget_simple" style="min-height: 24px"
 		     data-sharpay="srpio"
 		     data-hover="lighter"
 		     data-height="24"
 		     data-color="#ff9933"
 		     data-form="no"
 		     data-lang="<?=$lang;?>"
-		     data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
+		     data-networks="wechat,kakaotalk,facebook,telegram,livejournal"></div>
 
 	</div>
 </div>
 
 <div class="cookie-info">
 	<div class="container">
+		<div class="cookie-close">&#10005;</div>
 		<div><?= L::cookie_text ?></div>
 	</div>
 </div>
