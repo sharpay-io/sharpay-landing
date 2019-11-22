@@ -258,16 +258,16 @@ $(function() {
 
 });
 
-$(function(){
-
-	function showExtraReward() {
-		if( window.localStorage.getItem('sharpayRsrpio') ) {
-			var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
-			$('.sharpay-flip-card-back').each(function () {
-				this.innerText = r.extra + ' ' + r.currency;
-			});
-		}
+function showExtraReward() {
+	if( window.localStorage.getItem('sharpayRsrpio') ) {
+		var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
+		$('.sharpay-flip-card-back').each(function () {
+			this.innerText = r.extra + ' ' + r.currency;
+		});
 	}
+}
+
+$(function(){
 
 	if( ! window.sessionStorage.getItem('singUpEvent') )
 	{
