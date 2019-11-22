@@ -1044,7 +1044,7 @@ $langsArray = array(
 		<div class="popover-close">&#10005;</div>
 		<h2><?= L::referral_title ?></h2>
 		<p><?= L::referral_text ?></p>
-		<div data-limit="4" class="sharpay_widget_simple" style="min-height: 24px"
+		<div data-limit="3" class="sharpay_widget_simple" style="min-height: 24px"
 		     data-sharpay="srpio"
 		     data-hover="lighter"
 		     data-height="24"
