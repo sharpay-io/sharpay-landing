@@ -1073,14 +1073,14 @@ $langsArray = array(
 		<div class="popover-close">&#10005;</div>
 		<h2><?= L::referral_title ?></h2>
 		<p><?= L::referral_text ?></p>
-		<div data-limit="4" class="sharpay_widget_simple" style="min-height: 24px"
+		<div data-limit="3" class="sharpay_widget_simple" style="min-height: 24px"
 		     data-sharpay="srpio"
 		     data-hover="lighter"
 		     data-height="24"
 		     data-color="#ff9933"
 		     data-form="no"
 		     data-lang="<?=$lang;?>"
-		     data-networks="wechat,kakaotalk,facebook,telegram,livejournal"></div>
+		     data-networks="facebook,fbmessenger,whatsapp,viber,skype,wechat,kakaotalk,pinterest,livejournal,qq,twitter,linkedin,reddit,tumblr,vkontakte,telegram,odnoklassniki,weibo,kakaostory,line,mailru"></div>
 
 	</div>
 </div>
