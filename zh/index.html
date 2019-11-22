@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191122131649" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191122131649" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191122133050" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191122133050" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -33,7 +33,6 @@
 			n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
 		}(window, document);</script>
 
-	<script async src="https://app.sharpay.io/api/script.js"></script>
 </head>
 
 <body class="body">
@@ -1009,9 +1008,9 @@
 	</div>
 </div>
 
-<script async src="https://app.sharpay.io/api/script.js"></script>
-
 <script src="https://www.google.com/recaptcha/api.js?render=6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY"></script>
+
+<script src="https://app.sharpay.io/api/script.js"></script>
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery-2.2.0.min.js"><\/script>')</script>
@@ -1273,16 +1272,18 @@ $(function() {
 
 });
 
-$(function(){
-
-	function showExtraReward() {
-		if( window.localStorage.getItem('sharpayRsrpio') ) {
-			var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
+function showExtraReward() {
+	if( window.localStorage.getItem('sharpayRsrpio') ) {
+		var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
+		if( r.extra > 0 ) {
 			$('.sharpay-flip-card-back').each(function () {
 				this.innerText = r.extra + ' ' + r.currency;
 			});
 		}
 	}
+}
+
+$(function(){
 
 	if( ! window.sessionStorage.getItem('singUpEvent') )
 	{
@@ -1340,7 +1341,7 @@ $(function(){
 		if( ! window.sessionStorage.getItem('welcomeRewardHide') ) {
 			$('#welcomeReward').show();
 		}
-		showExtraReward();
+		setTimeout(showExtraReward, 5000);
     }
 
 	$(document).on('submit', '#webmasterForm', function () {

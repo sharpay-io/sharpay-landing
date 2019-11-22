@@ -52,7 +52,6 @@ $langsArray = array(
 			n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
 		}(window, document);</script>
 
-	<script async src="https://app.sharpay.io/api/script.js"></script>
 </head>
 
 <body class="body">
@@ -1064,9 +1063,9 @@ $langsArray = array(
 	</div>
 </div>
 
-<script async src="https://app.sharpay.io/api/script.js"></script>
-
 <script src="https://www.google.com/recaptcha/api.js?render=6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY"></script>
+
+<script src="https://app.sharpay.io/api/script.js"></script>
 
 <? include 'js/sharpay_script.php' ?>
 
