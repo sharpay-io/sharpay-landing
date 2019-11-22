@@ -1051,7 +1051,7 @@ $langsArray = array(
 		     data-color="#ff9933"
 		     data-form="no"
 		     data-lang="<?=$lang;?>"
-		     data-networks="wechat,kakaotalk,facebook,telegram,livejournal"></div>
+		     data-networks="facebook,fbmessenger,whatsapp,viber,skype,wechat,kakaotalk,pinterest,livejournal,qq,twitter,linkedin,reddit,tumblr,vkontakte,telegram,odnoklassniki,weibo,kakaostory,line,mailru"></div>
 
 	</div>
 </div>
