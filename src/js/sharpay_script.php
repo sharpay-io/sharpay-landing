@@ -261,9 +261,11 @@ $(function() {
 function showExtraReward() {
 	if( window.localStorage.getItem('sharpayRsrpio') ) {
 		var r = JSON.parse(window.localStorage.getItem('sharpayRsrpio'));
-		$('.sharpay-flip-card-back').each(function () {
-			this.innerText = r.extra + ' ' + r.currency;
-		});
+		if( r.extra > 0 ) {
+			$('.sharpay-flip-card-back').each(function () {
+				this.innerText = r.extra + ' ' + r.currency;
+			});
+		}
 	}
 }
 
@@ -325,7 +327,7 @@ $(function(){
 		if( ! window.sessionStorage.getItem('welcomeRewardHide') ) {
 			$('#welcomeReward').show();
 		}
-		showExtraReward();
+		setTimeout(showExtraReward, 5000);
     }
 
 	$(document).on('submit', '#webmasterForm', function () {
