@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191122133659" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191122133659" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191125151726" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191125151726" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -362,7 +362,32 @@
 </div>
 
 
-<div id="users" class="section section-dark">
+<div id="webmasters" class="section section-dark">
+	<div class="container">
+		<div class="col-3" data-ix="l-init">
+			<h2 class="h2">¡<span class="orange-span">Instalar</span> mi primer botón para compartir Sharpay <span class="orange-span">ahora mismo</span>!</h2>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<p class="p partnerRewardInfo">
+				¡Obtenga una recompensa adicional de <span class="orange-span">400&nbsp;S</span> por instalar botones de compartir <strong class="brand">Shar<span>pay</span></strong> en mi sitio web!			</p>
+			<p class="p">
+				Para crear mi primer proyecto en <strong class="brand">Shar<span>pay</span></strong>, solo necesito ingresar mi nombre de dominio y dirección de correo electrónico en el formulario y registrarme en el sistema.			</p>
+			<p class="p">
+				Después de confirmar mi dirección de correo electrónico, recibiré un código e instrucciones para instalar los botones para compartir en mi sitio web.			</p>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<form action="https://app.sharpay.io/auth/signup?back=%2Fwebmaster%2Fadd" method="post" id="webmasterForm">
+				<div class="form-row"><input type="text" name="domain" required value="" placeholder="Dominio de mi sitio web" class="orange-input"></div>
+				<div class="form-row"><input type="email" name="mail" required value="" placeholder="Mi correo electronico" class="orange-input"></div>
+				<div class="form-row"><button name="do" value="yes" type="submit" class="b1 btn w-inline-block">Continuar</button></div>
+				<div class="g-recaptcha"></div>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div id="users" class="section">
 	<div class="container">
 		<div class="l-col lc22" data-ix="l-init">
 			<h2 class="h2">Cómo funciona <span class="orange-span">para los usuarios</span></h2>
@@ -379,7 +404,7 @@
 	</div>
 </div>
 
-<div id="add" class="section">
+<div id="add" class="section section-dark">
 	<div class="c5 container">
 		<div class="l-col lc3" data-ix="l-init">
 			<h2 class="h2">Ventajas de <span class="orange-span">comparticion multiple</span> y estimulación con <span class="orange-span">tokens</span></h2>
@@ -417,7 +442,7 @@
 	</div>
 </div>
 
-<div id="roadmap" class="section section-dark">
+<div id="roadmap" class="section">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">Cronología <span class="orange-span">&</span> roadmap</h2>
@@ -537,7 +562,7 @@
 	</div>
 </div>
 
-<div id="emission" class="section">
+<div id="emission" class="section section-dark">
 	<div class="container">
 		<div class="l-col lc2" data-ix="l-init">
 			<h2 class="h2">Emisión / <span class="orange-span">distribución</span> de tokens</h2>
@@ -585,7 +610,7 @@
 	</div>
 </div>
 
-<div id="rashod" class="section section-dark">
+<div id="rashod" class="section">
 	<div class="container">
 		<div class="l-col" data-ix="l-init">
 			<h2 class="h2">Estructura de los <span id="rashod-h" class="orange-span">gastos</span></h2>
@@ -627,7 +652,7 @@
 	</div>
 </div>
 
-<div id="advisers" class="section sf">
+<div id="advisers" class="section section-dark sf">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init"><span class="orange-span">Nuestros asesores</span></h2>
@@ -717,7 +742,7 @@
 	</div>
 </div>  <!-- advisers -->
 
-<div id="team" class="section section-dark">
+<div id="team" class="section">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">Nuestro <span class="orange-span">equipo</span></h2>
@@ -827,7 +852,7 @@
 </div>
 
 
-<div id="media" class="section">
+<div id="media" class="section section-dark">
 	<div class="container">
 
 
@@ -940,7 +965,7 @@
 	</div>
 </div>
 
-<div id="footer" class="section section-dark sf">
+<div id="footer" class="section sf">
 	<div class="container f-cont">
 		<div class="h-form-title hft2">La venta de tokens está cerrada el 31 de Mayo de 2018.</div>
 		<div class="fbf form-block w-form">
@@ -1350,6 +1375,18 @@ $(function(){
 		setTimeout(showExtraReward, 5000);
     }
 
+	var partnerCheck = /p=([0-9a-z]{5,7})/i.exec( window.location.href );
+	var partnerMark = window.localStorage.getItem('partnerMark');
+	if( partnerCheck || partnerMark ) {
+		var partnerId = partnerCheck ? partnerCheck[1] : partnerMark;
+		$('.partnerRewardInfo').show();
+		$('#webmasterForm').append('<input type="hidden" name="p" value="' + partnerId + '">');
+		if( ! partnerMark || ( partnerCheck && partnerMark !== partnerId ) ) {
+			window.localStorage.setItem('partnerMark', partnerId);
+			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+			$.get('https://app.sharpay.io/auth/signupAjax?p=' + partnerId, function () { });
+		}
+    }
 	$(document).on('submit', '#webmasterForm', function () {
         var result = true;
 		$('input:visible', this).each(function () {

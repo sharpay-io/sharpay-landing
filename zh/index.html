@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191122133658" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191122133658" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191125151726" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191125151726" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -356,7 +356,32 @@
 </div>
 
 
-<div id="users" class="section section-dark">
+<div id="webmasters" class="section section-dark">
+	<div class="container">
+		<div class="col-3" data-ix="l-init">
+			<h2 class="h2"><span class="orange-span">立即安装</span>我的第一个Sharpay分享按钮<span class="orange-span">立即！</span></h2>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<p class="p partnerRewardInfo">
+				在我的網站上安装<strong class="brand">Shar<span>pay</span></strong>分享按钮可获得<span class="orange-span">400 S</span>的额外奖励！			</p>
+			<p class="p">
+				要使用<strong class="brand">Shar<span>pay</span></strong>创建我的第一个项目，我只需要在表单中输入域名和电子邮件地址并在系统中注册即可。			</p>
+			<p class="p">
+				确认我的电子邮件地址后，我将收到在我的网站上安装分享按钮的代码和说明。			</p>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<form action="https://app.sharpay.io/auth/signup?back=%2Fwebmaster%2Fadd" method="post" id="webmasterForm">
+				<div class="form-row"><input type="text" name="domain" required value="" placeholder="我网站的域名" class="orange-input"></div>
+				<div class="form-row"><input type="email" name="mail" required value="" placeholder="我的电子邮箱" class="orange-input"></div>
+				<div class="form-row"><button name="do" value="yes" type="submit" class="b1 btn w-inline-block">继续</button></div>
+				<div class="g-recaptcha"></div>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div id="users" class="section">
 	<div class="container">
 		<div class="l-col lc22" data-ix="l-init">
 			<h2 class="h2">它是如何<br><span class="orange-span">为用户服务的</span></h2>
@@ -373,7 +398,7 @@
 	</div>
 </div>
 
-<div id="add" class="section">
+<div id="add" class="section section-dark">
 	<div class="c5 container">
 		<div class="l-col lc3" data-ix="l-init">
 			<h2 class="h2"><span class="orange-span">多平台分享</span>和<span class="orange-span">代币</span>推动的优势</h2>
@@ -411,7 +436,7 @@
 	</div>
 </div>
 
-<div id="roadmap" class="section section-dark">
+<div id="roadmap" class="section">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">时间线 <span class="orange-span">&amp;</span> 路线图</h2>
@@ -531,7 +556,7 @@
 	</div>
 </div>
 
-<div id="emission" class="section">
+<div id="emission" class="section section-dark">
 	<div class="container">
 		<div class="l-col lc2" data-ix="l-init">
 			<h2 class="h2">代币的发行和<span class="orange-span">分配</span></h2>
@@ -579,7 +604,7 @@
 	</div>
 </div>
 
-<div id="rashod" class="section section-dark">
+<div id="rashod" class="section">
 	<div class="container">
 		<div class="l-col" data-ix="l-init">
 			<h2 class="h2"><span class="orange-span">支出</span>结构</h2>
@@ -621,7 +646,7 @@
 	</div>
 </div>
 
-<div id="advisers" class="section sf">
+<div id="advisers" class="section section-dark sf">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">我们的<span class="orange-span">顾问</span></h2>
@@ -711,7 +736,7 @@
 	</div>
 </div>  <!-- advisers -->
 
-<div id="team" class="section section-dark">
+<div id="team" class="section">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">我们的<span class="orange-span">团队</span></h2>
@@ -821,7 +846,7 @@
 </div>
 
 
-<div id="media" class="section">
+<div id="media" class="section section-dark">
 	<div class="container">
 
 
@@ -934,7 +959,7 @@
 	</div>
 </div>
 
-<div id="footer" class="section section-dark sf">
+<div id="footer" class="section sf">
 	<div class="container f-cont">
 		<div class="h-form-title hft2">主要的代币销售已经在2018年5月31日关闭。</div>
 		<div class="fbf form-block w-form">
@@ -943,7 +968,7 @@
 			      method="post" class="form">
 				<input type="email" class="text-field w-input en" maxlength="256" name="Mail-2" data-name="EMAIL"
 				       placeholder="输入您的电子邮件订阅" id="Mail-2">
-				<input type="submit" value="订阅" data-wait="Please wait..."
+				<input type="submit" value="订阅" data-wait="请稍候..."
 				       class="form-btn w-button">
 			</form>
 			<div class="sm2 success-msg w-form-done">
@@ -1344,6 +1369,18 @@ $(function(){
 		setTimeout(showExtraReward, 5000);
     }
 
+	var partnerCheck = /p=([0-9a-z]{5,7})/i.exec( window.location.href );
+	var partnerMark = window.localStorage.getItem('partnerMark');
+	if( partnerCheck || partnerMark ) {
+		var partnerId = partnerCheck ? partnerCheck[1] : partnerMark;
+		$('.partnerRewardInfo').show();
+		$('#webmasterForm').append('<input type="hidden" name="p" value="' + partnerId + '">');
+		if( ! partnerMark || ( partnerCheck && partnerMark !== partnerId ) ) {
+			window.localStorage.setItem('partnerMark', partnerId);
+			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+			$.get('https://app.sharpay.io/auth/signupAjax?p=' + partnerId, function () { });
+		}
+    }
 	$(document).on('submit', '#webmasterForm', function () {
         var result = true;
 		$('input:visible', this).each(function () {

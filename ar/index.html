@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191122133659" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191122133659" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20191125151727" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20191125151727" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -366,7 +366,32 @@
 </div>
 
 
-<div id="users" class="section section-dark">
+<div id="webmasters" class="section section-dark">
+	<div class="container">
+		<div class="col-3" data-ix="l-init">
+			<h2 class="h2"><span class="orange-span">Install</span> my first Sharpay share button <span class="orange-span">right now!</span></h2>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<p class="p partnerRewardInfo">
+				Get an extra reward of  <span class="orange-span">400&nbsp;S</span> for installing <strong class="brand">Shar<span>pay</span></strong> share buttons on my website!			</p>
+			<p class="p">
+				To create my first project in <strong class="brand">Shar<span>pay</span></strong>, I just need to enter my domain name and email address in the form and register in the system.			</p>
+			<p class="p">
+				After confirming my email address, I will receive a code and instructions for installing the share buttons on my website.			</p>
+		</div>
+		<div class="col-3" data-ix="r-init">
+			<form action="https://app.sharpay.io/auth/signup?back=%2Fwebmaster%2Fadd" method="post" id="webmasterForm">
+				<div class="form-row"><input type="text" name="domain" required value="" placeholder="Domain of my website" class="orange-input"></div>
+				<div class="form-row"><input type="email" name="mail" required value="" placeholder="My e-mail address" class="orange-input"></div>
+				<div class="form-row"><button name="do" value="yes" type="submit" class="b1 btn w-inline-block">Continue</button></div>
+				<div class="g-recaptcha"></div>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div id="users" class="section">
 	<div class="container">
 		<div class="l-col lc22" data-ix="l-init">
 			<h2 class="h2"><span class="orange-span">للمستخدمين</span> كيف تعمل بالنسبة</h2>
@@ -383,7 +408,7 @@
 	</div>
 </div>
 
-<div id="add" class="section">
+<div id="add" class="section section-dark">
 	<div class="c5 container">
 		<div class="l-col lc3" data-ix="l-init">
 			<h2 class="h2">مزايا المشاركة المتعددة والتحفيز بالعملات</h2>
@@ -421,7 +446,7 @@
 	</div>
 </div>
 
-<div id="roadmap" class="section section-dark">
+<div id="roadmap" class="section">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init">الجدول الزمني و خارطة الطريق</h2>
@@ -541,7 +566,7 @@
 	</div>
 </div>
 
-<div id="emission" class="section">
+<div id="emission" class="section section-dark">
 	<div class="container">
 		<div class="l-col lc2" data-ix="l-init">
 			<h2 class="h2">الإصدار/ توزيع العملات</h2>
@@ -589,7 +614,7 @@
 	</div>
 </div>
 
-<div id="rashod" class="section section-dark">
+<div id="rashod" class="section">
 	<div class="container">
 		<div class="l-col" data-ix="l-init">
 			<h2 class="h2"><span id="rashod-h" class="orange-span">النفقات</span> هيكل</h2>
@@ -631,7 +656,7 @@
 	</div>
 </div>
 
-<div id="advisers" class="section sf">
+<div id="advisers" class="section section-dark sf">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init"><span class="orange-span">مستشارونا</span></h2>
@@ -721,7 +746,7 @@
 	</div>
 </div>  <!-- advisers -->
 
-<div id="team" class="section section-dark">
+<div id="team" class="section">
 	<div class="cont2 container">
 		<div class="h2-wrap">
 			<h2 class="h2" data-ix="l-init"><span class="orange-span">فريقنا</span></h2>
@@ -831,7 +856,7 @@
 </div>
 
 
-<div id="media" class="section">
+<div id="media" class="section section-dark">
 	<div class="container">
 
 
@@ -944,7 +969,7 @@
 	</div>
 </div>
 
-<div id="footer" class="section section-dark sf">
+<div id="footer" class="section sf">
 	<div class="container f-cont">
 		<div class="h-form-title hft2">بداية بيع العملات : 1 مارس 2018</div>
 		<div class="fbf form-block w-form">
@@ -1354,6 +1379,18 @@ $(function(){
 		setTimeout(showExtraReward, 5000);
     }
 
+	var partnerCheck = /p=([0-9a-z]{5,7})/i.exec( window.location.href );
+	var partnerMark = window.localStorage.getItem('partnerMark');
+	if( partnerCheck || partnerMark ) {
+		var partnerId = partnerCheck ? partnerCheck[1] : partnerMark;
+		$('.partnerRewardInfo').show();
+		$('#webmasterForm').append('<input type="hidden" name="p" value="' + partnerId + '">');
+		if( ! partnerMark || ( partnerCheck && partnerMark !== partnerId ) ) {
+			window.localStorage.setItem('partnerMark', partnerId);
+			$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
+			$.get('https://app.sharpay.io/auth/signupAjax?p=' + partnerId, function () { });
+		}
+    }
 	$(document).on('submit', '#webmasterForm', function () {
         var result = true;
 		$('input:visible', this).each(function () {
