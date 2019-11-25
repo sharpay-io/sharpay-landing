@@ -4192,3 +4192,6 @@ a.doted {
     text-decoration: none;
     border-bottom: 1px dotted;
 }
+.partnerRewardInfo {
+    display: none;
+}

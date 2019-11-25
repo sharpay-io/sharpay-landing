@@ -421,14 +421,13 @@ $langsArray = array(
 
 <? $d = 1; ?>
 
-<?/*
 <div id="webmasters" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="container">
 		<div class="col-3" data-ix="l-init">
 			<h2 class="h2"><?= L::sites_webmasters_title ?></h2>
 		</div>
 		<div class="col-3" data-ix="r-init">
-			<p class="p partnerRewardInfo" style="display: block">
+			<p class="p partnerRewardInfo">
 				<?= L::sites_webmasters_reward ?>
 			</p>
 			<p class="p">
@@ -448,7 +447,7 @@ $langsArray = array(
 
 		</div>
 	</div>
-</div>*/?>
+</div>
 
 <div id="users" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="container">
