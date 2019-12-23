@@ -15,7 +15,7 @@ $(function(){
 	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 	
 	var authUrl = 'https://app.sharpay.io/promo/auth';
-	var actionUrl = 'https://app.sharpay.io/promo/newYear2019';
+	var actionUrl = 'https://app.sharpay.io/promo/newYear2020';
 	var authUrlFrame = 'https://app.sharpay.io/auth?back=%2Fpromo%2Fback';
 	
 	function auth() {
