@@ -121,6 +121,7 @@ $(function(){
 		$('#singin-modal').hide();
 	});
 	$(document).on('click', '.dropdown-menu a', function(){
+		document.location.hash = $(this).attr('href');
 		document.location.reload();
 	});
 	
