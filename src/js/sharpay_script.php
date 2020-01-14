@@ -276,7 +276,7 @@ $(function(){
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 		$.get('https://app.sharpay.io/promo/auth', function( data ){
 			if( ! data.ok ) {
-				var iframeWait, hitWait, atemptCount = 0, eventSend = false,
+				var iframeWait, hitWait, atemptCount = 0, atemptCount2 = 0, eventSend = false,
 				shrpReferral = function(){
 					if( sharpayAPI.identity() || ! eventSend ) {
 						sharpayAPI.send('sign-up', function( d ){ 
@@ -315,10 +315,14 @@ $(function(){
 						if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
 						{
 							shrpReferral();
+							atemptCount2++;
+							if( atemptCount2 > 10 ) {
+								clearInterval( iframeWait );
+							}
 						}
 					} catch ( e ) {}
 				};
-				iframeWait = setInterval(shrpRegistrationCheck, 500);	
+				iframeWait = setInterval(shrpRegistrationCheck, 1000);	
 				hitWait = setInterval(shrpReferral, 2500);
 			}
 		}, 'json');

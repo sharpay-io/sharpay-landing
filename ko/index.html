@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20191125151726" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20191125151726" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20200114114256" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20200114114256" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -1325,7 +1325,7 @@ $(function(){
 		$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 		$.get('https://app.sharpay.io/promo/auth', function( data ){
 			if( ! data.ok ) {
-				var iframeWait, hitWait, atemptCount = 0, eventSend = false,
+				var iframeWait, hitWait, atemptCount = 0, atemptCount2 = 0, eventSend = false,
 				shrpReferral = function(){
 					if( sharpayAPI.identity() || ! eventSend ) {
 						sharpayAPI.send('sign-up', function( d ){ 
@@ -1364,10 +1364,14 @@ $(function(){
 						if( document.querySelector('iframe[src^="https://app.sharpay.io/share"]') || isMobile() )
 						{
 							shrpReferral();
+							atemptCount2++;
+							if( atemptCount2 > 10 ) {
+								clearInterval( iframeWait );
+							}
 						}
 					} catch ( e ) {}
 				};
-				iframeWait = setInterval(shrpRegistrationCheck, 500);	
+				iframeWait = setInterval(shrpRegistrationCheck, 1000);	
 				hitWait = setInterval(shrpReferral, 2500);
 			}
 		}, 'json');
