@@ -72,6 +72,9 @@ a {
 	overflow: hidden;
 	font-family: monospace;
 }
+.brand-logo {
+	max-width: 232px;
+}
 .nav-link {
     color: rgba(255,255,255,.5);
     font-size: 13px;
@@ -122,6 +125,9 @@ a {
 }
 .mt-10 {
 	margin-top: 80px;
+}
+.mt-40 {
+	margin-top: 40px;
 }
 .container {
 	min-height: 100vh;
@@ -297,6 +303,22 @@ body>.container {
 .loader {
 	min-height: 200px;
 	background: url(/promo/images/balls.svg) no-repeat center center transparent;
+}
+
+.lunar-prize-top {
+	margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1270px;
+	}
+}
+
+@media (min-width: 992px){
+	.lunar-prize-top {
+		margin-top: 300px;
+	}
 }
 
 @media (max-width: 768px) {
