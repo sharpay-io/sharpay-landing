@@ -17,7 +17,7 @@ function auth() {
 				menu.eq(i).remove();
 			}
 			menu = $('nav>li');
-			$('a', menu.eq(0)).html( ( $('<div/>').text(data.user).html() ) + ( data.balance > 0 ? '<span class="ml-2 badge badge-light">'+ data.balance.toFixed(0) +' S</span>' : '' ) ).attr('href', 'https://app.sharpay.io/profile');
+			$('a', menu.eq(0)).html( ( $('<div/>').text(data.user).html() ) + ( parseFloat(data.balance) > 0 ? '<span class="ml-2 badge badge-light">'+ parseFloat(data.balance).toFixed(0) +' S</span>' : '' ) ).attr('href', 'https://app.sharpay.io/profile');
 		} else {
 			$('.join,.done,.loader').hide();
 			$('.auth').show();
