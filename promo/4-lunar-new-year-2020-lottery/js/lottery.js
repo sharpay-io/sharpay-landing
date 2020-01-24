@@ -9,6 +9,7 @@ var actionUrl = 'https://app.sharpay.io/promo/newYear2020';
 var authUrlFrame = 'https://app.sharpay.io/auth?back=%2Fpromo%2Fback';
 
 function auth() {
+	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 	$.get(authUrl, function( data ) {
 		if( data.ok ) {
 			var menu = $('nav>li');
@@ -28,6 +29,7 @@ function auth() {
 }
 
 function action() {
+	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 	$.get(actionUrl, function( data ) {
 		if( data.ok ) {
 			if( data.address && data.address.length > 0 ) {
@@ -77,11 +79,6 @@ $(function(){
 			window.location.reload();
 		}
 	}, false);
-	
-	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-	
-	
-	
 	
 	
 	$(document).on('click', '.auth button', function(){
