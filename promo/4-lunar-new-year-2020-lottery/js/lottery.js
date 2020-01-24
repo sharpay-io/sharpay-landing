@@ -12,12 +12,21 @@ $(function(){
 	} catch ( e ) {}
 
 	if( document.location.hash == '#zh' || lang == 'zh' ) {
-		$('body>.container').load('i18n/zh.html?r=' + (Math.floor(Math.random()*1000)), function(){ auth(); $('body>.container').fadeTo(500, 1); });
+		$('body>.container').load('i18n/zh.html?r=' + (Math.floor(Math.random()*1000)), function(){ 
+			auth(); 
+			$('body>.container').fadeTo(500, 1); 
+			$('body').append('<script async src="https://app.sharpay.io/api/script.js"></script>');
+		});
 	} else if( document.location.hash == '#en' ) {
-		$('body>.container').load('i18n/en.html?r=' + (Math.floor(Math.random()*1000)), function(){ auth(); $('body>.container').fadeTo(500, 1); });
+		$('body>.container').load('i18n/en.html?r=' + (Math.floor(Math.random()*1000)), function(){ 
+			auth(); 
+			$('body>.container').fadeTo(500, 1); 
+			$('body').append('<script async src="https://app.sharpay.io/api/script.js"></script>');
+		});
 	} else {
 		auth();
 		$('body>.container').fadeTo(500, 1);
+		$('body').append('<script async src="https://app.sharpay.io/api/script.js"></script>');
 	}
 	
 	window.addEventListener('message', function(event) {
