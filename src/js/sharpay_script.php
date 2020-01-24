@@ -220,7 +220,7 @@ $(function() {
   // }).show();
 
 	// NEWS FROM MEDIUM
-	$.get('https://app.sharpay.io/proxy/medium?count=3', function(news) {
+	$.get('https://app.sharpay.io/proxy/blog?count=3', function(news) {
 
 		const CONTENT_SIZE_LIMIT = 320;
 
