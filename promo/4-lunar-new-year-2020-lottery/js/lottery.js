@@ -5,7 +5,7 @@ if( window.self !== window.top ) {
 
 
 var authUrl = 'https://app.sharpay.io/promo/auth';
-var actionUrl = 'https://app.sharpay.io/promo/newYear2020';
+
 var authUrlFrame = 'https://app.sharpay.io/auth?back=%2Fpromo%2Fback';
 
 function auth() {
@@ -17,8 +17,7 @@ function auth() {
 				menu.eq(i).remove();
 			}
 			menu = $('nav>li');
-			$('a', menu.eq(0)).html( ( $('<div/>').text(data.user).html() ) + ( data.balance > 0 ? '<span class="ml-2 badge badge-light">'+ data.balance +'</span>' : '' ) ).attr('href', 'https://app.sharpay.io/profile');
-			action();
+			$('a', menu.eq(0)).html( ( $('<div/>').text(data.user).html() ) + ( data.balance > 0 ? '<span class="ml-2 badge badge-light">'+ data.balance.toFixed(0) +' S</span>' : '' ) ).attr('href', 'https://app.sharpay.io/profile');
 		} else {
 			$('.join,.done,.loader').hide();
 			$('.auth').show();
@@ -28,26 +27,6 @@ function auth() {
 	});
 }
 
-function action() {
-	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
-	$.get(actionUrl, function( data ) {
-		if( data.ok ) {
-			if( data.address && data.address.length > 0 ) {
-				$('.registered-address').text( data.address );
-				$('.auth,.join,.loader').hide();
-				$('.done').show();
-			} else {
-				$('.auth,.done,.loader').hide();
-				$('.join').show();
-			}
-		} else {
-			$('.join,.done,.loader').hide();
-			$('.auth').show();
-		}		
-	}, 'json').fail(function(){
-		$('.messages').addClass('error').text('Network error. Please try again later.').show();
-	});
-}
 
 $(function(){
 	
@@ -100,7 +79,7 @@ $(function(){
 	$(document).on('click', '#singin-modal', function(){
 		$('#singin-modal').hide();
 	});
-	$(document).on('click', '.dropdown-menu a', function(){
+	$(document).on('click', '.languagepicker a', function(){
 		document.location.hash = $(this).attr('href');
 		document.location.reload();
 	});

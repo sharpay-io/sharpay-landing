@@ -74,6 +74,7 @@ a {
 }
 .brand-logo {
 	max-width: 232px;
+	margin-top: 3px;
 }
 .nav-link {
     color: rgba(255,255,255,.5);
@@ -127,7 +128,7 @@ a {
 	margin-top: 80px;
 }
 .mt-40 {
-	margin-top: 40px;
+	margin-top: 37px;
 }
 .container {
 	min-height: 100vh;
@@ -160,7 +161,7 @@ ul {
 	list-style: none;
 }
 .nav-link {
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 13px;
 }
 .nav-item:last-child>a {
     padding-top: 0.6rem;
@@ -304,9 +305,65 @@ body>.container {
 	min-height: 200px;
 	background: url(/promo/images/balls.svg) no-repeat center center transparent;
 }
+.brand-logo-cont {
+	line-height: 44px;
+}
 
-.lunar-prize-top {
-	margin-top: 30px;
+.nav-lang {
+	min-width: 240px;
+}
+.languagepicker {
+	background-color: #313131;
+	display: inline-block;
+	padding: 0;
+	height: 40px;
+	overflow: hidden;
+	transition: all .3s ease;
+	border-radius: 5px;
+	position: absolute;
+	right: 15px;
+	font-size: 14px;
+	margin-top: 3px;
+}
+.languagepicker:hover, .languagepicker:active {
+	height: auto;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.languagepicker img {
+	width: 16px;
+}
+.languagepicker a{
+	color: #efefef;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+}
+.languagepicker li {
+	display: block;
+	padding: 0px 20px;
+	line-height: 40px;
+	-border-top: 1px solid #333;
+}
+.languagepicker li:hover{
+	background-color: #333;
+}
+.languagepicker a:first-child li {
+	border: none;
+	background: #313131 !important;
+
+}
+.languagepicker>li:first-child:after {
+	content: ' ';
+	float: right;
+    color: #999;
+	margin-left: 15px;
+	background: url(/images/check.svg) no-repeat center center transparent;
+	background-size: contain;
+	width: 16px;
+	height: 40px;
+}
+.languagepicker li img {
+	margin-right: 5px;
 }
 
 @media (min-width: 1200px) {
@@ -315,13 +372,10 @@ body>.container {
 	}
 }
 
-@media (min-width: 992px){
-	.lunar-prize-top {
-		margin-top: 300px;
-	}
-}
-
 @media (max-width: 768px) {
+	.nav-lang {
+		min-width: 175px;
+	}
 	.mt-10 {
 		margin-top: 30px;
 	}
