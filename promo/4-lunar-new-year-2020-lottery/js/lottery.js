@@ -4,6 +4,49 @@ if( window.self !== window.top ) {
 }
 
 
+var authUrl = 'https://app.sharpay.io/promo/auth';
+var actionUrl = 'https://app.sharpay.io/promo/newYear2020';
+var authUrlFrame = 'https://app.sharpay.io/auth?back=%2Fpromo%2Fback';
+
+function auth() {
+	$.get(authUrl, function( data ) {
+		if( data.ok ) {
+			var menu = $('nav>li');
+			for( var i = 0 ; i < (menu.length - 2); i++ ) {
+				menu.eq(i).remove();
+			}
+			menu = $('nav>li');
+			$('a', menu.eq(0)).html( ( $('<div/>').text(data.user).html() ) + ( data.balance > 0 ? '<span class="ml-2 badge badge-light">'+ data.balance +'</span>' : '' ) ).attr('href', 'https://app.sharpay.io/profile');
+			action();
+		} else {
+			$('.join,.done,.loader').hide();
+			$('.auth').show();
+		}
+	}, 'json').fail(function(){
+		$('.messages').addClass('error').text('Network error. Please try again later.').show();
+	});
+}
+
+function action() {
+	$.get(actionUrl, function( data ) {
+		if( data.ok ) {
+			if( data.address && data.address.length > 0 ) {
+				$('.registered-address').text( data.address );
+				$('.auth,.join,.loader').hide();
+				$('.done').show();
+			} else {
+				$('.auth,.done,.loader').hide();
+				$('.join').show();
+			}
+		} else {
+			$('.join,.done,.loader').hide();
+			$('.auth').show();
+		}		
+	}, 'json').fail(function(){
+		$('.messages').addClass('error').text('Network error. Please try again later.').show();
+	});
+}
+
 $(function(){
 	
 	var lang = 'en';
@@ -37,48 +80,8 @@ $(function(){
 	
 	$.ajaxSetup({ xhrFields: { withCredentials: true }, crossDomain: true });
 	
-	var authUrl = 'https://app.sharpay.io/promo/auth';
-	var actionUrl = 'https://app.sharpay.io/promo/newYear2020';
-	var authUrlFrame = 'https://app.sharpay.io/auth?back=%2Fpromo%2Fback';
 	
-	function auth() {
-		$.get(authUrl, function( data ) {
-			if( data.ok ) {
-				var menu = $('nav>li');
-				for( var i = 0 ; i < (menu.length - 2); i++ ) {
-					menu.eq(i).remove();
-				}
-				menu = $('nav>li');
-				$('a', menu.eq(0)).html( ( $('<div/>').text(data.user).html() ) + ( data.balance > 0 ? '<span class="ml-2 badge badge-light">'+ data.balance +'</span>' : '' ) ).attr('href', 'https://app.sharpay.io/profile');
-				action();
-			} else {
-				$('.join,.done,.loader').hide();
-				$('.auth').show();
-			}
-		}, 'json').fail(function(){
-			$('.messages').addClass('error').text('Network error. Please try again later.').show();
-		});
-	}
 	
-	function action() {
-		$.get(actionUrl, function( data ) {
-			if( data.ok ) {
-				if( data.address && data.address.length > 0 ) {
-					$('.registered-address').text( data.address );
-					$('.auth,.join,.loader').hide();
-					$('.done').show();
-				} else {
-					$('.auth,.done,.loader').hide();
-					$('.join').show();
-				}
-			} else {
-				$('.join,.done,.loader').hide();
-				$('.auth').show();
-			}		
-		}, 'json').fail(function(){
-			$('.messages').addClass('error').text('Network error. Please try again later.').show();
-		});
-	}
 	
 	
 	$(document).on('click', '.auth button', function(){
