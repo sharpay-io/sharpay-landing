@@ -1023,7 +1023,7 @@ $langsArray = array(
 			<form id="userSubscribeForm"
 			      action="https://app.sharpay.io/auth/signup"
 			      method="post" class="form">
-				<input type="mail" class="text-field w-input en" maxlength="256" name="email" data-name="EMAIL"
+				<input type="email" class="text-field w-input en" maxlength="256" name="mail" data-name="EMAIL"
 				       placeholder="<?= L::footer_email_placeholder ?>" id="Mail-2">
 				<input type="submit" value="<?= L::footer_subscribe ?>"
 				       class="form-btn w-button">
