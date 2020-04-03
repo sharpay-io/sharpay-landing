@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20200403203241" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20200403203241" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20200403204827" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20200403204827" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -1273,7 +1273,8 @@ $(function(){
 			$.get('https://app.sharpay.io/auth/signupAjax?p=' + partnerId, function () { });
 		}
     }
-	$(document).on('submit', '#webmasterForm', function () {
+	$(document).on('submit', '#webmasterForm,#userSubscribeForm', function () {
+	    var form = $(this);
         var result = true;
 		$('input:visible', this).each(function () {
 			if( $(this).val().length > 0 ) {
@@ -1292,7 +1293,7 @@ $(function(){
                 if( data.ok ) {
                 	window.location.href = data.go;
                 } else {
-                	$('#webmasterForm').append('<div class="form-row error-data">' + data.error + '</div>');
+                    form.append('<div class="form-row error-data">' + data.error + '</div>');
 	                grecaptcha.execute('6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY', {action: 'wmlead'}).then(function(token) {
 		                $('.g-recaptcha').html('<input type="hidden" name="g-recaptcha-response" value="'+token+'">');
 	                });

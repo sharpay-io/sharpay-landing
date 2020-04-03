@@ -346,7 +346,8 @@ $(function(){
 			$.get('https://app.sharpay.io/auth/signupAjax?p=' + partnerId, function () { });
 		}
     }
-	$(document).on('submit', '#webmasterForm', function () {
+	$(document).on('submit', '#webmasterForm,#userSubscribeForm', function () {
+	    var form = $(this);
         var result = true;
 		$('input:visible', this).each(function () {
 			if( $(this).val().length > 0 ) {
@@ -365,7 +366,7 @@ $(function(){
                 if( data.ok ) {
                 	window.location.href = data.go;
                 } else {
-                	$('#webmasterForm').append('<div class="form-row error-data">' + data.error + '</div>');
+                    form.append('<div class="form-row error-data">' + data.error + '</div>');
 	                grecaptcha.execute('6LdLAmIUAAAAAOOm8A9Ec1aAHKJOlB9miqOu1nrY', {action: 'wmlead'}).then(function(token) {
 		                $('.g-recaptcha').html('<input type="hidden" name="g-recaptcha-response" value="'+token+'">');
 	                });
