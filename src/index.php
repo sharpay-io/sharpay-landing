@@ -98,8 +98,8 @@ $langsArray = array(
 				<a href="#sites" class="nav-link w-nav-link"><?= L::head_menu_sites ?></a>
 				<a href="#users" class="nav-link w-nav-link"><?= L::head_menu_users ?></a>
 				<a href="#roadmap" class="nav-link w-nav-link"><?= L::head_menu_roadmap ?></a>
-				<a href="#emission" class="nav-link w-nav-link"><?= L::head_menu_emission ?></a>
-				<!-- <a href="#token" class="nav-link w-nav-link"><?= L::head_menu_token ?></a> -->
+                <?/*<!-- <a href="#emission" class="nav-link w-nav-link"><?= L::head_menu_emission ?></a> -->
+				<!-- <a href="#token" class="nav-link w-nav-link"><?= L::head_menu_token ?></a> -->*/?>
 				<a href="#advisers" class="nav-link w-nav-link"><?= L::head_menu_advisers ?></a>
 				<a href="#team" class="nav-link w-nav-link"><?= L::head_menu_team ?></a>
 				<a href="#signin" class="nav-link w-nav-link orange-span"><?= L::head_menu_signin ?></a>
@@ -169,14 +169,14 @@ $langsArray = array(
 				   onclick="gtag('event', 'whitepaper', {'lang': '<?= $lang ?>'}); yaCounter48279077.reachGoal('whitepaper');">
 					<div><?= L::head_white_paper ?></div>
 				</a>
-				<a href="<?= L::head_presentation_path ?>" target="_blank" class="btn w-inline-block"
+				<?/*<!--a href="<?= L::head_presentation_path ?>" target="_blank" class="btn w-inline-block"
 				   onclick="gtag('event', 'presentation', {'lang': '<?= $lang ?>'}); yaCounter48279077.reachGoal('presentation');">
 					<div><?= L::head_presentation ?></div>
 				</a>
 				<a href="<?= L::head_one_pager_path ?>" target="_blank" class="btn w-inline-block"
 				   onclick="gtag('event', 'onepager', {'lang': '<?= $lang ?>'}); yaCounter48279077.reachGoal('onepager');">
 					<div><?= L::head_one_pager ?></div>
-				</a>
+				</a-->*/?>
 				<a href="https://t.me/sharpay_admin" target="_blank" class="btn w-inline-block"
 				   onclick="sharpayAPI.send('live-chat'); gtag('event', 'chat', {'lang': '<?= $lang ?>'}); yaCounter48279077.reachGoal('chat');">
 					<div><span class="chat-online"></span><?= L::head_chat ?></div>
@@ -204,7 +204,7 @@ $langsArray = array(
 					   title="<?= L::reddit_title ?>"><img src="/images/reddit_1.svg"></a>
 					<a href="http://steemit.com/@sharpay" target="_blank" class="soc-link w-inline-block"
 					   title="<?= L::steemit_title ?>"><img src="/images/steemit.svg"></a>
-					<a href="http://golos.blog/@sharpay" target="_blank" class="soc-link w-inline-block"
+					<a href="http://golos.io/@sharpay" target="_blank" class="soc-link w-inline-block"
 					   title="<?= L::golos_title ?>"><img src="/images/golos.svg"></a>
 					<a href="mailto:tokensale@sharpay.io" target="_blank" class="soc-link w-inline-block"
 					   title="<?= L::email_title ?>"><img src="/images/mailto.svg"></a>
@@ -332,7 +332,7 @@ $langsArray = array(
 				<p class="p"><?= L::view_p1 ?></p>
 				<p class="p"><?= L::view_p2 ?></p>
 				<div id="btn-img-container">
-					<div id="bi1" class="btn-img">
+					<?/*<div id="bi1" class="btn-img">
 						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio" data-modal="true">
 							<img src="/images/btn1.svg"/>
 						</a>
@@ -351,11 +351,9 @@ $langsArray = array(
 						<a href="#" class="sharpay_widget_custom" data-sharpay="srpio">
 							<img src="/images/custom-btn2x.png">
 						</a>
-					</div>
+					</div>*/?>
 
-					<div style="text-align: left; margin-top: 20px;" data-limit="3" class="sharpay_widget_simple"
-					     data-sharpay="srpio"
-					     data-networks="facebook,twitter,linkedin,reddit,tumblr,vkontakte,googleplus,telegram,pinterest,odnoklassniki,weibo,kakaotalk,kakaostory,line,mailru,wechat,qq,whatsapp,viber,renren,fbmessenger,skype,livejournal"></div>
+					<div style="text-align: left; margin-top: 20px;" data-limit="3" class="sharpay_widget_simple" data-sharpay="srpio"></div>
 
 				</div>
 
@@ -382,23 +380,24 @@ $langsArray = array(
 				<div class="soc-img"><img src="/images/sns/kakao.svg"></div>
 				<!--div class="soc-img"><img src="/images/sns/linkedin.svg"></div-->
 				<div class="soc-img"><img src="/images/sns/ok.svg"></div>
+                <div class="soc-img"><img src="/images/sns/pinterest.svg"></div>
+                <div class="soc-img"><img src="/images/wechat.svg"></div>
+                <div class="soc-img"><img src="/images/qq.svg"></div>
+                <!--div class="soc-img"><img src="/images/gplus-icon.svg"></div-->
+                <!-- <div class="soc-img"><img src="/images/snapchaat.svg"></div> -->
+                <div class="soc-img"><img src="/images/viber.svg"></div>
+                <div class="soc-img"><img src="/images/lj.svg"></div>
+                <div id="soc-img-plus" class="soc-img"><img src="/images/plus-icon.svg" class="plus-icon"></div>
 			</div>
 		</div>
-		<div class="row-cont">
+		<!--div class="row-cont">
 			<div class="row-l-col" data-ix="l-init">
 				<p class="p"><?= L::view_connections_p2 ?></p>
 			</div>
 			<div id="soc-future" class="row-r-col rr2" data-ix="r-init">
-				<div class="soc-img"><img src="/images/sns/pinterest.svg"></div>
-				<div class="soc-img"><img src="/images/wechat.svg"></div>
-				<div class="soc-img"><img src="/images/qq.svg"></div>
-				<div class="soc-img"><img src="/images/gplus-icon.svg"></div>
-				<!-- <div class="soc-img"><img src="/images/snapchaat.svg"></div> -->
-				<div class="soc-img"><img src="/images/viber.svg"></div>
-				<div class="soc-img"><img src="/images/lj.svg"></div>
-				<div id="soc-img-plus" class="soc-img"><img src="/images/plus-icon.svg" class="plus-icon"></div>
+
 			</div>
-		</div>
+		</div-->
 	</div>
 </div>
 
@@ -444,7 +443,6 @@ $langsArray = array(
 				<div class="form-row"><button name="do" value="yes" type="submit" class="b1 btn w-inline-block"><?= L::sites_form_continue ?></button></div>
 				<div class="g-recaptcha"></div>
 			</form>
-
 		</div>
 	</div>
 </div>
@@ -625,6 +623,7 @@ $langsArray = array(
 	</div>
 </div>
 
+<?/*
 <div id="emission" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="container">
 		<div class="l-col lc2" data-ix="l-init">
@@ -714,7 +713,7 @@ $langsArray = array(
 		</div>
 	</div>
 </div>
-
+*/?>
 <div id="advisers" class="section<? print $d%2?' section-dark':''; $d++; ?> sf">
 	<div class="cont2 container">
 		<div class="h2-wrap">
@@ -1019,16 +1018,18 @@ $langsArray = array(
 
 <div id="footer" class="section<? print $d%2?' section-dark':''; $d++; ?> sf">
 	<div class="container f-cont">
-		<div class="h-form-title hft2"><?= L::footer_start ?></div>
+		<!--div class="h-form-title hft2"><?= L::footer_start ?></div-->
 		<div class="fbf form-block w-form">
-			<form id="wf-form-Email" name="wf-form-Email" data-name="Email"
-			      action="https://sharpay.us17.list-manage.com/subscribe/post?u=9640eb44e1bee917058684b01&amp;amp;id=e65ae8e1a9"
+			<form id="userSubscribeForm"
+			      action="https://app.sharpay.io/auth/signup"
 			      method="post" class="form">
-				<input type="email" class="text-field w-input en" maxlength="256" name="Mail-2" data-name="EMAIL"
+				<input type="email" class="text-field w-input en" maxlength="256" name="email" data-name="EMAIL"
 				       placeholder="<?= L::footer_email_placeholder ?>" id="Mail-2">
-				<input type="submit" value="<?= L::footer_subscribe ?>" data-wait="<?= L::footer_wait ?>"
+				<input type="submit" name="do" value="<?= L::footer_subscribe ?>"
 				       class="form-btn w-button">
+                <div class="g-recaptcha"></div>
 			</form>
+
 			<div class="sm2 success-msg w-form-done">
 				<div><?= L::footer_subscription_success ?></div>
 			</div>
@@ -1055,7 +1056,7 @@ $langsArray = array(
 			   title="<?= L::reddit_title ?>"><img src="/images/reddit_1.svg"></a>
 			<a target="_blank" href="http://steemit.com/@sharpay" class="sl-f soc-link w-inline-block"
 			   title="<?= L::steemit_title ?>"><img src="/images/steemit.svg"></a>
-			<a href="http://golos.blog/@sharpay" target="_blank" class="sl-f soc-link w-inline-block"
+			<a href="http://golos.io/@sharpay" target="_blank" class="sl-f soc-link w-inline-block"
 			   title="<?= L::golos_title ?>"><img src="/images/golos.svg"></a>
 			<a href="mailto:tokensale@sharpay.io" target="_blank" class="sl-f soc-link w-inline-block"
 			   title="<?= L::email_title ?>"><img src="/images/mailto.svg"></a>

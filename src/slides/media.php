@@ -2,7 +2,7 @@
 
 $mediaList = [
   [
-    'url' => 'https://www.ccn.com/sharpay-share-buttons-successfully-raised-2400-eth-presale-announcing-token-sale/',
+    'url' => '#',
     'image' => '/images/media/ccn.svg',
     'cls' => 'media-cnn'
   ],
