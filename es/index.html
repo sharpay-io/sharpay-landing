@@ -22,8 +22,8 @@
 	<link href="/css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/css/webflow.css" rel="stylesheet" type="text/css">
 	<!-- <link href="/css/slick.css" rel="stylesheet" type="text/css"> -->
-	<!-- <link href="/css/slick-theme.css?v=20200403200933" rel="stylesheet" type="text/css"> -->
-	<link href="/css/sharpay2.webflow.css?v=20200403200933" rel="stylesheet" type="text/css">
+	<!-- <link href="/css/slick-theme.css?v=20200403203241" rel="stylesheet" type="text/css"> -->
+	<link href="/css/sharpay2.webflow.css?v=20200403203241" rel="stylesheet" type="text/css">
 
 	<!-- [if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
@@ -852,8 +852,10 @@
 			      method="post" class="form">
 				<input type="email" class="text-field w-input en" maxlength="256" name="email" data-name="EMAIL"
 				       placeholder="Escriba su correo electrónico para la suscripción" id="Mail-2">
-				<input type="submit" name="do" value="Suscribir"
+				<input type="submit" value="Suscribir"
 				       class="form-btn w-button">
+                <input type="hidden" name="domain" value="subscribe">
+                <input type="hidden" name="do" value="yes">
                 <div class="g-recaptcha"></div>
 			</form>
 
@@ -1327,81 +1329,6 @@ grecaptcha.ready(function() {
 
 </script>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-
-<script>
-
-Highcharts.theme = {
-   colors: ['#517ff3', '#da4a39', '#f2b50e', '#009c59', '#ad44ba', '#10a9c0'],
-   chart: { backgroundColor: null, style: { fontFamily: 'Verdana, sans-serif' } },
-   title: {  style: { fontSize: '16px',  fontWeight: 'bold',  textTransform: 'uppercase' } },
-   tooltip: { borderWidth: 0,  backgroundColor: 'rgba(219,219,216,0.8)', shadow: false  },
-   legend: { itemStyle: {  fontWeight: 'bold', fontSize: '13px' } },
-   xAxis: { gridLineWidth: 0, labels: { style: { fontSize: '12px' } }  },
-   yAxis: { minorTickInterval: 'auto', title: { style: { textTransform: 'uppercase' } }, labels: { style: { fontSize: '12px' }  } },
-   plotOptions: {  pie: { states: {
-     hover: {
-       halo: { size: 20 }
-   }}}},
-   background2: '#F0F0EA',
-   credits: {
-     enabled: false
-   }
-};
-Highcharts.setOptions(Highcharts.theme);
-
-var emissionChart = Highcharts.chart('emissionChart', {
-    chart: { margin: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
-    title: { text: '' },
-    tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { dataLabels: { enabled: true, distance: -30,  style: { fontWeight: 'bold', color: 'white', fontSize: '14px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
-    series: [{
-        type: 'pie',
-        name: 'Emission',
-        colorByPoint: true,
-        innerSize: '60%',
-        data: [
-            { name: '37%', desc: 'Venta gratis de tokens', y: 37 },
-			{ name: '31%', desc: 'Reserva para el funcionamiento del sistema', y: 31 },
-			{ name: '15%', desc: 'Bonificación para el equipo', y: 15 },
-			{ name: '7%', desc: 'Bonificación para inversores', y: 7 },
-			{ name: '7%', desc: 'Recompensa a los asesores', y: 7 },
-			{ name: '3%', desc: 'Programa recompensa', y: 3 }
-        ]
-    }]
-});
-
-var rashodChart = Highcharts.chart('rashodChart', {
-    chart: { margin: [0, 0, 0, 0], plotBackgroundColor: null, plotBorderWidth: 0, plotShadow: false },
-    title: { text: '' },
-    tooltip: { enabled: true, formatter: function() {  return this.point.desc + ': <b>' + this.y + '%</b>'; }  },
-    plotOptions: { pie: { dataLabels: { enabled: true, distance: -25,  style: { fontWeight: 'bold', color: 'white', fontSize: '12px', } }, borderWidth: 0, startAngle: 0, endAngle: 0, shadow: false,  center: ['50%', '50%'] } },
-    series: [{
-        type: 'pie',
-        name: 'Расходы',
-        colorByPoint: true,
-        innerSize: '40%',
-        data: [
-			{ name: '33%', desc: 'Desarrollo', y: 33 },
-			{ name: '11%', desc: 'Personal', y: 11 },
-			{ name: '39%', desc: 'Marketing y ventas', y: 39 },
-			{ name: '4%', desc: 'Costos legales y de patente', y: 4 },
-			{ name: '9%', desc: 'Costes administrativos', y: 9 },
-			{ name: '4%', desc: 'Otros costos', y: 4 }
-        ]
-    }]
-});
-
-$(function(){
-	$(window).resize(function(){
-		var w = $('#rashodChart').parent().width() * 0.84;
-		rashodChart.setSize(w, w);
-		w = $('#emissionChart').parent().width() - 40;
-		emissionChart.setSize(w, w);
-			}).resize();
-});
-
-</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109731082-2"></script>

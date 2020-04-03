@@ -1025,8 +1025,10 @@ $langsArray = array(
 			      method="post" class="form">
 				<input type="email" class="text-field w-input en" maxlength="256" name="email" data-name="EMAIL"
 				       placeholder="<?= L::footer_email_placeholder ?>" id="Mail-2">
-				<input type="submit" name="do" value="<?= L::footer_subscribe ?>"
+				<input type="submit" value="<?= L::footer_subscribe ?>"
 				       class="form-btn w-button">
+                <input type="hidden" name="domain" value="subscribe">
+                <input type="hidden" name="do" value="yes">
                 <div class="g-recaptcha"></div>
 			</form>
 
@@ -1098,7 +1100,7 @@ $langsArray = array(
 
 <? include 'js/sharpay_script.php' ?>
 
-<? include 'js/charts_script.php' ?>
+<? //include 'js/charts_script.php' ?>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109731082-2"></script>
