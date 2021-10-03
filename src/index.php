@@ -101,7 +101,7 @@ $langsArray = array(
                 <?/*<!-- <a href="#emission" class="nav-link w-nav-link"><?= L::head_menu_emission ?></a> -->
 				<!-- <a href="#token" class="nav-link w-nav-link"><?= L::head_menu_token ?></a> -->*/?>
 				<a href="#advisers" class="nav-link w-nav-link"><?= L::head_menu_advisers ?></a>
-				<a href="#team" class="nav-link w-nav-link"><?= L::head_menu_team ?></a>
+				<?/*<a href="#team" class="nav-link w-nav-link"><?= L::head_menu_team ?></a>*/?>
 				<a href="#signin" class="nav-link w-nav-link orange-span"><?= L::head_menu_signin ?></a>
 				<div class="nav-lang nl-mob">
                     <? foreach ($langsArray as $lng => $item) {
