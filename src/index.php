@@ -271,8 +271,11 @@ $langsArray = array(
 
 <? include 'slides/news.php' ?>
 
-<div id="token" class="section">
-    <? /*<div class="container">
+<? $d = 0; ?>
+
+<? /*
+<div id="token" class="section<? print $d%2?' section-dark':''; $d++; ?>">
+    <div class="container">
 			<div class="-l-col" data-ix="l-init">
 				<h2 class="h2"><span class="orange-span"><?=L::token_sale?></span></h2>
 				<p class="p"><?=L::token_sale_dates?><br>
@@ -302,7 +305,7 @@ $langsArray = array(
 			<div class="-r-col" data-ix="r-init">
 				<div id="tokenChart"></div>
 			</div>
-		</div>*/ ?>
+		</div>
 
 	<div class="container container-exchange">
 		<div class="row-l-col" data-ix="l-init">
@@ -322,9 +325,9 @@ $langsArray = array(
 		</div>
 	</div>
 
-</div>
+</div>*/ ?>
 
-<div id="view" class="section section-dark">
+<div id="view" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="cont2 container">
 		<div class="row-cont">
 			<div class="row-l-col" data-ix="l-init">
@@ -401,7 +404,7 @@ $langsArray = array(
 	</div>
 </div>
 
-<div id="sites" class="section">
+<div id="sites" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="container">
 		<div class="l-col lc22" data-ix="l-init">
 			<h2 class="h2"><?= L::sites_how_it_works ?></span></h2>
@@ -417,8 +420,6 @@ $langsArray = array(
 		</div>
 	</div>
 </div>
-
-<? $d = 1; ?>
 
 <div id="webmasters" class="section<? print $d%2?' section-dark':''; $d++; ?>">
 	<div class="container">

@@ -1,39 +1,39 @@
 #!/bin/bash
 
 echo 'Generating default (English) page...'
-php src/index.php en > index.html
+php -d short_open_tag=On src/index.php en > index.html
 
 echo 'Generating Chinese page...'
-php src/index.php zh > zh/index.html
+php -d short_open_tag=On src/index.php zh > zh/index.html
 
 echo 'Generating Korian page...'
-php src/index.php ko > ko/index.html
+php -d short_open_tag=On src/index.php ko > ko/index.html
 
 echo 'Generating Russian page...'
-php src/index.php ru > ru/index.html
+php -d short_open_tag=On src/index.php ru > ru/index.html
 
 echo 'Generating Japanese page...'
-php src/index.php jp > jp/index.html
+php -d short_open_tag=On src/index.php jp > jp/index.html
 
 echo 'Generating Spanish page...'
-php src/index.php es > es/index.html
+php -d short_open_tag=On src/index.php es > es/index.html
 
 echo 'Generating Italian page...'
-php src/index.php it > it/index.html
+php -d short_open_tag=On src/index.php it > it/index.html
 
 echo 'Generating Portugal page...'
-php src/index.php pt > pt/index.html
+php -d short_open_tag=On src/index.php pt > pt/index.html
 
 echo 'Generating Hindi page...'
-php src/index.php hi > hi/index.html
+php -d short_open_tag=On src/index.php hi > hi/index.html
 
 echo 'Generating Filipino page...'
-php src/index.php ph > ph/index.html
+php -d short_open_tag=On src/index.php ph > ph/index.html
 
 echo 'Generating Nederlands page...'
-php src/index.php nl > nl/index.html
+php -d short_open_tag=On src/index.php nl > nl/index.html
 
 echo 'Generating Arabic page...'
-php src/index.php ar > ar/index.html
+php -d short_open_tag=On src/index.php ar > ar/index.html
 
 echo 'Done.'
