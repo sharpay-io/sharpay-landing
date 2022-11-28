@@ -774,7 +774,7 @@ $langsArray = array(
 					<p class="team-p"><?= L::advisers_vincent_bio ?></p>
 				</div>
 			</div>
-
+<? /*
 			<div class="team-item">
 				<div class="team-img"><img src="/images/Igor.jpg"></div>
 				<div class="team-top">
@@ -804,6 +804,7 @@ $langsArray = array(
 					<p class="team-p"><?= L::team_arkady_bio ?></p>
 				</div>
 			</div>
+*/ ?>
 
 		</div>
 
